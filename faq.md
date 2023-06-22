@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Preguntas frecuentes
 
 We list and answer the most frequently asked questions by our community:
 
