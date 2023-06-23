@@ -1,17 +1,17 @@
-# Welcome to Tainacan Wiki
+# Bienbenido a Tainacan Wiki
 
 ![logo](_assets/images/logo_tainacan.png)
 
-> An **open source**, **powerful** and **flexible** repository platform for _WordPress_.
+> Una plataforma de repositorio **de código abierto**, **potente** y **flexible** para _WordPress_.
 
-- Create collections with custom metadata and filters
-- Browse your items with a faceted search
-- Manage taxonomies that can be used across all your collections
-- Consume data via a powerful API
-- Present stories to the public using Gutenberg blocks
+- Crear colecciones con metadatos y filtros personalizados
+- Explore sus artículos con una búsqueda por facetas
+- Administre taxonomías que se pueden usar en todas sus colecciones
+- Consumir datos a través de una potente API
+- Presentar historias al público usando bloques de Gutenberg
 
-[Wiki in English](/#tainacan-wiki)
-[Wiki em Português](/pt-br/#wiki-do-tainacan)
+<!-- [Wiki in English](/#tainacan-wiki)
+[Wiki em Português](/pt-br/#wiki-do-tainacan) -->
 
 <!-- background color -->
 
