@@ -67,4 +67,4 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
     </div>
 </div>
 
-Se puede acceder a la documentación origial a través de GitHub Pages + Docsify [here](https://wiki.tainacan.org ":ignore").
+Se puede acceder a la documentación origial a través de GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ":ignore").
