@@ -13,12 +13,12 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![First Steps](/_assets/images/Primeiros_passos.png ":no-zoom")](/getting-started)
+[![Primeros Pasos](/_assets/images/Primeiros_passos.png ":no-zoom")](/getting-started)
 
 </div>
 <div class="panel-heading">
 
-[First Steps](/getting-started)
+[Primeros Pasos](/getting-started)
 
 </div>
         </div>
@@ -27,12 +27,12 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Install](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
+[![Instalacion](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
 
 </div>
 <div class="panel-heading">
 
-[Install](/install)
+[Instalacion](/install)
 
 </div>
         </div>
@@ -41,12 +41,12 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![General Concepts](/_assets/images/Usando_a_plataforma.png ":no-zoom")](/general-concepts)
+[![Conceptos Generales](/_assets/images/Usando_a_plataforma.png ":no-zoom")](/general-concepts)
 
 </div>
 <div class="panel-heading">
 
-[General Concepts](/general-concepts)
+[Conceptos Generales](/general-concepts)
 
 </div>
         </div>
@@ -55,12 +55,12 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Developers](/_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
+[![Desarrolladores](/_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
 
 </div>
 <div class="panel-heading">
 
-[Developers](/dev/)
+[Desarrolladores](/dev/)
 
 </div>
         </div>
