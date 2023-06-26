@@ -1,6 +1,6 @@
 # Preguntas frecuentes
 
-Hemos enumerado y respondido las preguntas más frecuentes de nuestra comunidad:
+Hemos enumerado y respondido las preguntas más frecuentes de nuestra comunidad
 
 > ¡Para unirte a la comunidad de Tainacan [regístrate aquí](https://tainacan.discourse.group ":ignore")!
 
