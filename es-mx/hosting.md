@@ -22,11 +22,13 @@ Es muy probable que si tu plan de alojamiento incluye WordPress instalado, ya es
 - `Apache` o `Nginx` funcionando;
 - `PHP` versión 5.6 o superior;
 - Módulos `PHP` esperados:
+
   - `curl`
   - `exif`
   - `imagick`
   - `gd`
   - `zlib`
+
 
 Después de activar el complemento de Tainacan, puedes verificar en la [página “Diagnóstico del sistema”](/pt-br/optimization#diagnóstico-do-sistema) si se cumple esta información. De lo contrario, comunícate con tu proveedor de alojamiento para obtener ayuda con la configuración.
 
@@ -44,3 +46,4 @@ A continuación encontrarás algunos servicios de alojamiento conocidos y probad
 | --------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Hostinger | https://www.hostinger.mx/hosting-wordpress | Configuración sencilla. Incluye todos los módulos PHP necesarios, SSL y ofrece un dominio gratis por un tiempo determinado |
 | Hostgator | https://www.hostgator.mx/hosting-wordpress                     | Configuración sencilla con herramienta de instalación de WordPress. Incluye todos los módulos PHP necesarios (algunos hosts antiguos carecían del módulo imagick). Tiene buena documentación y soporte para posibles configuraciones |
+

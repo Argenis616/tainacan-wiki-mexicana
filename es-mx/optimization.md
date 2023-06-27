@@ -223,6 +223,7 @@ deny from all
 
 También se puede deshabilitar el listado de archivos y el acceso directo a archivos.php en el directorio uploads. Esto se puede hacer incluyendo un archivo `.htaccess` dentro del directorio `/wp-content/uploads` de la instalación de WordPress con el siguiente contenido:
 
+
 ```php
 Options -Indexes
 
@@ -246,3 +247,4 @@ Existen varios plugins de caché para WordPress que pueden acelerar enormemente 
 Hay una precaución que debe tomarse cuando se utiliza un plugin de caché. Dado que Tainacan utiliza "nonces", que son códigos de seguridad para verificar la intención del usuario al realizar ciertas acciones, es necesario configurar la caché para que no dure más de 12 horas. Estos códigos duran ese tiempo y si la caché dura más de 12 horas, es posible que visites el sitio con un código caducado y tengas problemas de permisos.
 
 Si desea más detalles al respecto, consulta [estos](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) artículos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
+

@@ -27,11 +27,6 @@ Como se muestra en la imagen, haz clic en el botón **XAMPP para Windows 7.3.6 (
 ![](/_assets/images/xampp_02.png)
 
 Esta es la pantalla inicial de la instalación. Haz clic en el botón **Next** (**Siguiente**).
-
-<br><br>
-
-![](/_assets/images/xampp_03.png)
-
 Esta pantalla es para seleccionar los componentes que se van a instalar. No es necesario cambiar nada. Vuelve a dar clic en **Siguiente** (**Next**).
 
 <br><br>
@@ -49,6 +44,7 @@ En esta pantalla se presenta Bitnami, que es una librería de instaladores. Una 
 <br><br>
 
 ![](/_assets/images/xampp_06.png)
+
 
 Este es solo un mensaje de advertencia. La instalación está lista para comenzar. Da clic en **Siguiente** para iniciar el proceso.
 
@@ -69,6 +65,7 @@ El proceso ha concluido y la instalación está completa. Deja la casilla de ver
 <br><br>
 
 ![](/_assets/images/xampp_09.png)
+
 
 Aparece el cuadro de selección de idioma. Elige la primera opción, inglés. Luego haz clic en **Guardar** (**Save**).
 
