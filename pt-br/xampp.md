@@ -1,105 +1,108 @@
-# Instalando Tainacan de forma local en una computadora con Windows (sin servidor) #
+# Instalando o Tainacan em uma máquina windows local (sem servidor) #
 
 <br>
 
-**Tainacan** es un complemento (plugin) para **WordPress**. Para utilizarlo, si no tienes nada preparado, deberás realizar tres instalaciones muy sencillas:
-1. Un servidor web en tu computadora. Aquí te enseñamos [cómo instalar XAMPP en Windows](#baixando).
-2. Una instalación de **WordPress**. Aquí puedes ver [cómo instalar WordPress en un servidor XAMPP (Windows)](/pt-br/wordpress#como-instalar-o-wordpress-no-windows).
-3. El plugin **Tainacan**. Aquí te enseñamos [como instalar o Tainacan no wordpress](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
+O **Tainacan** é um plugin de **wordpress**. Para utilizá-lo, caso não tenha nada preparado, você precisará realizar três instalações bem simples:
+1. Um servidor web na sua máquina. Aqui ensinamos [como instalar o XAMPP no windows](#baixando).
+2. O **wordpress**. Aqui ensinamos [como instalar o wordpress num servidor XAMPP (windows)](/pt-br/wordpress#como-instalar-o-wordpress-no-windows).
+3. O plugin do **Tainacan**. Ensinamos [como instalar o Tainacan no wordpress](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
 
-Si lo prefieres, puedes ver los mismos tutoriales en video:
+Se preferir, você pode assistir os mesmos tutoriais em vídeo:
 * [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
-* [WordPress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
+* [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
 * [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
 
-## Descarga ##
+## Baixando ##
 
-Para empezar, ve al enlace https://www.apachefriends.org/pt_br/index.html y descarga **XAMPP** para **Windows**.
+Para iniciar, vamos até o link https://www.apachefriends.org/pt_br/index.html e vamos baixar o **XAMPP** para **windows**.
 
 ![](/_assets/images/xampp_01.png)
 
-Como se muestra en la imagen, haz clic en el botón **XAMPP para Windows 7.3.6 (PHP 7.3.6)** para descargarlo. Al finalizar el proceso, iniciaremos la instalación ejecutando el archivo descargado.
+Na figura acima, clique no botão **XAMPP para Windows 7.3.6 (PHP 7.3.6)** para fazer o download. Ao concluir o processo, vamos iniciar a instalação executando o arquivo baixado.
 
 <br><br>
 
-## Instalación ##
+## A instalação ##
 
 ![](/_assets/images/xampp_02.png)
 
-Esta es la pantalla inicial de la instalación. Haz clic en el botón **Next** (**Siguiente**).
+Esta é a tela inicial da instalação. Clique no botão **Next** (**Próximo**).
 
 <br><br>
 
 ![](/_assets/images/xampp_03.png)
 
-Esta pantalla es para seleccionar los componentes que se van a instalar. No es necesario cambiar nada. Vuelve a dar clic en **Siguiente** (**Next**).
+Esta é a tela de seleção de componentes a serem instalados. Não é preciso alterar nada. Clique em **Next** (**Próximo**) novamente.
 
 <br><br>
 
 ![](/_assets/images/xampp_04.png)
 
-En esta pantalla, el programa solicita la ubicación de instalación. Una vez más, no es necesario cambiar nada. Haz clic en **Siguiente** (**Next**).
+Nesta tela, o programa solicita o local da instalação. Novamente, não é necessário alterar nada. Clique em **Next** (**Próximo**).
 
 <br><br>
 
 ![](/_assets/images/xampp_05.png)
 
-En esta pantalla se presenta Bitnami, que es una librería de instaladores. Una vez más, no es necesario cambiar nada. Haz clic en **Siguiente** (**Next**).
+Nesta tela, é apresentado o Bitnami, que é uma biblioteca de instaladores. Mais uma vez, não é necessário alterar nada. Clique em **Next** (**Próximo**).
 
 <br><br>
 
 ![](/_assets/images/xampp_06.png)
 
-Este es solo un mensaje de advertencia. La instalación está lista para comenzar. Da clic en **Siguiente** para iniciar el proceso.
+Aqui é apenas uma mensagem de aviso. A instalação está pronta para começar. Clique em **Next** (**Próximo**) para iniciar o processo.
 
 <br><br>
 
 ![](/_assets/images/xampp_07.png)
 
-Ahora el proceso de instalación se está ejecutando. Espera a que la barra de avance se llene por completo.
+Agora o processo de instalação está em execução. Aguarde a barra ser totalmente preenchida.
 
 <br><br>
 
-## Abriendo el panel de control ##
+## Abrindo o Painel de Controle ##
 
 ![](/_assets/images/xampp_08.png)
 
-El proceso ha concluido y la instalación está completa. Deja la casilla de verificación seleccionada y haz clic en **Finalizar** (**Finish**). Se cerrará la pantalla actual y poco después aparecerá el cuadro del panel de control.
+O processo foi concluído e a instalação foi terminada. Deixe a caixa de seleção marcada e clique em **Finish** (**Finalizar**). Assim, a tela atual será fechada e o box do painel de controle irá ser exibido logo em seguida.
 
 <br><br>
 
 ![](/_assets/images/xampp_09.png)
 
-Aparece el cuadro de selección de idioma. Elige la primera opción, inglés. Luego haz clic en **Guardar** (**Save**).
+É exibido o box de escolha de idioma. Escolha a primeira opção, inglês. Depois clique em **Save** (**Salvar**).
 
 <br><br>
 
 ![](/_assets/images/xampp_10.png)
 
-El cuadro del panel de control se muestra como en esta imagen. Para que el **XAMPP** funcione, es necesario pulsar el botón **Iniciar** (**Start**) de los servicios **Apache** y **MySQL**. NOTA: Estos dos servicios deben estar activados siempre que se utilice el servidor.
+O box do painel de controle é exibido como na imagem acima. Para fazer o **XAMPP** funcionar, é necessário clicar no botão **Start** (**Iniciar**) dos serviços **Apache** e **MySQL**.
+OBS: Esses dois serviços devem ser ativados sempre que o servidor for utilizado.
 
 <br><br>
 
 ![](/_assets/images/xampp_11.png)
 
-Si todo va bien, ambos servicios se verán resaltados en verde, como en la imagen de arriba. Ahora haz clic en el botón **Admin**. Se abrirá tu navegador principal (Google Chrome, Firefox, Internet Explorer o el que esté instalado en tu computadora) con la dirección **localhost/dashboard** ya ingresada.
+Se tudo der certo, ambos os serviços ficarão verdes, como na imagem acima. Agora clique no botão Admin. O seu navegador principal (**Google Chrome**, **Firefox**, **Internet Explorer**... o que você tiver instalado na sua máquina) irá se abrir, com o endereço `localhost/dashboard` já digitado.
 
 <br><br>
 
-## Comprobación ##
+## Testando ##
 
 ![](/_assets/images/xampp_12.png)
 
-Si la instalación se realizó sin problemas, aparecerá la pantalla anterior. Ahora que hemos visto que el servidor funciona correctamente, vamos a la carpeta donde se deben almacenar los archivos para que aparezcan en el navegador.
+Se a instalação tiver corrido sem problemas, a tela acima aparecerá. Agora que vimos o servidor funcionando corretamente, vamos até a pasta onde os arquivos devem ser armazenados para aparecerem no navegador.
 
 <br><br>
 
 ![](/_assets/images/xampp_13.png)
 
-En la imagen de arriba, puedes ver la dirección de la carpeta: **C:/xampp/htdocs** Aquí es donde se encuentran los archivos que se verán en el navegador. ¡Listo, ya tenemos un servidor **XAMPP** funcionando en **Windows**!.
+Na imagem acima, é possível ver o endereço da pasta: `C:/xampp/htdocs`
+É lá que ficam os arquivos que serão visualizados no navegador.
+Pronto. Já temos um servidor **XAMPP** rodando no **windows**.
 
 <br><br>
 
-Ahora es el momento de empezar a instalar [WordPress](/pt-br/wordpress#como-instalar-o-wordpress-no-windows) en tu servidor **XAMPP**.
+Agora é hora de começar a instalar o [Wordpress](/pt-br/wordpress#como-instalar-o-wordpress-no-windows) no seu servidor **XAMPP**.
 
 <br><br>
