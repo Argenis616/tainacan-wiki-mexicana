@@ -27,12 +27,12 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Instalacion](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
+[![Instalación](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
 
 </div>
 <div class="panel-heading">
 
-[Instalacion](/install)
+[Instalación](/install)
 
 </div>
         </div>
