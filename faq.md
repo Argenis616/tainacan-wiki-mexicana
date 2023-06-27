@@ -1,5 +1,6 @@
 # Frequently Asked Questions
 
+
 We list and answer the most frequently asked questions by our community:
 
 > To participate in the Tainacan community [register here](https://tainacan.discourse.group ":ignore")!
