@@ -269,7 +269,7 @@ Nombre,Asunto|taxonomia|multiple|obligatorio,Número de Registro|numerico|obliga
 
     ● Si algún "metadato" todavía no existe en la "colección", selecciona "Crear metadatos".
 
-    ○ O si desea crearlos todos a la vez, haz clic en "Marcar todos los metadatos para crear".
+    ○ Si desea crearlos todos a la vez, haz clic en "Marcar todos los metadatos para crear".
 
     ![Acesse o painel de controle](_assets\images\Marcar_todos_os_metadados_para_serem_criados.png)
 
