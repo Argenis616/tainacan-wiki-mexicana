@@ -6,10 +6,10 @@ Hemos enumerado y respondido las preguntas más frecuentes de nuestra comunidad
 
 Saltar a una sección específica:
 
-- [Sobre Tainacan](#about-tainacan)
-- [Soporte](#errors-and-support)
-- [Instalación y alojamiento](#installation-and-hosting)
-- [Menús, páginas y bloques](#menus-pages-and-blocks)
+- [Sobre Tainacan](#Sobre-Tainacan)
+- [Soporte](#Errores-y-soporte)
+- [Instalación y alojamiento](#Instalación-y-alojamiento)
+- [Menús, páginas y bloques](#Menús,-Páginas-y-Bloques)
 
 ---
 
@@ -40,9 +40,9 @@ Porque su principal objetivo es ayudar a las instituciones culturales a organiza
 Siempre estamos disponibles en el [foro de discusión de Tainacan](https://tainacan.discourse.group ":ignore"), donde se pueden iniciar conversaciones, y en el [proyecto en GitHub](https://github.com/tainacan/tainacan ":ignore"), donde se pueden plantear cuestiones más técnicas. Si inicias una conversación, te recomendamos que siempre brindes la mayor cantidad de detalles posible para que podamos ayudar a identificar lo que está sucediendo. Algunas sugerencias son:
 
 - Describir paso a paso lo que se está haciendo, lo que ocurre y lo que se esperaba;
-- Consultar y, si es posible, enviarnos la información de la [página de diagnóstico del sistema](/optimization#system-check);
-- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](/how-do-i-find-the-error-logs-of-my-server);
-- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](/how-do-i-see-network-or-browser-console-errors);
+- Consultar y, si es posible, enviarnos la información de la [página de diagnóstico del sistema](/es-mx/optimization#system-check);
+- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](/es-mx/how-do-i-find-the-error-logs-of-my-server);
+- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](/es-mx/how-do-i-see-network-or-browser-console-errors);
 - Si tienes enlaces de prueba, ¡aún mejor!
 
 #### ¿Cómo encuentro los registros de errores de mi servidor?
@@ -63,17 +63,17 @@ En la **pestaña de la consola**, los errores en general aparecen destacados en 
 
 ### Recibo errores 404 o páginas en blanco cuando accedo a mi colección en el sitio web.
 
-En algunas situaciones particulares, como al realizar una migración del sitio, iniciar una nueva instalación o actualizar un plugin, puede surgir la necesidad de actualizar la estructura de permalinks (enlaces permanentes) de WordPress. Los permalinks son las direcciones o nombres específicos de las URL de tu sitio WordPress que permiten acceder a un contenido. Si al intentar acceder a una colección que ya existía o si algunas de las [peticiones realizadas por tu sitio](/how-do-i-see-network-or-browser-console-errors) devuelven 404, incluso con conexión a internet, es posible que tu sitio necesite recomponer su lista de permalinks. Este error es difícil de detectar (por eso por lo general no aparece en [Diagnóstico del sistema](/optimization#system-check)) pero, afortunadamente, ¡es muy sencillo de solucionar!
+En algunas situaciones particulares, como al realizar una migración del sitio, iniciar una nueva instalación o actualizar un plugin, puede surgir la necesidad de actualizar la estructura de permalinks (enlaces permanentes) de WordPress. Los permalinks son las direcciones o nombres específicos de las URL de tu sitio WordPress que permiten acceder a un contenido. Si al intentar acceder a una colección que ya existía o si algunas de las [peticiones realizadas por tu sitio](/es-mx/how-do-i-see-network-or-browser-console-errors) devuelven 404, incluso con conexión a internet, es posible que tu sitio necesite recomponer su lista de permalinks. Este error es difícil de detectar (por eso por lo general no aparece en [Diagnóstico del sistema](/es-mx/optimization#system-check)) pero, afortunadamente, ¡es muy sencillo de solucionar!
 
 Haz lo siguiente: accede al panel de administración de WordPress y ve al menú lateral en **"Configuración" -> "Enlaces permanentes"**. Allí, asegúrate de que la opción seleccionada sea **Post Name** o al menos **Custom Structure** (estructura personalizada) que tiene el valor _/%postname%/_. Después de comprobar esto, haz clic en **Guardar cambios** (es importante hacer clic aunque no se haya modificado la configuración). Vuelve a cargar el sitio y comprueba si puedes acceder al contenido en cuestión.
 
 ### No puedo cargar archivos. ¿Qué hago?
 
-Comprueba en la [Página de diagnóstico del sistema](/optimization#system-check) si la carpeta uploads de tu servidor tiene permisos de escritura. Si no es así, debes corregirlo asignando permisos de lectura y escritura para el usuario que accede al servidor (normalmente `www-data`).
+Comprueba en la [Página de diagnóstico del sistema](/es-mx/optimization#system-check) si la carpeta uploads de tu servidor tiene permisos de escritura. Si no es así, debes corregirlo asignando permisos de lectura y escritura para el usuario que accede al servidor (normalmente `www-data`).
 
 Si sigue sin funcionar, ponte en contacto con nosotros para que podamos analizarlo. ¿Se pueden subir archivos a WordPress pero no a Tainacan? ¿Qué formato de archivo estás intentando cargar? Esta es información que puede ayudarnos a entender el problema.
 
-[Aquí](/optimization#blindando-o-wordpress) se pueden encontrar otras preguntas relacionadas con este tema.
+[Aquí](/es-mx/optimization#blindando-o-wordpress) se pueden encontrar otras preguntas relacionadas con este tema.
 
 ### Ocurrió un error en el proceso de importación o exportación de artículos. ¿Qué hacer?
 
@@ -81,7 +81,7 @@ En general, los errores en procesos como los importadores y exportadores se regi
 
 ### Creo que mi instalación tarda demasiado en cargar los elementos. ¿Se puede mejorar?
 
-Si tu colección es pequeña y sencilla, entonces es muy probable que haya algún problema y se puede discutir en el foro de soporte. Si tu base de datos tiene miles de artículos, con docenas de metadatos, entonces las razones de la ralentización pueden tener que ver con el servidor o con la configuración de búsqueda actual. Te sugerimos una lectura detallada [de esta página](/optimization) que te guiará a través de algunas opciones sobre problemas de rendimiento.
+Si tu colección es pequeña y sencilla, entonces es muy probable que haya algún problema y se puede discutir en el foro de soporte. Si tu base de datos tiene miles de artículos, con docenas de metadatos, entonces las razones de la ralentización pueden tener que ver con el servidor o con la configuración de búsqueda actual. Te sugerimos una lectura detallada [de esta página](/es-mx/optimization) que te guiará a través de algunas opciones sobre problemas de rendimiento.
 
 ---
 
@@ -97,11 +97,11 @@ Sí, pero lamentablemente el [plan gratuito](https://wordpress.com/pricing/ ":ig
 
 ### ¿Es posible instalar Tainacan en mi propia computadora?
 
-Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma web**. En realidad, su función no es la de un programa que se abre y se cierra en una computadora. Las instalaciones locales -como las llamamos cuando las configuras en tu propio ordenador- son útiles para los desarrolladores que quieren contribuir o simplemente para quienes quieren hacer algunas pruebas antes de enviarlas a un servidor donde el sitio estará alojado en la web y en línea las 24 horas del día. Para configurar una instalación de WordPress preparada para Tainacan, echa un vistazo a [nuestros tutoriales de instalación](/install).
+Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma web**. En realidad, su función no es la de un programa que se abre y se cierra en una computadora. Las instalaciones locales -como las llamamos cuando las configuras en tu propio ordenador- son útiles para los desarrolladores que quieren contribuir o simplemente para quienes quieren hacer algunas pruebas antes de enviarlas a un servidor donde el sitio estará alojado en la web y en línea las 24 horas del día. Para configurar una instalación de WordPress preparada para Tainacan, echa un vistazo a [nuestros tutoriales de instalación](/es-mx/install).
 
 ### Entonces, ¿qué opciones tengo para alojar mi repositorio?
 
-¡Buena pregunta! Hablamos de ello con más detalle en nuestra página sobre [alojamiento](/hosting).
+¡Buena pregunta! Hablamos de ello con más detalle en nuestra página sobre [alojamiento](/es-mx/hosting).
 
 ---
 
@@ -109,11 +109,11 @@ Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma 
 
 ### ¿Es posible insertar elementos de Tainacan en las publicaciones de WordPress?
 
-¡Sí, es posible! Para añadir elementos de Tainacan a una publicación de WordPress (a partir de la versión 5.0) crea un [bloque de Gutenberg](/gutenberg-blocks) desde el editor de texto. Al insertar un bloque, puedes buscar Tainacan y podrás ver qué tipos de bloques de Tainacan existen.
+¡Sí, es posible! Para añadir elementos de Tainacan a una publicación de WordPress (a partir de la versión 5.0) crea un [bloque de Gutenberg](/es-mx/gutenberg-blocks) desde el editor de texto. Al insertar un bloque, puedes buscar Tainacan y podrás ver qué tipos de bloques de Tainacan existen.
 
 ### ¿Cómo veo la lista de colecciones en el tema?
 
-La lista de colecciones es una de las [Páginas especiales](/tainacan-pages) que inserta Tainacan. Solo tienes que añadir `colecciones` a la URL de tu sitio web.
+La lista de colecciones es una de las [Páginas especiales](/es-mx/tainacan-pages) que inserta Tainacan. Solo tienes que añadir `colecciones` a la URL de tu sitio web.
 
 ### ¿Cómo coloco la lista de colecciones en el menú de mi sitio web?
 
@@ -121,11 +121,11 @@ Tienes que ir a la barra superior en **Personalizar** > **Menús** > **Seleccion
 
 ### ¿Cómo puedo hacer que la página de inicio de mi sitio sea la lista de colecciones?
 
-Por defecto, la página de inicio de tu sitio será la lista de las entradas de tu blog. Para configurar una página de inicio personalizada, debes ir al menú superior en **Personalizar** > **Configuración de la página estática** y elegir la página. Sin embargo, al tratarse de una [página especial](/tainacan-pages) creada por el plug-in, la página de lista de colecciones no aparece por defecto como opción. La solución es crear una página y listar sus colecciones en ella, utilizando cualquiera de los [bloques de colección](/blocks-collections.md).
+Por defecto, la página de inicio de tu sitio será la lista de las entradas de tu blog. Para configurar una página de inicio personalizada, debes ir al menú superior en **Personalizar** > **Configuración de la página estática** y elegir la página. Sin embargo, al tratarse de una [página especial](/es-mx/tainacan-pages) creada por el plug-in, la página de lista de colecciones no aparece por defecto como opción. La solución es crear una página y listar sus colecciones en ella, utilizando cualquiera de los [bloques de colección](/es-mx/blocks-collections.md).
 
 ### ¿Qué pasa si quiero que otras personas colaboren con mi colección?
 
-Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
+Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/es-mx/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
 
 > Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!# Perguntas Frequentes
 
