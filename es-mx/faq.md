@@ -9,7 +9,7 @@ Saltar a una sección específica:
 - [Sobre Tainacan](#about-tainacan)
 - [Soporte](#errors-and-support)
 - [Instalación y alojamiento](#installation-and-hosting)
-- [Menús, páginas y bloques](#menus-pages-and-blocks)
+- [Menús, páginas y bloques](#menús-páginas-y-bloques)
 
 ---
 
@@ -127,5 +127,5 @@ Por defecto, la página de inicio de tu sitio será la lista de las entradas de 
 
 Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
 
-> Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!# Perguntas Frequentes
+> Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!# Preguntas frecuentes
 
