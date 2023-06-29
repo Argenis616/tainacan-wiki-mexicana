@@ -23,7 +23,7 @@ Una colección es un grupo de elementos (ítems) que comparten un conjunto comú
 
 Para cada colección se puede configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que se pueden buscar ítems de un "país" y obtener resultados de "pinturas" y "películas" en los resultados porque ambas colecciones comparten la taxonomía “países”.
 
-> Para tener información más detallada, consulta la sección de [taxonomías](#taxonomias).
+> Para tener información más detallada, consulta la sección de [taxonomías](#taxonomías).
 
 Las colecciones también pueden tener colecciones "hijas", que heredarán sus metadatos y a partir de ahí también se podrán añadir otros metadatos para obtener información adicional.
 
@@ -66,11 +66,11 @@ Cada metadato tiene un conjunto de configuraciones posibles: ¿Es un metadato ob
     allowfullscreen>
 </iframe>
 
-> [Consulta la sección Tipos de metadatos](#tipos-de-metadados)
+> Consulta la sección [Tipos de metadatos](#tipos-de-metadatos)
 
 Es posible configurar metadatos a nivel de repositorio, que serán heredados por todas las colecciones. Del mismo modo, las colecciones configuradas como "hijas" heredan todos los metadatos de la colección seleccionada como “padre”.
 
-> [Consulta la sección Colecciones](#colecoes)
+> Consulta la sección [Colecciones](#colecciones)
 
 > También es posible "importar y exportar metadatos predefinidos”.
 
@@ -106,7 +106,7 @@ Cada `tipo de filtro` tiene su propia configuración y componentes web que deter
 
 > Al conjunto de tipos de filtro que trae por defecto Tainacan, se suman los tipos de filtro creados mediante plug-ins, que amplían el conjunto de posibilidades.
 
-Consulta el artículo completo sobre el uso de **filtros** [aqui](/es-mx/filtros).
+Consulta el artículo completo sobre el uso de **filtros** [aqui](/es-mx/filters.md).
 
 ## Taxonomías
 
@@ -121,7 +121,7 @@ Los términos pueden tener una descripción, un icono o una imagen que los repre
 > Las taxonomías pueden compartirse entre colecciones.
 > Consulta el tema ["Tipos de metadatos"](#tipos-de-metadados) para saber cómo hacerlo.
 
-Consulta el artículo completo sobre el uso de **taxonomías** [aquí](/es-mx/taxonomies).
+Consulta el artículo completo sobre el uso de **taxonomías** [aquí](/es-mx/taxonomies.md).
 
 ### Videotutorial: Filtros y Taxonomías
 
