@@ -180,7 +180,7 @@ Una vez realizados estos ajustes, otro aspecto importante es blindar la instalac
 
 ---
 
-## Blindando o Wordpress
+## Blindando WordPress
 
 El primer paso es configurar correctamente los permisos de los archivos y directorios de la instalación. 
 Esto se puede hacer usando los siguientes comandos:
