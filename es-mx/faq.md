@@ -97,7 +97,7 @@ Sí, pero lamentablemente el [plan gratuito](https://wordpress.com/pricing/ ":ig
 
 ### ¿Es posible instalar Tainacan en mi propia computadora?
 
-Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma web**. En realidad, su función no es la de un programa que se abre y se cierra en una computadora. Las instalaciones locales -como las llamamos cuando las configuras en tu propio ordenador- son útiles para los desarrolladores que quieren contribuir o simplemente para quienes quieren hacer algunas pruebas antes de enviarlas a un servidor donde el sitio estará alojado en la web y en línea las 24 horas del día. Para configurar una instalación de WordPress preparada para Tainacan, echa un vistazo a [nuestros tutoriales de instalación](/install).
+Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma web**. En realidad, su función no es la de un programa que se abre y se cierra en una computadora. Las instalaciones locales -como las llamamos cuando las configuras en tu propio ordenador- son útiles para los desarrolladores que quieren contribuir o simplemente para quienes quieren hacer algunas pruebas antes de enviarlas a un servidor donde el sitio estará alojado en la web y en línea las 24 horas del día. Para configurar una instalación de WordPress preparada para Tainacan, echa un vistazo a [nuestros tutoriales de instalación](/es-mx/instalacao.md).
 
 ### Entonces, ¿qué opciones tengo para alojar mi repositorio?
 
