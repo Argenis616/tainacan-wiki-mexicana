@@ -177,61 +177,61 @@ Se usa para _"metadatos"_ que tienen un pequeño conjunto de términos controlad
 
 ### Taxonomías
 
-“\*Metadados do tipo Taxonomia**\*”** usam uma _“taxonomia”_ criada previamente. Este tipo de _“metadado”_ é especialmente útil para informações estruturadas a partir de um _“vocabulário controlado”_, permitindo inclusive a hierarquização de termos. Abaixo, apresentamos os passos para configurar um metadado do tipo _“Taxonomia”_.
+Los _"metadatos de tipo **Taxonomía**"_ utilizan una _"taxonomía"_ creada de antemano. Este tipo de _"metadatos"_ es especialmente útil para información estructurada a partir de un "vocabulario controlado", permitiendo incluso la jerarquización de términos. A continuación se detallan los pasos para configurar un metadato del tipo _"Taxonomía"_.
 
-​■**Configurações adicionais:**
+​■**Ajustes adicionales**
 
-​Como informado acima, é necessário criar primeiro uma _“Taxonomia”_. Esta será usada durante o processo de criação de um _“Metadado de Taxonomia”_:
+​Como se indicó anteriormente, es necesario crear primero la _“Taxonomía”_. Esta se utilizará durante el proceso de creación de un _“Metadatos de taxonomía”_:
 
-1.Crie uma _“taxonomia”_. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias)[Criar Taxonomias](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias) para conhecer mais;
+1.Crea la _“taxonomía”_. Ver[Crear taxonomías](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias)[Criar Taxonomias](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias) para tener más detalles;
 
-2.Crie um _“metadado”_ do tipo _“Taxonomia”_. Consulte Criar Metadados para saber mais;
+2.Crea un _“metadato”_ del tipo _“Taxonomía”_. Consulta Crear metadatos para obtener más información;
 
-3.Na área de _“edição do metadado”_, selecione a _“taxonomia”_ desejada para o preenchimento dos valores no _“metadado”_;
+3.En el área de _"edición de metadatos"_, selecciona la _"taxonomía"_ deseada para rellenar los valores de los _"metadatos"_;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/bDy0FQFolAs" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-4.Escolha o tipo de entrada de informações durante o preenchimento dos valores no _“metadado”_;
+4.Elige el tipo de entrada de información que se desplegará para rellenar los valores de los _"metadatos"_;
 
 ![Acesse o painel de controle](_assets\images\077.png)
 
-​■**Entrada do tipo** **“Tag input”**:
+​■**Entrada de tipo**  **etiqueta**:
 
-Neste tipo de entrada, é oferecido ao usuário somente uma caixa de busca. Os termos podem ser explorados por meio de digitação e busca;
+En este tipo de entrada, al usuario solo se le ofrece un cuadro de búsqueda. Los términos pueden explorarse escribiendo y buscando;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/RUaAFqM_XmE" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-■**Entrada do tipo** **"Checkbox”:**
+■**Entrada de tipo** **"Casilla de verificación”:**
 
 Este tipo de entrada ajuda o usuário a saber quais são os termos disponíveis para escolha em uma determinada _“Taxonomia”_. Os termos podem ser explorados em ordem alfabética ou por meio de digitação e busca;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/6-3nRtvMvXQ" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-5.Marque a opção _“Lista de opções sempre visível”_ se você está exibindo uma lista de caixa de seleção ou entrada de rádio e deseja que, durante o preenchimento, a lista de opções esteja sempre visível. Esta opção só está disponível para a entrada do tipo _“Checkbox”;_
+5.Marca la opción _"Lista de opciones siempre visible"_ si quieres que, durante el llenado, la lista de opciones esté siempre visible. Esta opción solo está disponible para la entrada de tipo _"Casilla de verificación";_
 
 ![Acesse o painel de controle](_assets\images\080.png)
 
-6.Se necessário, habilite _“Permitir termos novos”_ para autorizar que novos termos de _“Taxonomia”_ sejam criados durante o envio de _“itens”_.
+6.Si es necesario, activa _"Permitir nuevos términos"_ para autorizar la creación de nuevos términos para la _"Taxonomía"_ durante el registro de "elementos".
 
 ![Acesse o painel de controle](_assets\images\081.png)
 
-■**“Link filtrado para a coleção”**
+■**“Enlace filtrado a la colección”**
 
-Os termos de _“Taxonomia”_ se transformam em itens na página do _“Item”_. Isto dá ao usuário a possibilidade de visitar uma faceta ou recorte do acervo. Por exemplo: em uma ficha de uma moeda de ouro, ao clicar no link referente ao termo _"ouro"_ o visitante terá acesso a todos os _“itens”_ que foram classificados com o mesmo material. Como uma _“Taxonomia”_ pode ser compartilhada entre diferentes _“coleções”_ no Tainacan, você pode configurar se o link do _“item”_ vai dar acesso a itens de outras coleções ou somente da coleção em que o item está inserido.
+Los términos de una _"taxonomía"_ se convierten en elementos, esto ofrece al usuario la posibilidad de hacer una búsqueda facetada de la colección (es decir, seleccionar un término para hacer la búsqueda). Por ejemplo: en una ficha de una moneda de oro, haciendo clic en el enlace que hace referencia al término _"oro"_ el visitante tendrá acceso a todos los _"elementos"_ que se clasificaron con el mismo material. Como una _"Taxonomía"_ puede ser compartida entre diferentes _"colecciones"_ en Tainacan, se puede configurar si el enlace del _"elemento"_ dará acceso a ítems de otras colecciones o solo de la colección a la que pertenece el elemento.
 
 ![Acesse o painel de controle](_assets\images\082.png)
 
-### Relacionamento
+### Metadato de relación
 
-_“Metadados de Relacionamento”_ permitem fazer a conexão entre itens de uma mesma coleção ou entre itens de coleções distintas, ou seja, atribuem um item de uma coleção como valor para seu preenchimento;
+Los _"metadatos de relación"_ permiten establecer una conexión entre elementos de una misma colección o entre elementos de colecciones diferentes, es decir, asignan un elemento de una colección como valor para su relleno;
 
-​■**“Configurações adicionais”**
+​■**“Ajustes adicionales”**
 
-1.Selecione a _“coleção relacionada”_ para apontar a origem da lista de _“itens”_ no preenchimento do _“metadado”_;
+1.Selecciona la _"colección relacionada"_ para señalar el origen de la lista de _"elementos"_ que aparecerán cuando se haga la captura de los _"metadatos"_;
 
-2.Quando uma _“coleção”_ é selecionada, a seção _“Metadados para busca”_ permite escolher os metadados desta _“coleção”_ que irão auxiliar na localização de _“itens”_ durante o preenchimento deste _“metadado”_;
+2.Cuando se selecciona una _"colección"_, la sección _"Metadatos para la búsqueda"_ permite elegir los metadatos de esta _"colección"_ que ayudarán a localizar los _"elementos"_ durante el llenado de estos _"metadatos"_;
 
-3.Habilite _“permitir itens repetidos”_ para que um mesmo _“item”_ da _“coleção relacionada”_ seja atribuído como valor do _“metadado”_ em diferentes _“itens”_.
+3.Habilita _"permitir elementos repetidos"_ para que el mismo _"elemento"_ de la _"colección relacionada"_ se asigne como valor de los _"metadatos"_ en diferentes _"elementos"_.
 
 <iframe
       width="560"
@@ -242,27 +242,27 @@ _“Metadados de Relacionamento”_ permitem fazer a conexão entre itens de uma
       allowfullscreen>
 </iframe>
 
-### Composto
+### Metadato compuesto
 
-_“Metadados Compostos”_ são aqueles cujo valor não pode ser representado de maneira isolada por um único campo. Por exemplo, um endereço residencial pode ser composto por campos de _“texto”_, _“número”_ e até _“listas de seleção”_. Estes campos ou _“metadados”_ internos ao composto são chamados _“Metadados Filhos”_.
+Los _"metadatos compuestos"_ son aquellos cuyo valor no puede representarse aisladamente por un solo campo. Por ejemplo, una dirección puede estar compuesta por campos _"texto"_, _"número"_ e incluso _"listas de control"_. Estos campos o _"metadatos"_ internos del compuesto se denominan _"Metadatos hijos"_.
 
-É importante diferenciar este conceito de uma [_“Sessão de Metadados”_](/es-mx/metadata-sections.md), cujo propósito é apenas de organizar dados _“agrupados”_. **Para simples separação visual, não o use**. No caso do _“metadado composto”_, é possível ter multivalores compostos, ou seja, uma lista de valores constituídos por diferentes sub-valores que se relacionam.
+Es importante diferenciar este concepto de un _“Sesión de metadatos”_, cuyo propósito es solo organizar datos _"agrupados"_. No lo utilices para una simple separación visual. En el caso de los _"metadatos compuestos"_, es posible tener multivalores compuestos, es decir, una lista de valores formada por diferentes subvalores que se relacionan entre sí.
 
-Note que, ao usá-los:
+Al usar _“metadatos compuestos”_, es importante tomar en cuenta que:
 
-● Não é possível ter uma “Taxonomia” como “Metadado filho”;
+● No es posible tener una _"Taxonomía"_ como _"metadatos hijo"_;
 
-● Um “metadado composto” não pode ser marcado como “Obrigatório” ou “Valor Único”. Esse atributo será marcado nos filhos. Se o “metadado composto”, porém, está marcado como “Aceita múltiplos valores”, seus filhos não poderão ser marcados como “Obrigatório”;
+● No se puede marcar un _"metadato compuesto"_ como _"Obligatorio"_ o _"Valor único"_. Este atributo se marcará en los hijos. Sin embargo, si el _"metadato compuesto"_ se marca como _"Acepta múltiples valores"_, sus hijos no podrán marcarse como _"Obligatorio"_;
 
-● Os “metadados filhos” não podem ser marcados como “Multivalorados”, e não possuem opções de visualização (“Ver na lista”), estas configurações correspondem ao pai;
+● Los _"metadatos hijos"_ no pueden marcarse como _"Multivalor"_, y no tienen opciones de vista (_"Ver en lista"_), estos ajustes corresponden al padre;
 
-● “Metadados compostos” não estão disponíveis como opção para “Busca Avançada” ou “Edição em Massa”, apenas seus filhos.
+● Los  _"metadatos compuestos"_ no estan disponibles como una opción para "Búsqueda avanzada" o "Edición masiva", solo sus _"metadatos hijos"_.
 
-​■**Configurações adicionais:**
+​■**Ajustes adicionales:**
 
-1.Logo ao se criar um _“metadado composto”_, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de _“metadados”_ desejados para dentro desta área para criar filhos;
+1.Inmediatamente después de crear un _“metadato compuesto”_, se forma un área de creación de hijos debajo de su formulario. Arrastre los tipos de _"metadatos"_ deseados a esta área para crear hijos;
 
-2.Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os _“metadados”_ para _“não filhos”_.
+2.Ten en cuenta que la clasificación funciona internamente entre los hijos, pero una vez creada, no es posible cambiar los metadatos a _“sin hijos”_.
 
 <iframe
       width="560"
@@ -273,112 +273,112 @@ Note que, ao usá-los:
       allowfullscreen>
 </iframe>
 
-### Usuário
+### Metadatos de tipo usuario
 
-“_Metadados”_ do tipo _“Usuário”_ atribuem um usuário WordPress como valor para seu preenchimento. Com ele você pode vincular usuários à _“itens”_ e definir um significado para tal vínculo, em geral desejado para fins de gestão.
+Los _"metadatos de tipo usuario"_ permiten asignar a un usuario de WordPress como valor para su llenado. Con él se pueden vincular usuarios a _"elementos"_ y definir un significado para dicho vínculo, normalmente utilizado para fines de gestión.
 
-§ Caso deseje que o campo seja de início preenchido com o valor do atual “Autor do item” (o usuário que o criou), marque a opção “Por padrão é o autor do item”.
+§ Si deseas que el campo se rellene inicialmente con el valor del "Autor del ítem" actual (el usuario que lo creó), marca la opción "Por defecto es el autor del artículo".
 
-> **Nota:** Marcar a opção acima não faz com que itens _“já existentes”_ tenham seus valores deste _“metadado”_ automaticamente preenchidos. Para isso, é possível usar o método _“Copiar”_ da edição em massa, passando dados para o _“metadado tipo usuário”_, vindos do atributo _“Criado por”_, que equivale ao _“autor do item”_.
+> **Nota:** La selección de la opción anterior no hace que los metadatos de los elementos _"existentes"_ sean rellenados automáticamente. Para ello, puedes utilizar el método _"copiar"_ en _“edición masiva”_, pasando los datos a los _"metadatos de usuario"_ procedentes del atributo _"Creado por"_, que equivale al _"autor del elemento"_.
 
-Atualmente o Tainacan tem nove tipos de _“metadados por padrão”_, mas novos conjuntos[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[podem ser desenvolvidos](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais.
+Actualmente, Tainacan cuenta con nueve tipos de _“metadatos por defecto”_, pero [se puede desarrollar](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acuerdo a las necesidades individuales de cada instalación y ser agregados al núcleo de Tainacan. Revisar el artículo sobre [Desarrollo de complementos](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber más.
 
-## Editar Metadados
+## Editar metadatos
 
-Como detalhado na seção de criação de metadados, os _“metadados”_ podem ser criados tanto no _“nível de repositório”_ (serão herdados por todas as coleções), quanto no nível de uma determinada _“coleção”_. Por isso, os _“metadados”_ podem ser editados nestes dois níveis.
+Como se detalla en la sección de creación de metadatos, estos se pueden crear a _"nivel de repositorio"_ (y serán heredados por todas las colecciones) o a nivel de _"colección"_.  Por lo tanto, también se pueden editar en estos dos niveles.
 
-### Edição no Nível do repositório
+### Edición a nivel de repositorio
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Accede al _"Panel de control"_ de WordPress;
 
    ![Acesse o painel de controle](_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
    ![Acesse o painel de controle](_assets\images\051.png)
 
-3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
+3. Da click en _“Metadatos del repositorio”_ (metadatos que heredan todas las colecciones);
 
    ![Acesse o painel de controle](_assets\images\085.png)
 
-   !>**Atenção**: As modificações em configurações de _“metadados a nível de repositório”_ podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório.
+   !>**Atención**: Modificaciones en la configuración de _“metadatos a nivel de repositorio”_ que se hagan después de haber capturado datos, pueden afectar los datos ya completados y la información sobre los elementos que se crearán o ya se han creado en todo el repositorio.
 
-4. Clique no _“ícone de lápis”_ à direita do _“metadado”_ que deseja editar;
+4. Da clic en el _"icono de lápiz"_ a la derecha del _“metadato”_ que deseas editar;
 
    ![Acesse o painel de controle](_assets\images\086.png)
 
-5. Ao concluir as alterações, clique em _“Salvar”_ ou clique em _“Cancelar”_ para abortar a missão;
+5. Cuando termines de hacer cambios, haz clic en _"Guardar"_ o en _"Cancelar"_ si no quieres conservar esa modificación;
 
-   !>**Atenção**: Não é possível alterar o _“Tipo de Metadado”._ Por exemplo, alterar um _“metadado”_ do tipo _“Texto”_ para _“Texto Longo”_, ou _“Numérico”_ para _“Data”_.
+   !>**Atención**: Una vez creado, no se puede cambiar el _“Tipo de Metadato”_.  Es decir, no se puede cambiar un _“metadato”_  del tipo _"Texto"_ para convertirlo en _"Texto largo"_ o _"Numérico"_ o _“Fecha"_. Por eso es importante definir desde el inicio el tipo que tendrá cada metadato. Si en algún momento es necesario modificar el tipo de un metadato, habrá que eliminarlo y crearlo de nuevo con el tipo correcto.
 
-### Edição no nível da coleção
+### Edición a nivel de colecciones
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Accede al _"Panel de control"_ de WordPress;
 
    ![Acesse o painel de controle](_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
    ![Acesse o painel de controle](_assets\images\051.png)
 
-3. Clique na _“coleção”_ que você deseja editar;
+3. Da clic en la _“colección”_ que deseas editar;
 
    ![Acesse o painel de controle](_assets\images\087.png)
 
-4. Clique em _“metadados”_;
+4. Da clic en _"metadatos"_;
 
 ![Acesse o painel de controle](_assets\images\088.png)
 
-5. Clique no _“ícone lápis”_ para editar o _“metadado”;_
+5. Da clic en el  _"icono de lápiz"_ para editar el _“metadato”;_
 
    ![Acesse o painel de controle](_assets\images\089.png)
 
-!>**Atenção**: Não é possível alterar o _“Tipo de Metadado”_. Por exemplo, alterar um _“metadado”_ do tipo “_Texto”_ para “_Texto Longo”_, ou “_Numérico”_ para _“Data”_.
+!>**Atención**: Una vez creado, no se puede cambiar el _“Tipo de Metadato”_.  Es decir, no se puede cambiar un _“metadato”_  del tipo _"Texto"_ para convertirlo en _"Texto largo"_ o _"Numérico"_ o _“Fecha"_. Por eso es importante definir desde el inicio el tipo que tendrá cada metadato. Si en algún momento es necesario modificar el tipo de un metadato, habrá que eliminarlo y crearlo de nuevo con el tipo correcto.
 
-## Excluir Metadados
+## Eliminar metadatos
 
-Excluir _“Metadados a nível de Repositório”_:
+Borrar _“Metadatos a nivel de repositorio”_:
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Accede al _"Panel de control"_ de WordPress;
 
    ![Acesse o painel de controle](_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
    ![Acesse o painel de controle](_assets\images\051.png)
 
-3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
+3. Da clic en _“Metadatos del repositorio”_ (metadatos que heredan todas las colecciones);
 
    ![Acesse o painel de controle](_assets\images\085.png)
 
-4. Clique no “_ícone de lixeira”_ à direita do _“metadado”_ que deseja excluir;
+4. Da clic en el _“icono de papelera”_ a la derecha del _“metadato”_ que deseas eliminar;
 
    ![Acesse o painel de controle](_assets\images\090.png)
 
-!>**Atenção**: Ao clicar no _“ícone de lixeira”_, o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de _“metadados a nível de repositório”_ afetam **todos** os dados já preenchidos e informações em _“itens”_ que já foram criados em todo o repositório. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o _“metadado”_ somente se tiver certeza de que não haverá perdas graves de informação. Consulte [Registro de atividades](/es-mx/activities) para saber mais.
+!>**Atención*: Al hacer clic en el _"icono de papelera"_, los metadatos se eliminan inmediatamente. Esta operación no se puede deshacer. Eliminar _“metadatos a nivel de repositorio”_ afectará todos los datos ya rellenados y la información de los _"elementos"_ que se han creado en todo el repositorio. Antes de borrar un _“metadato”_, se recomienda deshabilitarlo temporalmente (hasta que se tenga la certeza de que el borrado no supondrá pérdida de información). Borra el _“metadato”_ solo si estás seguro de que no habrá una pérdida grave de información. Ver [Registro de actividad](/es-mx/activities) para saber más.
 
-### Excluir Metadados a nível de _“Coleções”_
+### Eliminar metadatos a nivel de “Colecciones”
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Accede al _"Panel de control"_ hacer WordPress;
 
    ![Acesse o painel de controle](_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
    ![Acesse o painel de controle](_assets\images\051.png)
 
-3. Clique na _“coleção”_ que você deseja editar;
+3. Da clic en la _"colección"_ que deseas editar;
 
    ![Acesse o painel de controle](_assets\images\087.png)
 
-4. Clique em _“metadados”;_
+4. Da clic en _“metadatos”;_
 
    ![Acesse o painel de controle](_assets\images\088.png)
 
-5. Clique no _“ícone lixeira”_ para excluir o _“metadado”_;
+5. Da clic en el _"icono de papelera"_ que está al lado del _“metadato”_ para eliminarlo;
 
    ![Acesse o painel de controle](_assets\images\091.png)
 
-!>**Atenção:** Excluir _“Metadados a nível de coleção”_ afeta as informações de todos os _“itens”_ criados nesta _“coleção”_; Na tela de edição de _“Metadados”_ (a nível de repositório ou a nível de coleção), é possível visualizar os _“metadados já criados”_ (ou herdados) na coluna à esquerda; A exclusão do _“metadado”_ implica, também, na exclusão de seus valores em todos os _“itens”_ aos quais se aplica. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para _“desabilitar um metadado”_, basta clicar no botão ao lado da _“caneta de edição”_.
+!>**Atención:** Borrar _“Metadatos a nivel de colección”_ afecta la información de todos los _"elementos"_ creados en esta _“colección”_. En la pantalla de edición de _“Metadatos”_ (a nivel de repositorio o a nivel de colección), es posible visualizar los _“metadatos ya creados”_ (o heredados) en la columna de la izquierda. La exclusión de un _“metadato”_ implica también la exclusión de sus valores en todos los _"elementos"_ que tienen este _“metadato”_. Antes de borrarlo, se recomienda que solo se deshabilite (hasta que se tenga la certeza de que el borrado no supondrá pérdida de información). Para _“deshabilitar un metadato”_, simplemente haz clic en el botón junto al _"bolígrafo de edición"_, esto ocultará el _“metadato”_ y todos sus valores, pero se recuperarán si se habilita de nuevo.
 
 ![Acesse o painel de controle](_assets\images\092.png)
