@@ -9,7 +9,7 @@ Saltar a una sección específica:
 - [Sobre Tainacan](#about-tainacan)
 - [Soporte](#errors-and-support)
 - [Instalación y alojamiento](#installation-and-hosting)
-- [Menús, Páginas y Bloques](#menus-blocks)
+- [Menús, Páginas y Bloques](#menús-páginas-y-bloques)
 
 ---
 
