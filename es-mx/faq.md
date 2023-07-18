@@ -9,7 +9,7 @@ Saltar a una sección específica:
 - [Sobre Tainacan](#Sobre-Tainacan)
 - [Soporte](#Errores-y-soporte)
 - [Instalación y alojamiento](#Instalación-y-alojamiento)
-- [Menús, páginas y bloques](#Menús,-Páginas-y-Bloques)
+- [Menús, páginas y bloques](#Menús-Páginas-y-Bloques)
 
 ---
 
@@ -105,7 +105,7 @@ Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma 
 
 ---
 
-## Menús, Páginas y Bloques
+## Menús Páginas y Bloques
 
 ### ¿Es posible insertar elementos de Tainacan en las publicaciones de WordPress?
 
