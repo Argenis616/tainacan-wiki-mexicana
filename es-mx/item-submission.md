@@ -160,7 +160,7 @@ Por último, es posible cambiar parte de la apariencia del formulario. Aunque la
 
 ![Acesse o painel de controle](_assets\images\135.png)
 
-## Verificación reCAPCHA en el formulario
+## Verificación reCAPTCHA en el formulario
 
 Es muy común, en sitios que tienen “formularios” como estos, que usuarios maliciosos ataquen el servidor. Una de las formas más comunes de hacer esto es mediante el uso de robots (scripts automatizados) que envían información al "formulario" varias veces, ya sea con el objetivo de difundir SPAM o para sobrecargar el servidor y posiblemente dejarlo fuera de servicio.
 
