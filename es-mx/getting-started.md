@@ -12,7 +12,7 @@ Digamos que tengo una colección de fotos que quiero exponer al mundo. En mi sit
 
 En el panel de administración de mi sitio de WordPress, ya tengo instalado el complemento (plug-in) Tainacan y puedo acceder a él desde la barra lateral:
 
-![Accediendo como administrador en Tainacan](/_assets/gifs/getting-started-0.gif)
+![Accediendo como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
 
 En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
