@@ -12,7 +12,7 @@ Digamos que tengo una colección de fotos que quiero exponer al mundo. En mi sit
 
 En el panel de administración de mi sitio de WordPress, ya tengo instalado el complemento (plug-in) Tainacan y puedo acceder a él desde la barra lateral:
 
-![Ingresando como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
+![Accediendo como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
 
 En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
@@ -118,4 +118,4 @@ Todos estos bloques tienen diferentes configuraciones de visualización y funcio
 
 ## Explorando más a fondo
 
-En este artículo te hemos mostrado algunas de las cosas que es posible hacer con Tainacan, pero no te equivoques, ¡esto fue solo un vistazo! Hay muchos otros temas que se pueden abordar como [Metadados de tipo relación](/es-mx/metadata.md#tipos-de-metadados), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Estándar de metadatos, [Control de actividades](/es-mx/activities.md),[Archivos adjuntos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. También encontrarás materiales educativos en otros lugares además de este Wiki, como los enlaces que figuran en nuestra [página de videos](/es-mx/videos.md). ¡Esperamos que Tainacan te ayude a crear repositorios digitales increíbles!
+En este artículo te hemos mostrado algunas de las cosas que es posible hacer con Tainacan, pero no te equivoques, ¡esto fue solo un vistazo! Hay muchos otros temas que se pueden abordar como [Metadados de tipo relación](/es-mx/metadata.md#tipos-de-metadados), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Estándar de metadatos, [Control de actividades](/es-mx/activities.md), [Archivos adjuntos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. También encontrarás materiales educativos en otros lugares además de este Wiki, como los enlaces que figuran en nuestra [página de videos](/es-mx/videos.md). ¡Esperamos que Tainacan te ayude a crear repositorios digitales increíbles!
