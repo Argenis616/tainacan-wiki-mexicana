@@ -125,7 +125,7 @@ Por defecto, la página de inicio de tu sitio será la lista de las entradas de 
 
 ### ¿Qué pasa si quiero que otras personas colaboren con mi colección?
 
-Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/es-mx/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
+Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/es-mx/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/es-mx/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
 
 > Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!# Perguntas Frequentes
 
