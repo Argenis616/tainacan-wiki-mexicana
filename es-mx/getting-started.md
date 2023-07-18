@@ -12,7 +12,7 @@ Digamos que tengo una colección de fotos que quiero exponer al mundo. En mi sit
 
 En el panel de administración de mi sitio de WordPress, ya tengo instalado el complemento (plug-in) Tainacan y puedo acceder a él desde la barra lateral:
 
-![Accesando como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
+![Ingresando como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
 
 En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
@@ -52,7 +52,7 @@ Volviendo a la página de configuración de metadatos, ahora puedo crear los met
 
 Los elementos de la colección “Mis fotos” son las propias fotos. Una forma posible es subirlas una por una, accediendo al menú “Crear ítem”, justo en la página de ítems de la colección. Pero supongamos que ya tengo varios de ellos guardados en una carpeta en mi computadora, entonces puedo seguir una ruta más simple, usando la función "Agregar ítems en masa":
 
-![Agregar ítems en masa](/es-mx/_assets/gifs/getting-started-5.gif)
+![Agregar elementos en masa](/es-mx/_assets/gifs/getting-started-5.gif)
 
 Al subir mis fotos, puedo optar por la Edición en masa o por la Edición en secuencia. La primera sirve para tratar los metadatos comunes entre todas las fotos y la segunda para examinar cada elemento, uno por uno. Empecemos por lo que tienen en común estas fotos: la cámara. Como las tomé todas con la misma cámara, estableceré esta información en la pantalla de Edición en masa. Luego paso a Edición en secuencia, donde podemos ver que Tainacan ya ha generado una miniatura a partir de mis fotos, que se puede cambiar en el futuro. Mis fotos serán públicas y no hay archivos adjuntos relacionados con ellas, así que solo tengo que rellenar los metadatos.
 
@@ -60,7 +60,7 @@ Al subir mis fotos, puedo optar por la Edición en masa o por la Edición en sec
 
 Cada configuración realizada en la pantalla de metadatos se refleja aquí, en el paso de creación del elemento. Puedo poner el Título y la Descripción de la foto y una fecha válida que indique cuándo se tomó la foto. La cámara ya se configuró de antemano, por lo que no hay nada de qué preocuparse aquí. En cuanto a la Categoría, se completará como mejor me parezca, usando las categorías que creé anteriormente. Si he olvidado alguna categoría, puedo crear el nuevo término para la taxonomía aquí mismo, directamente desde el formulario de edición del elemento. Después de rellenar todos los metadatos, podemos ver el aspecto de nuestra colección volviendo a la página de elementos de la colección:
 
-![Editando ítems en secuencia](/es-mx/_assets/gifs/getting-started-6.gif)
+![Editando elementos en secuencia](/es-mx/_assets/gifs/getting-started-6.gif)
 
 ## Navegando por tu colección
 
