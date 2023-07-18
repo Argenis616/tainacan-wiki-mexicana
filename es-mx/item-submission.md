@@ -2,15 +2,15 @@
 
 ?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-La [versión _0.17_](/es-mx/releases#tainacan-beta-017) dde Tainacan incorpora la posibilidad de abrir colecciones para el envío público de elementos (también denominado _autodepósito_). Esto significa que los usuarios sin privilegios administrativos, o incluso los visitantes del sitio, pueden ahora crear ellos mismos elementos en una colección, **ampliando así las posibilidades de una colección colaborativa generada por varias personas**.
+La [versión _0.17_](/es-mx/releases#tainacan-beta-017) de Tainacan incorpora la posibilidad de abrir colecciones para el envío público de elementos (también denominado _autodepósito_). Esto significa que los usuarios sin privilegios administrativos, o incluso los visitantes del sitio, pueden ahora crear ellos mismos elementos en una colección, **ampliando así las posibilidades de una colección colaborativa generada por varias personas**.
 
 Tras bambalinas el envío de elementos no es más que llevar el [formulario de creación de elementos](/es-mx/items#criar-itens), con los [metadatos configurados en la colección](/es-mx/metadata#tipos-de-metadados), a una página pública del sitio. Esto se hace a través de un [bloque gutenberg](/es-mx/gutenberg-blocks) y alguna configuración extra. En estas páginas, explicaremos cómo configurar el formulario público de envío de artículos. Luego abordaremos:
 
-1. Los ajustes necesarios para la [configuración de la colección](#configurando-a-coleção);
-2. El proceso de [creación de bloque de formulario](#criando-o-bloco-de-submissão-de-itens);
-3. Algunos [ajustes avanzados](#configurações-avançadas-do-bloco) al bloque;
-4. Protección contra ataques a sitios web [usando la verificación  _reCAPTCHA_](#verificação-recaptcha-no-formulário);
-5. Algunas [preguntas frecuentes](#duvidas-frequentes) sobre esta función;
+1. Los ajustes necesarios para la [configuración de la colección](#configuración-de-la-colección);
+2. El proceso de [creación de bloque de formulario](#creación-del-bloque-de-envío-de-elementos);
+3. Algunos [ajustes avanzados](#configuración-avanzada-de-bloques) al bloque;
+4. Protección contra ataques a sitios web [usando la verificación  _reCAPTCHA_](#verificación-recaptcha-en-el-formulario);
+5. Algunas [preguntas frecuentes](#preguntas-frecuentes) sobre esta función;
 
 ## Configuración de la colección
 
@@ -52,7 +52,7 @@ Para que tu formulario esté disponible a los visitantes del sitio, necesitas cr
 
    ![Acesse o painel de controle](_assets\images\submissao.png)
 
-4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção)[la sección anterior](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção);
+4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção)[la sección anterior](/es-mx/items);
 
    <iframe
        width="560"
@@ -167,8 +167,8 @@ Es muy común, en sitios que tienen “formularios” como estos, que usuarios m
 Para proteger su sitio de este tipo de ataque, recomendamos especialmente el uso de un mecanismo de verificación que pueda validar los "envíos" realizados por usuarios reales. Aunque existen varias soluciones para ello, nosotros ofrecemos integrada en el plugin la que consideramos una de las más sencillas y eficaces, el reCAPTCHA de Google. Seguro ya lo has visto en algún formulario web, en el que tenías que pulsar la casilla y realizar algún reto para seguir adelante con el envío. Se necesitan dos pasos para hacerlo funcionar en tu "formulario de envío de artículos":
 
 
-1. [Configurar el sitio web](#configurando-o-recaptcha-no-seu-site) para obtener la clave reCAPTCHA;
-2. [Habilitar colección](#habilitando-a-coleção-para-uso-do-recaptcha) para el uso de los mismos;
+1. [Configurar el sitio web](#configuración-de-recaptcha-en-su-sitio-web) para obtener la clave reCAPTCHA;
+2. [Habilitar colección](#habilitar-la-colección-para-usar-recaptcha) para el uso de los mismos;
 
 ### Configuración de reCAPTCHA en su sitio web
 
@@ -196,7 +196,7 @@ El formulario de envío de elementos no es más que un mapeo del formulario de e
 
 ### ¿Cómo configurar un flujo de validación para envíos?
 
-No hay un identificador específico que diga "Este elemento proviene de una confirmación". Por defecto, los elementos enviados a través del formulario irán a la pestaña de la lista de elementos en relación con el [estado establecido en la colección](#configurando-a-coleção). De esta forma se garantiza que no se hagan públicos inmediatamente y que puedan ser revisados y aprobados antes. Es posible, eso sí, crear un metadato privado de tipo Selección o Taxonomía (que no aparezca en el formulario) y que le ayude a identificar posibles subetapas de un flujo de aprobación (como "En revisión", "Falta revisión"), antes de que se apruebe definitivamente.
+No hay un identificador específico que diga "Este elemento proviene de una confirmación". Por defecto, los elementos enviados a través del formulario irán a la pestaña de la lista de elementos en relación con el [estado establecido en la colección](#configuración-de-la-colección). De esta forma se garantiza que no se hagan públicos inmediatamente y que puedan ser revisados y aprobados antes. Es posible, eso sí, crear un metadato privado de tipo Selección o Taxonomía (que no aparezca en el formulario) y que le ayude a identificar posibles subetapas de un flujo de aprobación (como "En revisión", "Falta revisión"), antes de que se apruebe definitivamente.
 
 ### No puedo crear nuevos términos desde el formulario, ¿por qué?
 
@@ -208,4 +208,4 @@ El módulo de envío de ítems está orientado a los ítems de las colecciones d
 
 ### Ya utilizo un plugin reCAPTCHA. ¿Hay alguna integración con el envío de artículos?
 
-De hecho, hay [algunos complementos que ya habilitan reCAPTCHA](https://br.wordpress.org/plugins/search/reCaptcha/ ":ignore") en la mayoría de los formularios de su sitio. Sin embargo, estos plugins no se integran automáticamente en Taiancan. Sin embargo, una vez que los utilice, puede aprovechar la clave del sitio y la palabra secreta generada para ellos y copiar y pegar en los [campos de configuración](#configurando-o-recaptcha-no-seu-site), por lo que todos estarán protegidos por el menor mecanismo e incluso puede realizar un seguimiento de las estadísticas de ataque y protecciones en el panel de administración de Google reCAPTCHA.
+De hecho, hay [algunos complementos que ya habilitan reCAPTCHA](https://br.wordpress.org/plugins/search/reCaptcha/ ":ignore") en la mayoría de los formularios de su sitio. Sin embargo, estos plugins no se integran automáticamente en Taiancan. Sin embargo, una vez que los utilice, puede aprovechar la clave del sitio y la palabra secreta generada para ellos y copiar y pegar en los [campos de configuración](#configuración-de-recaptcha-en-su-sitio-web), por lo que todos estarán protegidos por el menor mecanismo e incluso puede realizar un seguimiento de las estadísticas de ataque y protecciones en el panel de administración de Google reCAPTCHA.
