@@ -40,12 +40,12 @@ Los ítems o elementos son el contenido real del repositorio. El "cuadro", la "p
 El documento es la información principal del ítem. Es el objeto al que se refieren los metadatos. Tainacan acepta tres tipos de documentos:
 
 - **"Archivo"**: archivo añadido al elemento. Puede ser una imagen, vídeo, pdf, audio u otro tipo de archivo compatible.
-- **"URL"**: enlace de una página web con un contenido o archivo externo. Estos enlaces pueden ser a un sitio web genérico, a un archivo específico o a servicios multimedia. En el caso de los servicios multimedia (como YouTube, por ejemplo), Tainacan reconoce la dirección y muestra el reproductor adecuado mediante la herramienta [oEmbed](https://oembed.com/)(formato para permitir una representación incrustada de una URL en sitios de terceros). La lista de servicios compatibles con la conversión a "incrustaciones" en WordPress puede consultarse en [este enlace](https://codex.wordpress.org/es-mx:Incorporados).
+- **"URL"**: enlace de una página web con un contenido o archivo externo. Estos enlaces pueden ser a un sitio web genérico, a un archivo específico o a servicios multimedia. En el caso de los servicios multimedia (como YouTube, por ejemplo), Tainacan reconoce la dirección y muestra el reproductor adecuado mediante la herramienta [oEmbed](https://oembed.com/)(formato para permitir una representación incrustada de una URL en sitios de terceros). La lista de servicios compatibles con la conversión a "incrustaciones" en WordPress puede consultarse en [este enlace](https://wordpress.org/documentation/article/embeds/).
 - **"Texto"**: Un texto sencillo, almacenado directamente en la base de datos, que el usuario puede escribir al crear o editar un elemento.
 
 > El "tipo de documento" puede modificarse una vez enviado el elemento, por ejemplo: puedes enviar el elemento con un documento de referencia de tipo "texto" e insertar posteriormente el "archivo" o la "URL" correspondiente. También puedes llenar los campos de metadatos de un elemento y posteriormente añadir los documentos.
 
-Consulta el artículo completo sobre el uso de los **documentos** [aquí](/es-mx/items).
+Consulta el artículo completo sobre el uso de los **documentos** [aquí](#conceptos-generales).
 
 ## Metadatos
 
@@ -112,14 +112,14 @@ Consulta el artículo completo sobre el uso de **filtros** [aqui](/es-mx/filters
 
 Se pueden crear y utilizar taxonomías para clasificar los ítems del repositorio. Ejemplos de taxonomías comunes son “género”, “país”, “tipo de objeto”, “técnica”, etc.
 
-> En el lenguaje de WordPress, se conocen como taxonomías personalizadas. Consulta la [documentación de WordPress](https://codex.wordpress.org/Taxonomies/) para obtener más información.
+> En el lenguaje de WordPress, se conocen como taxonomías personalizadas. Consulta la [documentación de WordPress](https://es-mx.wordpress.org/support/article/taxonomies/) para obtener más información.
 
 Cada taxonomía tiene un conjunto de términos, por ejemplo, la taxonomía "género" puede tener términos como "drama" y "comedia". Los términos pueden tener jerarquía, lo que significa que los términos más generales (términos padre) contienen términos más específicos a los que se denomina términos hijos. Por ejemplo, si el término padre es “danza” y los términos hijos son "danza ritual" y "danza escénica", cuando el usuario busque ítems de “danza”, los resultados incluirán a los elementos que tengan cualquiera de los términos hijos.
 
 Los términos pueden tener una descripción, un icono o una imagen que los represente y también pueden estar vinculados a un concepto existente en una ontología. Los términos también pueden tener su propia URL en el sitio, con una página que enumere todos los ítems relacionados con ellos, incluso de diferentes colecciones, de esta forma se comportan como si fueran una colección, aunque pertenezcan a colecciones distintas.
 
 > Las taxonomías pueden compartirse entre colecciones.
-> Consulta el tema ["Tipos de metadatos"](#tipos-de-metadados) para saber cómo hacerlo.
+> Consulta el tema ["Tipos de metadatos"](#tipos-de-metadatos) para saber cómo hacerlo.
 
 Consulta el artículo completo sobre el uso de **taxonomías** [aquí](/es-mx/taxonomies.md).
 
