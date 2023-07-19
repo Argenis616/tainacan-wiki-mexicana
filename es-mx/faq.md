@@ -41,8 +41,8 @@ Siempre estamos disponibles en el [foro de discusión de Tainacan](https://taina
 
 - Describir paso a paso lo que se está haciendo, lo que ocurre y lo que se esperaba;
 - Consultar y, si es posible, enviarnos la información de la [página de diagnóstico del sistema](/es-mx/optimization#system-check);
-- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](#cómo-encuentro-los-registros-de-errores-de-mi-servidor);
-- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](#cómo-veo-los-errores-de-la-consola-de-red-o-del-navegador);
+- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](/es-mx/faq#cómo-encuentro-los-registros-de-errores-de-mi-servidor);
+- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](/es-mx/faq#cómo-veo-los-errores-de-la-consola-de-red-o-del-navegador);
 - Si tienes enlaces de prueba, ¡aún mejor!
 
 #### ¿Cómo encuentro los registros de errores de mi servidor?
@@ -63,7 +63,7 @@ En la **pestaña de la consola**, los errores en general aparecen destacados en 
 
 ### Recibo errores 404 o páginas en blanco cuando accedo a mi colección en el sitio web.
 
-En algunas situaciones particulares, como al realizar una migración del sitio, iniciar una nueva instalación o actualizar un plugin, puede surgir la necesidad de actualizar la estructura de permalinks (enlaces permanentes) de WordPress. Los permalinks son las direcciones o nombres específicos de las URL de tu sitio WordPress que permiten acceder a un contenido. Si al intentar acceder a una colección que ya existía o si algunas de las [peticiones realizadas por tu sitio](#cómo-encuentro-los-registros-de-errores-de-mi-servidor) devuelven 404, incluso con conexión a internet, es posible que tu sitio necesite recomponer su lista de permalinks. Este error es difícil de detectar (por eso por lo general no aparece en [Diagnóstico del sistema](#diagnóstico-del-sistema)) pero, afortunadamente, ¡es muy sencillo de solucionar!
+En algunas situaciones particulares, como al realizar una migración del sitio, iniciar una nueva instalación o actualizar un plugin, puede surgir la necesidad de actualizar la estructura de permalinks (enlaces permanentes) de WordPress. Los permalinks son las direcciones o nombres específicos de las URL de tu sitio WordPress que permiten acceder a un contenido. Si al intentar acceder a una colección que ya existía o si algunas de las [peticiones realizadas por tu sitio](#cómo-encuentro-los-registros-de-errores-de-mi-servidor) devuelven 404, incluso con conexión a internet, es posible que tu sitio necesite recomponer su lista de permalinks. Este error es difícil de detectar (por eso por lo general no aparece en [Diagnóstico del sistema](/es-mx/optimization#diagnóstico-del-sistema)) pero, afortunadamente, ¡es muy sencillo de solucionar!
 
 Haz lo siguiente: accede al panel de administración de WordPress y ve al menú lateral en **"Configuración" -> "Enlaces permanentes"**. Allí, asegúrate de que la opción seleccionada sea **Post Name** o al menos **Custom Structure** (estructura personalizada) que tiene el valor _/%postname%/_. Después de comprobar esto, haz clic en **Guardar cambios** (es importante hacer clic aunque no se haya modificado la configuración). Vuelve a cargar el sitio y comprueba si puedes acceder al contenido en cuestión.
 
