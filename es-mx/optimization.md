@@ -165,7 +165,7 @@ KeepAliveTimeout: esta directiva se usa para definir cuánto tiempo, en segundos
 
 En algunas páginas de Tainacan, especialmente en el listado de artículos, se hacen muchas peticiones simultáneas al servidor. Para mejorar el rendimiento en estas situaciones, se recomienda configurar el módulo MPM Prefork del servidor Apache.
 
-Para la conceptualización de cada directiva de configuración presentada a continuación, se recomienda leer [este artículo](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/)que explica todos los detalles y es útil para determinar la configuración más adecuada para el entorno de tu servidor. También recomendamos [este artículo](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) que propone un abordaje simple y objetivo para la determinación de estas configuraciones.
+Para la conceptualización de cada directiva de configuración presentada a continuación, se recomienda leer [este artículo](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/) que explica todos los detalles y es útil para determinar la configuración más adecuada para el entorno de tu servidor. También recomendamos [este artículo](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) que propone un abordaje simple y objetivo para la determinación de estas configuraciones.
 
 A continuación se detallan las configuraciones recomendadas que se deben realizar en el archivo `/etc/apache2/mods-availave/mpm_prefork.conf`:
 
@@ -246,5 +246,5 @@ Existen varios plugins de caché para WordPress que pueden acelerar enormemente 
 
 Hay una precaución que debe tomarse cuando se utiliza un plugin de caché. Dado que Tainacan utiliza "nonces", que son códigos de seguridad para verificar la intención del usuario al realizar ciertas acciones, es necesario configurar la caché para que no dure más de 12 horas. Estos códigos duran ese tiempo y si la caché dura más de 12 horas, es posible que visites el sitio con un código caducado y tengas problemas de permisos.
 
-Si desea más detalles al respecto, consulta [estos](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) artículos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
+Si desea más detalles al respecto, consulta [estos](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) [artículos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
 
