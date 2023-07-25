@@ -3,9 +3,9 @@
 <br>
 
 **Tainacan** es un complemento (plugin) para **WordPress**. Para utilizarlo, si no tienes nada preparado, deberás realizar tres instalaciones muy sencillas:
-1. Un servidor web en tu computadora. Aquí te enseñamos [cómo instalar XAMPP en Windows](#baixando).
-2. Una instalación de **WordPress**. Aquí puedes ver [cómo instalar WordPress en un servidor XAMPP (Windows)](/pt-br/wordpress#como-instalar-o-wordpress-no-windows).
-3. El plugin **Tainacan**. Aquí te enseñamos [como instalar o Tainacan no wordpress](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
+1. Un servidor web en tu computadora. Aquí te enseñamos [cómo instalar XAMPP en Windows](#descarga).
+2. Una instalación de **WordPress**. Aquí puedes ver [cómo instalar WordPress en un servidor XAMPP (Windows)](/es-mx/wordpress#como-instalar-o-wordpress-no-windows).
+3. El plugin **Tainacan**. Aquí te enseñamos [como instalar Tainacan en Wordpress](/es-mx/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
 
 Si lo prefieres, puedes ver los mismos tutoriales en video:
 * [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
@@ -97,6 +97,6 @@ En la imagen de arriba, puedes ver la dirección de la carpeta: **C:/xampp/htdoc
 
 <br><br>
 
-Ahora es el momento de empezar a instalar [WordPress](/pt-br/wordpress#como-instalar-o-wordpress-no-windows) en tu servidor **XAMPP**.
+Ahora es el momento de empezar a instalar [WordPress](/es-mx/wordpress#como-instalar-o-wordpress-no-windows) en tu servidor **XAMPP**.
 
 <br><br>
