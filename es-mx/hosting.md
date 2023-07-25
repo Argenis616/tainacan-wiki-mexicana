@@ -2,18 +2,18 @@
 
 ?> Esta página está dedicada a enumerar las opciones de alojamiento que están probadas por Tainacan listas para producción y para instalaciones de WordPress. Se alienta a usuarias y usuarios de la comunidad a compartir sus experiencias.
 
-Para utilizar Tainacan es necesario disponer de una instalación de WordPress en funcionamiento. Si tienes conocimientos de informática, es posible hacer esta instalación en tu propia computadora de forma local, como se [describió al inicio de esta sección](pt-br/xampp). Sin embargo, lo ideal es que tu sitio esté alojado en un servidor, una máquina que esté siempre encendida y conectada permanentemente a internet. Existen varios servicios de alojamiento en línea, muchos de ellos incluso optimizados para WordPress.
+Para utilizar Tainacan es necesario disponer de una instalación de WordPress en funcionamiento. Si tienes conocimientos de informática, es posible hacer esta instalación en tu propia computadora de forma local, como se [describió al inicio de esta sección](es-mx/xampp). Sin embargo, lo ideal es que tu sitio esté alojado en un servidor, una máquina que esté siempre encendida y conectada permanentemente a internet. Existen varios servicios de alojamiento en línea, muchos de ellos incluso optimizados para WordPress.
 
 En esta página enumeraremos:
 
-- [Funciones y características que se esperan de un servicio de hospedaje adecuado para el uso de Tainacan](#o-que-se-espera-de-uma-hospedagem-para-o-tainacan);
-- [Servicios conocidos y probados por la comunidad](#serviços-de-hospedagem-terceiros-testados);
+- [Funciones y características que se esperan de un servicio de hospedaje adecuado para el uso de Tainacan](#¿qué-se-espera-de-un-alojamiento-para-tainacan);
+- [Servicios conocidos y probados por la comunidad](#servicios-de-alojamiento-de-terceros-probados);
 
 ## ¿Qué se espera de un alojamiento para Tainacan?
 
 ### WordPress instalado
 
-Como requisito más esencial, tu instalación debe incluir un [WordPress](https://br.wordpress.org/ ":ignore"), o al menos debe permitir instalarlo, con acceso completo al panel de administración. Si bien Tainacan funcionará con cualquier versión a partir de la 4.8 de WordPress, recomendamos instalaciones con una [versión más reciente](https://br.wordpress.org/download/releases/ ":ignore") y superior a la 5.0 para poder aprovechar todas las funciones, como [los bloques gutenberg](/pt-br/gutenberg-blocks.md). Necesitarás tener permisos para instalar complementos (plugins) para activar Tainacan (que, [como se menciona aquí](/pt-br/faq.md#qual-a-diferença-entre-wpcom-e-wporg), elimina la posibilidad de usar algunas opciones de planes gratuitos como los de [WordPress.com](https://br.wordpress.com/ ":ignore"));
+Como requisito más esencial, tu instalación debe incluir un [WordPress](https://es-mx.wordpress.org/ ":ignore"), o al menos debe permitir instalarlo, con acceso completo al panel de administración. Si bien Tainacan funcionará con cualquier versión a partir de la 4.8 de WordPress, recomendamos instalaciones con una [versión más reciente](https://es-mx.wordpress.org/download/releases/ ":ignore") y superior a la 5.0 para poder aprovechar todas las funciones, como [los bloques gutenberg](/pt-br/gutenberg-blocks.md). Necesitarás tener permisos para instalar complementos (plugins) para activar Tainacan (que, [como se menciona aquí](/es-mx/faq.md#cuál-es-la-diferencia-entre-wpcom-y-wporg), elimina la posibilidad de usar algunas opciones de planes gratuitos como los de [WordPress.com](https://wordpress.com/es/ ":ignore"));
 
 #### Algunos requisitos del servidor
 
@@ -30,13 +30,13 @@ Es muy probable que si tu plan de alojamiento incluye WordPress instalado, ya es
   - `zlib`
 
 
-Después de activar el complemento de Tainacan, puedes verificar en la [página “Diagnóstico del sistema”](/pt-br/optimization#diagnóstico-do-sistema) si se cumple esta información. De lo contrario, comunícate con tu proveedor de alojamiento para obtener ayuda con la configuración.
+Después de activar el complemento de Tainacan, puedes verificar en la página [“Diagnóstico del sistema”](/es-mx/optimization#diagnóstico-del-sistema) si se cumple esta información. De lo contrario, comunícate con tu proveedor de alojamiento para obtener ayuda con la configuración.
 
 ### SSL habilitado
 
 ### Dominio registrado
 
-En resumen, registrar un dominio significa tener una dirección de internet reservada, a la que los navegadores apuntarán su sitio web cuando las personas busquen su URL o enlace (por ejemplo, `miacervoenlinea.com.mx`).  Este es un servicio independiente del alojamiento del contenido en sí, y se contrata con proveedores específicos (como [hostinger](https://registro.br/ ":ignore") o [godaddy](https://br.godaddy.com/ ":ignore")), según lo ofrecido por el proveedor del alojamiento.
+En resumen, registrar un dominio significa tener una dirección de internet reservada, a la que los navegadores apuntarán su sitio web cuando las personas busquen su URL o enlace (por ejemplo, `miacervoenlinea.com.mx`).  Este es un servicio independiente del alojamiento del contenido en sí, y se contrata con proveedores específicos (como [hostinger](https://www.hostinger.mx/ ":ignore") o [godaddy](https://www.godaddy.com/es ":ignore")), según lo ofrecido por el proveedor del alojamiento.
 
 ## Servicios de alojamiento de terceros probados
 
