@@ -41,8 +41,8 @@ Siempre estamos disponibles en el [foro de discusión de Tainacan](https://taina
 
 - Describir paso a paso lo que se está haciendo, lo que ocurre y lo que se esperaba;
 - Consultar y, si es posible, enviarnos la información de la [página de diagnóstico del sistema](/es-mx/optimization#diagnóstico-del-sistema);
-- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](#cómo-encuentro-los-registros-de-errores-de-mi-servidor);
-- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](#cómo-veo-los-errores-de-la-consola-de-red-o-del-navegador);
+- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](#¿cómo-encuentro-los-registros-de-errores-de-mi-servidor);
+- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](#¿cómo-veo-los-errores-de-la-consola-de-red-o-del-navegador);
 - Si tienes enlaces de prueba, ¡aún mejor!
 
 #### ¿Cómo encuentro los registros de errores de mi servidor?
