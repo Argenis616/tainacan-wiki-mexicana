@@ -4,7 +4,7 @@
   - [Preguntas frecuentes](es-mx/faq.md "Preguntas frecuentes sobre Tainacan - Tainacan Wiki")
   - [Conceptos generales](es-mx/general-concepts.md " Conceptos generales sobre Tainacan - Tainacan Wiki")
   - [Primeros pasos](es-mx/getting-started.md "Primeros pasos con Tainacan - Tainacan Wiki")
-- Iinstalacion y configuración
+- Instalacion y configuración
   - [**Instalando Tainacan**](es-mx/instalacao.md "Instalando Tainacan - Tainacan Wiki")
   - [Instalación en una máquina Windows local](es-mx/xampp.md "Instalando plugin Tainacan de forma local en una computadora con Windows (sin servidor) - Tainacan Wiki")
   - [Mejoramiento](es-mx/optimization.md "Estrategias para mejoramiento del plugin Tainacan - Tainacan Wiki")
