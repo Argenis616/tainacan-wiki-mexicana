@@ -12,8 +12,8 @@
 
 Para cada _"colección"_ es posible elegir cuáles de sus _"metadatos"_ se utilizarán como _"filtro"_ para los resultados de una búsqueda facetada en la vista de la _"colección"_. Los requisitos previos para el uso de _"filtros"_ en el repositorio son:
 
-- Crear “_[_metadatos_](/es-mx/metadata.md)_”_ a nivel de _"repositorio"_ o de _"colección"_;
-- Rellenar los campos de metadatos de los “_[_elementos_](/es-mx/items)_”;
+- Crear “[_metadatos_](/es-mx/metadata.md)” a nivel de _"repositorio"_ o de _"colección"_;
+- Rellenar los campos de metadatos de los “[_elementos_](/es-mx/items)”;
 - Hecho lo anterior, se [pueden configurar filtros](/es-mx/filters.md#configurar-filtros) al nivel de _"repositorio"_ o de _"colección”_.
 
 Los _“filtros”_ permiten al usuario cambiar la vista de los _"elementos"_ de una _"colección"_ a partir de los _“metadatos”_ que se configuraron como _"filtros"_.
@@ -31,7 +31,7 @@ Los _“filtros”_ permiten al usuario cambiar la vista de los _"elementos"_ de
   - **“Tiene miniatura”**: Es posible filtrar los _"elementos"_ que tienen o no una miniatura.
 
 - Los valores de los _“metadados”_ de cada _"elemento"_ aparecerán como opción de selección en cada _"filtro"_, según las configuraciones del _“tipo de metadatos”_;
-- Actualmente, Tainacan cuenta con **nueve tipos de metadatos**, pero pueden desarrollarse nuevos filtros de acuerdo a las necesidades individuales de cada instalación y agregarse al núcleo de Tainacan. Ver el artículo sobre[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desarrollo de plugins](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber más.
+- Actualmente, Tainacan cuenta con **nueve tipos de metadatos**, pero pueden desarrollarse nuevos filtros de acuerdo a las necesidades individuales de cada instalación y agregarse al núcleo de Tainacan. Ver el artículo sobre [Desarrollo de plugins](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber más.
 
 ## Tipos de filtros
 
