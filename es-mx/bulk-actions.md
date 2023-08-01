@@ -240,10 +240,10 @@ Crear elementos conjuntos es diferente que “importar elementos” desde un arc
 
 ## Importar elementos
 
-Importa varios elementos con metadatos preconfigurados y valores predefinidos con el [Importador .csv](https://tainacan.github.io/tainacan-wiki/#/es-mx/importers?id=importador-csv-items).
+Importa varios elementos con metadatos preconfigurados y valores predefinidos con el [Importador .csv](/es-mx/importers.md#importar-archivo-csv-de-elementos).
 
 ---
 
 ## Importar Taxonomias
 
-Crea taxonomías con vocabularios controlados y valores jerárquicos utilizando el [Importador de Vocabulario](https://tainacan.github.io/tainacan-wiki/#/es-mx/importers?id=importador-csv-de-vocabulários-taxonomias).
+Crea taxonomías con vocabularios controlados y valores jerárquicos utilizando el [Importador de Vocabulario](/es-mx/importers.md#importar-csv-de-vocabularios-taxonomías).
