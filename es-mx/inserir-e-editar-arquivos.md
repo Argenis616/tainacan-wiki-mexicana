@@ -200,4 +200,4 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
 
 ### Añadir un conjunto de archivos
 
-> ver [Importando arquivos e anexos](/es-mx/importers#importar-arquivos-e-anexos) para aprender a insertar imágenes de forma masiva.
+> Ver [Importando archivos y adjuntos](/es-mx/importers#importar-archivos-y-adjuntos) para aprender a insertar imágenes de forma masiva.
