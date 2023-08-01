@@ -4,7 +4,7 @@
 
 La [versión _0.17_](/es-mx/releases#tainacan-beta-017) de Tainacan incorpora la posibilidad de abrir colecciones para el envío público de elementos (también denominado _autodepósito_). Esto significa que los usuarios sin privilegios administrativos, o incluso los visitantes del sitio, pueden ahora crear ellos mismos elementos en una colección, **ampliando así las posibilidades de una colección colaborativa generada por varias personas**.
 
-Tras bambalinas el envío de elementos no es más que llevar el [formulario de creación de elementos](/es-mx/items#criar-itens), con los [metadatos configurados en la colección](/es-mx/metadata#tipos-de-metadados), a una página pública del sitio. Esto se hace a través de un [bloque gutenberg](/es-mx/gutenberg-blocks) y alguna configuración extra. En estas páginas, explicaremos cómo configurar el formulario público de envío de artículos. Luego abordaremos:
+Tras bambalinas el envío de elementos no es más que llevar el [formulario de creación de elementos](/es-mx/items#crear-elementos), con los [metadatos configurados en la colección](/es-mx/metadata#tipos-de-metadatos), a una página pública del sitio. Esto se hace a través de un [bloque gutenberg](/es-mx/gutenberg-blocks) y alguna configuración extra. En estas páginas, explicaremos cómo configurar el formulario público de envío de artículos. Luego abordaremos:
 
 1. Los ajustes necesarios para la [configuración de la colección](#configuración-de-la-colección);
 2. El proceso de [creación de bloque de formulario](#creación-del-bloque-de-envío-de-elementos);
@@ -52,7 +52,7 @@ Para que tu formulario esté disponible a los visitantes del sitio, necesitas cr
 
    ![Acesse o painel de controle](_assets\images\submissao.png)
 
-4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção)[la sección anterior](/es-mx/items);
+4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [la sección anterior](#configuración-de-la-colección);
 
    <iframe
        width="560"
