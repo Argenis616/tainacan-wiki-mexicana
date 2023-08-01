@@ -82,7 +82,7 @@ Contiene la información de actividades dentro de una colección, como crear, ed
 
    ​ c. **“Búsqueda general”**.
 
-## Registro de actividades del ítem o elemento
+## Registro de actividades del elemento
 
 Contiene la información de las "actividades" relacionadas con el elemento, como crear, editar y eliminar "valores” del elemento.
 
