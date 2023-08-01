@@ -16,6 +16,9 @@ Los **ítems** (llamados también “elementos”) son los contenidos reales del
 
 El “elemento” es el conjunto formado por un documento (puede ser un “archivo de imagen, video o audio”, un “texto” o una “URL”), sus metadatos y cualquier documento adjunto (si lo hubiera).
 
+<!-- tabs:start -->
+
+#### ** Crear **
 ## Crear elementos
 
 1. Accede al panel de control de _WordPress_;
@@ -128,6 +131,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
     ![Acesse o painel de controle](_assets\images\Criar_Itens_Descastar_Rascunho_Salvar.png)
 
+#### ** Editar **
 ## Editar elementos
 
 1. Accede al panel de control de WordPress;
@@ -162,6 +166,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    ![Acesse o painel de controle](_assets\images\Editar_itens_lixeira_rascunho_atualizar.png)
 
+#### ** Eliminar **
 ## Eliminar elementos
 
 1. Accede al panel de control de WordPress;
@@ -207,3 +212,5 @@ Cuando eliminas un _"elemento"_ de una _"colección"_ en Tainacan, se envía a l
 2. Haz clic en el _"icono de papelera"_, ubicado a la derecha de la información en el _"elemento"_. Si eliminas permanentemente un _"elemento"_, no será posible recuperarlo.
 
    ![Acesse o painel de controle](_assets\images\Deletar_Permanente_Item.png)
+   
+<!-- tabs:end -->
