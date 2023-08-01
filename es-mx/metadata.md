@@ -22,7 +22,7 @@ En este artículo, describimos:
 - Cómo crear metadatos, ya sea [nivel de repositório](#crear-metadatos) o [nivel de colección](#crear-metadatos-a-nivel-de-colección);
 - Los [tipos de metadatos](#tipos-de-metadatos) y sus particularidades;
 - Cómo [editar metadatos](#editar-metadatos) existentes;
-- Cómo [eliminar metadatos](#eliminar-metadados);
+- Cómo [eliminar metadatos](#eliminar-metadatos);
 
 En otros artículos, también puedes ver información relevante como:
 
@@ -38,7 +38,7 @@ En otros artículos, también puedes ver información relevante como:
 - _“Metadatos heredados”_ que pueden ser _“habilitados"_ o _"deshabilitados"_, lo que implica que se van a mostrar para ser llenados al enviar un nuevo _"elemento"_ o no, y también su presencia o ausencia (con sus respectivos datos) durante la visualización de las _"colecciones"_ y de los _"elementos"_;
 - **Los _“metadatos a nivel de repositorio”_ son heredados por todas las _"colecciones"_** del repositorio. Aparecen marcados con “_heredado_” delante del nombre;
 - Una vez que se ha creado un metadato, no se puede cambiar su tipo. Por ejemplo, no se puede cambiar un metadato del tipo _"Texto"_ a _"Texto largo"_, o _"Numérico"_ o a _"Fecha"_, después de su creación;
-- Los _"metadatos"_ que no han sido heredados del repositorio se pueden eliminar y muestran un "icono de papelera" delante de ellos. Ver [eliminar metadatos](#eliminar-metadados) para obtener más información.
+- Los _"metadatos"_ que no han sido heredados del repositorio se pueden eliminar y muestran un "icono de papelera" delante de ellos. Ver [eliminar metadatos](#eliminar-metadatos) para obtener más información.
 
 Tainacan no tiene una _“plantilla o modelo de metadatos predeterminado”_, sino diferentes _"tipos de metadatos"_ que pueden elegirse para satisfacer las necesidades del usuario durante la configuración de su colección digital. La correcta elección del _“tipo de metadato”_ ayudará al llenado de la información y, en consecuencia, en la recuperación más precisa de los _"elementos"_.
 
@@ -183,7 +183,7 @@ Los _"metadatos de tipo **Taxonomía**"_ utilizan una _"taxonomía"_ creada de a
 
 ​Como se indicó anteriormente, es necesario crear primero la _“Taxonomía”_. Esta se utilizará durante el proceso de creación de un _“Metadatos de taxonomía”_:
 
-1.Crea la _“taxonomía”_. Ver[Crear taxonomías](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias)[Criar Taxonomias](https://tainacan.github.io/tainacan-wiki/#/es-mx/taxonomies?id=criar-taxonomias) para tener más detalles;
+1.Crea la _“taxonomía”_. Ver[Crear taxonomías](/es-mx/taxonomies.md#crear-taxonomias) para tener más detalles;
 
 2.Crea un _“metadato”_ del tipo _“Taxonomía”_. Consulta Crear metadatos para obtener más información;
 
