@@ -12,7 +12,7 @@
 
 Las _“Taxonomías”_ son un tipo de metadato que funciona dentro de Tainacan como _“vocabularios controlados”_ que se utilizan para la clasificación de _"elementos"_ y ayudan tanto en la captura de datos como en su correcta recuperación.
 
-> En el lenguaje de WordPress, se habla de _“taxonomías personalizadas”_. Consulta la[ ](https://codex.wordpress.org/es-mx:Taxonomias)[documentación de WordPress](https://codex.wordpress.org/es-mx:Taxonomias) para saber más.
+> En el lenguaje de WordPress, se habla de _“taxonomías personalizadas”_. Consulta la [documentación de WordPress](https://codex.wordpress.org/es:Taxonom%C3%ADas#Qu.C3.A9_es_una_taxonom.C3.ADa.3F) para saber más.
 
 En Tainacan se pueden crear _“taxonomías simples”_ (se componen de una lista simple de términos) y _“taxonomías con jerarquía”_. Un ejemplo de una _“taxonomía simple”_ puede ser un metadato titulado _“género dramático”_ cuyos _“términos hijos”_ sean _"drama"_, _"comedia"_ y _“tragedia”_. Por su parte, un metadato como _“lugar de origen”_ podría configurarse como una taxonomía con tres niveles jerárquicos: _“País”_ (término padre), _“Estado o Provincia”_ (término hijo) y _“Municipio”_ (término nieto).
 
@@ -22,7 +22,7 @@ Los _"términos"_ pueden tener una _"descripción"_, un _"icono"_ o una _"imagen
 
 > Las _"taxonomías"_ pueden ser compartidas por varias _"colecciones"_ del repositorio.
 
-> Las _"taxonomías"_ son un _“tipo de metadato”_ que se puede incluir las _"colecciones"_. Ver el tema[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=criar-metadados)[Crear Metadatos](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=criar-metadados) para saber cómo.
+> Las _"taxonomías"_ son un _“tipo de metadato”_ que se puede incluir las _"colecciones"_. Ver el tema [Crear Metadatos](es-mx/metadata.md#crear-metadatos) para saber cómo.
 
 ####
 
