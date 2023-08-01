@@ -183,7 +183,7 @@ Los _"metadatos de tipo **Taxonomía**"_ utilizan una _"taxonomía"_ creada de a
 
 ​Como se indicó anteriormente, es necesario crear primero la _“Taxonomía”_. Esta se utilizará durante el proceso de creación de un _“Metadatos de taxonomía”_:
 
-1.Crea la _“taxonomía”_. Ver[Crear taxonomías](/es-mx/taxonomies.md#crear-taxonomias) para tener más detalles;
+1.Crea la _“taxonomía”_. Ver [Crear taxonomías](/es-mx/taxonomies.md#crear-taxonomias) para tener más detalles;
 
 2.Crea un _“metadato”_ del tipo _“Taxonomía”_. Consulta Crear metadatos para obtener más información;
 
