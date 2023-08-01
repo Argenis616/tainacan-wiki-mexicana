@@ -18,11 +18,11 @@ Cada _“metadato”_ tiene un conjunto de configuraciones posibles: ¿Es un _�
 
 En este artículo, describimos:
 
-- Las [características generales de los metadatos](#características-gerais-de-metadados), presentes em todos os tipos;
-- Cómo crear metadatos, ya sea [nivel de repositório](#criar-metadados) o [nivel de colección](#criar-metadados-à-nível-de-coleções);
-- Los [tipos de metadatos](#tipos-de-metadados) y sus particularidades;
-- Cómo [editar metadatos](#editar-metadados) existentes;
-- Cómo [eliminar metadatos](#excluir-metadados);
+- Las [características generales de los metadatos](#características-generales-de-los-metadatos), presentes em todos os tipos;
+- Cómo crear metadatos, ya sea [nivel de repositório](#crear-metadatos) o [nivel de colección](#crear-metadatos-a-nivel-de-colección);
+- Los [tipos de metadatos](#tipos-de-metadatos) y sus particularidades;
+- Cómo [editar metadatos](#editar-metadatos) existentes;
+- Cómo [eliminar metadatos](#eliminar-metadados);
 
 En otros artículos, también puedes ver información relevante como:
 
@@ -38,7 +38,7 @@ En otros artículos, también puedes ver información relevante como:
 - _“Metadatos heredados”_ que pueden ser _“habilitados"_ o _"deshabilitados"_, lo que implica que se van a mostrar para ser llenados al enviar un nuevo _"elemento"_ o no, y también su presencia o ausencia (con sus respectivos datos) durante la visualización de las _"colecciones"_ y de los _"elementos"_;
 - **Los _“metadatos a nivel de repositorio”_ son heredados por todas las _"colecciones"_** del repositorio. Aparecen marcados con “_heredado_” delante del nombre;
 - Una vez que se ha creado un metadato, no se puede cambiar su tipo. Por ejemplo, no se puede cambiar un metadato del tipo _"Texto"_ a _"Texto largo"_, o _"Numérico"_ o a _"Fecha"_, después de su creación;
-- Los _"metadatos"_ que no han sido heredados del repositorio se pueden eliminar y muestran un "icono de papelera" delante de ellos. Ver [eliminar metadatos](#excluir-metadados) para obtener más información.
+- Los _"metadatos"_ que no han sido heredados del repositorio se pueden eliminar y muestran un "icono de papelera" delante de ellos. Ver [eliminar metadatos](#eliminar-metadados) para obtener más información.
 
 Tainacan no tiene una _“plantilla o modelo de metadatos predeterminado”_, sino diferentes _"tipos de metadatos"_ que pueden elegirse para satisfacer las necesidades del usuario durante la configuración de su colección digital. La correcta elección del _“tipo de metadato”_ ayudará al llenado de la información y, en consecuencia, en la recuperación más precisa de los _"elementos"_.
 
@@ -89,7 +89,7 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
    ![Acesse o painel de controle](_assets\images\064.png)
 
-5. Para _"crear nuevos metadatos"_, simplemente elige el tipo de metadato que quieres crear y arrástralo a la lista de la izquierda, donde ya están los _“metadatos por defecto”_ de la colección.  El nuevo metadato aparecerá en último lugar en esta lista. También puedes utilizar la función de arrastrar y soltar para acomodar los metadatos en el orden que prefieras. Ver [tipos de metadatos](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=tipos-de-metadados)[Tipos de metadados](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=tipos-de-metadados) para conocer cuál es el _“metadato”_ más adecuado para cada tipo de información;
+5. Para _"crear nuevos metadatos"_, simplemente elige el tipo de metadato que quieres crear y arrástralo a la lista de la izquierda, donde ya están los _“metadatos por defecto”_ de la colección.  El nuevo metadato aparecerá en último lugar en esta lista. También puedes utilizar la función de arrastrar y soltar para acomodar los metadatos en el orden que prefieras. Ver [tipos de metadatos](/es-mx/metadata.md#tipos-de-metadatos) para conocer cuál es el _“metadato”_ más adecuado para cada tipo de información;
 
 6. Cada _“metadato”_ tiene que configurarse individualmente, eligiendo los ajustes y funciones posibles. A continuación describimos las funciones generales que se pueden configurar en prácticamente todos los metadatos. Consulta el área de metadatos para aprender a utilizar ajustes específicos (enlace);
 
@@ -103,11 +103,11 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
    **“Marcador de posición”**: Campo utilizado por metadatos con campo de texto para dar una breve instrucción sobre cómo llenarlo. Se trata de un mensaje sencillo que aparecerá dentro del campo de texto y que puede indicar al usuario qué tipo de información se espera. Por ejemplo: _“Escriba su nombre completo aquí…”_.
 
-   **“Estado”**: Determina el nivel de privacidad del metadato, es decir, nos permite configurar metadatos que solo estarán visibles para los administradores de la colección, pero no para los visitantes. Es muy útil cuando se registra información sensible (por ejemplo, avalúos, datos de localización de las otras, etc.) También nos sirve para configurar información que solo podrán ver quienes tengan un rol específico en la colección. Ver [Permisos de usuario](https://tainacan.github.io/tainacan-wiki/#/es-mx/users)[Permissões de Usuários](https://tainacan.github.io/tainacan-wiki/#/es-mx/users) para más detalle. Los dos estados que pueden configurarse son;
+   **“Estado”**: Determina el nivel de privacidad del metadato, es decir, nos permite configurar metadatos que solo estarán visibles para los administradores de la colección, pero no para los visitantes. Es muy útil cuando se registra información sensible (por ejemplo, avalúos, datos de localización de las otras, etc.) También nos sirve para configurar información que solo podrán ver quienes tengan un rol específico en la colección. Ver [Permisos de usuario](/es-mx/users.md) para más detalle. Los dos estados que pueden configurarse son;
 
    ​ ■ “Público”: Se muestran junto con el _“elemento”_, dependiendo del nivel de privacidad de este _“elemento”_ y de la _“colección”_ a la que pertenece;
 
-   ​ ■ “Privado”: solo se muestra a los administradores, editores y moderadores de la _"colección"_. Ver [Permisos de usuario](https://tainacan.github.io/tainacan-wiki/#/es-mx/users)[Permissões de Usuários](https://tainacan.github.io/tainacan-wiki/#/es-mx/users) para conocer más detalle.
+   ​ ■ “Privado”: solo se muestra a los administradores, editores y moderadores de la _"colección"_. Ver [Permisos de usuario](/es-mx/users.md) para conocer más detalle.
 
    **“Mostrar en listado”**: Determina si el _“metadato”_ se muestran por defecto en la vista previa de los ítems:
 
@@ -127,7 +127,7 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
    **“URL semántica”**: URL de la descripción semántica del _“metadato”_. Su configuración es opcional;
 
-   Dependiendo del _“tipo de metadato”_, puede haber otras especificaciones para configurar. Ver[tipos de metadatos](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=tipos-de-metadados) para más detalles.
+   Dependiendo del _“tipo de metadato”_, puede haber otras especificaciones para configurar. Ver [tipos de metadatos](/es-mx/metadata.md#tipos-de-metadatos) para más detalles.
 
 7. Después de completar y configurar los metadatos, da clic en _“Guardar”_, o en _"Cancelar"_ para abortar la misión. Una vez guardados, los _“metadadatos”_ creados aparecerán como un campo a rellenar al enviar y editar nuevos _"elementos"_.
 
