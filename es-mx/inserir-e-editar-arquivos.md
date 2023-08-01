@@ -14,7 +14,7 @@ Cuando se sube un archivo directamente a la "Mediateca de WordPress", éste se a
 
 ?> Sin embargo, cuando se añade un Documento o Adjunto a un ítem de Tainacan, al enviarlo en el    modal multimedia que abre Tainacan, el archivo se almacena en otra estructura que utiliza los IDs de la colección y del elemento actual. Debido a esto, al abrir un modal multimedia desde la pantalla de edición de los elementos de Tainacan, **sólo se mostrarán allí los archivos relacionados con el elemento y la opción de enviar nuevos.**.
 
-De esta forma podemos garantizar, por ejemplo, el control de la privacidad de los archivos (que aún puede mejorarse [como se explica en este artículo](/es-mx/optimization#blindando-o-wordpress)). Toma en cuenta que los elementos privados tendrán un comienzo diferente: \_x\_.
+De esta forma podemos garantizar, por ejemplo, el control de la privacidad de los archivos (que aún puede mejorarse [como se explica en este artículo](/es-mx/optimization#blindando-wordpress)). Toma en cuenta que los elementos privados tendrán un comienzo diferente: \_x\_.
 
 !> Esta organización impide, por ejemplo, que dos elementos utilicen más de un archivo. Sin embargo, esto es importante porque sin dicha restricción no se podría garantizar su privacidad, ya que un elemento podría ser público y otro privado.
 
@@ -24,7 +24,7 @@ Por lo tanto:
 2. Un archivo subido directamente a la "Mediateca de WordPress" sólo puede ser referenciado en el artículo a través de su enlace público, pero no "
    pertenecerá" al artículo;
 
-Es común querer usar archivos cargados en la biblioteca de medios en los elementos porque este espacio generalmente es inmediatamente accesible al iniciar sesión en el administrador de WordPress. Además, enviar varios archivos elemento por elemento puede ser tedioso, pero tenemos dos formas de solucionar esto, que mencionaremos más adelante: [agregar elementos de forma masiva desde archivos](#adição-em-massa-de-arquivos) e [importar archivos y archivos adjuntos a través de CSV](/es-mx/importers#importar-arquivos-e-anexos);
+Es común querer usar archivos cargados en la biblioteca de medios en los elementos porque este espacio generalmente es inmediatamente accesible al iniciar sesión en el administrador de WordPress. Además, enviar varios archivos elemento por elemento puede ser tedioso, pero tenemos dos formas de solucionar esto, que mencionaremos más adelante: [agregar elementos de forma masiva desde archivos](#añadir-un-conjunto-de-archivos) e [importar archivos y archivos adjuntos a través de CSV](/es-mx/importers#importar-archivos-y-adjuntos);
 
 ## Biblioteca de medios de WordPress
 
@@ -82,7 +82,7 @@ Las imágenes se pueden insertar directamente en el elemento sin necesidad de ag
 
 La acción de insertar imágenes individualmente está indicada para casos en los que hay pocos elementos en los que se van a añadir imágenes. La inserción de imágenes en secuencia es adecuada para un conjunto de elementos, que puede ir desde dos hasta todos los elementos en la misma página. La inserción de imágenes de forma masiva pretende abarcar un gran número de artículos.
 
-### insertar imagen individualmente
+### Insertar imagen individualmente
 
 1. Accede al panel de control de _WordPress_;
 
