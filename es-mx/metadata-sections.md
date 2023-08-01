@@ -6,10 +6,10 @@ A partir de la versión 0.19, Tainacan cuenta con el recurso **Secciones de meta
 
 En este artículo describimos:
 
-- Las [características generales](#características-das-seções-de-metadados) de una sección de metadatos;
-- Cómo [crear y editar](#criando-e-editando-seções) una sección de metadatos;
-- Cómo [eliminar una sección](#removendo-seções) de metadatos;
-- Cómo [ver la sección de metadatos](#visualizando-seções-na-página-do-item) en la página pública del artículo;
+- Las [características generales](#características-de-las-secciones-de-metadatos) de una sección de metadatos;
+- Cómo [crear y editar](#crear-y-editar-secciones) una sección de metadatos;
+- Cómo [eliminar una sección](#eliminación-de-secciones) de metadatos;
+- Cómo [ver la sección de metadatos](#visualización-de-secciones-en-la-página-del-elemento) en la página pública del artículo;
 
 Si todavía no estás familiarizado con el concepto y el flujo de edición de metadatos, [consulta la sección Metadatos](/es-mx/metadata.md).
 
@@ -40,7 +40,7 @@ La eliminación de secciones solo se puede hacer si esta no es la sección prede
 1. Primero, elimina o borra los metadatos existentes en la sección deseada;
 2. Después, haz clic en el botón de la papelera situado en la esquina derecha de la sección;
 
-## Visualización de secciones en la página del elemmento
+## Visualización de secciones en la página del elemento
 
 En el panel de administración de Tainacan, las secciones se ven como divisores de jerarquía superior en la lista de metadatos de la página del elemento. En la página de edición del elemento, estos divisores pueden incluso colapsarse, ocultando así todos sus metadatos. En la página pública del elemento, sin embargo, hay varias formas de ver una sección. Corresponde a los [desarrolladores de temas](/dev/creating-compatible-themes) implementar estas secciones, haciendo uso de las [funciones que cargan las secciones](https://github.com/tainacan/tainacan/blob/develop/src/classes/theme-helper/template-tags.php ":ignore"). Si no se tiene este cuidado, los metadatos se mostrarán sin separar las funciones, aunque siempre respetando el orden en que se encuentran en las secciones. Afortunadamente, tanto para la [interfaz de Tainacan](/es-mx/theme.md#tainacan-interface), como para [Blocksy](/es-mx/theme.md#tainacan-interface), ya se han implementado algunas vistas de ejemplo. Las siguientes demostraciones utilizan el tema de la interfaz de Tainacan, pero es importante saber que las secciones no se limitan a este tema:
 
