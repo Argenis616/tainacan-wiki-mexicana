@@ -12,9 +12,9 @@
 
 Para cada _"colección"_ es posible elegir cuáles de sus _"metadatos"_ se utilizarán como _"filtro"_ para los resultados de una búsqueda facetada en la vista de la _"colección"_. Los requisitos previos para el uso de _"filtros"_ en el repositorio son:
 
-- Crear [ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata)_“_[_metadatos_](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata)_”_ a nivel de _"repositorio"_ o de _"colección"_;
-- Rellenar los campos de metadatos de los[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/items)_“_[_elementos_](https://tainacan.github.io/tainacan-wiki/#/es-mx/items)_”_;
-- Hecho lo anterior, se[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/filters?id=configurar-filtros)[pueden configurar filtros](https://tainacan.github.io/tainacan-wiki/#/es-mx/filters?id=configurar-filtros) al nivel de _"repositorio"_ o de _"colección”_.
+- Crear “_[_metadatos_](/es-mx/metadata.md)_”_ a nivel de _"repositorio"_ o de _"colección"_;
+- Rellenar los campos de metadatos de los “_[_elementos_](/es-mx/items)_”;
+- Hecho lo anterior, se [pueden configurar filtros](/es-mx/filters.md#configurar-filtros) al nivel de _"repositorio"_ o de _"colección”_.
 
 Los _“filtros”_ permiten al usuario cambiar la vista de los _"elementos"_ de una _"colección"_ a partir de los _“metadatos”_ que se configuraron como _"filtros"_.
 
@@ -269,6 +269,6 @@ No hay ninguna diferencia en el proceso de creación de _"filtros a nivel de rep
     allowfullscreen>
 </iframe>
 
-> **Nota: **El _"borrado del filtro"_ solo afecta la navegabilidad de la visualización de la  _“colección"_. Esta operación solo la pueden deshacer los administradores. Consulta el[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/activities)[Registro de actividades](https://tainacan.github.io/tainacan-wiki/#/es-mx/activities) para obtener más información. El _"filtro"_ dejará de existir automáticamente si se desactivan o eliminan sus respectivos _“metadatos”_.
+> **Nota: **El _"borrado del filtro"_ solo afecta la navegabilidad de la visualización de la  _“colección"_. Esta operación solo la pueden deshacer los administradores. Consulta el [Registro de actividades](/es-mx/activities) para obtener más información. El _"filtro"_ dejará de existir automáticamente si se desactivan o eliminan sus respectivos _“metadatos”_.
 
 - Para _“recuperar”_ un _"filtro"_ borrado, basta con crearlo de nuevo.
