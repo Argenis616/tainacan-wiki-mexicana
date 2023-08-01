@@ -13,7 +13,7 @@ En esta página enumeraremos:
 
 ### WordPress instalado
 
-Como requisito más esencial, tu instalación debe incluir un [WordPress](https://es-mx.wordpress.org/ ":ignore"), o al menos debe permitir instalarlo, con acceso completo al panel de administración. Si bien Tainacan funcionará con cualquier versión a partir de la 4.8 de WordPress, recomendamos instalaciones con una [versión más reciente](https://es-mx.wordpress.org/download/releases/ ":ignore") y superior a la 5.0 para poder aprovechar todas las funciones, como [los bloques gutenberg](/pt-br/gutenberg-blocks.md). Necesitarás tener permisos para instalar complementos (plugins) para activar Tainacan (que, [como se menciona aquí](/es-mx/faq.md#cuál-es-la-diferencia-entre-wpcom-y-wporg), elimina la posibilidad de usar algunas opciones de planes gratuitos como los de [WordPress.com](https://wordpress.com/es/ ":ignore"));
+Como requisito más esencial, tu instalación debe incluir un [WordPress](https://es-mx.wordpress.org/ ":ignore"), o al menos debe permitir instalarlo, con acceso completo al panel de administración. Si bien Tainacan funcionará con cualquier versión a partir de la 4.8 de WordPress, recomendamos instalaciones con una [versión más reciente](https://es-mx.wordpress.org/download/releases/ ":ignore") y superior a la 5.0 para poder aprovechar todas las funciones, como [los bloques gutenberg](/pt-br/gutenberg-blocks.md). Necesitarás tener permisos para instalar complementos (plugins) para activar Tainacan (que, [como se menciona aquí](/es-mx/faq.md#¿cuál-es-la-diferencia-entre-wpcom-y-wporg), elimina la posibilidad de usar algunas opciones de planes gratuitos como los de [WordPress.com](https://wordpress.com/es/ ":ignore"));
 
 #### Algunos requisitos del servidor
 
