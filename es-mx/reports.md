@@ -81,7 +81,7 @@ El tercer gráfico que se muestra en la pantalla del repositorio es un gráfico 
 
 </div>
 
-Este gráfico ofrece una visión importante de cómo se distribuyen los elementos en el uso de los términos en una taxonomía. Una observación importante es que aquí los **términos se enumeran sin discriminación jerárquica**, es decir, los términos padres y sus términos hijos, , si los hay, se encuentran en el mismo nivel. A continuación se presenta [un gráfico](#total-de-itens-por-metadado-tipo-taxonomia-na-coleção) con esta información.
+Este gráfico ofrece una visión importante de cómo se distribuyen los elementos en el uso de los términos en una taxonomía. Una observación importante es que aquí los **términos se enumeran sin discriminación jerárquica**, es decir, los términos padres y sus términos hijos, , si los hay, se encuentran en el mismo nivel. A continuación se presenta [un gráfico](#total-de-elementos-por-tipo-de-taxonomía-de-metadatos-en-la-colección) con esta información.
 
 ## Actividades totales por usuario
 
@@ -137,7 +137,7 @@ Como aún no es posible implementar opciones de Zoom en gráficos de barras hori
 
 ## Total de elementos por tipo de taxonomía de metadatos en la colección
 
-Por último, en el panel de informes de la colección, hay un gráfico similar al de ["Artículos totales por término de taxonomía"](#total-de-itens-por-termo-de-taxonomia), presente en el panel del repositorio. Este gráfico muestra cuántos elementos tienen un término determinado como valor de un metadato de tipo taxonomía. Si hay más de un metadato de tipo taxonomía en la colección, es posible cambiar en el cuadro de selección situado junto al título del gráfico. El eje Y muestra el número total de artículos y el eje X los términos de esta taxonomía. Como en el gráfico mencionado anteriormente, este gráfico ofrece una paginación para grandes cantidades de términos.
+Por último, en el panel de informes de la colección, hay un gráfico similar al de ["Artículos totales por término de taxonomía"](#total-de-elementos-por-término-de-taxonomía), presente en el panel del repositorio. Este gráfico muestra cuántos elementos tienen un término determinado como valor de un metadato de tipo taxonomía. Si hay más de un metadato de tipo taxonomía en la colección, es posible cambiar en el cuadro de selección situado junto al título del gráfico. El eje Y muestra el número total de artículos y el eje X los términos de esta taxonomía. Como en el gráfico mencionado anteriormente, este gráfico ofrece una paginación para grandes cantidades de términos.
 
 ![Captura de Tela do Bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](_assets/images/reports_13.png)
 
