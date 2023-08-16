@@ -19,7 +19,7 @@ Con el plugin Tainacan activado en el WordPress, el propio plugin crea las sigui
 
 A medida que vayas creando colecciones, elementos y términos podrás acceder, automáticamente a estas direcciones desde el sitio web. Por lo general, en el panel administrativo de Tainacan, encontrará los enlaces a estas páginas en botones con íconos de ojos (como el que se encuentra en la parte superior derecha de esta página). Además, también es posible crear tus propias páginas presentando las colecciones o explicando algo sobre tu repositorio. Son dos caminos diferentes, pero que están a tu disposición gracias a la **integración de Tainacan con WordPress**. Más información a continuación:
 
-- [Páginas Especiales Generadas por Tainacan](#as-páginas-especiais-do-Tainacan)
+- [Páginas Especiales Generadas por Tainacan](#las-páginas-especiales-de-tainacan)
 - [Creando tus propias páginas con bloques de Gutenberg](/es-mx/gutenberg-blocks)
 
 ## Las páginas especiales de Tainacan
@@ -51,12 +51,12 @@ Esta es generalmente la página más importante de una instalación de Tainacan.
 - Modos de visualización, incluido el modo de pantalla completa (también están habilitados o deshabilitados en el formulario de edición de la colección);
 - Modal de URLs relacionadas, proporcionando acceso a la misma lista en diferentes formatos como JSON, HTML, CSV, PDF (si el [plugin](/es-mx/plugin-pdf-exposer) está instalado) y con la posibilidad de realizar mapeos;
 
-|||||Observe que a lista de itens é então a página de uma coleção em si. Se você clicar em uma coleção na _Lista de Coleções_ do site ela irá para esta lista. Porém, você pode preferir ter uma [página customizada de apresentação](/es-mx/gutenberg-blocks), por exemplo, para só então redirecionar para sua lista de itens. Isto pode ser modificado também no formulário de configuração da sua coleção, na opção "Página de Capa".
+Toma en cuenta que la lista de elementos es la página de una colección en sí misma. Si haces clic en una colección en la lista de colecciones del sitio, irá a esa lista. Sin embargo, es posible que prefieras tener una [página de presentación personalizada](/es-mx/gutenberg-blocks), por ejemplo, para luego redirigir a tu lista de elementos. Esto también se puede modificar en el formulario de configuración de tu colección, en la opción "Página de presentación".
 
-### Páginas de Itens de um Termo
+### Páginas de artículos a término
 
-`/nome-da-taxonomia/nome-do-termo`
+`/nombre-taxonomía/nombre-término`
 
-Similar à lista de itens de uma coleção, esta página mostra todos os itens que possuem algum metadado tipo taxonomia e que tenham neste metadado um termo específico. A principal diferença da lista da coleção é que o cabeçalho terá a imagem e descrição do termo, configurável no seu formulário de edição.
+De manera similar a la lista de elementos de una colección, esta página muestra todos los elementos que tienen algunos metadatos de tipo taxonomía y que tienen un término específico en estos metadatos. La principal diferencia con la lista de colección es que el encabezado tendrá la imagen y descripción del término, configurable en su forma de edición.
 
-Esta página é uma excelente maneira de trazer o conceito de "Exposições" multi-coleção para o seu repositório. Por exemplo, se você tiver uma coleção de pinturas e uma coleção de arquitetura com diferentes metadados, mas tiver em ambos um metadado da Taxonomia **Movimento artístico**, você pode ver todos os itens do termo **Movimento renascentista** em um só lugar, agregando aí itens das duas coleções.
+Esta página es una excelente manera de llevar el concepto de "exposiciones" de colecciones múltiples a tu repositorio. Por ejemplo, si tienes una colección de pintura y otra de arquitectura con metadatos diferentes, pero en ambas existe un metadato de la Taxonomía **Movimiento Artístico**, puedes ver todos los ítems del término **Movimiento Renacentista** en un solo lugar, agrupando allí los ítems de ambas colecciones.
