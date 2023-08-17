@@ -51,7 +51,7 @@ Esta es generalmente la página más importante de una instalación de Tainacan.
 
 Toma en cuenta que la lista de elementos es la página de una colección en sí misma. Si haces clic en una colección en la lista de colecciones del sitio, irá a esa lista. Sin embargo, es posible que prefieras tener una [página de presentación personalizada](/es-mx/gutenberg-blocks), por ejemplo, para luego redirigir a tu lista de elementos. Esto también se puede modificar en el formulario de configuración de tu colección, en la opción "Página de presentación".
 
-### Páginas de artículos a término
+### Páginas de elementos de un término
 
 `/nombre-taxonomía/nombre-término`
 
