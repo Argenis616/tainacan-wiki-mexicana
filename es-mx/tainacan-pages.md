@@ -36,7 +36,7 @@ Disponible en su sitio desde el momento en que se crea una colección, esta pág
 
 Disponible en su sitio desde el momento en que se crea un elemento en cualquier colección, esta página enumera **todos los elementos de todas las colecciones en el repositorio**. Presentará algunas vistas predeterminadas, opciones de clasificación por metadatos de nivel de repositorio y una lista de todos los filtros para todas las colecciones, además de un filtro de colecciones. Si bien el acceso a todos  los elementos es potente, _recomendamos que se utilice con precaución_. Filtrar por un metadato específico dentro de una colección, por ejemplo, ocultará de la lista los elementos que no tengan ese metadato, lo que puede resultar confuso para quienes no estén familiarizados con la organización de su repositorio.
 
-### Páginas de elementos en una colección
+### Páginas de elementos de una colección
 
 `/nombre-de-la-colección`
 
