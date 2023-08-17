@@ -1,109 +1,107 @@
-# Blocos de Itens
+# Bloques de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los bloques de elementos son una forma de mostrar una vista previa o lo más destacado de su colección, sin tener que exponer al usuario a toda la complejidad de la colección. [Lista de elementos con búsqueda por aspectos](/es-mx/tainacan-pages#páginas-de-elementos-de-una-colección). Actualmente, hay 4 bloques relacionados con artículos de Tainacan:
 
-Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/es-mx/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente, existem 4 blocos relacionados aos itens do Tainacan:
-
-1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) _(Dinâmico)_
-2. O [Carrossel de Itens](#carrossel-de-itens)
-3. A [Barra de Busca Tainacan](#barra-de-busca)
-4. A [Busca Facetada](#busca-facetada) _(A Lista de Itens Completa)_
+1. [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) _(Dinâmico)_
+2. [Carrusel de elementos](#carrusel-de-elementos)
+3. [Barra de búsqueda Tainacan](#barra-de-búsqueda)
+4. [Búsqueda por aspectos](#búsqueda-por-aspectos) _(A Lista de Itens Completa)_
 
 ---
 
-## Lista de Itens da Coleção
+## Lista de elementos de la colección
 
-Este é um dos blocos mais mais importantes que o Tainacan oferece. Com ele você configura uma "Busca de Itens" para serem exibidos. Mas como assim uma busca? É que ao invés de selecionar itens um a um, você determina quais parâmetros irão filtrar uma listagem de itens. Por isso chamamos este bloco de lista "dinâmica" de itens, pois se novos itens forem inseridos àquela listagem, seu bloco continuará atualizado. Veja a seguir:
+Este es uno de los bloques más importantes que ofrece Tainacan. Con él configuras una "Búsqueda de elementos" para que se muestren. Pero, ¿qué se entiende por búsqueda? En lugar de seleccionar los elementos uno por uno, usted determina los parámetros que filtrarán una lista de elementos. Por eso llamamos a este bloque una lista "dinámica" de elementos, porque si se añaden nuevos elementos a esa lista, tu bloque seguirá actualizándose. Véase más abajo:
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-collection-items-1.gif)
+![Seleccionar la colección en el bloque](/_assets/gifs/blocks-collection-items-1.gif)
 
-Logo ao inserir o bloco, devo configurar a minha busca. Este processo começa determinando de qual coleção em específico eu vou buscar itens. Feita esta escolha, sou apresentado à minha lista de itens, a mesma que vejo no _Painel Administrativo do Tainacan_. Os itens que eu enchergo nesta listagem serão os que vão ser buscados pelo meu bloco. Aqui posso alterar, por exemplo: **filtros, ordem de busca, quantidade de itens buscados e já aplicar uma busca textual simples**. Feito isso, estas informações serão salvas nas configurações do meu bloco e a lista será renderizada.
+En cuanto inserto el bloque, tengo que configurar mi búsqueda. Este proceso comienza determinando en qué colección concreta voy a buscar elementos. Una vez hecha esta elección, se me presenta mi lista de elementos, la misma que veo en el panel de administración de _Tainacan_. Los elementos que aparezcan en esta lista serán los que busque mi bloque. Aquí puedo cambiar, por ejemplo **filtros, orden de búsqueda, número de elementos buscados y ya aplicar una búsqueda textual simple**. Una vez hecho esto, esta información se guardará en la configuración de mi bloque y se mostrará la lista.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Configurações relacionadas ao Cabeçalho da Coleção](/_assets/images/blocks_collection_items_1.jpg ":size=200")
+![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ":size=200")
 
 </div>
 
-Com os itens carregados, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los elementos cargados, podemos realizar una serie de ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
-### Cabeçalho da Coleção
+### Cabecera de colección
 
-A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
+La primera opción le permite decorar un poco su bloque añadiendo una cabecera para su colección en la parte superior de la lista. Debería ser similar a lo que se ve en la página de elementos, pero una versión reducida, con la miniatura de la colección en el centro, la imagen de cabecera a la derecha y el nombre de la colección a la izquierda. Puede configurar el color de fondo de la cabecera, el texto y elegir si desea mostrar o no una etiqueta "Colección" antes del nombre de la colección.
 
-### Barra de Busca Tainacan
+### Barra de búsqueda Tainacan
 
-Caso você esteja oferecendo uma prévia de sua lista de itens mas não quer impedir que o usuário explore-a um pouco mais, você pode oferecer, no próprio bloco, uma barra de busca. Esta barra filtrará os itens mostrados, carregando sempre no máximo a quantidade configurada para a busca. Lembrando que os filtros que tiverem sido aplicados antes continuarão aplicados nesta listagem, assim você pode restringir o que será mostrado. A barra também te permite alternar o sentido da ordenação escolhida como _ascendente_ ou _descendente_ e mudar de página caso hajam mais itens resultantes da sua busca.
+Si ofreces una vista previa de tu lista de elementos pero no quieres impedir que el usuario siga explorándola, puedes ofrecer una barra de búsqueda en el propio bloque. Esta barra filtrará los elementos mostrados, cargando siempre como máximo la cantidad configurada para la búsqueda. Recuerde que los filtros que se hayan aplicado anteriormente seguirán aplicándose a esta lista, por lo que puede restringir lo que se muestra. La barra también le permite alternar la dirección de ordenación que haya elegido, como _ascendente_ o _descendente_, y cambiar de página si hay más elementos resultantes de su búsqueda.
 
-![Cabeçalho e Barra de Busca no Bloco](/_assets/gifs/blocks-collection-items-2.gif)
+![Cabecera de bloque y barra de búsqueda](/_assets/gifs/blocks-collection-items-2.gif)
 
-### Configurações da Exibição de Itens
+### Ajustes de visualización de elementos
 
-Por fim, é possível escolher quantos itens ao máximo serão exibidos. O padrão nas listagens Tainacan é sempre 12. Abaixo, novas configurações estão disponíveis, e elas estão diretamente relacionadas ao **modo de exibição dos itens**. Sim, nos blocos, também temos diferentes modos de visualizar a lista de itens carregada. Você pode alterar isso no próprio bloco, na barra superior. Este bloco oferece três modos:
+Por último, puede elegir cuántos elementos se mostrarán como máximo. El valor por defecto en los listados de Tainacan es siempre 12. A continuación, hay nuevos ajustes disponibles, y están directamente relacionados con el **cómo se muestran los elementos**. Sí, en los bloques también tenemos diferentes formas de visualizar la lista cargada de elementos. Esto se puede cambiar en el propio bloque, en la barra superior. Este bloque ofrece tres modos:
 
 <!-- tabs:start -->
 
-#### ** Grade de Itens **
+#### ** Rejilla de elementos **
 
-O modo padrão é a grade de itens, que mostrará as miniaturas dos itens (185px _x_ 185px), com seus títulos abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o título do item e se deseja um espaço maior entre os itens. Lembrando que quanto maior o espaçamento, menos itens cabem por linha.
+El modo por defecto es la rejilla de artículos, que mostrará las miniaturas de los artículos (185px _x_ 185px), con sus títulos debajo. En este modo, puede configurar si desea mostrar o no el título del elemento y si desea más espacio entre los elementos. Recuerde que cuanto mayor sea el espaciado, menos elementos cabrán por línea.
 
-![Configurando o bloco no modo grade](/_assets/gifs/blocks-collection-items-3.gif)
+![Configurar el bloque en modo cuadrícula](/_assets/gifs/blocks-collection-items-3.gif)
 
-#### ** Lista de Itens **
+#### ** Lista de Elementos **
 
-A lista de itens permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os títulos ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para coleções que não possuem imagens.
+La lista de elementos permite una vista más simplificada, con miniaturas más pequeñas (54px _x_ 54px) y los títulos junto a ellas. En este modo, puedes elegir no mostrar la miniatura, lo que es ideal para colecciones que no tienen imágenes.
 
-![Configurando o bloco no modo lista](/_assets/gifs/blocks-collection-items-4.gif)
+![Configuración del bloque en modo lista](/_assets/gifs/blocks-collection-items-4.gif)
 
-#### ** Mosaico de Itens **
+#### ** Mosaico de elementos **
 
-A partir do [Tainacan 0.14 :link:](https://tainacan.org/blog/2019/11/22/tainacan-beta-0-14-e-tainacan-interface-1-6-novo-modo-mosaico-do-bloco-de-itens-e-suporte-ao-wordpress-5-3/ ":ignore"), apresentamos também o modo mosaico. Este modo possui várias configurações extras. É ideal pra quem quer fornecer uma visão mais "artística" da sua lista de coleção. A composição montada pelo mosaico é mais irregular e não se restringe de cortar as imagens para montar vários **grupos de grades de itens**. Nele, os títulos aparecem apenas ao passar o mouse sobre o item, mas eles podem ser escondidos da mesma maneira como no modo grade, assim como o espaçamento entre os itens.
+Desde [Tainacan 0.14 :link:](https://tainacan.org/blog/2019/11/22/tainacan-beta-0-14-e-tainacan-interface-1-6-novo-modo-mosaico-do-bloco-de-itens-e-suporte-ao-wordpress-5-3/ ":ignore"), también presentamos el modo mosaico. Este modo tiene varios ajustes adicionales. Es ideal para aquellos que desean ofrecer una visión más "artística" de su lista de colecciones. La composición montada por el mosaico es más irregular y no se limita a cortar las imágenes para montar varios **grupos de cuadrículas de artículos**. Los títulos sólo aparecen cuando se pasa el ratón por encima del artículo, pero pueden ocultarse del mismo modo que en el modo cuadriculado, al igual que el espaciado entre los artículos.
 
-![Configurando o bloco no modo mosaico](/_assets/gifs/blocks-collection-items-5.gif)
+![Ajustando el bloque en modo mosaico](/_assets/gifs/blocks-collection-items-5.gif)
 
-Além disso, no modo mosaico, é possível configurar os seguintes detalhes:
+También puede configurar los siguientes detalles en el modo mosaico:
 
-- A altura do bloco, via painel lateral ou redimensionando o bloco;
-- A grade usada para montar cada grupo do bloco (grades maiores significarão mais itens por grupos, portanto mais imagens menores);
-- A densidade do grupo, ou seja a quantidade de itens por coluna em cada grupo;
+- La altura del bloque, a través del panel lateral o redimensionando el bloque;
+- La cuadrícula utilizada para montar cada grupo del bloque (cuadrículas más grandes significan más elementos por grupo, por lo tanto más imágenes pequeñas);
+- La densidad del grupo, es decir, el número de elementos por columna en cada grupo;
 
-Estes detalhes impactarão em quão ladrilhado seu mosaico vai ficar. Lembre-se que quanto mais itens, mais densa ficará a composição.
+Estos detalles influirán en el tamaño del mosaico. Recuerde que cuantos más elementos, más densa será la composición.
 
-![Mais ajustes do bloco no modo mosaico](/_assets/gifs/blocks-collection-items-6.gif)
+![Más ajustes del bloque en el modo mosaico](/_assets/gifs/blocks-collection-items-6.gif)
 
-Por fim, um último detalhe: Ao cortar as imagens para encaixá-las em suas grades, o mosaico sempre centraliaza a imagem, verticalmente e horizontalmente. Talvez você não queira isso, e prefira, por exemplo, que as imagens fiquem sempre com o topo visível (suponha uma coleção com bustos de várias pessoas). Para isto, existe a opção do _Ponto focal da imagem de fundo_.
+Finalmente, un último detalle: al cortar las imágenes para encajarlas en sus cuadrículas, el mosaico siempre centra la imagen, vertical y horizontalmente. Quizá no quieras esto y prefieras, por ejemplo, que las imágenes se vean siempre en la parte superior (supongamos que tienes una colección de bustos de varias personas). Para ello, existe la opción _Punto focal de la imagen de fondo_.
 
 <!-- tabs:end -->
 
 ---
 
-## Carrossel de Itens
+## Carrusel de elementos
 
-A quebra de linha que o Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) gera pode não agradar a todos. Para apresentar vários itens em sequência e ainda dar um ar mais "dinâmico" à sua publicação, o bloco de carrossel pode ser o ideal.
+El salto de línea que la [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) puede no ser del gusto de todos. Para presentar varios artículos en secuencia y dar a su publicación un aspecto más "dinámico", el bloque carrusel puede ser ideal.
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-items-carousel-1.gif)
+![Selección de la colección en el bloque](/_assets/gifs/blocks-items-carousel-1.gif)
 
-Da mesma maneira como nas configurações do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção#configurações-iniciais-do-bloco) você pode configurar uma busca para exibir seus itens no carrossel. Dessa maneira, eles dinamicamente serão buscados de acordo com certos parâmetros de busca, ordenação e filtragem que você definir. Mas neste bloco há também a possibilidade de escolher "a dedo" quais itens você deseja mostrar. Note que as opções são exclusivas. Deve-se usar uma estratégia ou a outra. No caso da seleção manual de itens, você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
+Al igual que con los ajustes del Bloque [Lista de elementos de la colección](#lista-de-elementos-de-la-colección#ajustes-iniciales-del-bloque) puede configurar una búsqueda para mostrar sus elementos en el carrusel. De esta forma, se buscarán dinámicamente según determinados parámetros de búsqueda, ordenación y filtrado que tú definas. Pero en este bloque también existe la posibilidad de elegir "a mano" qué elementos quieres mostrar. Tenga en cuenta que las opciones son excluyentes. Tiene que utilizar una estrategia u otra. En el caso de la selección manual de elementos, añades elementos a través del modal y los eliminas en la propia lista haciendo clic en el botón "X" que aparece encima del elemento insertado.
 
-Com os itens carregados, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los elementos cargados, puede observar que el carrusel no se mueve. De hecho, sólo se activa en la versión publicada o de previsualización del post o página. Aquí, en el editor, verás una lista desplazable normal y corriente. Ahora podemos realizar una serie de ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-### Cabeçalho da Coleção
+### Cabecera de la colección
 
-![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-items-carousel-2.gif)
+![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-items-carousel-2.gif)
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Configurações do Carrossel de Items](/_assets/images/blocks_items_carousel_1.png ":size=200")
+![Lista de ajustes del carrusel de elementos](/_assets/images/blocks_items_carousel_1.png ":size=200")
 
 </div>
 
-A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
+La primera opción le permite decorar un poco su bloque añadiendo una cabecera para su colección en la parte superior de la lista. Debería ser similar a lo que se ve en la página de elementos, pero una versión reducida, con la miniatura de la colección en el centro, la imagen de cabecera a la derecha y el nombre de la colección a la izquierda. Puede configurar el color de fondo de la cabecera, el texto y elegir si desea mostrar o no una etiqueta "Colección" antes del nombre de la colección.
 
-### Opções do Carrossel
+### Opciones del carrusel
 
 Como em outros blocos, você pode escolher exibir ou não o título dos itens abaixo da miniatura. As demais opções disponiveis pelo carrossel estão relacionadas à sua reprodução. São elas:
 
