@@ -6,8 +6,6 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
-
 # Páginas de Tainacan
 
 Con el plugin Tainacan activado en el WordPress, el propio plugin crea las siguientes páginas especiales:
