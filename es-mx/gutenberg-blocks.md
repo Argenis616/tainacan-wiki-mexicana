@@ -28,7 +28,7 @@ Tainacan no podía quedarse al margen, y utiliza esta herramienta para proporcio
 
 Para utilizar uno de los bloques, basta con editar una entrada o página y buscar en la lista de bloques disponibles uno de nuestros bloques. Éstos son:
 
-- [Lista de colecciones](/es-mx/blocks-collections#lista-de-coleções) _(estático)_;
+- [Lista de colecciones](/es-mx/blocks-collections#lista-de-colecciones) _(estático)_;
 - [Lista de Termos](/es-mx/blocks-terms#lista-de-termos) _(estático)_;
 - [Lista de Itens da Coleção](/es-mx/blocks-items#lista-de-itens-da-coleção);
 - [Galeria de Mídias do Item](/es-mx/blocks-item#galeria-de-midias-do-item);
