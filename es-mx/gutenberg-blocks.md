@@ -1,10 +1,10 @@
-# Blocos Gutenberg
+# Bloques Gutenberg
 
 ?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-## O que é esse tal Gutenberg?
+## ¿Qué es eso de Gutenberg?
 
-No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e Páginas, apelidado de Gutenberg:
+A finales de 2018, WordPress 5.0 presentó al mundo su nuevo editor de Posts y Páginas, apodado Gutenberg:
 
 <div style="text-align: center; font-size: 1.5rem;">
 
@@ -12,23 +12,23 @@ No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e
 
 </div>
 
-Focado em fornecer uma maneira dinâmica e visual para a editoração de conteúdo. Neste editor, todos os elementos de uma página, desde os mais simples parágrafos até a mais complexa galeria de imagens, são denominados **"Blocos"**. Com ele, fica fácil construir um post de lançamento de uma coleção, usando de imagens com diferentes alinhamentos, colunas, grades de texto, mapas, títulos ou botões mais chamativos. Além disso, [são diversos os plugins existentes](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para o WordPress que te oferecem novos blocos ricos e atraentes.
+Centrado en ofrecer una forma dinámica y visual de editar contenidos. En este editor, todos los elementos de una página, desde los párrafos más sencillos hasta la galería de imágenes más compleja, se denominan **"Bloques "**. Con él, es fácil construir un post de lanzamiento para una colección, utilizando imágenes con diferentes alineaciones, columnas, cuadrículas de texto, mapas, títulos o botones más llamativos. Además, [existen muchos plugins](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para WordPress que ofrecen nuevos bloques ricos y atractivos.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
+![Lista de bloques de Tainacan Gutenberg](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
 
 </div>
 
-## Os Blocos Tainacan
+## Los bloques de Tainacan
 
-O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer blocos dedicados ao conteúdo gerado no seu repositório.
+Tainacan no podía quedarse al margen, y utiliza esta herramienta para proporcionar bloques dedicados a los contenidos generados en su repositorio.
 
-> Combinando os blocos Gutenberg com seu conteúdo Tainacan, fica simples criar narrativas, contar histórias e apresentar o seu acervo digital de maneira acessível ao mundo.
+> La combinación de bloques Gutenberg con su contenido Tainacan hace que sea sencillo crear narraciones, contar historias y presentar su colección digital de forma accesible al mundo.
 
-Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
+Para utilizar uno de los bloques, basta con editar una entrada o página y buscar en la lista de bloques disponibles uno de nuestros bloques. Éstos son:
 
-- [Lista de Coleções](/es-mx/blocks-collections#lista-de-coleções) _(estático)_;
+- [Lista de colecciones](/es-mx/blocks-collections#lista-de-coleções) _(estático)_;
 - [Lista de Termos](/es-mx/blocks-terms#lista-de-termos) _(estático)_;
 - [Lista de Itens da Coleção](/es-mx/blocks-items#lista-de-itens-da-coleção);
 - [Galeria de Mídias do Item](/es-mx/blocks-item#galeria-de-midias-do-item);
