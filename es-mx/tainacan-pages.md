@@ -51,9 +51,9 @@ Esta es generalmente la página más importante de una instalación de Tainacan.
 
 Toma en cuenta que la lista de elementos es la página de una colección en sí misma. Si haces clic en una colección en la lista de colecciones del sitio, irá a esa lista. Sin embargo, es posible que prefieras tener una [página de presentación personalizada](/es-mx/gutenberg-blocks), por ejemplo, para luego redirigir a tu lista de elementos. Esto también se puede modificar en el formulario de configuración de tu colección, en la opción "Página de presentación".
 
-### Páginas de elementos de un término
+### Páginas de elementos de una condición
 
-`/nombre-taxonomía/nombre-término`
+`/nombre-taxonomía/nombre-condición`
 
 De manera similar a la lista de elementos de una colección, esta página muestra todos los elementos que tienen algunos metadatos de tipo taxonomía y que tienen un término específico en estos metadatos. La principal diferencia con la lista de colección es que el encabezado tendrá la imagen y descripción del término, configurable en su forma de edición.
 
