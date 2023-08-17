@@ -2,8 +2,8 @@
 
 Si su repositorio tiene varias colecciones, puede ser una buena idea presentarlas en la página de inicio o en un post de introducción a la colección. Para estas situaciones, merece la pena utilizar un bloque de colección. Tainacan ofrece actualmente dos de ellos:
 
-1.El [carrusel de colecciones](#carrusel-de-colecciones)
-2.La [lista de colecciones](#lista-de-colecciones) _(Estático)_
+1. El [carrusel de colecciones](#carrusel-de-colecciones)
+2. La [lista de colecciones](#lista-de-colecciones) _(Estático)_
 
 ---
 
