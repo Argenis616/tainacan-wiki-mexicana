@@ -5,7 +5,7 @@ Los bloques de elementos son una forma de mostrar una vista previa o lo más des
 1. [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) _(Dinâmico)_
 2. [Carrusel de elementos](#carrusel-de-elementos)
 3. [Barra de búsqueda Tainacan](#barra-de-búsqueda)
-4. [Búsqueda por aspectos](#búsqueda-por-atributos) _(A Lista de Itens Completa)_
+4. [Búsqueda por aspectos](#búsqueda-por-aspectos) _(A Lista de Itens Completa)_
 
 ---
 
@@ -149,9 +149,9 @@ Pero no tenemos por qué detenernos ahí. De forma similar a los bloques [Lista 
 !> La Barra de Búsqueda es uno de los pocos bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea una, se desactiva la opción de insertar una nueva.
 ---
 
-## Búsqueda por atributos
+## Búsqueda por aspectos
 
-La **Busqueda por atributos** es el bloque más complejo que ofrece el plugin. Con él puedes mostrar, en cualquier página o entrada, la Lista completa de Elementos tal y como se ve en la imagen [Páginas de elementos](/es-mx/tainacan-pages#las-páginas-especiales-de-tainacan) de Tainacan, incluyendo la posibilidad de aplicar filtros, búsqueda avanzada, cambiar los modos de visualización y ordenación, así como la paginación. Es una forma práctica de ofrecer todas estas funcionalidades en una sola página si estás usando un Tema que no ha implementado soporte para estas páginas especiales que registra el plugin, o quieres personalizar mucho el resto de la plantilla. También es una alternativa más versátil al `shortcode` que se sugirió anteriormente para mostrar esta lista. Véase más abajo:
+La **Busqueda por aspectos** es el bloque más complejo que ofrece el plugin. Con él puedes mostrar, en cualquier página o entrada, la Lista completa de Elementos tal y como se ve en la imagen [Páginas de elementos](/es-mx/tainacan-pages#las-páginas-especiales-de-tainacan) de Tainacan, incluyendo la posibilidad de aplicar filtros, búsqueda avanzada, cambiar los modos de visualización y ordenación, así como la paginación. Es una forma práctica de ofrecer todas estas funcionalidades en una sola página si estás usando un Tema que no ha implementado soporte para estas páginas especiales que registra el plugin, o quieres personalizar mucho el resto de la plantilla. También es una alternativa más versátil al `shortcode` que se sugirió anteriormente para mostrar esta lista. Véase más abajo:
 
 ### Ajustes iniciales del bloque
 
