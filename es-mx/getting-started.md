@@ -16,7 +16,7 @@ En el panel de administración de mi sitio de WordPress, ya tengo instalado el c
 
 En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
-![Creando una colección](_assets/gifs/getting-started-1.gif)
+![Creando una colección](/es-mx/_assets/gifs/getting-started-1.gif)
 
 ## Configuración de metadatos de la colección
 
