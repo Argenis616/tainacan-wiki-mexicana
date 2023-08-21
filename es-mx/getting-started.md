@@ -12,11 +12,11 @@ Digamos que tengo una colección de fotos que quiero exponer al mundo. En mi sit
 
 En el panel de administración de mi sitio de WordPress, ya tengo instalado el complemento (plug-in) Tainacan y puedo acceder a él desde la barra lateral:
 
-![Ingresando como administrador en Tainacan](/es-mx/_assets/gifs/getting-started-0.gif)
+![Ingresando como administrador en Tainacan](_assets/gifs/getting-started-0.gif)
 
 En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
-![Creando una colección](/es-mx/_assets/gifs/getting-started-1.gif)
+![Creando una colección](_assets/gifs/getting-started-1.gif)
 
 ## Configuración de metadatos de la colección
 
@@ -34,7 +34,7 @@ Cuando entramos en la página de metadatos, vemos que los dos primeros metadatos
 - **Máquina fotográfica** - _Tipo Texto simple_ - El nombre de la máquina utilizada para la foto;
 - **Categoría** - _Tipo de taxonomía_ - Una categoría de fotos;
 
-![Creación de metadatos](/es-mx/_assets/gifs/getting-started-2.gif)
+![Creación de metadatos](_assets/gifs/getting-started-2.gif)
 
 Para la “Categoría” elegí un metadato de tipo taxonomía. ¿Por qué? Bueno, vale la pena pensar, ¿qué es una categoría? Para mi colección, es un conjunto de términos que utilizo para describir una foto; estos términos pueden tener relaciones jerárquicas, como categorías principales y categorías secundarias, además de que aparecen nuevos según las nuevas fotos que llegan a mi colección. Esto encaja como anillo al dedo en lo que definimos como Taxonomías en Tainacan. Pero para crear un metadato de tipo “Taxonomía”, primero necesito configurarla como se explica a continuaciónPara la “Categoría” elegí un metadato de tipo taxonomía. ¿Por qué? Bueno, vale la pena pensar, ¿qué es una categoría? Para mi colección, es un conjunto de términos que utilizo para describir una foto; estos términos pueden tener relaciones jerárquicas, como categorías principales y categorías secundarias, además de que aparecen nuevos según las nuevas fotos que llegan a mi colección. Esto encaja como anillo al dedo en lo que definimos como Taxonomías en Tainacan. Pero para crear un metadato de tipo “Taxonomía”, primero necesito configurarla como se explica a continuación.
 
