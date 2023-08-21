@@ -81,7 +81,7 @@ En general, los errores en procesos como los importadores y exportadores se regi
 
 ### Creo que mi instalación tarda demasiado en cargar los elementos. ¿Se puede mejorar?
 
-Si tu colección es pequeña y sencilla, entonces es muy probable que haya algún problema y se puede discutir en el foro de soporte. Si tu base de datos tiene miles de artículos, con docenas de metadatos, entonces las razones de la ralentización pueden tener que ver con el servidor o con la configuración de búsqueda actual. Te sugerimos una lectura detallada [de esta página](/es-mx/optimization) que te guiará a través de algunas opciones sobre problemas de rendimiento.
+Si tu colección es pequeña y sencilla, entonces es muy probable que haya algún problema y se puede discutir en el foro de soporte. Si tu base de datos tiene miles de artículos, con docenas de metadatos, entonces las razones de la ralentización pueden tener que ver con el servidor o con la configuración de búsqueda actual. Te sugerimos una lectura detallada de [esta página](/es-mx/optimization) que te guiará a través de algunas opciones sobre problemas de rendimiento.
 
 ---
 
