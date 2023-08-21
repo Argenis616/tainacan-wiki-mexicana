@@ -1,7 +1,5 @@
 # Envío de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
-
 La [versión _0.17_](/es-mx/releases#tainacan-beta-017) de Tainacan incorpora la posibilidad de abrir colecciones para el envío público de elementos (también denominado _autodepósito_). Esto significa que los usuarios sin privilegios administrativos, o incluso los visitantes del sitio, pueden ahora crear ellos mismos elementos en una colección, **ampliando así las posibilidades de una colección colaborativa generada por varias personas**.
 
 Tras bambalinas el envío de elementos no es más que llevar el [formulario de creación de elementos](/es-mx/items#crear-elementos), con los [metadatos configurados en la colección](/es-mx/metadata#tipos-de-metadatos), a una página pública del sitio. Esto se hace a través de un [bloque gutenberg](/es-mx/gutenberg-blocks) y alguna configuración extra. En estas páginas, explicaremos cómo configurar el formulario público de envío de artículos. Luego abordaremos:
