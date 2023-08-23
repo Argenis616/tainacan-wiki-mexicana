@@ -78,19 +78,19 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 12. El campo “Slug” permite cambiar la URL de esta “colección”. Por defecto se crea a partir del nombre de la “colección”, pero se puede cambiar en este campo;
 
-    ![Acesse o painel de controle](_assets/images/063.png)
+    ![Acesse o painel de controle](_assets/images/012.png)
 
 13. Haz clic en “Guardar e ir a Metadatos” para acceder a la configuración de metadatos de esta “colección”. Consulta Metadatos para obtener más información;
 
-    ![Acesse o painel de controle](_assets/images/062.png)
+    ![Acesse o painel de controle](_assets/images/013.png)
 
 14. O haz clic en "Guardar e ir a Filtros" para acceder a la configuración de filtros para esta "colección". Consulta Filtros para obtener más información;
 
-    ![Acesse o painel de controle](_assets/images/061.png)
+    ![Acesse o painel de controle](_assets/images/014.png)
 
 15. Haz clic en "Finalizar" para terminar de configurar esta nueva "colección".
 
-    ![Acesse o painel de controle](_assets/images/060.png)
+    ![Acesse o painel de controle](_assets/images/015.png)
 
 ## Editar colecciones
 
@@ -104,11 +104,11 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 3. Haz clic en "Ver todas las colecciones";
 
-   ![Acesse o painel de controle](_assets/images/056.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 4. En la sección "Colecciones", haz clic en el "ícono de engranaje" a la derecha para editar la "colección" deseada.
 
-   ![Acesse o painel de controle](_assets/images/058.png)
+   ![Acesse o painel de controle](_assets/images/053.png)
 
 ## Eliminar colecciones
 
@@ -122,7 +122,7 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 3. Haz clic en "Ver todas las colecciones";
 
-   ![Acesse o painel de controle](_assets/images/056.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 4. En la lista de colecciones, haz clic en el "icono de papelera" para eliminar la colección deseada;
 
