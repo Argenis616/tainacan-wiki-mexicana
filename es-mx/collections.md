@@ -166,19 +166,19 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets/images/002.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Haz clic en "Ver todas las colecciones" para acceder a la "lista de colecciones" de tu repositorio;
 
-   ![Acesse o painel de controle](_assets/images/Ver_todas_colecoes.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 4. Para deshacer la eliminación de "colecciones", ve a la pestaña "Papelera";
 
-   ![Acesse o painel de controle](_assets/images/Colecoes_no_lixo.png)
+   ![Acesse o painel de controle](_assets/images/Ver_papelera.png)
 
 5. En la "lista de colecciones" que se muestra, haz clic en el "ícono de engranaje" a la derecha de la colección deseada;
 
-   ![Acesse o painel de controle](_assets/images/recuperar_colecao.png)
+   ![Acesse o painel de controle](_assets/images/Recuperar_coleccion.png)
 
 6. Edita la "configuración de la colección" cambiando el estado entre "Publicado" o "Privado" para eliminarlo de la "Papelera":
 
@@ -186,11 +186,11 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
    ○ **“Privado”**: Las “Colecciones privadas” solo aparecen para su creador y los usuarios registrados de su WordPress, que tienen el conjunto de permisos predeterminado. Puedes definir quién puede acceder a las "colecciones privadas" en Permisos de usuario.
 
-   ![Acesse o painel de controle](_assets/images/Alterar_status_colecao.png)
+   ![Acesse o painel de controle](_assets/images/Cambiar_estado_de_coleccion.png)
 
 7. Haz clic en "Finalizar" para guardar el cambio.
 
-   ![Acesse o painel de controle](_assets/images/Salvar_modificaoes_colecao.png)
+   ![Acesse o painel de controle](_assets/images/Guardar_modificaciones.png)
 
 ### Eliminar colecciones de forma permanente
 
@@ -200,16 +200,16 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets/images/002.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Haz clic en "Ver todas las colecciones" para acceder a la "lista de colecciones" de tu repositorio;
 
-   ![Acesse o painel de controle](_assets/images/Ver_todas_colecoes.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 4. Para deshacer la “eliminación de colecciones” accede a la pestaña “Papelera”;
 
-   ![Acesse o painel de controle](_assets/images/Colecoes_no_lixo.png)
+   ![Acesse o painel de controle](_assets/images/Ver_papelera.png)
 
 5. Haz clic en el "icono de papelera" junto al "icono de engranaje" y luego en "Confirmar para eliminar una colección de forma permanente".
 
-   ![Acesse o painel de controle](_assets/images/Excluir_colecao_permanentemente.png)
+   ![Acesse o painel de controle](_assets/images/Eliminar_permanentemente.png)
