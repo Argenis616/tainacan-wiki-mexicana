@@ -144,19 +144,19 @@ Para cada “colección” puedes configurar un conjunto diferente de metadatos,
 
 3. Haz clic en "Ver todas las colecciones" para acceder a la lista de "colecciones" en tu repositorio;
 
-   ![Acesse o painel de controle](_assets/images/Ver_todas_colecoes.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 4. Haz clic en la casilla de verificación (ubicada a la izquierda de las miniaturas de la colección) para elegir las que desees eliminar o haz clic en "Seleccionar todas las colecciones en la página";
 
-   ![Acesse o painel de controle](_assets/images/Selecionar_colecoes.png)
+   ![Acesse o painel de controle](_assets/images/Seleccionar_colecciones.png)
 
 5. Haz clic en "Acciones en lote" y luego haz clic en "Eliminar colecciones seleccionadas"
 
-   ![Acesse o painel de controle](_assets/images/Deletar_colecoes_selecionadas.png)
+   ![Acesse o painel de controle](_assets/images/Borrar_las_colecciones_seleccionadas.png)
 
 6. Para ver las "colecciones eliminadas" ve a la pestaña "Papelera" en "Colecciones".
 
-   ![Acesse o painel de controle](_assets/images/055.png)
+   ![Acesse o painel de controle](_assets/images/Ver_papelera.png)
 
 ### Recuperar colecciones eliminadas
 
