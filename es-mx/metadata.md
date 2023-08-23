@@ -58,15 +58,15 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
 1. Inicia sesión en WordPress con tu _"nombre de usuario"_ y _"contraseña"_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En el _“panel administrativo”_ da clic en _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Da clic en _“Metadatos del repositorio”_;
 
-   ![Acesse o painel de controle](_assets\images\070.png)
+   ![Acesse o painel de controle](_assets/images/070.png)
 
 4. Para crear un nuevo metadato, simplemente elige el _“tipo de metadato”_ del listado que aparece en la columna de la derecha, arrástralo y suéltalo al final de la lista de metadatos que ya están creados. El nuevo metadato aparecerá en último lugar de la lista de metadatos del repositorio.  También puedes utilizar la función de arrastrar y soltar para _“ordenar los metadatos”_ durante su creación.
 
@@ -77,29 +77,29 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
 1. Inicia sesión en WordPress con tu _"nombre de usuario"_ y _"contraseña"_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En el _“panel administrativo”_ da clic en _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Crea una _"colección"_ como se indica en la sección _“Crear colecciones”_;
 
 4. Entra a la _“colección”_ que creaste y haz clic en _“Metadatos”_;
 
-   ![Acesse o painel de controle](_assets\images\064.png)
+   ![Acesse o painel de controle](_assets/images/064.png)
 
 5. Para _"crear nuevos metadatos"_, simplemente elige el tipo de metadato que quieres crear y arrástralo a la lista de la izquierda, donde ya están los _“metadatos por defecto”_ de la colección.  El nuevo metadato aparecerá en último lugar en esta lista. También puedes utilizar la función de arrastrar y soltar para acomodar los metadatos en el orden que prefieras. Ver [tipos de metadatos](/es-mx/metadata.md#tipos-de-metadatos) para conocer cuál es el _“metadato”_ más adecuado para cada tipo de información;
 
 6. Cada _“metadato”_ tiene que configurarse individualmente, eligiendo los ajustes y funciones posibles. A continuación describimos las funciones generales que se pueden configurar en prácticamente todos los metadatos. Consulta el área de metadatos para aprender a utilizar ajustes específicos (enlace);
 
-   ![Acesse o painel de controle](_assets\images\071.png)
+   ![Acesse o painel de controle](_assets/images/071.png)
 
    **“Nombre”**: Aquí hay que escribir el nombre del metadato, por ejemplo: _“Título”_, _“Creador”_, _"Estado de conservación"_, etc;
 
    **“Descripción”**: Breve descripción, útil para describir o explicar cómo debe llenarse este metadato. Durante el llenado, quien esté capturando la información podrá ver la descripción si pasa el cursor sobre el signo de interrogación que está al lado del metadato;
 
-   ![Acesse o painel de controle](_assets\images\descricao_metadado.png)
+   ![Acesse o painel de controle](_assets/images/descricao_metadado.png)
 
    **“Marcador de posición”**: Campo utilizado por metadatos con campo de texto para dar una breve instrucción sobre cómo llenarlo. Se trata de un mensaje sencillo que aparecerá dentro del campo de texto y que puede indicar al usuario qué tipo de información se espera. Por ejemplo: _“Escriba su nombre completo aquí…”_.
 
@@ -139,19 +139,19 @@ A continuación, describimos cada uno de los _"tipos de metadatos"_ disponibles 
 
 Conocido también como _“texto corto”_, se recomienda el uso de este metadato para información que consista en un texto breve en formato libre y sin saltos de línea. No tiene un número límite de caracteres, pero solo permite insertar un texto corrido, sin separación de párrafos;
 
-![Acesse o painel de controle](_assets\images\066.png)
+![Acesse o painel de controle](_assets/images/066.png)
 
 ### Área de texto
 
 Conocido también como _“texto largo”_, este metadato se usa para insertar texto en formato libre. Permite la inserción de párrafos;
 
-![Acesse o painel de controle](_assets\images\067.png)
+![Acesse o painel de controle](_assets/images/067.png)
 
 ### Fecha
 
 Para _"metadatos"_ de fechas completas en el formato _“DD/MM/AAAA”_. Si no tiene la fecha completa, se sugiere elegir otros campos para ingresar fechas, como _"metadato numérico"_ o _"metadato de texto corto"_. Cuando se usa el metadato de tipo _“fecha”_, permite la recuperación de _"elementos"_ por intervalos de tiempo en dos tipos de filtros. Revisa los filtros disponibles para cada tipo de metadatos para obtener más información;
 
-![Acesse o painel de controle](_assets\images\076.png)
+![Acesse o painel de controle](_assets/images/076.png)
 
 ### Numérico
 
@@ -193,7 +193,7 @@ Los _"metadatos de tipo **Taxonomía**"_ utilizan una _"taxonomía"_ creada de a
 
 4.Elige el tipo de entrada de información que se desplegará para rellenar los valores de los _"metadatos"_;
 
-![Acesse o painel de controle](_assets\images\077.png)
+![Acesse o painel de controle](_assets/images/077.png)
 
 ​■**Entrada de tipo**  **etiqueta**:
 
@@ -209,17 +209,17 @@ Este tipo de entrada ajuda o usuário a saber quais são os termos disponíveis 
 
 5.Marca la opción _"Lista de opciones siempre visible"_ si quieres que, durante el llenado, la lista de opciones esté siempre visible. Esta opción solo está disponible para la entrada de tipo _"Casilla de verificación";_
 
-![Acesse o painel de controle](_assets\images\080.png)
+![Acesse o painel de controle](_assets/images/080.png)
 
 6.Si es necesario, activa _"Permitir nuevos términos"_ para autorizar la creación de nuevos términos para la _"Taxonomía"_ durante el registro de "elementos".
 
-![Acesse o painel de controle](_assets\images\081.png)
+![Acesse o painel de controle](_assets/images/081.png)
 
 ■**“Enlace filtrado a la colección”**
 
 Los términos de una _"taxonomía"_ se convierten en elementos, esto ofrece al usuario la posibilidad de hacer una búsqueda facetada de la colección (es decir, seleccionar un término para hacer la búsqueda). Por ejemplo: en una ficha de una moneda de oro, haciendo clic en el enlace que hace referencia al término _"oro"_ el visitante tendrá acceso a todos los _"elementos"_ que se clasificaron con el mismo material. Como una _"Taxonomía"_ puede ser compartida entre diferentes _"colecciones"_ en Tainacan, se puede configurar si el enlace del _"elemento"_ dará acceso a ítems de otras colecciones o solo de la colección a la que pertenece el elemento.
 
-![Acesse o painel de controle](_assets\images\082.png)
+![Acesse o painel de controle](_assets/images/082.png)
 
 ### Metadato de relación
 
@@ -291,21 +291,21 @@ Como se detalla en la sección de creación de metadatos, estos se pueden crear 
 
 1. Accede al _"Panel de control"_ de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Da click en _“Metadatos del repositorio”_ (metadatos que heredan todas las colecciones);
 
-   ![Acesse o painel de controle](_assets\images\085.png)
+   ![Acesse o painel de controle](_assets/images/085.png)
 
    !>**Atención**: Modificaciones en la configuración de _“metadatos a nivel de repositorio”_ que se hagan después de haber capturado datos, pueden afectar los datos ya completados y la información sobre los elementos que se crearán o ya se han creado en todo el repositorio.
 
 4. Da clic en el _"icono de lápiz"_ a la derecha del _“metadato”_ que deseas editar;
 
-   ![Acesse o painel de controle](_assets\images\086.png)
+   ![Acesse o painel de controle](_assets/images/086.png)
 
 5. Cuando termines de hacer cambios, haz clic en _"Guardar"_ o en _"Cancelar"_ si no quieres conservar esa modificación;
 
@@ -315,23 +315,23 @@ Como se detalla en la sección de creación de metadatos, estos se pueden crear 
 
 1. Accede al _"Panel de control"_ de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Da clic en la _“colección”_ que deseas editar;
 
-   ![Acesse o painel de controle](_assets\images\087.png)
+   ![Acesse o painel de controle](_assets/images/087.png)
 
 4. Da clic en _"metadatos"_;
 
-![Acesse o painel de controle](_assets\images\088.png)
+![Acesse o painel de controle](_assets/images/088.png)
 
 5. Da clic en el  _"icono de lápiz"_ para editar el _“metadato”;_
 
-   ![Acesse o painel de controle](_assets\images\089.png)
+   ![Acesse o painel de controle](_assets/images/089.png)
 
 !>**Atención**: Una vez creado, no se puede cambiar el _“Tipo de Metadato”_.  Es decir, no se puede cambiar un _“metadato”_  del tipo _"Texto"_ para convertirlo en _"Texto largo"_ o _"Numérico"_ o _“Fecha"_. Por eso es importante definir desde el inicio el tipo que tendrá cada metadato. Si en algún momento es necesario modificar el tipo de un metadato, habrá que eliminarlo y crearlo de nuevo con el tipo correcto.
 
@@ -341,19 +341,19 @@ Borrar _“Metadatos a nivel de repositorio”_:
 
 1. Accede al _"Panel de control"_ de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Da clic en _“Metadatos del repositorio”_ (metadatos que heredan todas las colecciones);
 
-   ![Acesse o painel de controle](_assets\images\085.png)
+   ![Acesse o painel de controle](_assets/images/085.png)
 
 4. Da clic en el _“icono de papelera”_ a la derecha del _“metadato”_ que deseas eliminar;
 
-   ![Acesse o painel de controle](_assets\images\090.png)
+   ![Acesse o painel de controle](_assets/images/090.png)
 
 !>**Atención*: Al hacer clic en el _"icono de papelera"_, los metadatos se eliminan inmediatamente. Esta operación no se puede deshacer. Eliminar _“metadatos a nivel de repositorio”_ afectará todos los datos ya rellenados y la información de los _"elementos"_ que se han creado en todo el repositorio. Antes de borrar un _“metadato”_, se recomienda deshabilitarlo temporalmente (hasta que se tenga la certeza de que el borrado no supondrá pérdida de información). Borra el _“metadato”_ solo si estás seguro de que no habrá una pérdida grave de información. Ver [Registro de actividad](/es-mx/activities) para saber más.
 
@@ -361,24 +361,24 @@ Borrar _“Metadatos a nivel de repositorio”_:
 
 1. Accede al _"Panel de control"_ hacer WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _"Tainacan"_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](_assets/images/051.png)
 
 3. Da clic en la _"colección"_ que deseas editar;
 
-   ![Acesse o painel de controle](_assets\images\087.png)
+   ![Acesse o painel de controle](_assets/images/087.png)
 
 4. Da clic en _“metadatos”;_
 
-   ![Acesse o painel de controle](_assets\images\088.png)
+   ![Acesse o painel de controle](_assets/images/088.png)
 
 5. Da clic en el _"icono de papelera"_ que está al lado del _“metadato”_ para eliminarlo;
 
-   ![Acesse o painel de controle](_assets\images\091.png)
+   ![Acesse o painel de controle](_assets/images/091.png)
 
 !>**Atención:** Borrar _“Metadatos a nivel de colección”_ afecta la información de todos los _"elementos"_ creados en esta _“colección”_. En la pantalla de edición de _“Metadatos”_ (a nivel de repositorio o a nivel de colección), es posible visualizar los _“metadatos ya creados”_ (o heredados) en la columna de la izquierda. La exclusión de un _“metadato”_ implica también la exclusión de sus valores en todos los _"elementos"_ que tienen este _“metadato”_. Antes de borrarlo, se recomienda que solo se deshabilite (hasta que se tenga la certeza de que el borrado no supondrá pérdida de información). Para _“deshabilitar un metadato”_, simplemente haz clic en el botón junto al _"bolígrafo de edición"_, esto ocultará el _“metadato”_ y todos sus valores, pero se recuperarán si se habilita de nuevo.
 
-![Acesse o painel de controle](_assets\images\092.png)
+![Acesse o painel de controle](_assets/images/092.png)
