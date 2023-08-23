@@ -23,21 +23,21 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Acesse o painel de controle](_assets/images/052.png)
 
 3. En la sección "Colecciones", haz clic en la "colección" deseada;
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Seleccionar_coleccion.png)
 
 4. Haz clic en “Agregar nuevo” en la esquina superior izquierda y selecciona la opción deseada:
 
    ● Haz clic en "Agregar un elemento" para enviar solo un "elemento";
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Adicionar_novo.png)
+   ![Acesse o painel de controle](_assets/images/Añadir_un_elemento.png)
 
    ● Haz clic en "Agregar ítems en bloque" para agregar un conjunto de ítems. Consulta Acciones masivas para obtener más información;
 
@@ -96,7 +96,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    ● **“Privado”:** El "ítem" solo es visible para los editores de la colección. Consulta Permisos de usuario para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Status_item.png)
+   ![Acesse o painel de controle](_assets/images/Crear_elemento_estado.png)
 
 8. Define si el “ítem” puede recibir comentarios;
 
@@ -104,7 +104,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    b. Los comentarios se pueden administrar en la sección de comentarios del "panel de control de WordPress". Puedes obtener más información en la documentación de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Permitir_Comentarios.png)
+   ![Acesse o painel de controle](_assets/images/Añadir_elemento_permitir_comentarios.png)
 
 9. Rellena los campos disponibles en la sección de metadatos:
 
@@ -129,22 +129,22 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
     ● **“Descartar”**: La creación del “ítem” se interrumpe y los campos rellenados no se guardarán.
 
-    ![Acesse o painel de controle](_assets\images\Criar_Itens_Descastar_Rascunho_Salvar.png)
+    ![Acesse o painel de controle](_assets/images/Añadir_elemento_guardar_descartar_borrador.png)
 
 #### ** Editar **
 ## Editar elementos
 
 1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Acesse o painel de controle](_assets/images/002.png)
 
 3. En la sección "colecciones", haz clic en la "colección" deseada;
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Selecao_Colecao.png)
 
 4. Haz clic en el "icono de lápiz" ubicado junto a la información del "ítem" que deseas editar:
 
@@ -154,7 +154,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    ● Los "elementos" no se pueden migrar de una "colección" a otra.
 
-   ![Acesse o painel de controle](_assets\images\Editar_Itens_Selecionar_Lapis.png)
+   ![Acesse o painel de controle](_assets/images/Editar_Itens_Selecionar_Lapis.png)
 
 5. Para terminar de editar el “ítem”, elige entre las siguientes opciones:
 
@@ -164,22 +164,22 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    ● **“Volver a borrador”**: El "elemento" se convertirá en "Borrador".
 
-   ![Acesse o painel de controle](_assets\images\Editar_itens_lixeira_rascunho_atualizar.png)
+   ![Acesse o painel de controle](_assets/images/Editar_itens_lixeira_rascunho_atualizar.png)
 
 #### ** Eliminar **
 ## Eliminar elementos
 
 1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Acesse o painel de controle](_assets/images/002.png)
 
 3. En la sección "colecciones", haz clic en la "colección" deseada;
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Selecao_Colecao.png)
 
 4. Haz clic en el "icono de papelera" ubicado junto a la información del "ítem" que deseas eliminar. Puede usar "filtros" o el "campo de búsqueda" para ubicar el "ítem”:
 
@@ -187,7 +187,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    !>**Atención**: Elimina el "ítem" solo si estás seguro de que no habrá una pérdida grave de información. Consulta Registro de actividad para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Editar_Itens_Selecionar_Lixeira.png)
+   ![Acesse o painel de controle](_assets/images/Editar_Itens_Selecionar_Lixeira.png)
 
 ### Restaurar elementos de la papelera
 
@@ -195,11 +195,11 @@ Cuando eliminas un "ítem" de una"colección" en Tainacan, se envía a la papele
 
 1. Los archivos enviados a la papelera están disponibles en la pestaña _"Papelera"_ de la colección;
 
-   ![Acesse o painel de controle](_assets\images\Restaurar_Item_da_Lixeira.png)
+   ![Acesse o painel de controle](_assets/images/Restaurar_Item_da_Lixeira.png)
 
 2. Haz clic en la flecha ubicada a la izquierda del _"icono de papelera"_ de cada _"elemento"_ que quieres restaurar. Al restaurar un _"elemento"_ de la papelera de reciclaje, vuelve a su estado anterior, _"publicado"_ o _"privado"_.
 
-   ![Acesse o painel de controle](_assets\images\Restaurar_botão.png)
+   ![Acesse o painel de controle](_assets/images/Restaurar_botão.png)
 
 ### Borrar permanentemente
 
@@ -207,10 +207,10 @@ Cuando eliminas un _"elemento"_ de una _"colección"_ en Tainacan, se envía a l
 
 1. Los archivos enviados a la papelera están disponibles en la pestaña _"Papelera" de la "colección"_;
 
-   ![Acesse o painel de controle](_assets\images\Deletar_Item_da_Lixeira.png)
+   ![Acesse o painel de controle](_assets/images/Deletar_Item_da_Lixeira.png)
 
 2. Haz clic en el _"icono de papelera"_, ubicado a la derecha de la información en el _"elemento"_. Si eliminas permanentemente un _"elemento"_, no será posible recuperarlo.
 
-   ![Acesse o painel de controle](_assets\images\Deletar_Permanente_Item.png)
+   ![Acesse o painel de controle](_assets/images/Deletar_Permanente_Item.png)
    
 <!-- tabs:end -->
