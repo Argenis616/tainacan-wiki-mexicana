@@ -1,8 +1,8 @@
 # Template Tags
 
-Just as WordPress has its [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore"), Tainacan has its own of this kind, which are essential PHP functions for theme developers who want to display content from the database and display them in nice HTML format.
+Al igual que WordPress tiene sus [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore"), Tainacan tiene las suyas propias de este tipo, que son funciones PHP esenciales para los desarrolladores de temas que quieran mostrar contenidos de la base de datos y mostrarlos en un bonito formato HTML.
 
-In this documentation, you will see a technical list of our most important Template Tags. Some of them have their usage better demonstrated in the [Theme Development and Extension](/dev/#theme-development-or-extension) and others may also be worth checking code examples from [our compatible themes](/theme).
+En esta documentación, verá una lista técnica de nuestras Etiquetas de Plantilla más importantes. Algunos de ellos tienen su uso mejor demostrado en el [Theme Development and Extension](/dev/#theme-development-or-extension) y otros también puede valer la pena comprobar ejemplos de código de [nuestros temas compatibles](/theme).
 
 ?> _TODO_ List the Template Tags here instead of linking to GitHub;
 
