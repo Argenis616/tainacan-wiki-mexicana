@@ -1,6 +1,5 @@
 # CLI: interfaz de línea de comandos de Tainacan
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 El WP-CLI (https://wp-cli.org/) es la interfaz de línea de comandos para WordPress. Desde esta interfaz puedes actualizar complementos, configurar instalaciones y mucho más sin usar un navegador web.
 
