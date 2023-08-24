@@ -6,7 +6,6 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 # Filtros
 
@@ -109,17 +108,17 @@ Cada _“tipo de metadato”_ ofrece diferentes _“tipos de filtros”_, como s
 
 1. Accede al Panel de Control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+   ![Acesse o painel de controle](_assets/images/Panel_Adm_Wordpress.png)
 
 2. En la barra lateral izquierda, haz clic en _“Tainacan”_:
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acesse o painel de controle](_assets/images/Panel_Acceso_Tainacan.png)
 
 3. Filtros a nivel de _“repositorio”_:
 
    ○ Haz clic en "Filtros de repositorio" para configurar los "filtros" que heredarán todas las "colecciones". Deben estar diseñados para permitir la navegación a partir de información global con vocabularios controlados. Por ejemplo: “Tipo de archivo”, “Fecha de registro del elemento”, “Estado de conservación”, etc.
 
-   ![Acesse o painel de controle](_assets\images\Acessar_Filtros_Repositorio.png)
+   ![Acesse o painel de controle](_assets/images/Acceder_Filtros_Repositorio.png)
 
 4. Filtros a nivel de **colecciones**.
 
@@ -127,11 +126,11 @@ Cada _“tipo de metadato”_ ofrece diferentes _“tipos de filtros”_, como s
 
    ○ Crea o elige la "colección" en la que deseas crear nuevos filtros. Consulta "Crear colección" y "Crear metadatos" para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Seleccionar_coleccion_filtros.png)
 
    I. En la barra superior de la “colección” seleccionada haz clic en “Filtros”;
 
-   ![Acesse o painel de controle](_assets\images\Acessar_Filtros_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Acceder_Filtros_Coleccion.png)
 
    II. Para crear “filtros a nivel de colección” es necesario haber creado previamente “metadatos” en la respectiva “colección” (ver Crear metadatos), y entonces estos “metadatos” estarán disponibles para ser configurados como “filtros”.
 
@@ -143,17 +142,17 @@ No hay ninguna diferencia en el proceso de creación de _"filtros a nivel de rep
 
 1. Elige un _“metadato”_ de la lista de _“Metadatos disponibles”_;
 
-   ![Acesse o painel de controle](_assets\images\Criar_FIltro_Repositorio_Metadados_Disponiveis.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Metadatos_Disponibles.png)
 
 2. Selecciona y arrastra hacia la izquierda un _“metadato”_ para la creación del _"filtro"_:
 
    I. Aparecerá una pantalla para elegir el “tipo de filtro”. Los “tipos de filtros” varían en función de los “tipos de metadatos”. Consulta Tipos de filtros disponibles o Tipos de metadatos para obtener más información;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Selecao_Tipo.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Seleccion_Tipo.png)
 
    II. Puedes obtener una vista previa de cómo se verá cada "filtro" en la página de la "colección". Para hacerlo, pasa el ratón por encima de cada tipo disponible para los “metadatos” seleccionados, como se ve en la imagen anterior.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Pre-visualizar_tipo.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Previsualizar.png)
 
 3. Selecciona el _"tipo de filtro"_ deseado. Se abrirá una pantalla de configuración del _"filtro"_. Rellena los campos:
 
@@ -165,11 +164,11 @@ No hay ninguna diferencia en el proceso de creación de _"filtros a nivel de rep
 
    > **Nota:** Los ajustes disponibles para cada _"filtro"_ creado varían según el _“tipo de filtro”_ y el _“tipo de metadatos”_. En caso de duda, haz clic en el _"icono de signo de interrogación"_ para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Configuracoes.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Configuraciones.png)
 
 4. Da clic en _"Guardar"_;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Salvar.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Guardar.png)
 
 5. Una vez guardado, el _"filtro"_ creado aparecerá en la barra lateral izquierda de la vista _"colección"_.
 
