@@ -1,6 +1,5 @@
 # Conceptos generales
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 En esta página presentamos algunos conceptos fundamentales para el uso cotidiano de Tainacan. Es importante decir que los términos que utilizamos fueron definidos por el equipo de investigación y desarrollo de Tainacan, pero dependiendo de tu área de especialización, pueden ser sinónimos de otros términos que conozcas.
 
