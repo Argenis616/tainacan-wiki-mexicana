@@ -1,6 +1,5 @@
 # Secciones de metadatos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 A partir de la versión 0.19, Tainacan cuenta con el recurso **Secciones de metadatos**. Proporcionan una forma de organizar largas listas de metadatos en agrupaciones visuales y estructurales que facilitan el proceso de catalogación de los datos de un ítem o elemento. En el panel de administración, las secciones de metadatos se muestran como paneles plegables, pero en la página pública de un elemento se pueden mostrar de diferentes maneras, dependiendo de la configuración del tema. Pueden, por ejemplo, mostrarse como pestañas, o dar prioridad a alguna sección dándole más prominencia visual que a otra.
 
