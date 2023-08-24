@@ -1,7 +1,5 @@
 # Plugin: Tipo de metadatos URL
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
-
 Este plugin amplía la funcionalidad del plugin Tainacan añadiendo soporte para un tipo de metadatos extra, útil para mostrar enlaces URL como contenido incrustado, ya sea a través de la función de auto-incrustación de _WordPress_ o forzando el uso de un iframe. Es una solución para aquellos interesados en tener más de un tipo de URL de documento o que esperan que los archivos adjuntos también acepten URLs.
 
 ## Instalación
