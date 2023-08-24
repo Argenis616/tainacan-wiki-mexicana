@@ -1,19 +1,19 @@
 # Plugin: PDF Exposer
 
-This plugin adds an exposer option for rendering **PDF files** containing information from items, similar to an archival report.
+Este plugin añade la opción de exposicón para renderizar **ficheros PDF** que contienen información de artículos, similar a un informe de archivo.
 
-## Introduction
+## Introducción
 
-By default, every Tainacan list or item offers what we call *Exposers* or *Alternative URLs*, which are ways to visualize your data in a different format, such as our own *JSON API*, a basic *HTML Table* and *CSV files*. They are acessible via the button "View as..". This plugin adds an extra exposer option, that renders a PDF file of the desired items list.
+Por defecto, cada lista o elemento de Tainacan ofrece lo que llamamos *Expositores* o *URLs alternativas*, que son formas de visualizar tus datos en un formato diferente, como nuestra propia *API JSON*, una *Tabla HTML* básica y *archivos CSV*. Son accesibles a través del botón "Ver como..". Este plugin añade una opción de exposición adicional, que muestra un archivo PDF de la lista de elementos deseada.
 
-## Instalation
+## Instalación
 
-Download the [.zip](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate/archive/master.zip) file from [the GitHub repository](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+Descarga el [.zip](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate/archive/master.zip) archivo de [el repositorio GitHub](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) y siga las instrucciones de instalación descritas en [nuestra sección de instalación de plugins](/es-mx/plugins#instalación-de-plugins).
 
-Activate our plugin on the *WordPress* administrative panel section for plugins.
+Active nuestro plugin en la sección de plugins del panel administrativo de *WordPress*.
 
-## Configuration
+## Configuración
 
 
-## Usage
+## Utilización
 
