@@ -1,6 +1,5 @@
 # Instalación y configuración
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 ## Antes de descargar
 
