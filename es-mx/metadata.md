@@ -99,7 +99,7 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
    **“Descripción”**: Breve descripción, útil para describir o explicar cómo debe llenarse este metadato. Durante el llenado, quien esté capturando la información podrá ver la descripción si pasa el cursor sobre el signo de interrogación que está al lado del metadato;
 
-   ![Acesse o painel de controle](_assets/images/descricao_metadado.png)
+   ![Acesse o painel de controle](_assets/images/descripcion_metadato.png)
 
    **“Marcador de posición”**: Campo utilizado por metadatos con campo de texto para dar una breve instrucción sobre cómo llenarlo. Se trata de un mensaje sencillo que aparecerá dentro del campo de texto y que puede indicar al usuario qué tipo de información se espera. Por ejemplo: _“Escriba su nombre completo aquí…”_.
 
