@@ -1,7 +1,5 @@
 # Plugins
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
-
 Tainacan es un _plugin_ para _WordPress_, lo que significa que mejora la funcionalidad de _WordPress_ con nuevas características. Esto forma parte de la filosofía de _WordPress_ de proporcionar una solución básica importante que pueda satisfacer a la mayoría de los usuarios y, al mismo tiempo, ofrecer la posibilidad de elegir extensiones para que se adapte mejor a las distintas necesidades. Lo mismo se aplica al propio Tainacan, que intenta aportar por defecto las principales funcionalidades de gestión y visualización de colecciones digitales, dejando algunas funcionalidades extra como _plugins para el plugin_.
 
 ## Plugins disponibles
