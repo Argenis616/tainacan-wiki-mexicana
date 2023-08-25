@@ -30,23 +30,23 @@ Los _"términos"_ pueden tener una _"descripción"_, un _"icono"_ o una _"imagen
 
 1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Da clic en _“Taxonomías”;_
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+   ![Accede al panel de control](_assets/images/093.png)
 
 4. Da clic en _“Nueva taxonomía”_;
 
-   ![Acesse o painel de controle](_assets\images\094.png)
+   ![Accede al panel de control](_assets/images/094.png)
 
 5. En la pestaña _“Taxonomía”_ llena los campos deseados:
 
-   ![Acesse o painel de controle](_assets\images\095.png)
+   ![Accede al panel de control](_assets/images/095.png)
 
    a) **“Nombre”**: nombre de la _“taxonomía”_;
 
@@ -70,17 +70,17 @@ Los _"términos"_ pueden tener una _"descripción"_, un _"icono"_ o una _"imagen
 
 6. Después de llenar esta información, haz clic en la pestaña _"Términos"_ y después en _"Crear nuevo término"_.
 
-   ![Acesse o painel de controle](_assets\images\096.png)
+   ![Accede al panel de control](_assets/images/096.png)
 
 ### Crear términos
 
 1.Haz clic en "Crear nuevo término";
 
-![Acesse o painel de controle](_assets\images\097.png)
+![Accede al panel de control](_assets/images/097.png)
 
 2.Llena los siguientes campos:
 
-![Acesse o painel de controle](_assets\images\098.png)
+![Accede al panel de control](_assets/images/098.png)
 
 a. **“Imagen de cabecera”**: es posible agregar una imagen que aparezca en la vista "término" de una "taxonomía", según la configuración y el tema adoptado. El tema predeterminado de Tainacan muestra la imagen de encabezado en la página de “término de taxonomía”;
 
@@ -98,15 +98,15 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 
 1. Accede al “panel de control” de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Haz clic en “Taxonomías”;
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+   ![Accede al panel de control](_assets/images/093.png)
 
 4. Haz clic en la “taxonomía” deseada en la “lista de taxonomías”:
 
@@ -118,29 +118,29 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 
 1.Accede al “panel de control” de WordPress;
 
-![Acesse o painel de controle](_assets\images\050.png)
+![Accede al panel de control](_assets/images/050.png)
 
 2.En la barra lateral izquierda, haz clic en “Tainacan”;
 
-![Acesse o painel de controle](_assets\images\051.png)
+![Accede al panel de control](_assets/images/051.png)
 
 3.Haz clic en “Taxonomías”;
 
-![Acesse o painel de controle](_assets\images\093.png)
+![Accede al panel de control](_assets/images/093.png)
 
 4.Haz clic en la “taxonomía” deseada en la “lista de taxonomías”;
 
 5.Haz clic en la pestaña "Términos";
 
-![Acesse o painel de controle](_assets\images\096.png)
+![Accede al panel de control](_assets/images/096.png)
 
 6.En la "lista de términos", selecciona el que quieres editar y haz clic en el "icono de lápiz" a la derecha para abrir los campos de edición para este "término";
 
-![Acesse o painel de controle](_assets\images\099.png)
+![Accede al panel de control](_assets/images/099.png)
 
 7.Haz modificaciones en los campos deseados;
 
-![Acesse o painel de controle](_assets\images\099.png)
+![Accede al panel de control](_assets/images/100.png)
 
 8.Haz clic en:
 
@@ -154,19 +154,19 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 
 1. Accede al “panel de control” de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Haz clic en “Taxonomías”;
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+   ![Accede al panel de control](_assets/images/093.png)
 
 4. Haz clic en el "icono de papelera" a la derecha de la "taxonomía" que deseas eliminar;
 
-![Acesse o painel de controle](_assets\images\102.png)
+![Accede al panel de control](_assets/images/102.png)
 
 !>**Atención**: Aparecerá un mensaje para confirmar esta acción. La “eliminación de taxonomía” implica también la “eliminación de información” en “metadatos”, “ítems” y “colecciones” que utilizan esta “taxonomía”. Elimina la "taxonomía" solo si estás seguro de que no habrá una pérdida grave de información. Consulta Registro de actividad para obtener más información.
 
@@ -174,18 +174,18 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 
 1.Accede al “panel de control” de WordPress;
 
-![Acesse o painel de controle](_assets\images\050.png)
+![Accede al panel de control](_assets/images/050.png)
 
 2.En la barra lateral izquierda, haz clic en “Tainacan”;
 
-![Acesse o painel de controle](_assets\images\051.png)
+![Accede al panel de control](_assets/images/051.png)
 
 3.Haz clic en “Taxonomías”;
 
-![Acesse o painel de controle](_assets\images\093.png)
+![Accede al panel de control](_assets/images/093.png)
 
 4.Haz clic en el "icono de papelera" a la derecha del "término" que deseas eliminar;
 
-![Acesse o painel de controle](_assets\images\101.png)
+![Accede al panel de control](_assets/images/101.png)
 
 !>Atención: se mostrará un aviso para confirmar esta acción. La “exclusión del término” también implica la “exclusión de este valor” en “metadatos”, “ítems” y “colecciones” que utilicen esta “taxonomía”.
