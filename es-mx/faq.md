@@ -89,11 +89,11 @@ Si tu colección es pequeña y sencilla, entonces es muy probable que haya algú
 
 ### ¿Cuál es la diferencia entre wp.com y wp.org?
 
-wp.com o [wordpress.com](https://wordpress.com ":ignore") es una de las varias plataformas de alojamiento que ofrecen instalaciones y servidores preparados con WordPress. En cambio, [wordpress.org](https://wordpress.org ":ignore") es el sitio oficial del software libre WordPress, donde puedes encontrar información de instalación, documentación, enlaces a la comunidad, eventos y, entre estas cosas, también opciones de alojamiento. Pero su principal objetivo es proporcionar la herramienta que puede ser utilizada por cualquier persona para construir sitios en cualquier servicio de alojamiento.
+wp.com o [wordpress.com](https://wordpress.com ":ignore") es una de las varias plataformas de alojamiento que ofrecen instalaciones y servidores preparados con WordPress. En cambio, [wordpress.org](https://es-mx.wordpress.org/ ":ignore") es el sitio oficial del software libre WordPress, donde puedes encontrar información de instalación, documentación, enlaces a la comunidad, eventos y, entre estas cosas, también opciones de alojamiento. Pero su principal objetivo es proporcionar la herramienta que puede ser utilizada por cualquier persona para construir sitios en cualquier servicio de alojamiento.
 
 ### ¿Puedo usar Tainacan en mi blog wordpress.com?
 
-Sí, pero lamentablemente el [plan gratuito](https://wordpress.com/pricing/ ":ignore") de wordpress.com no permite instalar plug-ins. Para eso, tienes que utilizar un plan de pago. Recuerda que esta no es la única forma u opción de alojar sitios de WordPress.
+Sí, pero lamentablemente el [plan gratuito](https://wordpress.com/es/pricing/ ":ignore") de wordpress.com no permite instalar plug-ins. Para eso, tienes que utilizar un plan de pago. Recuerda que esta no es la única forma u opción de alojar sitios de WordPress.
 
 ### ¿Es posible instalar Tainacan en mi propia computadora?
 
