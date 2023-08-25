@@ -20,7 +20,7 @@ Una colección es un grupo de elementos (ítems) que comparten un conjunto comú
 
 > Por ejemplo: puede haber una colección para "cuadros" con metadatos como "Título", "Autor", "País", "Técnica", etc. y otra colección para "películas", con metadatos como "Título", "Director", "País", "Duración" y "Género"'.
 
-Para cada colección se puede configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que se pueden buscar ítems de un "país" y obtener resultados de "pinturas" y "películas" en los resultados porque ambas colecciones comparten la taxonomía “países”.
+Para cada colección se puede configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que se pueden buscar elementos de un "país" y obtener resultados de "pinturas" y "películas" en los resultados porque ambas colecciones comparten la taxonomía “países”.
 
 > Para tener información más detallada, consulta la sección de [taxonomías](#taxonomías).
 
@@ -30,13 +30,13 @@ Consulta el artículo completo sobre el uso de **colecciones** [aquí](/es-mx/co
 
 ## Ítems o elementos
 
-Los ítems o elementos son el contenido real del repositorio. El "cuadro", la "película", el "libro", etc. Estos elementos pertenecen a una colección y tienen los metadatos configurados para la colección a la que pertenecen.
+Los elementos son el contenido real del repositorio. El "cuadro", la "película", el "libro", etc. Estos elementos pertenecen a una colección y tienen los metadatos configurados para la colección a la que pertenecen.
 
 > En el lenguaje WordPress, cada elemento o ítem es un post y el tipo de post representa la colección a la que pertenece.
 
 ### Documento
 
-El documento es la información principal del ítem. Es el objeto al que se refieren los metadatos. Tainacan acepta tres tipos de documentos:
+El documento es la información principal del elemento. Es el objeto al que se refieren los metadatos. Tainacan acepta tres tipos de documentos:
 
 - **"Archivo"**: archivo añadido al elemento. Puede ser una imagen, vídeo, pdf, audio u otro tipo de archivo compatible.
 - **"URL"**: enlace de una página web con un contenido o archivo externo. Estos enlaces pueden ser a un sitio web genérico, a un archivo específico o a servicios multimedia. En el caso de los servicios multimedia (como YouTube, por ejemplo), Tainacan reconoce la dirección y muestra el reproductor adecuado mediante la herramienta [oEmbed](https://oembed.com/)(formato para permitir una representación incrustada de una URL en sitios de terceros). La lista de servicios compatibles con la conversión a "incrustaciones" en WordPress puede consultarse en [este enlace](https://wordpress.org/documentation/article/embeds/).
@@ -48,7 +48,7 @@ Consulta el artículo completo sobre el uso de los **documentos** [aquí](#conce
 
 ## Metadatos
 
-Los metadatos son el conjunto de información que describe al ítem o elemento.
+Los metadatos son el conjunto de información que describe al elemento.
 
 Cada colección dispone de un conjunto de metadatos para describir sus documentos. Esto significa que la colección a la que pertenece el elemento determina los metadatos que tiene.
 
@@ -137,13 +137,13 @@ Consulta el artículo completo sobre el uso de **taxonomías** [aquí](/es-mx/ta
 
 Esta sección recoge algunos conceptos y funcionalidades que se están debatiendo para su desarrollo.
 
-### Tipos de ítems
+### Tipos de elementos
 
-Los "tipos de ítem" permiten hacer una descripción especializada del ítem en función de su naturaleza. Así, dentro de una misma colección es posible que haya ítems que varíen su naturaleza y, por tanto, tengan un conjunto de metadatos diferente.
+Los "tipos de elementos" permiten hacer una descripción especializada del ítem en función de su naturaleza. Así, dentro de una misma colección es posible que haya elementos que varíen su naturaleza y, por tanto, tengan un conjunto de metadatos diferente.
 
-Para cada "tipo de ítem"', es posible elegir un grupo de metadatos, del mismo modo que se hace para una colección. Al crear un elemento dentro de una colección, tendrá todos los metadatos elegidos para esta colección y, además, los metadatos relacionados con su tipo.
+Para cada "tipo de elemento"', es posible elegir un grupo de metadatos, del mismo modo que se hace para una colección. Al crear un elemento dentro de una colección, tendrá todos los metadatos elegidos para esta colección y, además, los metadatos relacionados con su tipo.
 
-Un "tipo de ítem" puede ser cualquier cosa. Por ejemplo, los discos de vinilo, los libros y los cuadros son distintos tipos de ítems que pueden tener metadatos específicos. Pero también podrían ser conceptos abstractos, como "transacciones financieras".
+Un "tipo de elemento" puede ser cualquier cosa. Por ejemplo, los discos de vinilo, los libros y los cuadros son distintos tipos de ítems que pueden tener metadatos específicos. Pero también podrían ser conceptos abstractos, como "transacciones financieras".
 
 ### Área de trabajo
 
@@ -153,7 +153,7 @@ Los elementos del "área de trabajo" no son visibles públicamente y solo tienen
 
 ### Colecciones temáticas
 
-Las "colecciones temáticas" son otra forma de organizar los elementos del repositorio. En esencia, cada colección temática es un término dentro de una taxonomía llamada "Colecciones temáticas", que puede contener ítems de cualquier colección, y un mismo ítem puede formar parte de varias colecciones temáticas.
+Las "colecciones temáticas" son otra forma de organizar los elementos del repositorio. En esencia, cada colección temática es un término dentro de una taxonomía llamada "Colecciones temáticas", que puede contener elementos de cualquier colección, y un mismo ítem puede formar parte de varias colecciones temáticas.
 
 La lógica es la misma que para los términos en las taxonomías, la única diferencia es que nos ofrece otra forma de gestionar estas colecciones.
 
