@@ -47,13 +47,13 @@ Volviendo a la página de configuración de metadatos, ahora puedo crear los met
 
 ![Creación de un metadato tipo taxonomía](_assets/gifs/getting-started-4.gif)
 
-## Subir los ítems o elementos a Tainacan
+## Subir los elementos a Tainacan
 
-Los elementos de la colección “Mis fotos” son las propias fotos. Una forma posible es subirlas una por una, accediendo al menú “Crear ítem”, justo en la página de ítems de la colección. Pero supongamos que ya tengo varios de ellos guardados en una carpeta en mi computadora, entonces puedo seguir una ruta más simple, usando la función "Agregar ítems en masa":
+Los elementos de la colección “Mis fotos” son las propias fotos. Una forma posible es subirlas una por una, accediendo al menú “Añadir nuevo(a)”, justo en la página de elementos de la colección. Pero supongamos que ya tengo varios de ellos guardados en una carpeta en mi computadora, entonces puedo seguir una ruta más simple, usando la función "Añadir elementos en lote":
 
 ![Agregar elementos en lote](_assets/gifs/getting-started-5.gif)
 
-Al subir mis fotos, puedo optar por la Edición en masa o por la Edición en secuencia. La primera sirve para tratar los metadatos comunes entre todas las fotos y la segunda para examinar cada elemento, uno por uno. Empecemos por lo que tienen en común estas fotos: la cámara. Como las tomé todas con la misma cámara, estableceré esta información en la pantalla de Edición en masa. Luego paso a Edición en secuencia, donde podemos ver que Tainacan ya ha generado una miniatura a partir de mis fotos, que se puede cambiar en el futuro. Mis fotos serán públicas y no hay archivos adjuntos relacionados con ellas, así que solo tengo que rellenar los metadatos.
+Al subir mis fotos, puedo optar por la Edición en lote o por la Edición en secuencia. La primera sirve para tratar los metadatos comunes entre todas las fotos y la segunda para examinar cada elemento, uno por uno. Empecemos por lo que tienen en común estas fotos: la cámara. Como las tomé todas con la misma cámara, estableceré esta información en la pantalla de Edición en masa. Luego paso a Edición en secuencia, donde podemos ver que Tainacan ya ha generado una miniatura a partir de mis fotos, que se puede cambiar en el futuro. Mis fotos serán públicas y no hay archivos adjuntos relacionados con ellas, así que solo tengo que rellenar los metadatos.
 
 ### Captura de metadatos
 
@@ -93,7 +93,7 @@ Navegando por la colección, podemos hacer clic en el elemento y ver su página,
 
 ![Presentación](_assets/gifs/getting-started-12.gif)
 
-Además de la página pública de la colección, existen otras páginas, predefinidas por Tainacan, que pueden ser de nuestro interés, y que pueden colocarse fácilmente accesibles en el menú del sitio web. La primera es la Lista de colecciones, disponible en /collections, que -obviamente- muestra todas mis colecciones públicas. Otra es la Lista de ítems o elementos del repositorio, accesible en /items, que funciona como una página de colección, pero muestra los elementos públicos de todas las colecciones, así como sus filtros. Tú eliges si mostrar o no estas páginas.
+Además de la página pública de la colección, existen otras páginas, predefinidas por Tainacan, que pueden ser de nuestro interés, y que pueden colocarse fácilmente accesibles en el menú del sitio web. La primera es la Lista de colecciones, disponible en /collections, que -obviamente- muestra todas mis colecciones públicas. Otra es la Lista de elementos del repositorio, accesible en /items, que funciona como una página de colección, pero muestra los elementos públicos de todas las colecciones, así como sus filtros. Tú eliges si mostrar o no estas páginas.
 
 ## Contar historias con bloques de Gutenberg
 
@@ -117,4 +117,4 @@ Todos estos bloques tienen diferentes configuraciones de visualización y funcio
 
 ## Explorando más a fondo
 
-En este artículo te hemos mostrado algunas de las cosas que es posible hacer con Tainacan, pero no te equivoques, ¡esto fue solo un vistazo! Hay muchos otros temas que se pueden abordar como [Metadados de tipo relación](/es-mx/metadata.md#tipos-de-metadatos), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Estándar de metadatos, [Control de actividades](/es-mx/activities.md), [Archivos adjuntos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. También encontrarás materiales educativos en otros lugares además de este Wiki, como los enlaces que figuran en nuestra [página de videos](/es-mx/videos.md). ¡Esperamos que Tainacan te ayude a crear repositorios digitales increíbles!
+En este artículo te hemos mostrado algunas de las cosas que es posible hacer con Tainacan, pero no te equivoques, ¡esto fue solo un vistazo! Hay muchos otros temas que se pueden abordar como [Metadados de tipo relación](/es-mx/metadata.md#tipos-de-metadatos), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Estándar de metadatos, [Control de actividades](/es-mx/activities.md), [Archivos adjuntos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. También encontrarás materiales educativos en otros lugares además de esta Wiki, como los enlaces que figuran en nuestra [página de videos](/es-mx/videos.md). ¡Esperamos que Tainacan te ayude a crear repositorios digitales increíbles!
