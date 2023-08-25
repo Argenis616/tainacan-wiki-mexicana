@@ -11,7 +11,7 @@ Una vez que hayas configurado tu WordPress, no necesitas descargar Tainacan. Sim
 
 ## Complemento (plug in) Tainacan 
 
-Instala Tainacan directamente desde el panel de administración de tu sitio de WordPress o descárgalo del [repositorio oficial de complementos](https://wordpress.org/plugins/tainacan). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan).
+Instala Tainacan directamente desde el panel de administración de tu sitio de WordPress o descárgalo del [repositorio oficial de complementos](https://es.wordpress.org/plugins/tainacan/). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan).
 
 Echa un vistazo al [tutorial de instalación de Tainacan](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress) para ver el proceso paso a paso.
 
@@ -19,7 +19,7 @@ Echa un vistazo al [tutorial de instalación de Tainacan](/pt-br/tainacan#como-i
 
 Tainacan puede funcionar con cualquier tema de WordPress. Sin embargo, para asegurar toda la funcionalidad que ofrece, te recomendamos utilizar el tema preparado para ello.
 
-Instala el tema "Interfaz de Tainacan (Tainacan interface)" directamente desde el panel de administración de tu sitio de WordPress, o descárgalo desde el [repositorio oficial de complemento](https://wordpress.org/themes/tainacan-interface). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan-theme).
+Instala el tema "Interfaz de Tainacan (Tainacan interface)" directamente desde el panel de administración de tu sitio de WordPress, o descárgalo desde el [repositorio oficial de complemento](https://es.wordpress.org/themes/tainacan-interface/). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan-theme).
 
 Consulta el [tutorial de instalación de temas](/es-mx/theme#tema) para ver la instalación paso a paso.
 
