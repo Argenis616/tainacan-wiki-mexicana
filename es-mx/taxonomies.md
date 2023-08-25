@@ -24,8 +24,10 @@ Los _"términos"_ pueden tener una _"descripción"_, un _"icono"_ o una _"imagen
 
 > Las _"taxonomías"_ son un _“tipo de metadato”_ que se puede incluir las _"colecciones"_. Ver el tema [Crear Metadatos](es-mx/metadata.md#crear-metadatos) para saber cómo.
 
-####
 
+<!-- tabs:start -->
+
+### ** Crear **
 ## Crear Taxonomías
 
 1. Accede al panel de control de WordPress;
@@ -94,6 +96,7 @@ d. **“Término padre”**: determina el nivel jerárquico del “término” e
 
 Hay que repetir la acción de “agregar nuevos términos” por cada término que se desee agregar. También se pueden crear “Taxonomías” desde el “importador de vocabularios”. Consulte Importadores para obtener más información.
 
+### ** Editar **
 ## Editar taxonomías
 
 1. Accede al “panel de control” de WordPress;
@@ -150,6 +153,7 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 
 ​ c. “Guardar” para concluir la edición del término.
 
+### ** Eliminar **
 ## Eliminar taxonomías
 
 1. Accede al “panel de control” de WordPress;
@@ -189,3 +193,5 @@ Hay que repetir la acción de “agregar nuevos términos” por cada término q
 ![Accede al panel de control](_assets/images/101.png)
 
 !>Atención: se mostrará un aviso para confirmar esta acción. La “exclusión del término” también implica la “exclusión de este valor” en “metadatos”, “ítems” y “colecciones” que utilicen esta “taxonomía”.
+
+<!-- tabs:end -->
