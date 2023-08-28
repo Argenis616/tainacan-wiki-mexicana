@@ -236,9 +236,9 @@ Require all denied
 
 ### Wordfence
 
-Para concluir esta sección, recomendamos la instalación, activación y configuración del plugin [Wordfence](https://wordpress.org/plugins/wordfence/) que cuenta con una serie de funcionalidades destinadas a proteger la instalación de Wordpress de diversos tipos de ataques y explotación de vulnerabilidades.
+Para concluir esta sección, recomendamos la instalación, activación y configuración del plugin [Wordfence](https://es.wordpress.org/plugins/wordfence/) que cuenta con una serie de funcionalidades destinadas a proteger la instalación de Wordpress de diversos tipos de ataques y explotación de vulnerabilidades.
 
-Puedes acceder al complemento (plugin) y a su documentación [aquí](https://wordpress.org/plugins/wordfence/).
+Puedes acceder al complemento (plugin) y a su documentación [aquí](https://es.wordpress.org/plugins/wordfence/).
 
 ## Caché
 
