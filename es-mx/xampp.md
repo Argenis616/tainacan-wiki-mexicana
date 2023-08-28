@@ -30,26 +30,26 @@ Esta pantalla es para seleccionar los componentes que se van a instalar. No es n
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_04.png)
+![Instalación XAMPP](/_assets/images/xampp_03.png)
 
 En esta pantalla, el programa solicita la ubicación de instalación. Una vez más, no es necesario cambiar nada. Haz clic en **Siguiente** (**Next**).
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_05.png)
+![Instalación XAMPP](/_assets/images/xampp_04.png)
 
 En esta pantalla se presenta Bitnami, que es una librería de instaladores. Una vez más, no es necesario cambiar nada. Haz clic en **Siguiente** (**Next**).
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_06.png)
+![Instalación XAMPP](/_assets/images/xampp_05.png)
 
 
 Este es solo un mensaje de advertencia. La instalación está lista para comenzar. Da clic en **Siguiente** para iniciar el proceso.
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_07.png)
+![Instalación XAMPP](/_assets/images/xampp_06.png)
 
 Ahora el proceso de instalación se está ejecutando. Espera a que la barra de avance se llene por completo.
 
@@ -57,26 +57,26 @@ Ahora el proceso de instalación se está ejecutando. Espera a que la barra de a
 
 ## Abriendo el panel de control ##
 
-![Instalación XAMPP](/_assets/images/xampp_08.png)
+![Instalación XAMPP](/_assets/images/xampp_07.png)
 
 El proceso ha concluido y la instalación está completa. Deja la casilla de verificación seleccionada y haz clic en **Finalizar** (**Finish**). Se cerrará la pantalla actual y poco después aparecerá el cuadro del panel de control.
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_09.png)
+![Instalación XAMPP](/_assets/images/xampp_08.png)
 
 
 Aparece el cuadro de selección de idioma. Elige la primera opción, inglés. Luego haz clic en **Guardar** (**Save**).
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_10.png)
+![Instalación XAMPP](/_assets/images/xampp_09.png)
 
 El cuadro del panel de control se muestra como en esta imagen. Para que el **XAMPP** funcione, es necesario pulsar el botón **Iniciar** (**Start**) de los servicios **Apache** y **MySQL**. NOTA: Estos dos servicios deben estar activados siempre que se utilice el servidor.
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_11.png)
+![Instalación XAMPP](/_assets/images/xampp_10.png)
 
 Si todo va bien, ambos servicios se verán resaltados en verde, como en la imagen de arriba. Ahora haz clic en el botón **Admin**. Se abrirá tu navegador principal (Google Chrome, Firefox, Internet Explorer o el que esté instalado en tu computadora) con la dirección **localhost/dashboard** ya ingresada.
 
@@ -84,13 +84,13 @@ Si todo va bien, ambos servicios se verán resaltados en verde, como en la image
 
 ## Comprobación ##
 
-![Instalación XAMPP](/_assets/images/xampp_12.png)
+![Instalación XAMPP](/_assets/images/xampp_11.png)
 
 Si la instalación se realizó sin problemas, aparecerá la pantalla anterior. Ahora que hemos visto que el servidor funciona correctamente, vamos a la carpeta donde se deben almacenar los archivos para que aparezcan en el navegador.
 
 <br>
 
-![Instalación XAMPP](/_assets/images/xampp_13.png)
+![Instalación XAMPP](/_assets/images/xampp_12.png)
 
 En la imagen de arriba, puedes ver la dirección de la carpeta: **C:/xampp/htdocs** Aquí es donde se encuentran los archivos que se verán en el navegador. ¡Listo, ya tenemos un servidor **XAMPP** funcionando en **Windows**!.
 
