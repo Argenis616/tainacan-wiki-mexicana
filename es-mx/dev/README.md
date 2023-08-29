@@ -26,69 +26,69 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 <div class="two-columns-list">
 
-- [Configuración del entorno local](/dev/setup-local.md) - Si quieres contribuir al núcleo de Tainacan, debes configurar tu entorno local. Alternativamente, puede utilizar nuestro [repositorio Docker](https://github.com/tainacan/tainacan-docker ":ignore"). **Si quieres desarrollar temas o plugins, no necesitas esto**.
-- [Conceptos clave](/dev/key-concepts.md) - Lo primero es lo primero. Entendamos qué es qué en Tainacan.
-- [Interiores de Tainacan](/dev/internal-api.md) - Referencia sobre las principales clases de Tainacan y cómo utilizarlas.
-- [Ganchos de Tainacan](/dev/hooks.md) - Amplíe o modifique diferentes secciones de código sin modificar el plugin, utilizando Acciones y Filtros, tanto en el backend como en el frontend.
+- [Configuración del entorno local](/es-mx/dev/setup-local.md) - Si quieres contribuir al núcleo de Tainacan, debes configurar tu entorno local. Alternativamente, puede utilizar nuestro [repositorio Docker](https://github.com/tainacan/tainacan-docker ":ignore"). **Si quieres desarrollar temas o plugins, no necesitas esto**.
+- [Conceptos clave](/es-mx/dev/key-concepts.md) - Lo primero es lo primero. Entendamos qué es qué en Tainacan.
+- [Interiores de Tainacan](/es-mx/dev/internal-api.md) - Referencia sobre las principales clases de Tainacan y cómo utilizarlas.
+- [Ganchos de Tainacan](/es-mx/dev/hooks.md) - Amplíe o modifique diferentes secciones de código sin modificar el plugin, utilizando Acciones y Filtros, tanto en el backend como en el frontend.
 - [API de Tainacan](https://tainacan.org/api-docs/ ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
-- [Roles y capacidades](/dev/roles-capabilities.md) - Información básica sobre privacidad de datos y niveles de acceso en Tainacan.
+- [Roles y capacidades](/es-mx/dev/roles-capabilities.md) - Información básica sobre privacidad de datos y niveles de acceso en Tainacan.
 
 </div>
 
-### More on Plugin Development {docsify-ignore}
+### Más sobre el desarrollo de plugins {docsify-ignore}
 
 <div class="three-columns-list">
 
-- [Exporting and Exposing](/dev/exporting-and-exposing.md)
-- [CSV Importer](/dev/csv-importer.md)
-- [Vocabulary Importer](/dev/vocabulary-importer.md)
-- [Mapping Standards](/dev/mapping-standards.md)
-- [Repository Methods](/dev/repository-methods.md)
+- [Exportar y exponer](/es-mx/dev/exporting-and-exposing.md)
+- [Importador CSV](/es-mx/dev/csv-importer.md)
+- [Importador de vocabulario](/es-mx/dev/vocabulary-importer.md)
+- [Normativa cartográfica](/es-mx/dev/mapping-standards.md)
+- [Métodos de repositorio](/es-mx/dev/repository-methods.md)
 
 </div>
 
-### Plugin Extension {docsify-ignore}
+### Extensión de Plugin {docsify-ignore}
 
 <div class="two-columns-list">
 
-- [Creating a new Metadata Type](/dev/creating-metadata-type.md) - A guide for creating your custom Metadata Type
-- [Creating a new Filters Type](/dev/creating-filters-type.md) - A guide for creating your custom Filters Type
-- How to create [Exporters](/dev/exporter-flow.md), [Importers](/dev/importer-flow.md) and [Exposers](/dev/exposers.md)
-- [Registering New Vue Components](/dev/registering-custom-vue-components.md) - Registering new Vue components that can be used by your plugin, such as metadata and filter types or extra view modes.
-- [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The clientside rendered items list that provides all power to faceted search.
-- [Tweaking the Tainacan Admin UI](/dev/admin-ui-options.md) - Using a filter to set variables for customizing the Tainacan Admin panel.
+- [Creación de un nuevo tipo de metadatos](/es-mx/dev/creating-metadata-type.md) - Guía para crear un tipo de metadatos personalizado
+- [Creación de un nuevo tipo de filtros](/es-mx/dev/creating-filters-type.md) - Guía para crear un tipo de filtro personalizado
+- Cómo crear [Exportadores](/es-mx/dev/exporter-flow.md), [Importadores](/es-mx/dev/importer-flow.md) and [Expositores](/es-mx/dev/exposers.md)
+- [Registro de nuevos componentes Vue](/es-mx/dev/registering-custom-vue-components.md) - Registro de nuevos componentes Vue que pueden ser utilizados por su plugin, como metadatos y tipos de filtro o modos de vista adicionales.
+- [Componente de lista de elementos Vue](/es-mx/dev/the-vue-items-list-component.md) - La lista de elementos renderizados del lado del cliente que proporciona toda la potencia a la búsqueda facetada.
+- [Modificación de la interfaz de administración de Tainacan](/es-mx/dev/admin-ui-options.md) - Uso de un filtro para establecer variables para personalizar el panel de administración de Tainacan.
 
 </div>
 
-### Theme Development or Extension {docsify-ignore}
+### Desarrollo o ampliación de temas {docsify-ignore}
 
 <div class="two-columns-list">
 
-- [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features
-- [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
-- [Customizing the Items List](/dev/customizing-the-items-list.md) - Tweaking the appearence of the items list
-- [Creating Extra View Modes](/dev/extra-view-modes) - How to create Extra View Modes that will be avaialble for displaying items list
-- [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) - Details to offer better support to the latest content block editor
+- [Creación de temas compatibles](/es-mx/dev/creating-compatible-themes.md) - Introducción a la creación de un tema totalmente compatible con las funciones de Tainacan.
+- [Plantillas personalizadas de Tainacan](/es-mx/dev/custom-templates.md) - Plantillas personalizadas para las que Tainacan añade a la jerarquía de plantillas de WordPress
+- [Personalización de la lista de artículos](/es-mx/dev/customizing-the-items-list.md) - Modificar el aspecto de la lista de artículos
+- [Creación de modos de vista adicionales](/es-mx/dev/extra-view-modes) - Cómo crear modos de vista adicionales para mostrar la lista de elementos
+- [Soporte Gutenberg para temas](/es-mx/dev/theme-gutenberg-support.md) - Detalles para ofrecer una mejor compatibilidad con el último editor de bloques de contenido
 
 </div>
 
-### Configuration and performance {docsify-ignore}
+### Configuración y rendimiento {docsify-ignore}
 
 <div class="three-columns-list">
 
-- [Faceted Search](/dev/faceted-search.md)
-- [Search Engine](/dev/search-engine.md)
-- [Garbage Collector](/dev/garbage-collector.md)
+- [Búsqueda por facetas](/es-mx/dev/faceted-search.md)
+- [Motor de búsqueda](/es-mx/dev/search-engine.md)
+- [Recolector de basura](/es-mx/dev/garbage-collector.md)
 
 </div>
 
 ---
 
-## Other development contributions
+## Otras contribuciones al desarrollo
 
 <div class="three-columns-list">
 
-- [Contributing Guidelines](/dev/CONTRIBUTING.md)
-- [Tainacan release process](/dev/release.md)
+- [Directrices contributivas](/es-mx/dev/CONTRIBUTING.md)
+- [Proceso de liberación de Tainacan](/es-mx/dev/release.md)
 
 </div>
