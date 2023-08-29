@@ -1,4 +1,4 @@
-# Template Tags
+# Etiquetas de plantilla
 
 Al igual que WordPress tiene sus [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore"), Tainacan tiene las suyas propias de este tipo, que son funciones PHP esenciales para los desarrolladores de temas que quieran mostrar contenidos de la base de datos y mostrarlos en un bonito formato HTML.
 
