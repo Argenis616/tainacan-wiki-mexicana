@@ -13,7 +13,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 - [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/ ":ignore") class - Este es el corazón de WordPress, la clase que le da la interfaz para consultar las entradas en la base de datos. Toda la interacción con la base de datos en Tainacan utiliza esta clase.
 - [Custom Post types](https://wordpress.org/support/article/post-types/ ":ignore") y [taxonomías](https://codex.wordpress.org/Taxonomies ":ignore") - Todas las entidades de Tainacan, como las colecciones, los metadatos y los artículos, son tipos de entrada personalizados de WordPress, por lo que resulta útil comprender cómo se gestionan.
 - [The Loop](https://developer.wordpress.org/themes/basics/the-loop/ ":ignore") - Uno de los principales elementos de WordPress utilizado para interactuar a través de los mensajes. Útil sobre todo si está retocando con temas.
-- [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore") - Funciones simples utilizadas por los desarrolladores de temas para mostrar contenido dinámico. Por lo general, estas funciones se utilizan dentro de "The Loop" y Tainacan implementa [sus propias etiquetas].(/dev/template-tags.md).
+- [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore") - Funciones simples utilizadas por los desarrolladores de temas para mostrar contenido dinámico. Por lo general, estas funciones se utilizan dentro de "The Loop" y Tainacan implementa [sus propias etiquetas].(/es-mx/dev/template-tags.md).
 - [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/ ":ignore") - Crucial si trabajas con temas.
 
 </div>
