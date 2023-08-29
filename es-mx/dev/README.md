@@ -10,7 +10,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 <div class="two-columns-list">
 
-- [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/ ":ignore") clase - Este es el corazón de WordPress, la clase que le da la interfaz para consultar las entradas en la base de datos. Toda la interacción con la base de datos en Tainacan utiliza esta clase.
+- [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/ ":ignore") class - Este es el corazón de WordPress, la clase que le da la interfaz para consultar las entradas en la base de datos. Toda la interacción con la base de datos en Tainacan utiliza esta clase.
 - [Custom Post types](https://wordpress.org/support/article/post-types/ ":ignore") y [taxonomías](https://codex.wordpress.org/Taxonomies ":ignore") - Todas las entidades de Tainacan, como las colecciones, los metadatos y los artículos, son tipos de entrada personalizados de WordPress, por lo que resulta útil comprender cómo se gestionan.
 - [The Loop](https://developer.wordpress.org/themes/basics/the-loop/ ":ignore") - Uno de los principales elementos de WordPress utilizado para interactuar a través de los mensajes. Útil sobre todo si está retocando con temas.
 - [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore") - Funciones simples utilizadas por los desarrolladores de temas para mostrar contenido dinámico. Por lo general, estas funciones se utilizan dentro de "The Loop" y Tainacan implementa [sus propias etiquetas].(/dev/template-tags.md).
@@ -20,18 +20,18 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 ---
 
-## Development Resources
+## Recursos para el desarrollo
 
-### Development Basics {docsify-ignore}
+### Fundamentos del desarrollo {docsify-ignore}
 
 <div class="two-columns-list">
 
-- [Setting up local environment](/dev/setup-local.md) - If you want to contribute to Tainacan core, you must set up your local environment. Alternatively, you can use our [Docker repository](https://github.com/tainacan/tainacan-docker ":ignore"). **If you want to develop themes or plugins, you don't need this**.
-- [Key Concepts](/dev/key-concepts.md) - First things first. Let's understand what is what in Tainacan.
-- [Tainacan Internals](/dev/internal-api.md) - Reference on Tainacan main classes and how to use them.
-- [Tainacan Hooks](/dev/hooks.md) - Expand or modify different sections of code without modifying the plugin, using Actions and Filters, both in backend and frontend.
-- [Tainacan API](https://tainacan.org/api-docs/ ":ignore") - A Rest JSON API which you can use to get content from a Tainacan database.
-- [Roles and Capabilities](/dev/roles-capabilities.md) - Basic information about data privacy and access levels in Tainacan.
+- [Configuración del entorno local](/dev/setup-local.md) - Si quieres contribuir al núcleo de Tainacan, debes configurar tu entorno local. Alternativamente, puede utilizar nuestro [repositorio Docker](https://github.com/tainacan/tainacan-docker ":ignore"). **Si quieres desarrollar temas o plugins, no necesitas esto**.
+- [Conceptos clave](/dev/key-concepts.md) - Lo primero es lo primero. Entendamos qué es qué en Tainacan.
+- [Interiores de Tainacan](/dev/internal-api.md) - Referencia sobre las principales clases de Tainacan y cómo utilizarlas.
+- [Ganchos de Tainacan](/dev/hooks.md) - Amplíe o modifique diferentes secciones de código sin modificar el plugin, utilizando Acciones y Filtros, tanto en el backend como en el frontend.
+- [API de Tainacan](https://tainacan.org/api-docs/ ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
+- [Roles y capacidades](/dev/roles-capabilities.md) - Información básica sobre privacidad de datos y niveles de acceso en Tainacan.
 
 </div>
 
