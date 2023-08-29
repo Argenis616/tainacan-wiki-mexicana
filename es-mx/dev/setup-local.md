@@ -1,111 +1,111 @@
-# Setting up your local environment
+# Configuración de su entorno local
 
-This document will run you through setting up your local environment and running the tests. If you haven't done it yet, please have a look at [key concepts](key-concepts.md) so you can have a better understanding of the project.
+Este documento le ayudará a configurar su entorno local y a ejecutar las pruebas. Si aún no lo has hecho, echa un vistazo a [conceptos clave](key-concepts.md) para que pueda comprender mejor el proyecto.
 
-## Overview
+## Panorama general
 
-This is the development repository for the Tainacan WordPress plugin.
+Este es el repositorio de desarrollo para el plugin de WordPress Tainacan.
 
-Overview of folders:
+Vista general de las carpetas:
 
-- `docs` - This technical documentation
-- `src` - The actual plugin. Everything outside this folder is not part of the distribution package
-- `tests` - phpunit tests
+- `docs` - Esta documentación técnica
+- `src` - El plugin en sí. Todo lo que esté fuera de esta carpeta no forma parte del paquete de distribución.
+- `tests` - Pruebas phpunit
 
-This repository includes all the tools needed to develop Tainacan, such as tests and other scripts to compile sass and other things.
+Este repositorio incluye todas las herramientas necesarias para desarrollar Tainacan, como tests y otros scripts para compilar sass y otras cosas.
 
-## Before you start
+## Antes de empezar
 
-Tainacan is a WordPress plugin, so you will need all the basic dependencies you usually have to run a WordPress site, such as PHP and MySQL.
+Tainacan es un plugin de WordPress, por lo que necesitarás todas las dependencias básicas que normalmente tienes para ejecutar un sitio WordPress, como PHP y MySQL.
 
-You will also need:
+También necesitarás
 
-- `Composer` to manage dependencies
-- `Sass` to compile sass into css files
-- `WP-Cli` to configure the test environment
-- `Phpunit` to run unit tests
-- `Node` to handle dependencies and build the JS application
+- `Composer` para gestionar las dependencias
+- `Sass` para compilar sass en archivos css
+- `WP-Cli` para configurar el entorno de pruebas
+- `Phpunit` para ejecutar pruebas unitarias
+- `Node` para manejar las dependencias y construir la aplicación JS
 
 ```
 sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
 sudo gem install sass
 ```
 
-- To install WP-Cli, check [the official documentation](https://wp-cli.org/#installing).
+- Para instalar WP-Cli, visita [la documentación oficial](https://wp-cli.org/#installing).
 
-## Setting up
+## Configuración
 
-First of all, clone this repository.
+En primer lugar, clone este repositorio.
 
-Note that you can NOT clone it directly in the WordPress `plugins` directory. Clone it in a folder of its own and configure your build to point to your local WordPress `plugins` folder.
+Ten en cuenta que NO puedes clonarlo directamente en el directorio `plugins` de WordPress. Clónelo en una carpeta propia y configure su compilación para que apunte a su carpeta local de `plugins` de WordPress.
 
 ```
 git clone git@git.github.com:tainacan/tainacan.git
 ```
 
-Set up a WordPress installation. This could be a dedicated installation to develop Tainacan or you can use an existing instance you have. It is up to you, but you will need one, both for developing and manually testing, as well to run automated integration tests.
+Configura una instalación de WordPress. Puede ser una instalación dedicada para desarrollar Tainacan o puedes usar una instancia existente que tengas. Depende de ti, pero necesitarás una, tanto para desarrollar y probar manualmente, como para ejecutar pruebas de integración automatizadas.
 
-## Build
+## Construir
 
-When we want to build the plugin, we run `build.sh` that installs any dependencies, compiles all the assets (sass and js) and moves the files to the plugin directory. This compiled version of the plugin is the one added to the official WordPress Plugin repository.
+Cuando queremos construir el plugin, ejecutamos `build.sh` que instala cualquier dependencia, compila todos los assets (sass y js) y mueve los ficheros al directorio del plugin. Esta versión compilada del plugin es la que se añade al repositorio oficial de plugins de WordPress.
 
-In order to use it, make a copy of `build-config-sample.cfg` and name it only `build-config.cfg`. Edit and fill in your environment details:
+Para usarla, haz una copia de `build-config-sample.cfg` y nómbrala sólo `build-config.cfg`. Edítalo e introduce los detalles de tu entorno:
 
-- `wp_base_dir`: The base directory for you local WordPress installation, used for development and testing. e.g `~/develop/wordpress`
-- `wp_url`: The base URL for your local WordPress installation/ e.g `http://localhost/wp`
-- `wp_plugin_dir`: The directory for your plugin build. Should be a directory inside `wp_base_dir`. e.g `~/develop/wordpress/wp-content/plugins/test-tainacan`
+- `wp_base_dir`: El directorio base de su instalación local de WordPress, utilizado para desarrollo y pruebas. p.ej. `~/develop/wordpress`.
+- `wp_url`: La URL base de su instalación local de WordPress/ por ejemplo `http://localhost/wp`.
+- `wp_plugin_dir`: El directorio de su plugin. Debe ser un directorio dentro de `wp_base_dir`. Por ejemplo `~/develop/wordpress/wp-content/plugins/test-tainacan`.
 
-Once you are ready, you can run:
+Una vez que esté listo, puede ejecutar:
 
 ```
 ./build.sh
 ```
 
-While developing, you might want to run `build-watch.sh`. This script will watch your development folder for changes and automatically build the plugin so you don't have to do it manually every time you modify a file.
+Mientras desarrollas, puede que quieras ejecutar `build-watch.sh`. Este script vigilará tu carpeta de desarrollo en busca de cambios y construirá automáticamente el plugin para que no tengas que hacerlo manualmente cada vez que modifiques un archivo.
 
-## Tests
+## Pruebas
 
-Tainacan uses `phpunit` to run tests for the backend and the API. This is a very important part of the development process! Never commit anything before running all the tests to make sure you did not break anything. If you are developing a new feature, you must write tests for it. If you are fixing a bug, you should first write a test that reproduces the bug and then make it pass.
+Tainacan usa `phpunit` para ejecutar pruebas para el backend y la API. Esta es una parte muy importante del proceso de desarrollo. Nunca confirmes nada antes de ejecutar todas las pruebas para asegurarte de que no has roto nada. Si estás desarrollando una nueva funcionalidad, debes escribir pruebas para ella. Si estás corrigiendo un error, primero debes escribir una prueba que reproduzca el error y luego hacer que pase.
 
-To execute all the tests, simply execute the `phpunit` command from the project root folder. But first, you need to configure PHPUnit.
+Para ejecutar todas las pruebas, simplemente ejecuta el comando `phpunit` desde la carpeta raíz del proyecto. Pero primero, necesitas configurar PHPUnit.
 
-### Preparing PHPUnit
+### Preparando PHPUnit
 
-To run the unit tests it is necessary to create a new MySQL database for your unit tests. This database will be cleaned and restored every time you run PHPUnit.
+Para ejecutar las pruebas unitarias es necesario crear una nueva base de datos MySQL para tus pruebas unitarias. Esta base de datos será limpiada y restaurada cada vez que ejecutes PHPUnit.
 
-Install the WordPress test library by running the script provided in the `tests/bin` folder, by running the following command:
+Instale la librería de pruebas de WordPress ejecutando el script proporcionado en la carpeta `tests/bin`, ejecutando el siguiente comando:
 
 ```
 tests/bin/install-wp-tests.sh wordpress_test root root /path/to/wordpress-test-folder localhost latest
 ```
 
-The parameters are:
+Los parámetros son:
 
-- Database name
-- MySQL username
-- MySQL password
-- WordPress Test Directory\*
-- MySQL host
-- WordPress version
-- Optional: skip create database
+- Nombre de la base de datos
+- Nombre de usuario de MySQL
+- Contraseña de MySQL
+- Directorio de prueba de WordPress
+- Hosting MySQL
+- Versión de WordPress
+- Opcional: omitir crear base de datos
 
-\* `WordPress Test Directory` will be created with 2 subfolders:
+\* `WordPress Test Directory` se creará con 2 subcarpetas:
 
-- `wordpress-test` - An installation of WordPress
-- `wordpress-tests-lib` - As the name says, the WordPress Tests Library
+- `wordpress-test` - Una instalación de WordPress
+- `wordpress-tests-lib` - Como su nombre indica, la librería de pruebas de WordPress
 
-Inside the `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
+Dentro de la carpeta `tests`, edite el archivo llamado `bootstrap-config-sample.php` e informe la carpeta donde instaló su Librería de Pruebas de WordPress. Esta será `/path/to/wordpress-test-folder/wodpress-tests-lib`. Guarde el archivo como `bootstrap-config.php`.
 
-Note that the installation script will create a config file in the destination folder with your database credentials. If you have to change it, you will need to edit it there.
+Ten en cuenta que el script de instalación creará un archivo de configuración en la carpeta de destino con tus credenciales de la base de datos. Si tienes que cambiarlo, tendrás que editarlo allí.
 
-You only need to do all this once, and now you are ready to run tests.
+Sólo tienes que hacer todo esto una vez, y ya estás listo para ejecutar pruebas.
 
-#### Running tests
+#### Ejecutar pruebas
 
-Simply type this command from the project root folder:
+Simplemente escribe este comando desde la carpeta raíz del proyecto:
 
 ```
 phpunit
 ```
 
-(Note that `phpunit` accepts several parameters, for example, if you want to run just a specific group of tests).
+(Tenga en cuenta que ``phpunit`` acepta varios parámetros, por ejemplo, si desea ejecutar sólo un grupo específico de pruebas).
