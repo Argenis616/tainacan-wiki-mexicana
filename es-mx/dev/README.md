@@ -1,20 +1,20 @@
-# Tainacan for Developers
+# Tainacan para desarrolladores
 
-As you know, **Tainacan is a [WordPress](https://wordpress.org) plugin** and is built on top of this very well known platform. If you are familiar with _WordPress_ it should be easy for you to understand how Tainacan is organized, how it interacts with the database and how to build your own features from it.
+Como saben, **Tainacan es un plugin de [WordPress](https://wordpress.org)** y está construido sobre esta conocida plataforma. Si estás familiarizado con _WordPress_ debería serte fácil entender cómo está organizado Tainacan, cómo interactúa con la base de datos y cómo construir tus propias funcionalidades a partir de él.
 
-## Well, but I'm new to WordPress
+## Bueno, pero yo soy nuevo en WordPress
 
-If you don't have experience with WordPress and would like to develop a plugin for Tainacan, or even contribute to the plugin, it's a good idea to learn some fundamentals. Those will be useful to everything you will deal with while working with Tainacan.
+Si no tienes experiencia con WordPress y te gustaría desarrollar un plugin para Tainacan, o incluso contribuir al plugin, es una buena idea aprender algunos fundamentos. Éstos serán útiles para todo lo que tratará mientras trabaja con Tainacan.
 
-This is a non-exhaustive list of the most important topics you should look into:
+Esta es una lista no exhaustiva de los temas más importantes que deberías investigar:
 
 <div class="two-columns-list">
 
-- [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/ ":ignore") class - This is the heart of WordPress, the class that gives you the interface to query for posts in the database. All interaction with the database in Tainacan uses this class.
-- [Custom Post types](https://wordpress.org/support/article/post-types/ ":ignore") and [taxonomies](https://codex.wordpress.org/Taxonomies ":ignore") - All Tainacan entities, such as collections, metadata and items, are WordPress Custom post types, so it is helpful to understand how they are handled.
-- [The Loop](https://developer.wordpress.org/themes/basics/the-loop/ ":ignore") - One of the main WordPress elements used to interact through posts. Useful especially if you are tweaking with themes.
-- [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore") - Simple functions used by theme developers to display dynamic content. Usually, these function are used inside "The Loop" and Tainacan implements [it's own Template tags](/dev/template-tags.md).
-- [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/ ":ignore") - Crucial if working with themes.
+- [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/ ":ignore") clase - Este es el corazón de WordPress, la clase que le da la interfaz para consultar las entradas en la base de datos. Toda la interacción con la base de datos en Tainacan utiliza esta clase.
+- [Custom Post types](https://wordpress.org/support/article/post-types/ ":ignore") y [taxonomías](https://codex.wordpress.org/Taxonomies ":ignore") - Todas las entidades de Tainacan, como las colecciones, los metadatos y los artículos, son tipos de entrada personalizados de WordPress, por lo que resulta útil comprender cómo se gestionan.
+- [The Loop](https://developer.wordpress.org/themes/basics/the-loop/ ":ignore") - Uno de los principales elementos de WordPress utilizado para interactuar a través de los mensajes. Útil sobre todo si está retocando con temas.
+- [Template Tags](https://developer.wordpress.org/themes/basics/template-tags/ ":ignore") - Funciones simples utilizadas por los desarrolladores de temas para mostrar contenido dinámico. Por lo general, estas funciones se utilizan dentro de "The Loop" y Tainacan implementa [sus propias etiquetas].(/dev/template-tags.md).
+- [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/ ":ignore") - Crucial si trabajas con temas.
 
 </div>
 
