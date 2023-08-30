@@ -13,7 +13,7 @@ Todas las acciones realizadas en Tainacan quedan registradas y pueden ser consul
 
 Al hacer clic en una Colección >> Actividades >> Actividad, se abre una ventana con la siguiente información:
 
-![Accede al panel de control](/es-mx/_assets/images/103.png)
+![Accede al panel de control](_assets/images/103.png)
 
 ​ a. “**Descripción de la actividad”**;
 
@@ -35,15 +35,15 @@ Reúne actividades como creación, edición y eliminación de "colecciones", "me
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Accede al panel de control](/es-mx/_assets/images/050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Accede al panel de control](/es-mx/_assets/images/051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Haz clic en “Actividades del repositorio”;
 
-   ![Accede al panel de control](/es-mx/_assets/images/104.png)
+   ![Accede al panel de control](_assets/images/104.png)
 
 4. En esta página puedes filtrar las “actividades” por:
 
@@ -53,7 +53,7 @@ Reúne actividades como creación, edición y eliminación de "colecciones", "me
 
    c. **“Búsqueda general”**.
 
-   ![Accede al panel de control](/es-mx/_assets/images/105.png)
+   ![Accede al panel de control](_assets/images/105.png)
 
 ## Registro de actividades de la colección
 
@@ -61,19 +61,19 @@ Contiene la información de actividades dentro de una colección, como crear, ed
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Accede al panel de control](/es-mx/_assets/images/050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Accede al panel de control](/es-mx/_assets/images/051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Haz clic en la “Colección” que quieres revisar y luego en “Actividades”;
 
-   ![Accede al panel de control](/es-mx/_assets/images/106.png)
+   ![Accede al panel de control](_assets/images/106.png)
 
 4. En esta página puedes filtrar las actividades por:
 
-   ![Accede al panel de control](/es-mx/_assets/images/107.png)
+   ![Accede al panel de control](_assets/images/107.png)
 
    ​ a. **“Rango de fechas”**;
 
@@ -87,23 +87,23 @@ Contiene la información de las "actividades" relacionadas con el elemento, como
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Accede al panel de control](/es-mx/_assets/images/050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan
 
-   ![Accede al panel de control](/es-mx/_assets/images/051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Haz clic en la "colección" que deseas y luego haz clic en el "ítem" en el que quieres verificar las "actividades";
 
-   ![Accede al panel de control](/es-mx/_assets/images/108.png)
+   ![Accede al panel de control](_assets/images/108.png)
 
 4. En el “elemento”, haz clic en la pestaña “Actividades”;
 
-   ![Accede al panel de control](/es-mx/_assets/images/109.png)
+   ![Accede al panel de control](_assets/images/109.png)
 
 5. En esta página puedes filtrar las actividades por:
 
-   ![Accede al panel de control](/es-mx/_assets/images/110.png)
+   ![Accede al panel de control](_assets/images/110.png)
 
    a. **“Rango de fechas”**;
 
