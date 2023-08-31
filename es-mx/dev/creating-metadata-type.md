@@ -1,20 +1,20 @@
-# Creating a Custom Metadata Type
+# Creación de un tipo de metadatos personalizado
 
-Metadata types are the objects that represent the types of metadata that can be used. Examples of Metadata Types are "Text", "Long text", "Date", "Relationship with another item", etc. Each metadata type object has its settings and web component that will be used to render the interface.
+Los tipos de metadatos son los objetos que representan los tipos de metadatos que se pueden utilizar. Ejemplos de tipos de metadatos son "Texto", "Texto largo", "Fecha", "Relación con otro elemento", etc. Cada objeto de tipo de metadatos tiene su configuración y componente web que se utilizará para representar la interfaz.
 
-Developers can create custom Metadata Types via plugins starting from Tainacan 0.16. This article shows how to do this, divided in the following sections:
+Los desarrolladores pueden crear Tipos de Metadatos personalizados a través de plugins a partir de Tainacan 0.16. Este artículo muestra cómo hacerlo, dividido en las siguientes secciones:
 
-- [Registering](#registering-your-metadata-type) your Metadata Type
-- Creating the [PHP Class](#creating-the-php-class)
-- Creating the [Vue Web Component](#creating-vue-web-component)
-- Creating Vue Web Component for the [Metadata Form](#creating-vue-web-component-for-the-metadata-form)
-- Advanced usage of third party [Vue Components](#advanced-usage-of-vue-components)
+- [Registro de ](#registro-de-su-tipo-de-metadatos) su tipo de metadatos
+- Creando la [Clase en PHP](#creando-la-clase-en-php)
+- Creando la [Vue Web Component](#creating-vue-web-component)
+- Creación de un componente web Vue para el [Formulario de Metadatos](#creating-vue-web-component-for-the-metadata-form)
+- Uso avanzado de [Componentes Vue de terceros](#advanced-usage-of-vue-components)
 
-> If you want to play with the sample used here, it is all available in [this Github repo](https://github.com/tainacan/custom-metadata-type-samples ":ignore") :wink:
+> Si quieres jugar con la muestra utilizada aquí, todo está disponible en [este repositorio de Github](https://github.com/tainacan/custom-metadata-type-samples ":ignore") :wink:
 
-## Registering your Metadata Type
+## Registro de su tipo de metadatos
 
-First of all, you have to register your Metadata Type class. You do this by calling the `register_metadata_type` method of the `Metadata Type Helper`, available if the Tainacan plugin is installed. For the simplicity of this article, let us suppose that you are creating a custom version of the existing _Numeric_ Metadata Type, which you'll call "Custom Metadata Type". You might have the main plugin file, named `custom-metadata-type.php` with the following content:
+En primer lugar, tienes que registrar tu clase de Tipo de Metadatos. Esto se hace llamando al método `register_metadata_type` del `Metadata Type Helper`, disponible si el plugin Tainacan está instalado. Para simplificar este artículo, supongamos que estás creando una versión personalizada del Tipo de Metadatos _Numeric_ existente, que llamarás "Tipo de Metadatos Personalizado". Podrías tener el archivo principal del plugin, llamado `custom-metadata-type.php` con el siguiente contenido:
 
 ```php
 <?php
@@ -52,11 +52,11 @@ function register_metadata_type_form($helper) {
 ?>
 ```
 
-You can see that we have a folder named "metadata_type" to keep the class and component separate, which is up to you as you prefer to organize the plugin file structure. Now we'll understand better what each of the registered parts means.
+Puedes ver que tenemos una carpeta llamada "metadata_type" para mantener la clase y el componente separados, lo cual depende de ti como prefieras organizar la estructura de archivos del plugin. Ahora vamos a entender mejor lo que significa cada una de las partes registradas.
 
-## Creating the PHP Class
+## Creando la clase en PHP
 
-Now you have to create the class you just registered, and use its constructor to set the basic features of your Metadata Type. Let's go slowly by checking the content of `metadata_type/metadata-type.php`:
+Ahora tienes que crear la clase que acabas de registrar, y usar su constructor para establecer las características básicas de tu Tipo de Metadatos. Vayamos poco a poco comprobando el contenido de `metadata_type/metadata-type.php`:
 
 ```php
 <?php
@@ -95,29 +95,29 @@ class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
 ?>
 ```
 
-These are the methods you have to call to set up your Metadata Type:
+Estos son los métodos que tiene que llamar para configurar su Tipo de Metadatos:
 
-- **set_name(string \$name)** - Sets the name of the Metadata type. This is the name the user will see in the front end and should be internationalized with your text domain (`custom-metadata-type`).
-- **set_description(string \$description)** - Sets the description of the Metadata type. This is the text the user will see in the front end and should be internationalized with your text domain (`custom-metadata-type`).
-- **set_primitive(string \$type)** - Inform what is the raw type of data that will be stored. This is used mainly by Filter Types to decide what kind of Filters will be available for each Metadata Type. Current used primitive types are: `string`, `date`, `float`, `item`, `term`, and `long_string` (you can create new ones if you want, just note that not all Filter Types may be available to them).
-- **set_component(string \$component_name)** - The name of the vue component that will be created on the next session. We recommend adding the prefix _tainacan-metadata-type-_ to avoid collisions.
-- **set_preview_template(string \$template)** - An HTML preview of how the component will look like. This is seen by users inside the tooltip "Metadata Type Preview" when hovering by the Metadata Type button. If you can use [Bulma](https://bulma.io ":ignore") and [Buefy](https://buefy.org/ ":ignore") classes here. This parameter is not obligatory but can improve user experience.
+- **set_name(string \$name)** - Establece el nombre del tipo de metadatos. Este es el nombre que el usuario verá en el front-end y debe ser internacionalizado con su dominio de texto (`custom-metadata-type`).
+- **set_description(string \$description)** - Establece la descripción del tipo de metadatos. Este es el texto que el usuario verá en el front-end y debe ser internacionalizado con su dominio de texto (`custom-metadata-type`).
+- **set_primitive(string \$type)** - Informa del tipo de datos en bruto que se almacenarán. Lo utilizan principalmente los tipos de filtro para decidir qué tipo de filtros estarán disponibles para cada tipo de metadatos. Los tipos primitivos utilizados actualmente son: `string`, `date`, `float`, `item`, `term`, y `long_string` (puedes crear nuevos si quieres, sólo ten en cuenta que no todos los Tipos de Filtro pueden estar disponibles para ellos).
+- **set_component(string \$component_name)** - El nombre del componente Vue que se creará en la próxima sesión. Recomendamos añadir el prefijo _tainacan-metadata-type-_ para evitar colisiones.
+- **set_preview_template(string \$template)** - Una vista previa HTML del aspecto que tendrá el componente. Esto lo ven los usuarios dentro del tooltip "Metadata Type Preview" cuando pasan el ratón por el botón Metadata Type. Si puede utilizar las clases [Bulma](https://bulma.io ":ignore") y [Buefy](https://buefy.org/ ":ignore") aquí. Este parámetro no es obligatorio, pero puede mejorar la experiencia del usuario.
 
-The last two (**set_form_component** and **set_default_options**) are only needed as we describe bellow:
+Los ultimos 2 (**set_form_component** y **set_default_options**) sólo son necesarios como describimos a continuación:
 
-### Metadata type Options
+### Opciones de tipo de metadatos
 
-When you register a new Metadata Type, it will be automatically added as an option in the Metadata configuration screen. It will also have the default metadata configuration form, where you set whether the metadata is _required_ or not, accept _multiple values_ or not, and so on.
+Cuando registras un nuevo tipo de metadatos, se añadirá automáticamente como opción en la pantalla de configuración de metadatos. También tendrá el formulario de configuración de metadatos por defecto, donde se establece si los metadatos son _requeridos_ o no, aceptan _valores múltiples_ o no, etc.
 
-However, your metadata type may have specific options you want to give to the users. For example: In the Select Metadata type, you can set which will be the options in your Select. In the Numeric Metadata Type, we ant to allow users to decide the _step_ for increasing values.
+Sin embargo, su tipo de metadatos puede tener opciones específicas que desee dar a los usuarios. Por ejemplo: En el tipo de metadatos Select, puede establecer cuáles serán las opciones de su Select. En el tipo de metadatos Numérico permite a los usuarios decidir el _paso_ para incrementar valores.
 
-To do this, you have to declare what are the options your metadata type has, and prepare another web component to be rendered in the metadata form:
+Para hacer esto, tienes que declarar cuales son las opciones que tiene tu tipo de metadatos, y preparar otro componente web para ser renderizado en el formulario de metadatos:
 
-- **set_form_component(string \$component_name)** - The name of the vue component that will be rendered inside the metadata edition form with extra options related to this metadata type. We recommend adding the prefix _tainacan-metadata-form-type-_ to avoid collisions.
+- **set_form_component(string \$component_name)** - El nombre del componente Vue que se renderizará dentro del formulario de edición de metadatos con opciones extra relacionadas con este tipo de metadatos. Recomendamos añadir el prefijo _tainacan-metadata-form-type-_ para evitar colisiones.
 
-- **set_default_options(string \$component_name)** - An array with custom metadata type options, having their `slug` and initial value. This reflects to the inputs that we'll exist on the Metadata Form Component.
+- **set_default_options(string \$component_name)** - Un array con opciones de tipo de metadatos personalizados, teniendo su `slug` y valor inicial. Esto refleja a las entradas que vamos a existir en el Metadata Form Component.
 
-Your form Metadata Form Component shall also include labels that need to be translated. For that, you can use the `get_form_labels` method:
+Tu formulario Metadata Form Component también deberá incluir etiquetas que necesiten ser traducidas. Para ello, puedes utilizar el método `get_form_labels`:
 
 ```php
 class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
@@ -135,9 +135,9 @@ class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
 }
 ```
 
-Where the title is used as form label and the description is shown inside a tooltip, seen by the user when hovering a **?** icon.
+Donde el título se utiliza como etiqueta del formulario y la descripción se muestra dentro de un tooltip, visto por el usuario al pasar el ratón sobre un icono **?**.
 
-Optionally you can implement the `validate_options` method to validate the form before it gets saved:
+Opcionalmente puedes implementar el método `validate_options` para validar el formulario antes de guardarlo:
 
 ```php
 class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
@@ -157,37 +157,37 @@ class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
 }
 ```
 
-`validate_options` is expected to return `true` if valid, and an array where the keys are the option `slug` and the values are the error messages.
+Se espera que `validate_options` devuelva `true` si es válido, y un array donde las claves son la opción `slug` y los valores son los mensajes de error.
 
-### Additional Methods
+### Métodos adicionales
 
-There are a few other methods you can implement that can change how the items interact with metadata depending on the metadata type:
+Hay algunos otros métodos que puedes implementar que pueden cambiar la forma en que los elementos interactúan con los metadatos dependiendo del tipo de metadatos:
 
 #### **validate( Item_Metadata_Entity \$item_metadata)**
 
-This method will override the validation of the Item Metadata Entity, which means every time Tainacan saves a value for metadata of this type, it will call this method.
+Este método anulará la validación de la Entidad de Metadatos del Artículo, lo que significa que cada vez que Tainacan guarde un valor para metadatos de este tipo, llamará a este método.
 
-For example, the Date Metadata Type overrides [this method](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/date/class-tainacan-date.php#L30 ":ignore") to make sure the date is in the correct format. Notice that it takes care of checking whether the value is a string (single value) or an array (multiple values).
+Por ejemplo, el tipo de metadatos Fecha anula [este método](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/date/class-tainacan-date.php#L30 ":ignorar") para asegurarse de que la fecha está en el formato correcto. Observe que se encarga de comprobar si el valor es una cadena (valor único) o una matriz (valores múltiples).
 
 #### **get_value_as_html( Item_Metadata_Entity \$item_metadata)**
 
-This method will change the way value is converted to HTML for metadata of this metadata type. For example, Taxonomy and Relationship Metadata Type use [this](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L197 ":ignore") and [this](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L111 ":ignore"), respectivelly, to add links to the related term/item in the HTML output.
+Este método cambiará la forma en que el valor se convierte a HTML para los metadatos de este tipo de metadatos. Por ejemplo, los metadatos de tipo taxonomía y relación utilizan [esto](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L197 ":ignore") y [esto](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L111 ":ignore"), respectivamente, para añadir enlaces al término/elemento relacionado en la salida HTML.
 
-## Creating Vue Web Component
+## Creando un Componente Web Vue
 
-The Vue component is the chunk that will be rendered inside the Item Edition form so the user can edit its metadata of your custom type.
+El componente Vue es el trozo que se renderizará dentro del formulario de Edición de Artículos para que el usuario pueda editar sus metadatos de su tipo personalizado.
 
-Our [Vue.js](vuejs.org/ ":ignore") components use the Options API, which means they are defined by an object with options, usually including:
+Nuestros componentes [Vue.js](vuejs.org/ ":ignore") utilizan la API de Opciones, lo que significa que están definidos por un objeto con opciones, que normalmente incluyen:
 
-- `template` - With its HTML content with vue notation for binding data and events;
-- `data` - A function that returns an object with your data, or local variables;
-- `props` - The variables that will be passed from the [Tainacan Form Item](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/tainacan-form-item.vue ":ignore") parent component. We'll learn more about them below;
-- `methods` - The array of functions that are evoked inside this component;
-- `computed` - Array of functions that return local data that are derived from some processing of other variables;
-- `watch` - Array of functions that are listening to some variable change to perform some update.
-- And others such as lifecycle hooks, which you can check in the [Vue.js](vuejs.org/ ":ignore") documentation.
+- `template` - Con su contenido HTML con notación vue para enlazar datos y eventos;
+- `data` - Una función que devuelve un objeto con sus datos, o variables locales;
+- `props` - Las variables que se pasarán desde el componente padre [Tainacan Form Item](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/tainacan-form-item.vue ":ignore"). Aprenderemos más sobre ellas a continuación;
+- `methods` - El array de funciones que se evocan dentro de este componente;
+- computed` - Matriz de funciones que devuelven datos locales que se derivan de algún procesamiento de otras variables;
+- `watch` - Matriz de funciones que están a la escucha de algún cambio de variable para realizar alguna actualización.
+- Y otros como lifecycle hooks, que puedes consultar en la documentación de [Vue.js](vuejs.org/ ":ignore").
 
-This object should be in that path referenced in our [registering process](#registering-your-metadata-type), so `metadata_type/metadata-type.js` in our Custom Metadata Type example, which is a copy of the Numeric Metadata Type:
+Este objeto debe estar en esa ruta referenciada en nuestro [proceso de registro](#registering-your-metadata-type), así `metadata_type/metadata-type.js` en nuestro ejemplo de Custom Metadata Type, que es una copia del Numeric Metadata Type:
 
 ```javascript
 window.tainacan_extra_components =
@@ -238,40 +238,40 @@ window.tainacan_extra_components["tainacan-metadata-type-custom"] =
   TainacanMetadataTypeCustom;
 ```
 
-The first and last lines are an important step for registering custom components to the plugin JS bundle.
+La primera y la última línea son un paso importante para registrar componentes personalizados en el paquete JS del plugin.
 
-!> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+!> DEBES mantener el nombre `window.tainacan_extra_components`, ya que es el que usa el plugin para cargar los componentes personalizados, y ten cuidado de no sobreescribirlo completamente. Otros plugins pueden haber registrado sus componentes allí también.
 
-The `slug` passed to the array in the last line is the same used by the _set_component_ method previously in our [registration process](#registering-your-metadata-type).
+El `slug` pasado al array en la última línea es el mismo usado por el método _set_component_ previamente en nuestro [proceso de registro](#registering-your-metadata-type).
 
-### Understanding the component logic
+### Entendiendo la lógica del componente
 
-#### Props: what the component receives from the parent component.
+#### Props: lo que el componente recibe del componente padre.
 
-Notice first the `props` on the component. They are passed to every metadata:
+Fíjate primero en los `props` del componente. Se pasan a todos los metadatos:
 
-- `itemMetadatum` is the item metadatum object itself, which contains important data as the `metadatum.id` and the `metadatum.metadata_type_options`;
-- `value` is the value used for binding whatever is the content value of this metadatum;
-- `disabled` is a boolean handled by the Item's form, which can be used to disable any inner component in case the options are not loaded and other situations that might be desired;
+- `itemMetadatum` es el propio objeto metadato del ítem, que contiene datos importantes como el `metadatum.id` y el `metadatum.metadata_type_options`;
+- `value` es el valor utilizado para vincular lo que sea el valor de contenido de este metadato;
+- `disabled` es un booleano manejado por el formulario del Item, que puede ser usado para deshabilitar cualquier componente interno en caso de que las opciones no estén cargadas y otras situaciones que puedan ser deseadas;
 
-Prop's values are not to be modified by the component. If you want to perform changes to some local data before sending it to the API, you should probably use the `data` component option with a copy of the input value, passed during the `created()` lifecycle.
+Los valores de Prop no deben ser modificados por el componente. Si desea realizar cambios en algunos datos locales antes de enviarlos a la API, probablemente debería utilizar la opción del componente `data` con una copia del valor de entrada, pasado durante el ciclo de vida de `created()`.
 
-#### Methods: where we send values back to the parent component
+#### Métodos: donde enviamos valores de vuelta al componente padre
 
 .
-The `methods` here simply delegate the blur and input events to the default parent component, which is responsible for passing these values to the Item's form.
+Los `methods` aquí simplemente delegan los eventos blur y input al componente padre por defecto, que es el responsable de pasar estos valores al formulario del Item.
 
-?> Every metadatum component must emit an input value, passing the updated value that they received from the props.
+Cada componente metadatum debe emitir un valor de entrada, pasando el valor actualizado que recibieron de los props.
 
-#### Getting the Metatada Type Options on a Computed function
+#### Obteniendo las Opciones de Tipo de Metatada en una función Computada
 
-That might not be your case, but if your metadata component has registered a Metadata Form Component with extra options then you can access them via the `this.itemMetadatum.metadatum.metadata_type_options` object. In the code above, we access this value with a Computed function.
+Puede que este no sea tu caso, pero si tu componente de metadatos ha registrado un componente de formulario de metadatos con opciones extra, entonces puedes acceder a ellas a través del objeto `this.itemMetadatum.metadatum.metadata_type_options`. En el código anterior, accedemos a este valor con una función Computed.
 
-Finally, in this example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. We recommend checking it out, as this library is already loaded on Tainacan, and most of its classes are styled to match our default style. But if you want to use another Vue.js library or component, you can check the session of [Registering Custom Vue JS](/dev/registering-custom-vue-components.md) for understanding how to use it, but the process is much alike what we have done to register the Metadata Form Component.
+Por último, en este ejemplo se utiliza un componente personalizado de [Buefy](https://buefy.github.io/), `b-input`. Recomendamos echarle un vistazo, ya que esta librería ya está cargada en Tainacan, y la mayoría de sus clases tienen un estilo que coincide con nuestro estilo por defecto. Pero si quieres usar otra librería o componente de Vue.js, puedes consultar la sesión de [Registering Custom Vue JS](/dev/registering-custom-vue-components.md) para entender cómo usarlo, pero el proceso es muy parecido al que hemos hecho para registrar el componente de formulario de metadatos.
 
-## Creating Vue Web Component for the Metadata Form
+## Creando el Componente Vue Web para el Formulario de Metadatos
 
-Registering the Metadata Form Component follows similar steps. You need to take care of using the path registered before, in our case `metadata_type/metadata-form-type.js` and care of using the same slug from the registration step: `tainacan-metadata-form-type-custom`. We are now registering not a metadata type, but an isolated vuejs component, thats why in the `PHP` file we're calling the `register_vuejs_component` function. Here is our considerably longer `.js` file:
+Registrar el Componente Formulario de Metadatos sigue pasos similares. Hay que tener cuidado de utilizar la ruta registrada anteriormente, en nuestro caso `metadata_type/metadata-form-type.js` y tener cuidado de utilizar el mismo slug del paso de registro: `tainacan-metadata-form-type-custom`. Ahora no estamos registrando un tipo de metadatos, sino un componente vuejs aislado, por eso en el archivo `PHP` estamos llamando a la función `register_vuejs_component`. Aquí está nuestro archivo `.js` considerablemente más largo:
 
 ```js
 window.tainacan_extra_components =
@@ -374,29 +374,29 @@ window.tainacan_extra_components["tainacan-metadata-form-type-custom"] =
   TainacanMetadataFormCustomType;
 ```
 
-Some observation here:
+Algunas observaciones:
 
-- The form components always receive a `value` prop from its parent, that is an object containing any option registered on the Metadata Type Class;
-- You don't need to wrap your template with a `<form>` tag, as the parent component of this will be the default Metadata Edition Form;
-- In the example above, we store a local copy of the `value.step`, obtained on the `created()` lifecycle. That is because we want to change the value internally and also emit the updated version to the parent form. Notice, when `emit()` is performed, that the value goes inside an object, the same way that it was received from the parent.
+- Los componentes de formulario siempre reciben un `value` prop de su padre, que es un objeto que contiene cualquier opción registrada en la Clase de Tipo de Metadatos;
+- No necesitas envolver tu plantilla con una etiqueta `<form>`, ya que el componente padre de ésta será el Formulario de Edición de Metadatos por defecto;
+- En el ejemplo anterior, almacenamos una copia local del `value.step`, obtenida en el ciclo de vida `created()`. Esto es porque queremos cambiar el valor internamente y también emitir la versión actualizada al formulario padre. Fíjate, cuando se ejecuta `emit()`, que el valor va dentro de un objeto, de la misma forma que fue recibido del padre.
 
-## Advanced usage of Vue Components
+## Uso avanzado de componentes Vue
 
-The strategy mentioned above may not be sufficient in your case, more specifically in two cases:
+La estrategia mencionada anteriormente puede no ser suficiente en su caso, más concretamente en dos casos:
 
-1. If you want to write your component in a `.vue` file, avoiding the `template` option which may not be good for organizing complex components;
-2. If you need extra third party Vue plugins or components that are not loaded by default in Tainacan's plugin bundle. For example, if you wish to use some kind of Date Picker plugin in case you are not satisfied with Buefy's one.
+1. Si quieres escribir tu componente en un archivo `.vue`, evitando la opción `template` que puede no ser buena para organizar componentes complejos;
+2. Si necesitas plugins o componentes Vue de terceros que no se cargan por defecto en el paquete de plugins de Tainacan. Por ejemplo, si deseas utilizar algún tipo de plugin Date Picker en caso de que no estés satisfecho con el de Buefy.
 
-In any of those cases, you would need a _bundler_ to convert your Vue files and import logic into a single `js` file, to be referenced in your PHP class. While there are different bundlers out there that can be used, we will use [Webpack](https://webpack.js.org/ ":ignore") as an example and [NPM](https://www.npmjs.com/ ":ignore") as our package manager. Here is what you'll need to have, in your `metadata_type` folder:
+En cualquiera de esos casos, necesitarías un _bundler_ para convertir tus archivos Vue y la lógica de importación en un único archivo `js`, para ser referenciado en tu clase PHP. Aunque hay diferentes bundlers que se pueden utilizar, vamos a utilizar [Webpack](https://webpack.js.org/ ":ignore") como ejemplo y [NPM](https://www.npmjs.com/ ":ignore") como nuestro gestor de paquetes. Esto es lo que necesitarás tener, en tu carpeta `metadata_type`:
 
-- A `package.json` file, to hold your npm dependencies and script instructions;
-- A `webpack.config.js` file, containing the bundler settings;
-- Your new `metadata-type.vue` file, with the logic that one was put on the `.js` file, and your extra stuff;
-- A modified version of the old `metadata-type.js` file that we created earlier in this tutorial.
+- Un archivo `package.json`, que contiene las dependencias de npm y las instrucciones de los scripts;
+- Un archivo `webpack.config.js`, que contiene la configuración del bundler;
+- Tu nuevo archivo `metadata-type.vue`, con la lógica que se puso en el archivo `.js`, y tus cosas extra;
+- Una versión modificada del antiguo archivo `metadata-type.js` que creamos anteriormente en este tutorial.
 
-And of course, after all set you'll need to [build it](#build-it!). The settings will depend a lot on what you are building on, but here we have some example:
+Y por supuesto, después de todo listo necesitarás [construirlo](#construirlo!). La configuración dependerá mucho de lo que estés construyendo, pero aquí tenemos algunos ejemplos:
 
-### Minimal _package.json_ example
+### Ejemplo mínimo de _package.json_
 
 ```json
 {
@@ -423,9 +423,9 @@ And of course, after all set you'll need to [build it](#build-it!). The settings
 }
 ```
 
-Notice how we already offer a build command and an example of how a third party component would be included as a dependency. The usual way to add these is by running `npm install some-third-party-component`, if there is a package published on _npm_ repository.
+Fíjate en que ya ofrecemos un comando de compilación y un ejemplo de cómo se incluiría un componente de terceros como dependencia. La forma habitual de añadirlos es ejecutando `npm install some-third-party-component`, si existe un paquete publicado en el repositorio _npm_.
 
-### Basic _webpack.config.js_ example
+### Ejemplo básico de _webpack.config.js_
 
 ```js
 let path = require("path");
@@ -453,11 +453,11 @@ module.exports = {
 };
 ```
 
-!> Notice that the generated bundle(`metadata-type.bundle.js`) has a different name than the source file(`metadata-type.js`) and is inside a `build` folder, as defined by the [Webpack config file](#basic-webpackconfigjs-example). This means that you will have to update your [registration PHP](#registering-your-metadata-type) file mentioned earlier to provide the proper `metadata_script_url`.
+!> Observa que el bundle generado (`metadata-type.bundle.js`) tiene un nombre diferente al del archivo fuente (`metadata-type.js`) y está dentro de una carpeta `build`, como se define en el [archivo de configuración del Webpack](#basic-webpackconfigjs-example). Esto significa que tendrá que actualizar su archivo [PHP de registro](#registering-your-metadata-type) mencionado anteriormente para proporcionar la `metadata_script_url` adecuada.
 
-### Your .vue file
+### Tu archivo .vue
 
-Now, instead of using the "_object-with-options_" logic for [creating the Vue component](#creating-vue-web-component-for-the-metadata-form), we can actually take advantage of Vue's "_single-file-component_" logic and even _import_ some third party components if needed:
+Ahora, en lugar de usar la lógica "_object-with-options_" para [crear el componente Vue](#creating-vue-web-component-for-the-metadata-form), podemos aprovechar la lógica "_single-file-component_" de Vue e incluso _importar_ algunos componentes de terceros si es necesario:
 
 ```vue
 <template>
@@ -520,9 +520,9 @@ export default {
 </style>
 ```
 
-### Updating the .js file
+### Actualizar el archivo .js
 
-Now the previous `.js` file only have to import the component and pass it to the `window.tainacan_extra_components` global variable.
+Ahora el fichero `.js` anterior sólo tiene que importar el componente y pasarlo a la variable global `window.tainacan_extra_components`.
 
 ```js
 import TainacanMetadataTypeCustom from "./metadata-type.vue";
@@ -535,19 +535,19 @@ window.tainacan_extra_components["tainacan-metadata-type-custom"] =
   TainacanMetadataTypeCustom;
 ```
 
-### Build it!
+### Construirlo!
 
-With these four files set up you are ready to build your small vue.js project. Open the terminal, enter the `metadata_type` folder and execute:
+Con estos cuatro archivos configurados estás listo para construir tu pequeño proyecto Vue.js. Abre el terminal, entra en la carpeta de tu`metadata_type` y ejecuta:
 
 ```
 npm install
 npm run build
 ```
 
-If everything goes well, you shall have a new folder `node_modules` and a new file `package.lock.json` generated on your folder.
+Si todo va bien, tendrás una nueva carpeta `node_modules` y un nuevo archivo `package.lock.json` generado en tu carpeta.
 
-## Wrapping up
+## Conclusión
 
-Creating your custom Metadata Type for Tainacan requires following some _naming conventions_ and understanding a bit of the structure existing on the plugin code. We here summarized how to [Register](#registering-your-metadata-type), create the [Class](#creating-the-php-class) and the [Custom Vue Components](#creating-vue-web-component) related to it. But you can learn a lot more by studying the [source code of some more complex examples](https://github.com/tainacan/tainacan/tree/develop/src/views/admin/components/metadata-types ":ignore"). Feel free to reach us at the GitHub repo or at the [community forum](https://tainacan.discourse.group ":ignore") :wink:
+Crear tu Metadata Type personalizado para Tainacan requiere seguir algunas _convenciones de nomenclatura_ y entender un poco la estructura existente en el código del plugin. Aquí resumimos cómo [Registrar](#registering-your-metadata-type), crear la [Clase](#creating-the-php-class) y los [Componentes Vue personalizados](#creating-vue-web-component) relacionados con ella. Pero puedes aprender mucho más estudiando el [código fuente de algunos ejemplos más complejos](https://github.com/tainacan/tainacan/tree/develop/src/views/admin/components/metadata-types ":ignore"). No dudes en contactar con nosotros en el repositorio de GitHub o en el [foro de la comunidad](https://tainacan.discourse.group ":ignore") :wink:
 
-> Oh, and BTW. Are you ready to also create a [Custom Filter Type](/dev/creating-filters-type) for your new Metadata Type?
+> Ah, y por cierto. ¿Estás preparado para crear también un [Tipo de filtro personalizado](/es-mx/dev/creating-filters-type) para tu nuevo Tipo de metadatos?
