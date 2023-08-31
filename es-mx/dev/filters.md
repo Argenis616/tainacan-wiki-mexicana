@@ -235,7 +235,7 @@ add_filter(
 );
 ```
 
-Un array de Admin UI Options. Aprende mas sobre este filtro [aquí](/es-mx/dev/admin-ui-options.md).
+Un array de Admin UI Options. Aprende mas sobre este filtro [en su página dedicada](/es-mx/dev/admin-ui-options.md).
 
 #### Parámetros
 
@@ -258,7 +258,7 @@ Un array de tuplas clave-valor donde la clave es una clave simple para identific
 
 | Nombre    | Tipo    | Descripción                                                                                                                                                                                        |
 | ------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| strings | `array` | Matriz de objetos que contienen la clave y el valor de la traducción strings. Por defecto es [el arreglo de este archivo](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php ":ignore"). |
+| strings | `array` | Matriz de objetos que contienen la clave y el valor de la traducción de los strings. Por defecto es [el arreglo de este archivo](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php ":ignore"). |
 
 ### tainacan-admin-hooks-positions
 
@@ -286,7 +286,7 @@ add_filter(
 );
 ```
 
-Lista of forms disponibles donde admin form hooks puede ser usado
+Lista de formularios disponibles donde admin form hooks puede ser usado
 
 #### Parámetros
 
