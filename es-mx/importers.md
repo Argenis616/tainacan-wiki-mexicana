@@ -314,7 +314,7 @@ Una vez que hayas terminado de crear el archivo *.csv* con los términos deseado
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Acceso al panel de control](_assets/images/Panel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets/images/Panel_Adm_Wordpress.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
