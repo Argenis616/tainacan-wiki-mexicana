@@ -1,4 +1,4 @@
-* [:arrow_left: Back to Wiki Home](/#wiki-do-tainacan)
+* [:arrow_left: Back to Wiki Home](/es-mx/?id=wiki-do-tainacan)
 * [Developer's Documentation](/es-mx/dev/)
  
 * Fundamentos del desarrollo
