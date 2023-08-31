@@ -32,5 +32,5 @@
 	* [Motor de búsqueda](/es-mx/dev/search-engine.md) 
 	* [Recolector de basura](/es-mx/dev/garbage-collector.md)
 * Otras contribuciones para el desarrollo
-    * [Contribuyendo](/es-mx/dev/CONTRIBUTING.md)
-    * [Liberación](/es-mx/dev/release.md) 
+    * [Contribuciones](/es-mx/dev/CONTRIBUTING.md)
+    * [Liberaciones](/es-mx/dev/release.md) 
