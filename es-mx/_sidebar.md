@@ -35,7 +35,7 @@
   - [Plugin: Tipo de Metadado URL](es-mx/plugin-metadata-type-url.md "Un plugin que registra un tipo de metadatos para mostrar y predecir enlaces URL - Tainacan Wiki")
   - [Modos de vista adicionales](es-mx/plugin-extra-view-modes.md "Un plugin de modos de vista adicionales para Tainacan - Tainacan Wiki")
   - [WordPress 3D HOP (Beta)](es-mx/plugin-3d-hop.md "Un plugin para renderizar objetos 3D a través de 3DHOP en Tainacan - Tainacan Wiki")
-- [Para desarrolladores](dev/README.md "Sesión de páginas para desarrolladores - Tainacan Wiki")
+- [Para desarrolladores](/es-mx/dev/README.md "Sesión de páginas para desarrolladores - Tainacan Wiki")
 - Sobre Tainacan
   - [:link:Web oficial](https://tainacan.org/ ":ignore")
   - [Versiones](es-mx/releases.md "Versiones lanzadas - Tainacan Wiki")
