@@ -5,7 +5,7 @@
 	* [Configuración local](/es-mx/dev/setup-local.md) 
 	* [Conceptos clave](/es-mx/dev/key-concepts.md)
 	* [API interna](/es-mx/dev/internal-api.md)
-	* [Tainacan Hooks](/es.mx/dev/hooks.md)
+	* [Tainacan Hooks](/es-mx/dev/hooks.md)
 	* [API JSON :link:](https://tainacan.org/api-docs/ ':ignore')
 	* [Permisos](/es-mx/dev/permissions.md) 
 * Desarrollo de Plugins y extensiones
