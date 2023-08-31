@@ -1,219 +1,216 @@
-?> _NOTICE_ This page describes the roles & caps structure for Tainacan versions older than 0.15. If you use earlier versions, check the [Roles and Capabilities](/dev/roles-capabilities.md) page.
+?> _NOTICE_ Esta página describe la estructura de roles y capacidades para versiones de Tainacan anteriores a la 0.15. Si utilizas versiones anteriores, consulta la página [Roles y Capacidades](/es-mx/dev/roles-capabilities.md).
 
-# Tainacan Users Permissions
+# Permisos de los usuarios de Tainacan
 
-This page explains how permissions are handled in Tainacan, what are the user's roles available and what each one of them can do.
+Esta página explica cómo se manejan los permisos en Tainacan, cuáles son los roles de usuario disponibles y qué puede hacer cada uno de ellos.
 
-Tainacan handles user permissions in the very same way WordPress does, so if you are used to WordPress Roles and Permissions, you won't have any trouble.
+Tainacan maneja los permisos de usuario de la misma manera que WordPress, así que si estás acostumbrado a los Roles y Permisos de WordPress, no tendrás ningún problema.
 
-Default WordPress roles are assigned with new capabilities to work with Collections, Items, and other Tainacan specific operations. Additionally Tainacan creates new roles, relative to the core WordPress roles, that have the same Tainacan specific capabilities but don't have access to the rest of the administrative panel of WordPress. For example, WordPress Editor can manage everything inside Tainacan, and they can also create and publish pages, on the other hand, Tainacan Editors can't.
+A los roles por defecto de WordPress se les asignan nuevas capacidades para trabajar con Colecciones, Ítems y otras operaciones específicas de Tainacan. Adicionalmente Tainacan crea nuevos roles, relativos a los roles principales de WordPress, que tienen las mismas capacidades específicas de Tainacan pero no tienen acceso al resto del panel administrativo de WordPress. Por ejemplo, el Editor de WordPress puede administrar todo dentro de Tainacan, y también pueden crear y publicar páginas, por otro lado, los Editores de Tainacan no pueden.
 
-If you want to change permissions for specific roles or users, or even create new roles, you can always use one of the many WordPress plugins available for that.
+Si desea cambiar los permisos para roles o usuarios específicos, o incluso crear nuevos roles, siempre puede utilizar uno de los muchos plugins de WordPress disponibles para ello.
 
-In short, these are the roles and their main characteristics. A detailed description can be found in the next session. 
+En resumen, estos son los roles y sus principales características. Puede encontrar una descripción detallada en la siguiente sesión. 
 
-* Subscriber: Can't really do anything inside Tainacan.
-* Collaborator / Tainacan Collaborator: Can create collections and items, but not to publish them.
-* Author / Tainacan Author: Can create and publish collections and items, but can not edit published items nor edit other user's items.
-* Editor / Tainacan Editor: Can create, publish and edit other users' collections and items.
-* Administrator: Rules the world.
+* Suscriptor: Realmente no puede hacer nada dentro de Tainacan.
+* Colaborador / Colaborador de Tainacan: Puede crear colecciones y artículos, pero no publicarlos.
+* Autor / Tainacan Autor: Puede crear y publicar colecciones e ítems, pero no puede editar los ítems publicados ni editar los ítems de otros usuarios.
+* Editor / Tainacan Editor: Puede crear, publicar y editar colecciones e ítems de otros usuarios.
+* Administrador: Gobierna el mundo.
 
-## Roles and permissions
+## Roles y permisos
 
-Here you will find a detailed explanation of what each role can do with each part of Tainacan.
+Aquí encontrarás una explicación detallada de lo que cada rol puede hacer con cada parte de Tainacan.
 
-### Collections
+### Colecciones
 
-These are the capabilities related to collection management.
+Estas son las capacidades relacionadas con la gestión de colecciones.
 
-**Note about Collection moderators**: Collection moderators have the same capabilities an editor has, but only about the collections he or she is moderating. Even if the user is a subscriber, he will act as if he/she was an editor for that specific collection.
+**Nota sobre los moderadores de colecciones**: Los moderadores de colecciones tienen las mismas capacidades que un editor, pero sólo sobre las colecciones que modera. Aunque el usuario sea un suscriptor, actuará como si fuera un editor para esa colección en concreto.
 
-|                              | Admin | Editor | Author | Collaborator |
+|                              | Admin | Editor | Autor | Colaborador |
 |------------------------------|-------|--------|--------|--------------|
-| Edit Collections             | y     | y      | y      |              |
-| Delete Collections           | y     | y      | y      |              |
-| Publish Collections          | y     | y      | y      |              |
-| Edit Published Collections   | y     | y      | y      |              |
-| Delete Published Collections | y     | y      | y      |              |
-| Edit Others Collections      | y     | y      |        |              |
-| Delete Others Collections    | y     | y      |        |              |
-| Read Private Collections     | y     | y      |        |              |
-| Edit Private Collections     | y     | y      |        |              |
-| Delete Private Collections   | y     | y      |        |              |
+| Editar colecciones             | y     | y      | y      |              |
+| Eliminar colecciones           | y     | y      | y      |              |
+| Publicar colecciones          | y     | y      | y      |              |
+| Editar colecciones publicadas   | y     | y      | y      |              |
+| Eliminar colecciones publicadas | y     | y      | y      |              |
+| Editar otras colecciones      | y     | y      |        |              |
+| Borrar otras colecciones    | y     | y      |        |              |
+| Leer colecciones privadas     | y     | y      |        |              |
+| Editar colecciones privadas     | y     | y      |        |              |
+| Borrar colecciones privadas   | y     | y      |        |              |
 
-#### Edit Collections
+#### Editar colecciones
 
-> Capability name: edit_tainacan-collections
-Who's got it: Everyone but subscribers and collaborators
+> Nombre de la función: edit_tainacan-collections
+Quién la tiene Todo el mundo excepto suscriptores y colaboradores
 
-Allows to create and edit one's collections details. Does not allow to publish them.
+Permite crear y editar los datos de las colecciones propias. No permite publicarlas.
 
-#### Edit Others Collections
+#### Editar otras colecciones
 
-> Capability name: edit_others_tainacan-collections
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la función: edit_others_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows editing other user's Collections details.
+Permite editar los detalles de las Colecciones de otros usuarios.
 
-#### Edit Published Collections
+#### Editar colecciones publicadas
 
-> Capability name: edit_published_tainacan-collections
-Who's got it: Administrators, Editorsn and Tainacan Editors
+> Nombre de la Capacidad: edit_published_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows editing collections details after they were published.
+Permite editar los detalles de las colecciones una vez publicadas.
 
-#### Edit Private Collections
+#### Editar colecciones privadas
 
-> Capability name: edit_private_tainacan-collections
-Who's got it: Administrators, Editors and Tainacan Editors
+> Nombre de la funcionalidad: edit_private_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows editing details of collections marked as private.
+Permite editar los detalles de las colecciones marcadas como privadas.
 
-#### Publish Collections
+#### Publicar colecciones
 
-> Capability name: publish_tainacan-collections
-Who's got it: Administrators, Editors, Tainacan Editors, Authors and Tainacan Authors
+> Nombre de la función: publish_tainacan-collections
+Quién la tiene: Administradores, Editores, Editores Tainacan, Autores y Autores Tainacan
 
-Allows to publish one's own collections.
+Permite publicar colecciones propias.
 
-#### Delete Collections
+#### Borrar colecciones
 
-> Capability name: delete_tainacan-collections
-Who's got it: Everyone but subscribers and colaborators
+> Nombre de la funcionalidad: delete_tainacan-collections
+Quién la tiene Todos excepto suscriptores y colaboradores
 
-Allows to delete one's own collections.
+Permite eliminar las colecciones propias.
 
-#### Delete Others Collections
+#### Borrar colecciones ajenas
 
-> Capability name: delete_others_tainacan-collections
-Who's got it: Administrators, Editors and Tainacan Editors
+> Nombre de la funcionalidad: delete_others_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows to delete other user's Collections.
+Permite borrar las Colecciones de otros usuarios.
 
-#### Delete Published Collections
+#### Borrar colecciones publicadas
 
-> Capability name: delete_published_tainacan-collections
-Who's got it: Administrators, Editors and Tainacan Editors
+> Nombre de la Capacidad: delete_published_tainacan-collections
+Quién la tiene: Administradores, Editores y Editores de Tainacan
 
-Allows to delete collections after they were published.
+Permite eliminar colecciones una vez publicadas.
 
-#### Delete Private Collections
+#### Borrar colecciones privadas
 
-> Capability name: delete_private_tainacan-collections
-Who's got it: Administrators, Editors and Tainacan Editors
+> Nombre de la funcionalidad: delete_private_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows to delete collections marked as private.
+Permite borrar colecciones marcadas como privadas.
 
-#### Read Private Collections
+#### Leer colecciones privadas
 
-> Capability name: read_private_tainacan-collections
-Who's got it: Administrators, Editors and Tainacan Editors
+> Nombre de la funcionalidad: read_private_tainacan-collections
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows to view collections marked as private and its items.
+Permite ver las colecciones marcadas como privadas y sus ítems.
 
-### Items
+### Ítems
 
-These are the capabilities related to items management.
+Estas son las capacidades relacionadas con la gestión de ítems.
 
-Every user in tainacan is granted a set of capabilities, for every collection in the repository, depending on his/her role.
+A cada usuario en tainacan se le otorga un conjunto de capacidades, para cada colección en el repositorio, dependiendo de su rol.
 
-Capabilities are independent for each collection. So a user may be editor in one collection but have no rights whatsoever in another collection.
+Las capacidades son independientes para cada colección. Así, un usuario puede ser editor en una colección pero no tener ningún derecho en otra.
 
-Permissions to a specific collection may be granted to a user adding him/her as a moderator of the collection. In that case, he/she will have the same rights as an editor, but only for that specific collection.
+Se pueden conceder permisos a una colección específica a un usuario añadiéndole como moderador de la colección. En ese caso, tendrá los mismos derechos que un editor, pero sólo para esa colección específica.
 
-Also, you may use a WordPress plugin to have granular control of capabilities for each user in each collection.
+Además, puede utilizar un plugin de WordPress para tener un control granular de las capacidades de cada usuario en cada colección.
 
-In the description below you will find the characteristics of all the capabilities that are applied for each collection. Each user and role have a set of all these 10 capabilities for each collection.
+En la siguiente descripción encontrará las características de todas las capacidades que se aplican para cada colección. Cada usuario y rol tiene un conjunto de todas estas 10 capacidades para cada colección.
 
-|                        | Admin | Editor | Author | Collaborator |
+|                        | Admin | Editor | Autor | Colaborador |
 |------------------------|-------|--------|--------|--------------|
-| Edit Items             | y     | y      | y      | y            |
-| Delete Items           | y     | y      | y      | y            |
-| Publish Items          | y     | y      | y      |              |
-| Edit Published Items   | y     | y      | y      |              |
-| Delete Published Items | y     | y      | y      |              |
-| Edit Others Items      | y     | y      |        |              |
-| Delete Others Items    | y     | y      |        |              |
-| Read Private Items     | y     | y      |        |              |
-| Edit Private Items     | y     | y      |        |              |
-| Delete Private Items   | y     | y      |        |              |
+| Eliminar elementos             | y     | y      | y      | y            |
+| Delete Items         | y     | y      | y      | y            |
+| Publicar elementos          | y     | y      | y      |              |
+| Editar elementos publicados   | y     | y      | y      |              |
+| Eliminar elementos publicados | y     | y      | y      |              |
+| Editar otros elementos     | y     | y      |        |              |
+| Borrar otros elementos   | y     | y      |        |              |
+| Leer elementos privados     | y     | y      |        |              |
+| Editar elementos privados     | y     | y      |        |              |
+| Borrar elementos privados   | y     | y      |        |              |
 
-#### Edit Items
+#### Editar elementos
 
-> Capability name: edit_%collection_id%_items
-Who's got it: Everyone but subscribers
+> Nombre de la función: edit_%collection_id%_items
+Quién la tiene Todos menos los suscriptores
 
-Allows to create and edit one's own items. Does not allow to publish them.
+Permite crear y editar los propios artículos. No permite publicarlos.
 
-#### Edit Others Items
+#### Editar otros elementos
 
-> Capability name: edit_others_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la función: edit_others_%collection_id%_items
+Quién la tiene: Administradores, Editores y Editores de Tainacan
 
-Allows editing other user's Items.
+Permite editar elementos de otros usuarios.
 
-#### Edit Published Items
+#### Editar elementos publicados
 
-> Capability name: edit_published_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la funcionalidad: edit_published_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows editing Items after they were published.
+Permite editar elementos después de haber sido publicados.
 
-#### Edit Private Items
+#### Editar elementos privados
 
-> Capability name: edit_private_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la funcionalidad: edit_private_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows editing Items marked as private.
+Permite editar elementos marcados como privados.
 
-#### Publish Items
+#### Publicar elementos
 
-> Capability name: publish_%collection_id%_items
-Who's got it: Administrators, Editors, Tainacan Editors, Authors, and Tainacan Authors
+> Nombre de la funcionalidad: publish_%collection_id%_items
+Quién la tiene: Administradores, Editores, Editores de Tainacan, Autores y Autores de Tainacan
 
-Allows publishing one's own Items.
+Permite publicar Elementos propios.
 
-#### Delete Items
+#### Eliminar elementos
 
-> Capability name: delete_%collection_id%_items
-Who's got it: Everyone but subscribers
+> Nombre de la funcionalidad: delete_%collection_id%_items
+Quién la tiene Todos menos los suscriptores
 
-Allows deleting one's own Items.
+Permite eliminar los elementos propios.
 
-#### Delete Others Items
+#### Eliminar otros elementos
 
-> Capability name: delete_others_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la función: delete_others_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows deleting other user's Items.
+Permite borrar elementos de otros usuarios.
 
-#### Delete Published Items
+#### Borrar elementos publicados
 
-> Capability name: delete_published_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la funcionalidad: delete_published_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows deleting Items after they were published.
+Permite borrar elementos después de haber sido publicados.
 
-#### Delete Private Items
+#### Borrar elementos privados
 
-> Capability name: delete_private_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la funcionalidad: delete_private_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows deleting Items marked as private.
+Permite borrar elementos marcados como privados.
 
-#### Read Private Items
+#### Leer elementos privados
 
-> Capability name: read_private_%collection_id%_items
-Who's got it: Administrators, Editors, and Tainacan Editors
+> Nombre de la funcionalidad: read_private_%collection_id%_items
+Quién la tiene Administradores, Editores y Editores de Tainacan
 
-Allows to view Items marked as private and its items.
-
-
-### Taxonomies
-
-### Metadata
-
-### Filters
+Permite ver los elementos marcados como privados y sus ítems.
 
 
+### Taxonomías
 
+### Metadatos
+
+### Filtros
