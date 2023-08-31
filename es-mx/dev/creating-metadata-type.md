@@ -7,7 +7,7 @@ Los desarrolladores pueden crear Tipos de Metadatos personalizados a través de 
 - [Registro de ](#registro-de-su-tipo-de-metadatos) su tipo de metadatos
 - Creando la [Clase en PHP](#creando-la-clase-en-php)
 - Creando la [Vue Web Component](#creating-vue-web-component)
-- Creación de un componente web Vue para el [Formulario de Metadatos](#creating-vue-web-component-for-the-metadata-form)
+- Creación de un componente web Vue para el [Formulario de Metadatos](#creando-el-componente-vue-web-para-el-formulario-de-metadatos)
 - Uso avanzado de [Componentes Vue de terceros](#advanced-usage-of-vue-components)
 
 > Si quieres jugar con la muestra utilizada aquí, todo está disponible en [este repositorio de Github](https://github.com/tainacan/custom-metadata-type-samples ":ignore") :wink:
