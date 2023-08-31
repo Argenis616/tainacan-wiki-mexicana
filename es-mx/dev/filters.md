@@ -1,5 +1,3 @@
-?> _TODO_ Document each filters with parameters and usage example
-
 # Filtros
 
 Del manual para desarrolladores de WordPress:
