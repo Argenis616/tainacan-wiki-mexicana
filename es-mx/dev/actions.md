@@ -2,11 +2,11 @@
 
 # Actions
 
-From the WordPress developer handbook:
+Del manual para desarrolladores de WordPress:
 
-> An action takes the info it receives, does something with it, and returns nothing. In other words: it acts on something and then exits, returning nothing back to the calling hook. It interrupts the code flow to do something, and then returns back to the normal flow without modifying anything;
+> Una acción toma la información que recibe, hace algo con ella y no devuelve nada. En otras palabras: actúa sobre algo y luego sale, no devolviendo nada al gancho de llamada. Interrumpe el flujo de código para hacer algo, y luego vuelve al flujo normal sin modificar nada;
 
-The Tainacan Actions are Backend, _PHP-based_ actions:
+Las Acciones Tainacan son acciones Backend, _basadas en PHP_:
 
 ## Backend Actions
 
