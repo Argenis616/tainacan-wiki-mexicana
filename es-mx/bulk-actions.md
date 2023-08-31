@@ -3,7 +3,7 @@
 
 Tainacan permite realizar "acciones conjuntas". Es posible crear, editar, importar y eliminar elementos de forma masiva con solo unos pocos clics.
 
-## Crear elementos conjuntos
+## Crear elementos en lotes
 
 Crear elementos conjuntos es diferente que “importar elementos” desde un archivo *.csv*. A diferencia ésta última función, que se ejecuta desde la sección de importadores de Tainacan, la creación conjunta se realiza directamente desde el panel administrativo de Colecciones, mediante la carga de los principales documentos que conformarán la colección.
 
@@ -51,7 +51,7 @@ Crear elementos conjuntos es diferente que “importar elementos” desde un arc
 
 ![Acceso al panel de control](_assets/images/Agregar_elementos_comandos_finales.png)
 
-### Editar elementos en conjunto
+### Editar elementos en lotes
 
 1. Selecciona la “Colección” que contenga los elementos que quieras editar.
 
@@ -67,7 +67,7 @@ Crear elementos conjuntos es diferente que “importar elementos” desde un arc
 
    ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_acciones.png)
 
-4. Selecciona `Editar elementos seleccionados de forma conjunta`.
+4. Selecciona `Edición en lotes de los elementos seleccionados`.
 
    ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_edicion.png)
 
@@ -141,7 +141,7 @@ Crear elementos conjuntos es diferente que “importar elementos” desde un arc
 
 ---
 
-## Eliminar elementos en conjunto
+## Eliminar elementos en lotes
 
 1. Selecciona la “Colección” que contenga los elementos que quieres eliminar.
 
@@ -207,7 +207,7 @@ Crear elementos conjuntos es diferente que “importar elementos” desde un arc
 
    ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones.png)
 
-4. Elige `Editar elementos seleccionados en secuencia`.
+4. Elige `Editar los elementos seleccionados en secuencia`.
 
    ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_editar.png)
 
