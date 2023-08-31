@@ -1,18 +1,19 @@
-# Roles and Capabilities
+# Funciones y capacidades
 
-This document describes how Tainacan roles and capabilities are implemented from version 0.15 on. For earlier versions, check the old [permissions](/dev/permissions.md) page.
+Este documento describe cómo se implementan los roles y capacidades de Tainacan a partir de la versión 0.15. Para versiones anteriores, consulte la antigua página [permissions](/es-mx/dev/permissions.md).
 
-It serves as a reference to developers to understand how this works and also as the basis for writing the documentation for end-users.
+Sirve como referencia a los desarrolladores para entender cómo funciona esto y también como base para escribir la documentación para los usuarios finales.
 
-It also explains how WordPress handles capability checks, as it is not a very well documented topic.
+También explica cómo WordPress maneja las comprobaciones de capacidades, ya que no es un tema muy bien documentado.
 
-## Tainacan Capabilities 
+## Capacidades de Tainacan 
 
-Tainacan introduces several capabilities to WordPress. They are divided in two groups:
+Tainacan introduce varias capacidades en WordPress. Se dividen en dos grupos:
 
-### General Capabilities
+### Capacidades Generales
 
-Capabilities relative to the entire Repository
+Capacidades relativas a todo el repositorio
+
 
 ```php
 'manage_tainacan' => [
@@ -87,11 +88,11 @@ Capabilities relative to the entire Repository
     'description' => __('Access to activities logs. Note that activity logs might contain information on private collections, items and metadata.', 'tainacan')
 ],
 ```
-*(list extracted from `src/classes/class-tainacan-roles.php)*
+*(Lista extraída desde `src/classes/class-tainacan-roles.php)*
 
-### Collection Capabilities
+### Capacidades de la colección
 
-Each collection has its own set of capabilities, where `%d` is the collection ID.
+Cada colección tiene su propio conjunto de capacidades, donde `%d` es el ID de la colección.
 
 ```php
 'manage_tainacan_collection_%d' => [
@@ -176,25 +177,25 @@ Each collection has its own set of capabilities, where `%d` is the collection ID
 ],
 
 ```
-*(list extracted from `src/classes/class-tainacan-roles.php)*
+*(Lista extraída desde `src/classes/class-tainacan-roles.php)*
 
-### Super capabilities
+### Supercapacidades
 
-There a few capabilities that have super powers and override others capabilities:
+Hay algunas capacidades que tienen superpoderes y anulan otras capacidades:
 
-* `manage_tainacan` -> If this capability is present, check for any capability starting with `tnc_` will return `true`. This includes repository and collection capabilities. A user or role with this capability is considered a "Tainacan administrator"
-* `manage_tainacan_collection_%d` -> If this capability is present for a collection, check for any capability starting with `tnc_col_%s` will return `true`. Where `%d` is the collection ID. A user or role with this capability is a Collection manager and can do everything in this collection.
-* `tnc_col_all_*` All collections capabilities -> For every capability starting with `tnc_col_%d` there is a relative `tnc_col_all` capability that will apply for every collection. For example, if `tnc_col_all_edit_items` is present, checking for `tnc_col_%d_edit_items` with ANY number replacing `%d` will return `true`. This is a way to assign a capability to all collections, including collections yet to be created.
-* `manage_tainacan_collection_all` -> the same idea of the above. If this capability is present any check to any collection capability of any collection ID will return `true`. A user or role with this capability will be able to do everything in all collections, but might not have other repositories capabilities.
-* Collection owner -> When checking for any `tnc_col_%d` capability, Tainacan will verify if the user is the owner (author) of the collection. If he/she is, the check will also return `true`, even if the user does not have the capability. In short, it is as if every user automatically was granted `manage_tainacan_collection_%d` for their collections.
+* `manage_tainacan` -> Si esta capacidad está presente, la comprobación de cualquier capacidad que empiece por `tnc_` devolverá `true`. Esto incluye capacidades de repositorio y colección. Un usuario o rol con esta capacidad se considera un "administrador de Tainacan"
+* `manage_tainacan_collection_%d` -> Si esta capacidad está presente para una colección, la comprobación de cualquier capacidad que empiece por `tnc_col_%s` devolverá `true`. Donde `%d` es el ID de la colección. Un usuario o rol con esta capacidad es un gestor de colecciones y puede hacer todo en esta colección.
+* Para cada capacidad que empiece por `tnc_col_%d` existe una capacidad relativa `tnc_col_all` que se aplicará a todas las colecciones. Por ejemplo, si `tnc_col_all_edit_items` está presente, la comprobación de `tnc_col_%d_edit_items` con CUALQUIER número que sustituya a `%d` devolverá `true`. Esta es una forma de asignar una capacidad a todas las colecciones, incluidas las colecciones que aún no se han creado.
+* `manage_tainacan_collection_all` -> la misma idea de lo anterior. Si esta capacidad está presente cualquier comprobación a cualquier capacidad de colección de cualquier ID de colección devolverá `true`. Un usuario o rol con esta capacidad será capaz de hacer todo en todas las colecciones, pero puede que no tenga otras capacidades de repositorios.
+* Propietario de la colección -> Al comprobar cualquier capacidad `tnc_col_%d`, Tainacan verificará si el usuario es el propietario (autor) de la colección. Si lo es, la comprobación también devolverá `true`, incluso si el usuario no tiene la capacidad. En resumen, es como si a cada usuario se le concediera automáticamente `manage_tainacan_collection_%d` para sus colecciones.
 
-Also, any user with the WordPress native `edit_users` capability will always have `tnc_rep_edit_users`.
+Además, cualquier usuario con la capacidad nativa de WordPress `edit_users` siempre tendrá `tnc_rep_edit_users`.
 
-## Default Roles
+## Roles por defecto
 
-By default, WordPress **Administrators** and **Editors** are granted `manage_tainacan` capability.
+Por defecto, los **Administradores** y **Editores** de WordPress tienen la capacidad `manage_tainacan`.
 
-Also, Tainacan creates 3 roles with the following capabilities:
+Además, Tainacan crea 3 roles con las siguientes capacidades:
 
 ```php
 
@@ -242,25 +243,25 @@ Also, Tainacan creates 3 roles with the following capabilities:
 
 ```
 
-## Checking permissions
+## Comprobación de permisos
 
-Every entity (instances of `Tainacan\Entities\Entity`) have a set of method to check for permissions:
+Cada entidad (instancias de `Tainacan\Entities\Entity`) tiene un conjunto de métodos para comprobar los permisos:
 
-* `can_edit([$user])` -> checks if user can edit the entity.
-* `can_delete([$user])` -> checks if user can delete the entity.
-* `can_read([$user])` -> checks if user can read/view the entity.
-* `can_publish([$user])` -> checks if user can publish the entity.
+* `can_edit([$user])` -> comprueba si el usuario puede editar la entidad.
+* `can_delete([$user])` -> comprueba si el usuario puede borrar la entidad.
+* `can_read([$user])` -> comprueba si el usuario puede leer/ver la entidad.
+* `can_publish([$user])` -> comprueba si el usuario puede publicar la entidad.
 
-All these methods get an optional `$user` argument. If `$user` is omitted, it will check against the current user. If `$user` is informed, it will check if the informed user can perform the action.
+Todos estos métodos reciben un argumento opcional `$user`. Si se omite `$user`, se comprobará con el usuario actual. Si `$user` es informado, comprobará si el usuario informado puede realizar la acción.
 
-These methods are all intelligent and consider all Tainacan rules. For example:
+Todos estos métodos son inteligentes y tienen en cuenta todas las reglas de Tainacan. Por ejemplo:
 
-* If an item is public, it will also check whether the item's collection is public or private and if the user has the proper `read_private_*` capability
-* It will check whether a filter is a repository or a collection filter and check the appropriate capability to decide whether the user can view or edit the filter.
+* Si un ítem es público, también comprobará si la colección del ítem es pública o privada y si el usuario tiene la capacidad apropiada `read_private_*`.
+* Comprobará si un filtro es un repositorio o un filtro de colección y comprobará la capacidad apropiada para decidir si el usuario puede ver o editar el filtro.
 
-So this is the preferred way of checking for capabilities. Also because you don't have to bother knowing the capability name.
+Así que esta es la forma preferida de comprobar las capacidades. También porque no tienes que molestarte en saber el nombre de la capacidad.
 
-For example, if `$item` is an Item entity:
+Por ejemplo, si `$item` es una entidad Item:
 
 ```php
 // this
@@ -274,44 +275,45 @@ $item->can_edit();
 
 ```
 
-Another advantage of using Entities methods is that it works with anonymous users. `current_user_can()` will always return `false` if the user is not logged in, even if you are checking if the user can read a public item. `$item->can_read()` will return `true` if the item is public and the user is not logged in.
+Otra ventaja de utilizar métodos de Entidades es que funciona con usuarios anónimos. current_user_can()` siempre devolverá `false` si el usuario no ha iniciado sesión, incluso si está comprobando si el usuario puede leer un elemento público. `$item->can_read()` devolverá `true` si el elemento es público y el usuario no ha iniciado sesión.
 
-## !!! Important notice on permission checks !!!
+¡¡¡## !!! ¡¡¡Aviso importante sobre la comprobación de permisos !!!
 
-It is very important to notice that repository methods such as `insert` or `fetch` **WILL NOT VERIFY USER PERMISSIONS**. If you fetch items from a repository or insert items to it, Tainacan will not check and may return the private item or insert items even if a user is not logged in.
+Es muy importante tener en cuenta que métodos del repositorio como `insert` o `fetch` **NO VERIFICARÁN LOS PERMISOS DEL USUARIO**. Si obtiene elementos de un repositorio o inserta elementos en él, Tainacan no lo comprobará y puede devolver el elemento privado o insertar elementos incluso si el usuario no ha iniciado sesión.
 
-So if you are fetching, inserting, updating, creating or deleting something, **YOUR CODE MUST CHECK FOR PERMISSIONS** before performing the action.
+Así que si estás buscando, insertando, actualizando, creando o borrando algo, ** TU CÓDIGO DEBE COMPROBAR LOS PERMISOS** antes de realizar la acción.
 
-API Endpoints check for permissions correctly.
+Los puntos finales de la API comprueban los permisos correctamente.
 
-**THERE ARE TWO EXCEPTIONS:**
+**HAY DOS EXCEPCIONES:**
 
-If you fetch anything (item, collections, etc...) and do not inform a `post_status` in your query, WordPress will check if the current user can `read_private_post` for the post type and return only the public posts, and include or not private posts depending on user permissions.
+Si obtiene algo (artículo, colecciones, etc...) y no informa de un `post_status` en su consulta, WordPress comprobará si el usuario actual puede `read_private_post` para el tipo de entrada y devolverá sólo las entradas públicas, e incluirá o no las entradas privadas dependiendo de los permisos del usuario.
 
-So, in short:
+Así que, en resumen:
 
-* If you query for entities without informing the `post_status` you want, it will check for permissions and return only posts the current user can read. This is the proper way to return everything the user can view
-* If you query for entities and inform a `post_status` it will return the posts no matter which the permissions of the current user are. So if you want to query for private posts, you must check user permission before. (API Endpoints are smart and block the request if you inform a private post_status and do not have the proper permissions)
+* Si consultas por entidades sin informar el `post_status` que quieres, comprobará los permisos y devolverá sólo los posts que el usuario actual pueda leer. Esta es la forma correcta de devolver todo lo que el usuario puede ver
+* Si consultas por entidades e informas un `post_status` devolverá los posts sin importar cuales son los permisos del usuario actual. Así que si quieres consultar los mensajes privados, debes comprobar los permisos del usuario antes. (Los puntos finales de la API son inteligentes y bloquean la petición si informas un post_status privado y no tienes los permisos adecuados)
 
-The SECOND exception is when you fetch items without informing neither `post_status` nor a `collection`. This happens when you want to get all items from all collections in a repository view.
+La SEGUNDA excepción es cuando se obtienen elementos sin informar ni del `post_status` ni de una `collection`. Esto ocurre cuando quieres obtener todos los ítems de todas las colecciones en una vista de repositorio.
 
-In these cases, Tainacan will individually check permissions for each collection and only return items that the current user can read. (considering public/private items and public items inside private collections).
+En estos casos, Tainacan comprobará individualmente los permisos de cada colección y sólo devolverá los ítems que el usuario actual pueda leer. (considerando elementos públicos/privados y elementos públicos dentro de colecciones privadas).
 
-Again, if you explicitly ask for one `post_status` it will return all items with this status without performing any checks.
+De nuevo, si pides explícitamente un `post_status` devolverá todos los ítems con este estado sin realizar ninguna comprobación.
 
-## How this is implemented
+## Cómo se implementa
 
-All Tainacan entities (collections, items, metadata, filters, logs, and taxonomies), except for Terms, are stored as posts of a certain custom post types.
+Todas las entidades de Tainacan (colecciones, ítems, metadatos, filtros, registros y taxonomías), excepto los Términos, se almacenan como posts de un determinado tipo de post personalizado.
 
-The set of capabilities for each post type is available via the `get_capabilities()` method of each Entity.
+El conjunto de capacidades para cada tipo de entrada está disponible a través del método `get_capabilities()` de cada Entidad.
 
-Some of them are explicitly declared, and some of them are automatically generated passing the `capability_type` argument to `register_post_type()` WordPress function.
+Algunas de ellas se declaran explícitamente, y otras se generan automáticamente pasando el argumento `capability_type` a la función de WordPress `register_post_type()`.
 
-For example Collections capabilities are declared in the `get_capabilities()` method, while Metadata capabilities are automatically generated using the `capability_type` attribute of the class.
+Por ejemplo, las capacidades de las colecciones se declaran en el método `get_capabilities()`, mientras que las capacidades de los metadatos se generan automáticamente utilizando el atributo `capability_type` de la clase.
 
-If you are not familiar with capabilities for custom post types, read the [register_post_type documentation](https://developer.wordpress.org/reference/functions/register_post_type/) and [this blog post](http://justintadlock.com/archives/2010/07/10/meta-capabilities-for-custom-post-types). It's a good start.
 
-Let's have a look at taxonomies capabilities (from `classes/entities/class-tainacan-taxonomy.php`):
+Si no está familiarizado con las capacidades de los tipos de entrada personalizados, lea la [documentación de register_post_type](https://developer.wordpress.org/reference/functions/register_post_type/) y [esta entrada del blog](http://justintadlock.com/archives/2010/07/10/meta-capabilities-for-custom-post-types). Es un buen comienzo.
+
+Echemos un vistazo a las capacidades de las taxonomías (de `classes/entities/class-tainacan-taxonomy.php`):
 
 ```php
     public function get_capabilities() {
@@ -340,9 +342,9 @@ Let's have a look at taxonomies capabilities (from `classes/entities/class-taina
 	}
 ```
 
-Notice how many capabilities are set as the same `tnc_rep_edit_taxonomies`. This is because we are simplifying it a bit and allowing anyone with this capability to not only edit but publish and edit published taxonomies. Currently, this is not a need for Tainacan. In the future, if we find this is important, permissions may be different for each case.
+Observe cómo muchas capacidades se establecen como el mismo `tnc_rep_edit_taxonomies`. Esto es porque lo estamos simplificando un poco y permitiendo a cualquiera con esta capacidad no sólo editar sino publicar y editar taxonomías publicadas. Actualmente, esto no es una necesidad para Tainacan. En el futuro, si encontramos que esto es importante, los permisos pueden ser diferentes para cada caso.
 
-Items capabilities are dynamically generated, as they include the ID of the collection the item is part of. So this is declared in the Collection entity:
+Las capacidades de los elementos se generan dinámicamente, ya que incluyen el ID de la colección de la que forma parte el elemento. Así que esto se declara en la entidad Colección:
 
 ```php
 	function get_items_capabilities() {
@@ -372,91 +374,92 @@ Items capabilities are dynamically generated, as they include the ID of the coll
 	}
 ```
 
-## How tainacan hooks into permission checks
+## Cómo Tainacan se engancha a la comprobación de permisos
 
-`src/classes/class-tainacan-roles.php` holds most of the rules. 
+`src/classes/class-tainacan-roles.php` contiene la mayoría de las reglas. 
 
-It has 2 major hooks.
+Tiene 2 ganchos principales.
 
-1. Hook into `user_has_cap` -> When `user_can()` or `current_user_can()` functions are called, WordPress checks if the user has the capabilities being checked. This hook modifies this check to implement the Super capabilities described above. For example, this is the place where it will check if the user can `manage_tainacan` and, if so, return true for any check for any capability starting with `tnc_`.
+1. Cuando se llaman las funciones `user_can()` o `current_user_can()`, WordPress comprueba si el usuario tiene las capacidades que se están comprobando. Este hook modifica esta comprobación para implementar las capacidades Super descritas anteriormente. Por ejemplo, este es el lugar donde se comprobará si el usuario puede `manage_tainacan` y, si es así, devolverá true para cualquier comprobación de cualquier capacidad que empiece por `tnc_`.
 
-2. Hook into `map_meta_cap` -> This hooks into the check for meta capabilities and applies the rules to check caps on filter and metadata. It checks if filter/metadatum is repository or collection level and then maps it to the corresponding capability. For example `tnc_rep_edit_filters` if in repository level, or `tnc_col_12_edit_filters` if belonging to collection with an ID of 12.
+2. Esto se conecta a la comprobación de las capacidades meta y aplica las reglas para comprobar los topes en el filtro y los metadatos. Comprueba si el filtro/metadato es de nivel repositorio o colección y lo asigna a la capacidad correspondiente. Por ejemplo `tnc_rep_edit_filters` si está en el nivel de repositorio, o `tnc_col_12_edit_filters` si pertenece a la colección con un ID de 12.
 
-Items repository (`src/classes/repository/class-tainacan-items.php`) also add a hook into the `map_meta_cap` filter. This hook improves the `can_read` meta capability and checks the visibility of the collection the item belongs to. So, even if an item is public, it might be inside a private collection. This hook ensures the `can_read` check considers it.
+El repositorio de ítems (`src/classes/repository/class-tainacan-items.php`) también añade un hook en el filtro `map_meta_cap`. Este gancho mejora la meta capacidad `can_read` y comprueba la visibilidad de la colección a la que pertenece el ítem. Así, aunque un elemento sea público, puede estar dentro de una colección privada. Este hook asegura que la comprobación `can_read` lo tenga en cuenta.
 
 
-## WordPress permission check workflow
+## Flujo de trabajo de la comprobación de permisos de WordPress
 
-This section is to help developers to start understanding how WordPress checks permission and hopefully will help to understand the hooks we used above.
+Esta sección es para ayudar a los desarrolladores a empezar a entender cómo WordPress comprueba los permisos y esperamos que ayude a entender los ganchos que hemos usado arriba.
 
-First, let's understand what a meta capability is.
+Primero, entendamos qué es una meta capacidad.
 
-### Meta Capabilities
+### Meta Capacidades
 
-**Meta capabilities (or metacaps)** are capabilities used to check for permission-based on a context. Nobody and no role have this capability. This capability is only used to check the context and then return the real (primitive) capabilities that need to be checked.
+**Las capacidades meta (o metacaps)** son capacidades usadas para comprobar permisos basados en un contexto. Nadie y ningún rol tienen esta capacidad. Esta capacidad sólo se utiliza para comprobar el contexto y luego devolver las capacidades reales (primitivas) que necesitan ser comprobadas.
 
-Example:
+Ejemplo:
 
-Lets's say you have a `$post_ID `and you want to know if current user can edit it, you will ask:
+Digamos que tienes un `$post_ID `y quieres saber si el usuario actual puede editarlo, preguntarás:
+
 
 ```php
 current_user_can('edit_post', $post_ID);
 ```
 
-Notice that when you check for a metacap, you always give one or more additional parameters. This is the context.
+Fíjese en que cuando busca un metacap, siempre da uno o más parámetros adicionales. Este es el contexto.
 
-What WordPress will do with it is ask a few questions:
+Lo que WordPress hará con él es hacer algunas preguntas:
 
-* Is the current user author of this post?
-* Is this post already published?
-* Is this post private?
+* ¿Es el usuario actual el autor de esta entrada?
+* ¿Esta entrada ya está publicada?
+* ¿Es esta entrada privada?
 
-Depending on the answer to those questions, WordPress will check for the relative primitive capabilities:
+Dependiendo de la respuesta a esas preguntas, WordPress comprobará las capacidades primitivas relativas:
 
-* Is the current user author of this post? check for capability `edit_posts` (note the plural) if yes, or `edit_other_posts` if no.
-* Is this post already published? check for capability `edit_published_posts` if yes
-* Is this post private? check for capability `edit_private_posts`  if yes
+* ¿Es el usuario actual el autor de esta entrada? comprueba la capacidad `edit_posts` (nótese el plural) en caso afirmativo, o `edit_other_posts` en caso negativo.
+* ¿Este post ya está publicado? comprueba la capacidad `edit_published_posts` en caso afirmativo.
+* ¿Es este post privado? comprueba la capacidad "edit_private_posts" en caso afirmativo.
 
-So, in short, meta capabilities are **inexistent capabilities** that are **mapped** to real **primitive** capabilities **depending on the context**.
+Así que, en resumen, las meta capacidades son **capacidades inexistentes** que son **mapeadas** a **capacidades primitivas** reales **dependiendo del contexto**.
 
-Every custom post type have 3 metacaps:
+Cada custom post type tiene 3 metacaps:
 
 * read_post
-* edit_post
+* editar_post
 * delete_post
 
-### The workflow
+### El flujo de trabajo
 
-Ok, now that we understand what metacaps are we can follow the workflow:
+Bien, ahora que entendemos lo que son los metacaps podemos seguir el flujo de trabajo:
 
-Whenever `current_user_can()` or `user_can()` are called, WordPress end up calling [`WP_User::has_cap`](https://developer.wordpress.org/reference/classes/wp_user/has_cap/).
+Cada vez que `current_user_can()` o `user_can()` son llamados, WordPress termina llamando a [`WP_User::has_cap`].(https://developer.wordpress.org/reference/classes/wp_user/has_cap/).
 
-The first thing this method does is pass the required `$cap` that is being checked through the [`map_meta_cap`](https://developer.wordpress.org/reference/functions/map_meta_cap/) function. This function then checks if `$cap` is a meta_cap and then asks the questions considering the context passed in additional parameters. It then returns `one or more` capabilities to be checked.
+Lo primero que hace este método es pasar el `$cap` requerido que se está comprobando a través de la función [`map_meta_cap`](https://developer.wordpress.org/reference/functions/map_meta_cap/). A continuación, esta función comprueba si `$cap` es una meta_cap y formula las preguntas teniendo en cuenta el contexto pasado en parámetros adicionales. Entonces devuelve `una o más` capacidades a comprobar.
 
-When you register a new custom post type with the option `map_meta_cap` as `true` (all Tainacan post types are registered this way), WordPress will then detect that this is a metacap from a registered post type and call `map_meta_cap` again passing the generic metacap as the argument.
+Cuando registre un nuevo tipo de entrada personalizado con la opción `map_meta_cap` como `true` (todos los tipos de entradas Tainacan se registran de esta forma), WordPress detectará que se trata de un metacap de un tipo de entrada registrado y llamará a `map_meta_cap` de nuevo pasando el metacap genérico como argumento.
 
-For example, if you registered a post type called `movies`, with the metacap `edit_post => edit_movie`, it will call `map_meta_cap` again passing `edit_post` as argument.
+Por ejemplo, si has registrado un tipo de entrada llamado `movies`, con el metacap `edit_post => edit_movie`, volverá a llamar a `map_meta_cap` pasando `edit_post` como argumento.
 
-Once it calls `map_meta_cap` again, it will then ask all those questions: "is the user the author? is the post published?" and then, knowing that the post being checked belong to a custom post type, it will get the registered capabilities for that post type and finally return the relative primitive capabilities to `WP_User::has_cap`.
+Una vez que vuelva a llamar a `map_meta_cap`, se hará todas esas preguntas: "¿es el usuario el autor? ¿está el post publicado?" y entonces, sabiendo que el post que se está comprobando pertenece a un tipo de post personalizado, obtendrá las capacidades registradas para ese tipo de post y finalmente devolverá las capacidades primitivas relativas a `WP_User::has_cap`.
 
-So in the case of `movies`, it could be `edit_others_movies`. In the case of our Taxonomy post type, as you saw in the declaration above, what is registered in `edit_others_posts` is `tnc_rep_edit_others_taxonomies`. 
+Así que en el caso de `movies`, podría ser `edit_others_movies`. En el caso de nuestro tipo de entrada Taxonomy, como has visto en la declaración anterior, lo que se registra en `edit_others_posts` es `tnc_rep_edit_others_taxonomies`. 
 
-At the end of the `map_meta_cap` function, WordPress will also pass its return through a filter called `map_meta_cap`. This allows us to add more metacaps if we want or to change the behavior of native metacaps. This is what we do for filters, metadata and items caps.
+Al final de la función `map_meta_cap`, WordPress también pasará su retorno a través de un filtro llamado `map_meta_cap`. Esto nos permite añadir más metacaps si queremos o cambiar el comportamiento de los metacaps nativos. Esto es lo que hacemos para los filtros, metadatos y elementos caps.
 
-Finally, once `WP_User::has_cap` has the return of `map_meta_cap`, it will check if all the capabilities that need to be checked are present if the user array of capabilities. This goes through the `user_has_cap` filter and allows us to modify this check and return whatever we want. This is where we hook to make Super capabilities work and return true even if the user does not have the queried capability.
+Finalmente, una vez que `WP_User::has_cap` tiene el retorno de `map_meta_cap`, comprobará si todas las capacidades que necesitan ser comprobadas están presentes en el array de capacidades del usuario. Esto pasa por el filtro `user_has_cap` y nos permite modificar esta comprobación y devolver lo que queramos. Aquí es donde nos enganchamos para hacer que las supercapacidades funcionen y devuelvan true incluso si el usuario no tiene la capacidad consultada.
 
-**Workflow summary:**
+**Resumen del flujo de trabajo.**
 
-1.  `current_user_can($cap, $context)` is called. `$context` usually is the object ID
+1.  Se llama a `current_user_can($cap, $context)`. `$context` suele ser el ID del objeto
 
-2. it calls `WP_User::has_cap()`
+2. Se llama a `WP_User::has_cap()`.
 
-3. It passes `$cap` to `map_meta_cap()` function
+3. 3. Pasa `$cap` a la función `map_meta_cap()`.
 
-4. It checks if `$cap` is metacap and returns an array of primitive capabilities to be checked depending on the context. 
-4.1 If $cap is a custom post type meta capability, `map_meta_cap` will call itself again passing one of the post type metacaps (`read_post`, `edit_post` or `delete_post`)
-4.2 In this second call, it will do the regular checks for these metacaps and return the post type's respective primitive capabilities.
+4. 4. Comprueba si `$cap` es metacap y devuelve un array de capacidades primitivas a comprobar dependiendo del contexto. 
+4.1 Si $cap es una metacapacidad de tipo post personalizada, `map_meta_cap` se llamará a sí misma de nuevo pasando uno de los metacaps de tipo post (`read_post`, `edit_post` o `delete_post`)
+4.2 En esta segunda llamada, realizará las comprobaciones habituales para estos metacaps y devolverá las respectivas capacidades primitivas del tipo de post.
 
-5. The return of `map_meta_cap` goes through the `map_meta_cap` filter.
+5. El retorno de `map_meta_cap` pasa por el filtro `map_meta_cap`.
 
-6. `WP_User::has_cap()` finishes the check, checking if all capabilities returned by `map_meta_cap` exist in the user list of capabilities. This check goes through the `user_has_cap` filter.
+6. 6. `WP_User::has_cap()` finaliza la comprobación, verificando si todas las capacidades devueltas por `map_meta_cap` existen en la lista de capacidades del usuario. Esta comprobación pasa por el filtro `user_has_cap`.
