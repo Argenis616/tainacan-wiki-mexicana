@@ -174,39 +174,39 @@ Después del tipo de metadatos, también se pueden ingresar otras instrucciones:
 
 1. Accede al panel de control de *WordPress*;
 
-   ![Acceso al panel de control](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets\images\Panel_Adm_WordPress.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acceso al panel de control](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets\images\Panel_Acceso_Tainacan.png)
 
 3. Accede a la sección **Importadores**;
 
-   ![Acceso al panel de control](_assets\images\Acesso_Importadores.png)
+   ![Acceso al panel de control](_assets\images\Acceso_Importadores.png)
 
 4. En la sección **Importadores disponibles**, selecciona `CSV`;
 
-   ![Acceso al panel de control](_assets\images\Acesso_Importador_CSV.png)
+   ![Acceso al panel de control](_assets\images\Acceso_Importadores_CSV.png)
 
 5. Carga el archivo *.csv* en el campo archivo de origen;
 
-   ![Acceso al panel de control](_assets\images\Importador_Seleção_Arquivo_CSV.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Seleccionar_Archivo_CSV.png)
 
 6. Selecciona o crea una "Colección de destino" para indicar dónde se crearán los "elementos";
 
    \*.Si seleccionas “crear una nueva colección en blanco”, al terminar de crear la “colección”, te dirigirá nuevamente al `Importador`.
 
-   ![Acceso al panel de control](_assets\images\Importador_Seleção_Colecao.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Seleccionar_Coleccion.png)
 
 7. Configure los siguientes campos de acuerdo con la configuración realizada en su archivo “.csv”:
 
 * **Delimitador csv**: carácter que separa los valores;
 * **Delimitador de metadatos de valores múltiples**: carácter que separa valores dentro de una misma celda;
 * **Delimitador de texto**: carácter que delimita todos los valores dentro de una misma celda;
-**Codificación del archivo**: parámetro que determina la codificación de los valores de texto en el archivo (generalmente UTF-8, en todo caso, asegúrate de que el archivo “.csv” esté codificado de acuerdo con las opciones disponibles en el importador);
+* **Codificación del archivo**: parámetro que determina la codificación de los valores de texto en el archivo (generalmente UTF-8, en todo caso, asegúrate de que el archivo “.csv” esté codificado de acuerdo con las opciones disponibles en el importador);
 * **Valor vacío**: expresión utilizada en el archivo “.csv” para representar los “metadatos” que se limpiarán al actualizar los “elementos” ya existentes en una “colección”. La expresión predeterminada es [valor vacío].
 
-   ![Acceso al panel de control](_assets\images\Importador_Parametros_Importacao.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Parametros_Importacion.png)
 
 8. Configura estos campos según tus preferencias para la importación:
 
@@ -215,15 +215,15 @@ Después del tipo de metadatos, también se pueden ingresar otras instrucciones:
 
    I. Como se especifica en la documentación, apunta la URL en el campo de ruta al servidor.
 
-   ![Acceso al panel de control](_assets\images\Importador_Parametros_Importacao.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Parametros_Importacion.png)
 
 9. Haz clic en siguiente;
 
-   ![Acceso al panel de control](_assets\images\Importador_CSV_Proximo.png)
+   ![Acceso al panel de control](_assets\images\Importadores_CSV_Siguiente.png)
 
 10. En la pantalla Mapeo de metadatos es posible realizar el proceso de emparejamiento entre los metadatos previamente configurados en el *.csv*;
 
-    ![Acceso al panel de control](_assets\images\Importador_CSV_Tela_Mapeamento.png)
+    ![Acceso al panel de control](_assets\images\Marcar_todos_los_metadatos_para_ser_creados.png)
 
 11. Selecciona los metadatos identificados en *.csv* (a la izquierda) y su correspondiente de la colección de destino (a la derecha) en Tainacan;
 
@@ -240,7 +240,7 @@ Después del tipo de metadatos, también se pueden ingresar otras instrucciones:
 
     ○ Si desea crearlos todos a la vez, haz clic en `Marcar todos los metadatos` para crear.
 
-    ![Acesse o painel de controle](_assets\images\Marcar_todos_os_metadados_para_serem_criados.png)
+    ![Acceso al panel de control](_assets\images\Marcar_metadatos.png)
 
 12. Para crear nuevos metadatos en la colección, selecciona `Agregar más metadatos`. Consulta la sección `Metadatos` para obtener más información sobre la creación y los `tipos de metadatos` existentes;
 
@@ -254,11 +254,11 @@ Después del tipo de metadatos, también se pueden ingresar otras instrucciones:
 
 13. Cuando hayas terminado, haz clic en Ejecutar para iniciar el proceso de importación;
 
-    ![Acceso al panel de control](_assets\images\Importador_CSV_Mapeamento_Executar_Importacao.png)
+    ![Acceso al panel de control](_assets\images\Importadores_CSV_Ejecutar.png)
 
 14. Serás redirigido a la pantalla `Actividades del repositorio` donde podrás seguir el progreso del proceso de importación. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, desde el más reciente hasta el más antiguo. Una vez finalizado el proceso, se mostrará el `archivo de registro` y, en caso de errores, el `archivo de registro de errores`;
 
-    ![Acceso al panel de control](_assets\images\Importador_CSV_Atividades_Processos.png)
+    ![Acceso al panel de control](_assets\images\Importadores_CSV_Actividades_Procesos.png)
 
 15. Una vez que el proceso de importación se haya completado con éxito, ve a la colección de destino de la importación y verifica si los metadatos, elementos y valores son los esperados.
 
@@ -314,35 +314,35 @@ Una vez que hayas terminado de crear el archivo *.csv* con los términos deseado
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Acceso al panel de control](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets\images\Panel_Adm_WordPress.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acceso al panel de control](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets\images\Panel_Acceso_Tainacan.png)
 
 3. Accede a la sección **Importadores**;
 
-   ![Acceso al panel de control](_assets\images\Acesso_Importadores.png)
+   ![Acceso al panel de control](_assets\images\Acceso_Importadores.png)
 
 4. En la sección **Importadores disponibles**, selecciona *Vocabulario CSV*;
 
-   ![Acceso al panel de control](_assets\images\Acesso_Importador_Vocabulario_CSV.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Acceso_CSV_Vocabularios.png)
 
 5. Configura el campo “Delimitador CSV” de acuerdo con el carácter delimitador de tu archivo *.csv*;
 
-   ![Acceso al panel de control](_assets\images\Importador_Vocabulario_CSV_parametros.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Vocabulario_CSV_Parametros.png)
 
 6. Selecciona el archivo *.csv* para cargar;
 
-   ![Acceso al panel de control](_assets\images\Importador_Vocabulario_CSV_selecao_arquivo.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Vocabulario_CSV_Seleccionar_Archivo.png)
 
 7. Crea o elige la *Taxonomía* de destino. Consulta Taxonomías para obtener más información;
 
-   ![Acceso al panel de control](_assets\images\Importador_Vocabulario_CSV_selecao_taxonomia_destino.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Vocabulario_CSV_Seleccionar_Taxonomia_Destino.png)
 
 8. Haz clic en *Ejecutar*;
 
-   ![Acceso al panel de control](_assets\images\Importador_Vocabulario_CSV_Executar.png)
+   ![Acceso al panel de control](_assets\images\Importadores_Vocabulario_CSV_Ejecutar.png)
 
 9. Serás redirigido a la pantalla *Actividades del repositorio*, donde podrás seguir el progreso del proceso de importación. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, desde el más reciente hasta el más antiguo. Cuando finalice el proceso, se mostrará el archivo de registro y, en caso de errores, el archivo de registro de errores;
 
@@ -356,15 +356,15 @@ A diferencia de los importadores de CSV, en realidad no estamos importando datos
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Acceso al panel de control](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets\images\Panel_Adm_WordPress.png)
 
 2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acceso al panel de control](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets\images\Panel_Acesso_Tainacan.png)
 
 3. Accede a la sección *Importadores*;
 
-   ![Acceso al panel de control](_assets\images\Acesso_Importadores.png)
+   ![Acceso al panel de control](_assets\images\Acceso_Importadores.png)
 
 4. En la sección *Importadores disponibles*, selecciona *Prueba*;
 
