@@ -1,6 +1,5 @@
 # Búsqueda en PDFs
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 En la versión 0.12 hemos puesto a disposición un enfoque experimental para indexar texto de archivos en formato _“PDF”_ cargados como un documento de _“elementos”_. Esto permite a los usuarios utilizar la _“busca textual”_ para buscar dentro de documentos _“PDF”_.
 
