@@ -19,7 +19,7 @@ Con Tainacan, puedes exportar tanto las colecciones como las Taxonomías (Vocabu
 
 2. En la barra lateral izquierda, haz clic en Tainacan.
 
-   ![Acceso al panel de control](_assets/images/051.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
 3. Haz clic en `Exportadores`.
 
@@ -77,7 +77,7 @@ Con Tainacan, puedes exportar tanto las colecciones como las Taxonomías (Vocabu
 
 2. En la barra lateral izquierda, haz clic en *Tainacan*;
 
-   ![Acceso al panel de control](_assets/images/exportador_051.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
 3. Haz clic en *Exportadores*.
 
