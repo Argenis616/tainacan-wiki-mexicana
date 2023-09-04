@@ -22,7 +22,7 @@ A medida que vayas creando colecciones, elementos y términos podrás acceder, a
 
 ## Las páginas especiales de Tainacan
 
-![Conjunto de capturas de pantalla que ejemplifican las páginas especiales de Tainacan, en el tema de la Interfaz de Tainacan](/_assets/images/paginas-especiales-tainacan.png)
+![Conjunto de capturas de pantalla que ejemplifican las páginas especiales de Tainacan, en el tema de la Interfaz de Tainacan](/es-mx/_assets/images/paginas-especiales-tainacan.png)
 
 ### Página de colecciones
 
