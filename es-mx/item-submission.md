@@ -16,15 +16,15 @@ En la página de configuración de toda “Colección”, hay un campo que permi
 
 1. Accede a la colección en la que quieras habilitar el "envío de elementos" y pulsa en "Ajustes".
 
-   ![Acesse o painel de controle](_assets\images\120.png)
+   ![Acceso al panel de control](_assets/images/120.png)
 
 2. En la esquina inferior derecha, habilita la función "Permitir envío de elementos".
 
-   ![Acesse o painel de controle](_assets\images\121.png)
+   ![Acceso al panel de control](_assets/images/121.png)
 
 3. Con este campo habilitado, la colección se puede incluir en el bloque de envío de elementos, del que hablaremos en breve. Al habilitar la función, aparecen nuevas opciones, como se muestra en la siguiente captura de pantalla:
 
-   ![Acesse o painel de controle](_assets\images\122.png)
+   ![Acceso al panel de control](_assets/images/122.png)
 
 **“Permitir el envío por parte de usuarios anónimos”**: se refiere a qué usuarios pueden enviar este formulario. Por defecto, cualquier persona que visite el sitio, aunque no se encuentre registrada en el sistema WordPress. Si se activa, incluso las personas que nunca han iniciado sesión en el sitio podrán enviar información.
 
@@ -40,15 +40,15 @@ Para que tu formulario esté disponible a los visitantes del sitio, necesitas cr
 
 1. Accede al “panel de control” de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acceso al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en “Entradas” (si deseas insertar el bloque en unentrada) o “Páginas” (si deseas insertar el bloque en una página);
 
-   ![Acesse o painel de controle](_assets\images\123.png)
+   ![Acceso al panel de control](_assets/images/123.png)
 
 3. Una vez hecho esto, la búsqueda del bloque _“Formulario de envío de elementos”_ en la lista de bloques, te permitirá insertar el formulario;
 
-   ![Acesse o painel de controle](_assets\images\submissao.png)
+   ![Acceso al panel de control](_assets/images/envio.png)
 
 4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [la sección anterior](#configuración-de-la-colección);
 
@@ -91,11 +91,11 @@ Haga clic en el “_loque de envío de elementos”_ y, a continuación, en el _
 
 **“Mensaje de retorno de envío”:** Configure los campos de retorno para el usuario una vez completado el formulario. El primero se refiere al mensaje que se mostrará cuando el _“elemento”_ se haya enviado correctamente en el formulario.
 
-![Acesse o painel de controle](_assets\images\128.png)
+![Acceso al panel de control](_assets/images/128.png)
 
 Por defecto, esta información aparece como en la siguiente imagen:
 
-![Acesse o painel de controle](_assets\images\form_submission.png)
+![Acceso al panel de control](_assets/images/form_enviado.png)
 
 Este puede ser un buen lugar para informar, por ejemplo, que el envío se está evaluando por el equipo administrativo y que, si se aprueba, el _“elementos”_ estará disponible en el listado de _“elementos de la colección”_.
 
@@ -103,7 +103,7 @@ Este puede ser un buen lugar para informar, por ejemplo, que el envío se está 
 
 Como puede verse en la vista previa del bloque, el _“formulario de envío de elementos”_  tiene cuatro secciones principales, en el siguiente orden:
 
-![Acesse o painel de controle](_assets\images\129.png)
+![Acceso al panel de control](_assets/images/129.png)
 
 1. El “Documento del elemento principal”, que puede ser un archivo, texto sin formato o una dirección en línea a través de un enlace URL.
 2. La “Miniatura”, , que representará al elemento en los listados y que por defecto se genera automáticamente a partir del "Documento", y puede ser enviada por el usuario.
@@ -116,7 +116,7 @@ Estas etiquetas pueden tener sentido en la interfaz de administración de Tainac
 
 En el panel "Entrada de metadatos", puede ver todos los campos que se han configurado en la pantalla de "metadatos" de la configuración de la colección.
 
-![Acesse o painel de controle](_assets\images\130.png)
+![Acceso al panel de control](_assets/images/130.png)
 
 Aquí puedes ocultar algunos metadatos que no consideres pertinente que aparezcan en este formulario. Por ejemplo, un campo que contenga la información de si ese elemento ha sido aprobado después de la revisión ciertamente no necesita estar en el formulario público. Ten en cuenta, no obstante, que si los metadatos en cuestión son "obligatorios", no pueden desactivarse, ya que ello impediría su envío.
 
@@ -124,9 +124,9 @@ Aquí puedes ocultar algunos metadatos que no consideres pertinente que aparezca
 
 Este panel agrupa todas las funcionalidades de "ocultar/mostrar" de los elementos del formulario que no sean los "metadatos". Usando estas opciones, puedes acercar el diseño de tu formulario a uno más simple en tu sitio web, en vez del complejo y rico componente que se encuentra en el "panel de administración" de Tainacan:
 
-![Acesse o painel de controle](_assets\images\131.png)
+![Acceso al panel de control](_assets/images/131.png)
 
-![Acesse o painel de controle](_assets\images\132.png)
+![Acceso al panel de control](_assets/images/132.png)
 
 1. **“Ocultar cualquier botón redondo para elegir el tipo de documento”**: Al ocultar los tres, la sesión con la etiqueta dejará de existir. Ocultando dos de los tres, el formulario dejará de mostrar los botones redondos y mostrará inmediatamente el campo para insertar el documento del único tipo restante:
 
@@ -152,11 +152,11 @@ Este panel agrupa todas las funcionalidades de "ocultar/mostrar" de los elemento
 
 Por último, es posible cambiar parte de la apariencia del formulario. Aunque la estética de los componentes puede variar en función del "tema" utilizado, es posible realizar algunos ajustes en este panel. Puede ser conveniente cambiar el tamaño de la fuente base (la fuente utilizada en el "panel de administración" suele ser más pequeña que la que se encuentra en las entradas y páginas) y, por supuesto, los colores en general. Los colores son, básicamente, variaciones de gris para mostrar líneas y texto, y dos colores primarios, que proceden de la interfaz Azul Turquesa de Tainacan. Son importantes para los "enlaces", los "botones", los "globos de ayuda" y los "elementos sobre los que pasa el ratón". Merece la pena ver los efectos resultantes en la vista previa del bloque para hacerse una idea.
 
-![Acesse o painel de controle](_assets\images\133.png)
+![Acceso al panel de control](_assets/images/133.png)
 
-![Acesse o painel de controle](_assets\images\134.png)
+![Acceso al panel de control](_assets/images/134.png)
 
-![Acesse o painel de controle](_assets\images\135.png)
+![Acceso al panel de control](_assets/images/135.png)
 
 ## Verificación reCAPTCHA en el formulario
 
@@ -165,20 +165,20 @@ Es muy común, en sitios que tienen “formularios” como estos, que usuarios m
 Para proteger su sitio de este tipo de ataque, recomendamos especialmente el uso de un mecanismo de verificación que pueda validar los "envíos" realizados por usuarios reales. Aunque existen varias soluciones para ello, nosotros ofrecemos integrada en el plugin la que consideramos una de las más sencillas y eficaces, el reCAPTCHA de Google. Seguro ya lo has visto en algún formulario web, en el que tenías que pulsar la casilla y realizar algún reto para seguir adelante con el envío. Se necesitan dos pasos para hacerlo funcionar en tu "formulario de envío de artículos":
 
 
-1. [Configurar el sitio web](#configuración-de-recaptcha-en-su-sitio-web) para obtener la clave reCAPTCHA;
-2. [Habilitar colección](#habilitar-la-colección-para-usar-recaptcha) para el uso de los mismos;
+1. [Acceso al panel de control](#configuración-de-recaptcha-en-su-sitio-web) para obtener la clave reCAPTCHA;
+2. [Acceso al panel de control](#habilitar-la-colección-para-usar-recaptcha) para el uso de los mismos;
 
 ### Configuración de reCAPTCHA en su sitio web
 
 1. Accede al “Panel de administración” de WordPress. Hay un submenú del plugin Tainacan específico para esto, el "Envío de elementos".
 
-   ![Acesse o painel de controle](_assets\images\136.png)
+   ![Acceso al panel de control](_assets/images/136.png)
 
 2. En esta página, encontrará dos campos que deben completarse: la "clave del sitio" y la "palabra secreta del sitio"
 
-   ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
+   ![Acceso al panel de control](_assets/images/envio-elementos-captcha-1.png)
 
-Ambos campos se obtienen en el sitio web de reCAPTCHA al registrar el sitio web en este enlace: https://www.google.com/reCAPTCHA/admin/create. No olvides hacer clic en "Guardar cambios" al completar este paso.
+Ambos campos se obtienen en el sitio web de reCAPTCHA al registrar el sitio web en este enlace: https://www.google.com/recaptcha/admin/enterprise. No olvides hacer clic en "Guardar cambios" al completar este paso.
 
 ### Habilitar la colección para usar reCAPTCHA
 
@@ -202,8 +202,8 @@ Por ahora, no es posible crear nuevos términos de "metadatos de tipo taxonomía
 
 ### Quiero un formulario con campos no relacionados con la colección. ¿Es posible?
 
-El módulo de envío de ítems está orientado a los ítems de las colecciones de Tainacan. Si quieres obtener una información de tu usuario y no consideras que esa información sea de una colección concreta de tu repositorio, quizás lo que necesites es un plugin de formulario para tu sitio. Existen [varios disponibles para WordPress](https://br.wordpress.org/plugins/search/form/ ":ignore") que incluso se pueden insertar en la misma página del bloque de envío de artículos, pero dejando en claro que se trata de información separada.
+El módulo de envío de ítems está orientado a los ítems de las colecciones de Tainacan. Si quieres obtener una información de tu usuario y no consideras que esa información sea de una colección concreta de tu repositorio, quizás lo que necesites es un plugin de formulario para tu sitio. Existen [varios disponibles para WordPress](https://es.wordpress.org/plugins/search/form/ ":ignore") que incluso se pueden insertar en la misma página del bloque de envío de artículos, pero dejando en claro que se trata de información separada.
 
 ### Ya utilizo un plugin reCAPTCHA. ¿Hay alguna integración con el envío de artículos?
 
-De hecho, hay [algunos complementos que ya habilitan reCAPTCHA](https://br.wordpress.org/plugins/search/reCaptcha/ ":ignore") en la mayoría de los formularios de su sitio. Sin embargo, estos plugins no se integran automáticamente en Taiancan. Sin embargo, una vez que los utilice, puede aprovechar la clave del sitio y la palabra secreta generada para ellos y copiar y pegar en los [campos de configuración](#configuración-de-recaptcha-en-su-sitio-web), por lo que todos estarán protegidos por el menor mecanismo e incluso puede realizar un seguimiento de las estadísticas de ataque y protecciones en el panel de administración de Google reCAPTCHA.
+De hecho, hay [algunos complementos que ya habilitan reCAPTCHA](https://es.wordpress.org/plugins/search/reCaptcha/ ":ignore") en la mayoría de los formularios de su sitio. Sin embargo, estos plugins no se integran automáticamente en Taiancan. Sin embargo, una vez que los utilice, puede aprovechar la clave del sitio y la palabra secreta generada para ellos y copiar y pegar en los [campos de configuración](#configuración-de-recaptcha-en-su-sitio-web), por lo que todos estarán protegidos por el menor mecanismo e incluso puede realizar un seguimiento de las estadísticas de ataque y protecciones en el panel de administración de Google reCAPTCHA.
