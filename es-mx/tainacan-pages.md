@@ -1,6 +1,6 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Ver no Tema" 
+		alt="Icono de Ver en el tema" 
 		src="/es-mx/_assets/images/icon_see.png"
 		width="42"
 		height="42">
@@ -22,7 +22,7 @@ A medida que vayas creando colecciones, elementos y términos podrás acceder, a
 
 ## Las páginas especiales de Tainacan
 
-![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan, no  tema Tainacan Interface](/_assets/images/paginas_especiais_tainacan.png)
+![Conjunto de capturas de pantalla que ejemplifican las páginas especiales de Tainacan, en el tema de la Interfaz de Tainacan](/_assets/images/paginas-especiales-tainacan.png)
 
 ### Página de colecciones
 
