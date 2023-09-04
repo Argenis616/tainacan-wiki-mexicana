@@ -6,7 +6,6 @@
 		height="40">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 # Permisos y Usuarios
 
@@ -18,7 +17,7 @@ Un _“permiso”_ es lo que se comprueba al dar acceso a un usuario a una “_p
 
 Lo detallamos a continuación:
 
-1. como [Roles de usuario de Tainacan](/es-mx/tainacan-roles.md) (y cómo se comparan con los valores predeterminados de WordPress)
+1. Como [Roles de usuario de Tainacan](/es-mx/tainacan-roles.md) (y cómo se comparan con los valores predeterminados de WordPress)
 2. Como [Permisos de Tainacan](/es-mx/capabilities.md)
 3. Como [Administrar roles de usuario](/es-mx/manage-user-roles.md)
 4. Como [Administrar permisos específicos](/es-mx/manage-specific-capabilities.md) en ciertas colecciones
