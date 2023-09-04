@@ -1,6 +1,5 @@
 # Insertar y editar archivos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 Aunque puede ser una URL para una fuente externa, un elemento en Tainacan suele tener su Documento configurado como un archivo, como una imagen, vídeo, audio o PDF, que se almacena en la base de datos de WordPress. Además, se pueden tener anexos - también archivos - que ofrecen más información sobre este artículo. En esta página cubriremos algunos procesos que se pueden realizar para enviar estos archivos, añadir elementos de forma masiva desde archivos y editar imágenes directamente desde el panel de WordPress;
 
@@ -30,9 +29,9 @@ Es común querer usar archivos cargados en la biblioteca de medios en los elemen
 
 Como se mencionó, todos los archivos utilizados en Tainacan se almacenan en el“Biblioteca multimedia de WordPress”, donde también se pueden realizar ediciones de los archivos que son imágenes.
 
-### insertar imágenes
+### Insertar imágenes
 
-1. Accede al _“Panel de control”_ do _WordPress_;
+1. Accede al _“Panel de control”_ de _WordPress_;
 
 2. En la barra lateral izquierda, haz clic en _“Media”_ y luego en _“Biblioteca”_;
 
@@ -40,7 +39,7 @@ Como se mencionó, todos los archivos utilizados en Tainacan se almacenan en el�
 
 4. Arrastra o selecciona la _“imagen”_ que quieres añadir.
 
-   ![Inserir imagem na biblioteca](_assets/gifs/inserindo-imagens-biblioteca.gif)
+   ![Insertar imagen en la biblioteca](_assets/gifs/insertando-imagenes-biblioteca.gif)
 
 ### Editar imágenes
 
@@ -68,7 +67,7 @@ Como se mencionó, todos los archivos utilizados en Tainacan se almacenan en el�
 
    **“Recortar imagen”**.
 
-![Inserir imagen na biblioteca](_assets/gifs/editando-imagens-biblioteca.gif)
+![Insertar imagen en la biblioteca](_assets/gifs/editando-imagenes-biblioteca.gif)
 
 ---
 
@@ -86,23 +85,25 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
 
 1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Selecciona una colección;
 
-4. Selecciona el _“ítem”_ deseado y haz clic en _“Editar elemento”_;
+   ![Accede al panel de control](_assets/images/Seleccionar_Coleccion1.png)
 
-   ![Acesse o painel de controle](_assets\images\selecione_a_imagem.png)
+5. Selecciona el _“ítem”_ deseado y haz clic en _“Editar elemento”_;
 
-5. Pulsa en" _“Archivo”_;
+   ![Accede al panel de control](_assets/images/seleccionar_imagen.png)
 
-   ![Acesse o painel de controle](_assets\images\138.png)
+6. Pulsa en" _“Archivo”_;
 
-6. Selecciona una _“imagen”_ que ya esté en la _“Mediateca”_ o carga una _“imagen”_ desde tu computadora;
+   ![Accede al panel de control](_assets/images/138.png)
+
+7. Selecciona una _“imagen”_ que ya esté en la _“Mediateca”_ o carga una _“imagen”_ desde tu computadora;
 
    <iframe
        width="560"
@@ -113,7 +114,7 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
        allowfullscreen>
    </iframe>
 
-7. Pulsa en _“Seleccionar Archivo”_;
+8. Pulsa en _“Seleccionar Archivo”_;
 
    En el _“pie de página”_  aparecerá una barra de progreso con la información pertinente:
 
@@ -128,9 +129,9 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
        allowfullscreen>
    </iframe>
 
-8.  En la esquina inferior derecha de la pantalla, haga clic en:
+9.  En la esquina inferior derecha de la pantalla, haga clic en:
 
-![Acesse o painel de controle](_assets\images\141.png)
+![Accede al panel de control](_assets/images/141.png)
 
 - **“Enviar a la papelera de reciclaje”**,  para que el _“elemento”_ se envíe a la papelera de reciclaje;
 - **“Volver al borrador”**, para que el _“elemento”_ cambie su _estado_ a _“borrador”_;
@@ -140,11 +141,11 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
 
 1. Accede al _“Panel de control”_ de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
 2. En la barra lateral izquierda, haz clic en _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
 3. Seleccione una _“colección”_;
 
@@ -161,13 +162,13 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
        allowfullscreen>
    </iframe>
 
-5. Haz clic en “Acciones por lote” y luego en “Editar elementos seleccionados en bloque”;
+5. Haz clic en “Acciones para la selección” y luego en “Editar los elementos seleccionados en secuencia”;
 
-   ![Acesse o painel de controle](_assets\images\143.png)
+   ![Accede al panel de control](_assets/images/143.png)
 
 6. Haz clic en “Archivo”
 
-   ![Acesse o painel de controle](_assets\images\138.png)
+   ![Accede al panel de control](_assets/images/138.png)
 
 7. Selecciona una “imagen” que ya esté en la “Biblioteca de medios” o carga una “imagen” desde su computadora;
 
@@ -196,7 +197,7 @@ La acción de insertar imágenes individualmente está indicada para casos en lo
 
    III. “Actualizar”, para confirmar los cambios realizados en el “elemento“ y pasar al siguiente.
 
-   ![Acesse o painel de controle](_assets\images\144.png)
+   ![Accede al panel de control](_assets/images/144.png)
 
 ### Añadir un conjunto de archivos
 
