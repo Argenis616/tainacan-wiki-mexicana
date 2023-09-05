@@ -6,9 +6,9 @@ Los desarrolladores pueden crear Tipos de Metadatos personalizados a través de 
 
 - [Registro de ](#registro-de-su-tipo-de-metadatos) su tipo de metadatos
 - Creando la [Clase en PHP](#creando-la-clase-en-php)
-- Creando la [Vue Web Component](#creating-vue-web-component)
+- Creando el [componente Web Vue](#creando-el-componente-web-vue)
 - Creación de un componente web Vue para el [Formulario de Metadatos](#creando-el-componente-vue-web-para-el-formulario-de-metadatos)
-- Uso avanzado de [Componentes Vue de terceros](#advanced-usage-of-vue-components)
+- Uso avanzado de [Componentes Vue de terceros](#uso-avanzado-de-componentes-vue)
 
 > Si quieres jugar con la muestra utilizada aquí, todo está disponible en [este repositorio de Github](https://github.com/tainacan/custom-metadata-type-samples ":ignore") :wink:
 
@@ -173,7 +173,7 @@ Por ejemplo, el tipo de metadatos Fecha anula [este método](https://github.com/
 
 Este método cambiará la forma en que el valor se convierte a HTML para los metadatos de este tipo de metadatos. Por ejemplo, los metadatos de tipo taxonomía y relación utilizan [esto](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L197 ":ignore") y [esto](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L111 ":ignore"), respectivamente, para añadir enlaces al término/elemento relacionado en la salida HTML.
 
-## Creando un Componente Web Vue
+## Creando el Componente Web Vue
 
 El componente Vue es el trozo que se renderizará dentro del formulario de Edición de Artículos para que el usuario pueda editar sus metadatos de su tipo personalizado.
 
@@ -394,7 +394,7 @@ En cualquiera de esos casos, necesitarías un _bundler_ para convertir tus archi
 - Tu nuevo archivo `metadata-type.vue`, con la lógica que se puso en el archivo `.js`, y tus cosas extra;
 - Una versión modificada del antiguo archivo `metadata-type.js` que creamos anteriormente en este tutorial.
 
-Y por supuesto, después de todo listo necesitarás [construirlo](#construirlo!). La configuración dependerá mucho de lo que estés construyendo, pero aquí tenemos algunos ejemplos:
+Y por supuesto, después de todo listo necesitarás [construirlo](#construyelo!). La configuración dependerá mucho de lo que estés construyendo, pero aquí tenemos algunos ejemplos:
 
 ### Ejemplo mínimo de _package.json_
 
@@ -535,7 +535,7 @@ window.tainacan_extra_components["tainacan-metadata-type-custom"] =
   TainacanMetadataTypeCustom;
 ```
 
-### Construirlo!
+### Construyelo!
 
 Con estos cuatro archivos configurados estás listo para construir tu pequeño proyecto Vue.js. Abre el terminal, entra en la carpeta de tu`metadata_type` y ejecuta:
 
