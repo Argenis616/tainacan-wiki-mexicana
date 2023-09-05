@@ -71,4 +71,4 @@ A partir de la versión 0.17, Tainacan permite el envío de artículos en págin
    5. Prueba a cambiar algunos colores y el tamaño de la fuente;
 2. Publique la página y compruebe los efectos en el bloque de formulario;
 
-?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq#He-encontrado-un-error-cómo-debo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#He-encontrado-un-error-cómo-debo-proceder).
