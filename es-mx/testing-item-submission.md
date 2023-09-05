@@ -53,7 +53,7 @@ A partir de la versión 0.17, Tainacan permite el envío de artículos en págin
 
 1. En los ajustes de la colección, active la opción "Usar verificación _reCAPTCHA_ en el formulario de envío";
 2. En el panel de administración de WordPress, accede al submenú del plugin Tainacan llamado "Envío de elementos";
-3. En esta página, introduce los campos "Clave del sitio" y "Clave secreta" generados en el formulario de Google [_reCAPTCHA_] (https://www.google.com/recaptcha/admin/create ":ignorar");
+3. En esta página, introduce los campos "Clave del sitio" y "Clave secreta" generados en el formulario de Google [_reCAPTCHA_](https://www.google.com/recaptcha/admin/create ":ignorar");
 4. Guarde la configuración;
 5. Inserte un nuevo bloque de envío (elimine uno existente, si procede), recordando seleccionar como destino una colección cuya configuración _reCAPTCHA_ haya sido habilitada;
 6. Rellene el formulario. Debería haber una casilla _reCAPTCHA_ en la parte inferior de la página. Pruebe a enviar sin rellenarla y luego a rellenarla.
