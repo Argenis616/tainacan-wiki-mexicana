@@ -7,15 +7,15 @@ A finales de 2018, WordPress 5.0 presentó al mundo su nuevo editor de Posts y P
 
 <div style="text-align: center; font-size: 1.5rem;">
 
-[https://wordpress.org/gutenberg/](https://es.wordpress.org/gutenberg/ ":ignore").
+[https://es.wordpress.org/gutenberg/](https://es.wordpress.org/gutenberg/ ":ignore").
 
 </div>
 
-Centrado en ofrecer una forma dinámica y visual de editar contenidos. En este editor, todos los elementos de una página, desde los párrafos más sencillos hasta la galería de imágenes más compleja, se denominan **"Bloques "**. Con él, es fácil construir un post de lanzamiento para una colección, utilizando imágenes con diferentes alineaciones, columnas, cuadrículas de texto, mapas, títulos o botones más llamativos. Además, [existen muchos plugins](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para WordPress que ofrecen nuevos bloques ricos y atractivos.
+Centrado en ofrecer una forma dinámica y visual de editar contenidos. En este editor, todos los elementos de una página, desde los párrafos más sencillos hasta la galería de imágenes más compleja, se denominan **"Bloques "**. Con él, es fácil construir un post de lanzamiento para una colección, utilizando imágenes con diferentes alineaciones, columnas, cuadrículas de texto, mapas, títulos o botones más llamativos. Además, [existen muchos plugins](https://es.wordpress.org/plugins/browse/blocks/ ":ignore") para WordPress que ofrecen nuevos bloques ricos y atractivos.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de bloques de Tainacan Gutenberg](/es-mx/_assets/images/gutenberg-blocks-list.jpg ":size=450")
+![Lista de bloques de Tainacan Gutenberg](/es-mx/_assets/images/lista-bloques-de-gutenberg.png ":size=450")
 
 </div>
 
@@ -88,7 +88,7 @@ Si ya has creado una página con él, entonces ya estás familiarizado con la pl
 
 Estos elementos pueden ser indeseables en algunas situaciones. Suponga que quiere crear una versión personalizada de la página de inicio de su repositorio. En este caso, podría utilizar la plantilla `Landing`, que sólo muestra los elementos **1**, **5** y **6** de la lista anterior. La plantilla `Landing with Breadcrumb` añade el elemento **2** a esta lista:
 
-![Ejemplos usando plantillas](/_assets/gifs/gutenberg_page_templates.gif)
+![Ejemplos usando plantillas](/es-mx/_assets/gifs/gutenberg_page_templates.gif)
 
 ### WYSIWYG o las diferencias entre editor y página
 
