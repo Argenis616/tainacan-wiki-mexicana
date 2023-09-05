@@ -4,7 +4,7 @@ Para probar la búsqueda facetada de artículos, necesita una colección con una
 
 ## Lo básico
 
-1. 1. Acceda a la Colección o a la lista de Ítems Nivel Repositorio;
+1. Acceda a la Colección o a la lista de Ítems Nivel Repositorio;
 2. Aplicar la búsqueda textual simple;
 3. Aplicar diferentes combinaciones de filtros;
 4. Cambiar los modos de ordenación y visualización de la lista (no olvide probar el modo "Pantalla completa", si está disponible);
