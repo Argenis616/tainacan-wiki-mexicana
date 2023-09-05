@@ -13,4 +13,4 @@ Al editar un permiso, puedes ver qué roles lo tienen. Los roles están separado
 
 ![Edición de funciones asociadas a un permiso específico.](/es-mx/_assets/images/manage-specific-capabilities-2.png)
 
-Para acceder a estas pantallas, el usuario debe tener un rol con el permiso [Gestionar permisos de usuario]](/es-mx/capabilities#repositorio-general) o [Gestionar los permisos de los usuarios de la colección](/es-mx/capabilities#colección)
+Para acceder a estas pantallas, el usuario debe tener un rol con el permiso [Gestionar permisos de usuario](/es-mx/capabilities#repositorio-general) o [Gestionar los permisos de los usuarios de la colección](/es-mx/capabilities#colección)
