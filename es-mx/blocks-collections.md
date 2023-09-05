@@ -13,7 +13,7 @@ Para presentar varias colecciones en secuencia y dar a su publicación un aspect
 
 ### Configuraciones iniciales de los bloques
 
-![Selección de las colecciones del bloque](/_assets/gifs/blocks-collections-carousel-1.gif)
+![Selección de las colecciones del bloque](/es-mx/_assets/gifs/blocks-collections-carousel-1.gif)
 
 Para empezar, elija las colecciones que se añadirán al bloque. Las colecciones se añaden a través del modal y se eliminan de la propia lista haciendo clic en el botón "X" que aparece encima de la colección insertada.
 
@@ -21,7 +21,7 @@ Con las colecciones cargadas, puede que notes que el carrusel no se mueve. De he
 
 ### Modos de visualización de la colección
 
-![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-collections-carousel-2.gif)
+![Ver el carrusel en acción en el tema](/es-mx/_assets/gifs/blocks-collections-carousel-2.gif)
 
 Por defecto, el carrusel de colecciones tendrá un aspecto muy diferente al del [Carrusel de elementos](/es-mx/blocks-items#carrossel-de-itens), porque en cada unidad del carrusel aparecen tres imágenes. Estas imágenes son de artículos, en realidad los tres primeros artículos de la colección. Así, el bloque le ofrece una vista previa del aspecto de la colección. Si en lugar de la **rejilla de artículos** quieres mostrar la **miniatura de la colección**, sólo tienes que cambiarlo en la configuración del bloque en la barra lateral del editor.
 
@@ -50,7 +50,7 @@ Para empezar, elija las colecciones que se añadirán al bloque. Las colecciones
 
 Con las colecciones cargadas, podemos realizar algunos ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-![Configuraciones iniciales del bloque](/_assets/gifs/blocks-collections-list-1.gif)
+![Configuraciones iniciales del bloque](/es-mx/_assets/gifs/blocks-collections-list-1.gif)
 
 ### Configuraciones de visualización de la colección
 
