@@ -42,7 +42,7 @@ Este es el tema por defecto del proyecto Tainacan y está disponible en los repo
 - Bloques Gutenberg estándar estilizados según la identidad visual del tema;
 - Soporte de barra lateral;
 
-![Capturas de pantalla del tema de interfaz de Tainacan](/es-mx/_assets/gifs/temas-tainacan-interfaz.gif)
+![Capturas de pantalla del tema de interfaz de Tainacan](_assets/gifs/temas-tainacan-interfaz.gif)
 
 ### Blocksy
 
@@ -67,7 +67,7 @@ El segundo tema más recomendado que mencionamos aquí no es un tema hijo, sino 
 - Botón "Más" en el menú de cabecera cuando el número de artículos no cabe en la pantalla;
 - Otras opciones de personalización del diseño disponibles a través del tema;
 
-![Capturas de pantalla del tema Blocksy](/es-mx/_assets/gifs/themes-blocksy.gif)
+![Capturas de pantalla del tema Blocksy](_assets/gifs/themes-blocksy.gif)
 
 ### Identidad gubernamental (IDG-WP)
 
