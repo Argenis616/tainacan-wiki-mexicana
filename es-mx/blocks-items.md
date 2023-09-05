@@ -21,7 +21,7 @@ En cuanto inserto el bloque, tengo que configurar mi búsqueda. Este proceso com
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ":size=200")
+![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.png ":size=200")
 
 </div>
 
