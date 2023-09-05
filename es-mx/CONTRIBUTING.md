@@ -4,10 +4,10 @@ Si ha llegado a esta página, probablemente esté pensando en contribuir a nuest
 
 Para colaborar, sin embargo, tendrá que familiarizarse con nuestras herramientas de documentación. No se preocupe: aquí le daremos la ayuda que necesita para hacer contribuciones de calidad sin dificultad. En esta página verás:
 
-- [Cómo editar archivos en línea a través de GitHub](#editando-arquivos-diretamente-no-github)
-- [Cómo funciona la sintaxis de los artículos en la Wiki](#familiarizando-se-com-a-formatação-markdown)
-- [Cómo probar y hacer contribuciones avanzadas en la Wiki](#contribuição-avançada-com-a-docsify)
-- [Cómo funciona la estructura de archivos Wiki](#entendendo-a-estrutura-da-wiki)
+- [Cómo editar archivos en línea a través de GitHub](#editar-archivos-directamente-en-github)
+- [Cómo funciona la sintaxis de los artículos en la Wiki](#familiarizandose-con-el-formato-markdown)
+- [Cómo probar y hacer contribuciones avanzadas en la Wiki](#contribución-avanzada-con-Docsify)
+- [Cómo funciona la estructura de archivos Wiki](#comprender-la-estructura-de-la-wiki)
 
 ## Editar archivos directamente en GitHub
 
@@ -17,7 +17,7 @@ Nuestra Wiki está alojada íntegramente en GitHub, en el siguiente repositorio:
 
 Haciendo clic en el botón de edición con forma de pincel, puedes hacer los cambios que quieras y, al final del formulario, explicar qué cambios se proponen. Al enviar una propuesta de cambio, GitHub está, entre bastidores, creando un _Fork_ para ustedes y aplicando un _Pull-Request_.
 
-Para contribuciones más complejas, que impliquen crear páginas, insertar imágenes, pestañas, vídeos o incluso cambios en la estructura de navegación de la Wiki, le sugerimos que siga nuestras instrucciones. [instrucciones para ejecutar Docsify](#contribuição-avançada-com-a-docsify).
+Para contribuciones más complejas, que impliquen crear páginas, insertar imágenes, pestañas, vídeos o incluso cambios en la estructura de navegación de la Wiki, le sugerimos que siga nuestras instrucciones. [instrucciones para ejecutar Docsify](#contribución-avanzada-con-Docsify).
 
 ## Familiarizandose con el formato Markdown
 
@@ -30,7 +30,7 @@ Muchos sistemas colaborativos adoptan ciertas convenciones de formato para facil
 | Texto en cursiva, negrita o ambas          | `*cursiva*, **negrita** o ***ambos***`                                          | _cursiva_, **negrita** o **_ambos_**                                          |
 | Texto pre-formateado                         | `Aquí va el nombre de una función`                                                  | `Aquí va el nombre de una función`                                                |
 | Enlaces a las páginas de la wiki                  | `[Página principal](/es-mx/README.md)`                                           | [Página principal](/es-mx/README.md)                                           |
-| Enlaces a una sección                        | `[Editando colecciones](/es-mx/collections#crear-colecciones)`                         | [Editando colecciones](/es-mx/collections#criar-coleções)                         |
+| Enlaces a una sección                        | `[Editando colecciones](/es-mx/collections#crear-colecciones)`                         | [Editando colecciones](/es-mx/collections#crear-colecciones)                         |
 | Referencia a la dirección de un sitio web      | `https://tainacan.org`                                                           | https://tainacan.org                                                           |
 | Referencia a un enlace con un nombre personalizado | `[Sitio oficial de Tainacan](https://www.wikipedia.org/)`                         | [Sitio oficial de Tainacan](https://www.wikipedia.org/)                         |
 | Comentarios de texto                        | `<!--Este comentario no se mostrará en la página, sólo en su código fuente-->` | <!--Este comentario no se mostrará en la página, sólo en su código fuente--> |
