@@ -15,7 +15,7 @@ Centrado en ofrecer una forma dinámica y visual de editar contenidos. En este e
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de bloques de Tainacan Gutenberg](/es-mx/_assets/images/lista-bloques-de-gutenberg.png ":size=450")
+![Lista de bloques de Tainacan Gutenberg](_assets/images/lista-bloques-de-gutenberg.png ":size=450")
 
 </div>
 
@@ -43,7 +43,7 @@ Para utilizar uno de los bloques, basta con editar una entrada o página y busca
 
 Antes de empezar a explorar los bloques de Tainacan, sin embargo, es posible que desee entender algunos conceptos generales. La siguiente figura muestra las sesiones relacionadas con su bloque cuando se inserta en el editor:
 
-![Sesiones relacionadas con los bloques en el editor](/es-mx/_assets/images/gutenberg-blocks-sections.png)
+![Sesiones relacionadas con los bloques en el editor](_assets/images/gutenberg-blocks-sections.png)
 
 1. Es la barra superior del bloque. Suele contener ajustes como el modo de visualización, la alineación del bloque, así como opciones para borrar, insertar bloques antes o después y crear un grupo de bloques;
 2. Es el área de contenido del propio bloque. Cuando están activos, es decir, cuando se hace clic sobre ellos, los bloques de Tainacan suelen tener una zona gris con la configuración principal que debe realizarse (elige una fuente para los datos mostrados, como una colección). Esta región no aparece en la versión final del post, que puede verse alejando el foco del bloque;
@@ -51,7 +51,7 @@ Antes de empezar a explorar los bloques de Tainacan, sin embargo, es posible que
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Posibles Alineaciones del bloque](/es-mx/_assets/images/gutenberg-blocks-alignments.png ":size=250")
+![Lista de Posibles Alineaciones del bloque](_assets/images/gutenberg-blocks-alignments.png ":size=250")
 
 </div>
 
@@ -63,7 +63,7 @@ En general, un bloque comienza por defecto con el ajuste "Centro". Si selecciona
 
 Las dos opciones "Anchura amplia" y "Anchura completa" son útiles para temas que ofrecen plantillas con un amplio margen que puede extrapolarse. La figura siguiente lo muestra:
 
-![Lista de Posibles Alineaciones del bloque](/es-mx/_assets/images/gutenberg-wide-alignment.png)
+![Lista de Posibles Alineaciones del bloque](_assets/images/gutenberg-wide-alignment.png)
 
 El tema (_Tainacan Interface_) tiene un margen lateral que limita el ancho de la entrada a 1400px. Además, dentro de la propia entrada hay un margen interno que reduce aún más la anchura del cuerpo del texto. Usando "Anchura amplia" en [Bloque de Carrusel de Elementos](#carrusel-de-elementos) arriba, hemos extrapolado ligeramente el margen del cuerpo del texto para resaltarlo. Pero podemos ir más allá. Usando "Anchura completa", hacemos que el [Bloque de Elementos de la Colección](#lista-de-elementos-de-la-colección) en la parte inferior ocupe todo el ancho de la entrada. Esta función se utiliza a menudo para presentar elementos visuales destacados en su página, o para componer cabeceras personalizadas.
 
@@ -88,7 +88,7 @@ Si ya has creado una página con él, entonces ya estás familiarizado con la pl
 
 Estos elementos pueden ser indeseables en algunas situaciones. Suponga que quiere crear una versión personalizada de la página de inicio de su repositorio. En este caso, podría utilizar la plantilla `Landing`, que sólo muestra los elementos **1**, **5** y **6** de la lista anterior. La plantilla `Landing with Breadcrumb` añade el elemento **2** a esta lista:
 
-![Ejemplos usando plantillas](/es-mx/_assets/gifs/gutenberg_page_templates.gif)
+![Ejemplos usando plantillas](_assets/gifs/gutenberg_page_templates.gif)
 
 ### WYSIWYG o las diferencias entre editor y página
 
