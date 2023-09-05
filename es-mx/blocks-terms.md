@@ -17,7 +17,7 @@ Para presentar varios términos en secuencia y dar a su publicación un aspecto 
 
 ### Configuraciones iniciales del bloque
 
-![Selección de condiciones en el bloque](/es-mx/_assets/gifs/blocks-terms-carousel-1.gif)
+![Selección de condiciones en el bloque](_assets/gifs/blocks-terms-carousel-1.gif)
 
 Para empezar, elija la Taxonomía desde la que se cargarán las condiciones. Una vez hecho esto, elija los términos que se añadirán al bloque. Puede añadir términos a través del modal y eliminarlos de la propia lista haciendo clic en el botón "X" que aparece encima del término insertado.
 
@@ -25,7 +25,7 @@ Con las condiciones cargadas, puede que notes que el carrusel no se mueve. De he
 
 ### Modos de visualización de términos
 
-![Ver el carrusel en acción en el tema](/es-mx/_assets/gifs/blocks-terms-carousel-2.gif)
+![Ver el carrusel en acción en el tema](_assets/gifs/blocks-terms-carousel-2.gif)
 
 Por defecto, el carrusel de condiciones, así como la sección [Carrusel de colecciones](/es-mx/blocks-collections#carrusel-de-colecciones), será muy diferente de [Carrusel de elementos](/es-mx/blocks-items#carrusel-de-elementos), porque aparecen tres imágenes en cada unidad del carrusel. Estas imágenes son de elementos, de hecho, los tres primeros artículos de la lista para este término. Así, el bloque le ofrece una vista previa del aspecto de la lista. Si en lugar de la **Rejilla de artículos** quieres mostrar la  **Imagen de la condición**, sólo tienes que cambiarlo en la configuración del bloque en la barra lateral del editor.
 
@@ -54,7 +54,7 @@ Para empezar, elija la Taxonomía desde la que se cargarán los términos. Una v
 
 Con los elementos cargados, podemos realizar algunos ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-![Ajustes iniciales del Bloque](/es-mx/_assets/gifs/blocks-terms-list-1.gif)
+![Ajustes iniciales del Bloque](_assets/gifs/blocks-terms-list-1.gif)
 
 ### Configuración de la pantalla de condiciones
 
