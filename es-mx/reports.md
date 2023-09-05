@@ -80,7 +80,7 @@ El tercer gráfico que se muestra en la pantalla del repositorio es un gráfico 
 
 </div>
 
-Este gráfico ofrece una visión importante de cómo se distribuyen los elementos en el uso de los términos en una taxonomía. Una observación importante es que aquí los **términos se enumeran sin discriminación jerárquica**, es decir, los términos padres y sus términos hijos, , si los hay, se encuentran en el mismo nivel. A continuación se presenta [un gráfico](#total-de-elementos-por-tipo-de-taxonomía-de-metadatos-en-la-colección) con esta información.
+Este gráfico ofrece una visión importante de cómo se distribuyen los elementos en el uso de los términos en una taxonomía. Una observación importante es que aquí los **términos se enumeran sin discriminación jerárquica**, es decir, los términos padres y sus términos hijos, , si los hay, se encuentran en el mismo nivel. A continuación se presenta un [gráfico](#total-de-elementos-por-tipo-de-taxonomía-de-metadatos-en-la-colección) con esta información.
 
 ## Actividades totales por usuario
 
