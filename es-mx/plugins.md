@@ -4,7 +4,7 @@ Tainacan es un _plugin_ para _WordPress_, lo que significa que mejora la funcion
 
 ## Plugins disponibles
 
-- [Visualidor PDF](/es-mx/plugin-pdf-exposer) (Beta) - Añade el visor de PDF, que permite ver las listas de elementos en formato PDF.
+- [Visualizador PDF](/es-mx/plugin-pdf-exposer) (Beta) - Añade el visor de PDF, que permite ver las listas de elementos en formato PDF.
 - [Metadatos de tipo URL](/es-mx/plugin-metadata-type-url) - Añade un tipo de metadatos que acepta URL y muestra una versión incrustada o iframe de su contenido.
 - [Modos de visualización adicionales](/es-mx/plugin-extra-view-modes) - Añade varios modos de visualización alternativos a la lista de elementos.
 - [WordPress 3DHOP](/es-mx/plugin-3d-hop) (Beta) - Añade compatibilidad de documentos con modelos 3D que utilicen la función [3D HOP](http://3dhop.net/);
@@ -17,7 +17,7 @@ Los plugins listados arriba que ya no están en beta ahora pueden ser instalados
 
 Una forma visual de instalar plugins descargados es ir al panel de administración de _WordPress_, acceder a la sección Plugins y hacer clic en "Añadir nuevo". Esto te llevará a la lista de plugins y en la parte superior verás el botón "Enviar plugin" donde podrás seleccionar tu archivo `.zip`.
 
-![Instalar un plugin desde el panel de WordPress](/es-mx/_assets/images/plugins_1.png)
+![Instalar un plugin desde el panel de WordPress](_assets/images/plugins_1.png)
 
 ### Instalación de un plugin a través de WP-CLI
 
