@@ -39,7 +39,7 @@ Active el plugin en la sección de plugins del panel de administración de _Word
 
 Vaya a la página de configuración de su colección. Busca la sección Modos de vista disponibles y marca los que quieras que estén disponibles en la lista del tema:
 
-![Configuración de los modos de visualización](/es-mx/_assets/images/plugins_extra_view_modes_1.png ":size=420")
+![Configuración de los modos de visualización](_assets/images/plugins_extra_view_modes_1.png ":size=420")
 
 ## Uso
 
@@ -47,24 +47,24 @@ Y ya está. Ahora puedes ver tu lista de diferentes maneras. A continuación hay
 
 <div style="display: flex;flex-wrap: wrap; justify-content: space-around;">
 
-![Captura de pantalla de la vista de galería](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-1.png ":size=320")
+![Captura de pantalla de la vista de galería](_assets/images/plugin_extra_viewmodes_screenshot-1.png ":size=320")
 
-![Captura de pantalla de la vista de galería con el elemento resaltado](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-2.png ":size=320")
+![Captura de pantalla de la vista de galería con el elemento resaltado](_assets/images/plugin_extra_viewmodes_screenshot-2.png ":size=320")
 
-![Captura de pantalla de la vista de galería con el elemento y los metadatos resaltados](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-3.png ":size=320")
+![Captura de pantalla de la vista de galería con el elemento y los metadatos resaltados](_assets/images/plugin_extra_viewmodes_screenshot-3.png ":size=320")
 
-![Captura de pantalla de la vista en Mosaico](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-4.png ":size=320")
+![Captura de pantalla de la vista en Mosaico](_assets/images/plugin_extra_viewmodes_screenshot-4.png ":size=320")
 
-![Captura de pantalla de la vista de Marco](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-5.png ":size=320")
+![Captura de pantalla de la vista de Marco](_assets/images/plugin_extra_viewmodes_screenshot-5.png ":size=320")
 
-![Captura de pantalla del modo Visualización](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-6.png ":size=320")
+![Captura de pantalla del modo Visualización](_assets/images/plugin_extra_viewmodes_screenshot-6.png ":size=320")
 
-![Captura de pantalla de la vista de Álbumes](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-7.png ":size=320")
+![Captura de pantalla de la vista de Álbumes](_assets/images/plugin_extra_viewmodes_screenshot-7.png ":size=320")
 
-![Captura de pantalla del modo de visualización de Documentos](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-8.png ":size=320")
+![Captura de pantalla del modo de visualización de Documentos](_assets/images/plugin_extra_viewmodes_screenshot-8.png ":size=320")
 
-![Captura de pantalla del modo de visualización de Libros](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-9.png ":size=320")
+![Captura de pantalla del modo de visualización de Libros](_assets/images/plugin_extra_viewmodes_screenshot-9.png ":size=320")
 
-![Captura de pantalla del modo de visualización Polaroid](/es-mx/_assets/images/plugin_extra_viewmodes_screenshot-10.png ":size=320")
+![Captura de pantalla del modo de visualización Polaroid](_assets/images/plugin_extra_viewmodes_screenshot-10.png ":size=320")
 
 </div>
