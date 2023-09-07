@@ -1,4 +1,4 @@
-?> _TODO_ Documentar cada filtro con parámetros y ejemplos de uso
+>  Documentar cada filtro con parámetros y ejemplos de uso
 
 # Filtros
 
