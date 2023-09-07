@@ -1,12 +1,12 @@
-?> _TODO_ Document each filters with parameters and usage example
+?> _TODO_ Documentar cada filtro con parámetros y ejemplos de uso
 
-# Filters
+# Filtros
 
-From the WordPress developer handbook:
+Del manual para desarrolladores de WordPress:
 
-> A filter takes the info it receives, modifies it somehow, and returns it. In other words: it filters something and passes it back to the hook for further use. It is used to modify something in a specific way so that the modification is then used by code later on.
+> Un filtro toma la información que recibe, la modifica de alguna manera, y la devuelve. En otras palabras: filtra algo y lo devuelve al hook para su uso posterior. Se utiliza para modificar algo de una manera específica para que la modificación sea utilizada por el código más adelante.
 
-The Tainacan Filters can be divided in Backend, _PHP-based_ filters and Frontend, _Javascript-based_ filters:
+Los Filtros Tainacan se pueden dividir en Backend, _PHP-based_ filtros y Frontend, _Javascript-based_ filtros:
 
 ## Backend Filters
 
@@ -237,13 +237,13 @@ add_filter(
 );
 ```
 
-An array of Admin UI Options. Learn more about this filter in [its dedicated page](/dev/admin-ui-options.md).
+Una serie de opciones de la interfaz de usuario de administración. Más información sobre este filtro en [su página dedicada](/dev/admin-ui-options.md).
 
-#### Paramethers
+#### Parametros
 
-| Name    | Type    | Description                                                                                      |
+| Nombre    | Tipo    | Descripcion                                                                                      |
 | ------- | ------- | ------------------------------------------------------------------------------------------------ |
-| options | `array` | Admin UI options. Possible values are listed [here](/dev/admin-ui-options.md). Defaults to `[]`. |
+| opciones | `array` | Opciones de la interfaz de administración. Se enumeran los valores posibles [aquí](/dev/admin-ui-options.md). Por defecto a `[]`. |
 
 ### tainacan-i18n
 
@@ -254,13 +254,13 @@ add_filter(
 );
 ```
 
-An array of key-value tuples where the key is a simple key for identifying a translatable string and the value is the translated string, using `__( 'Some string here', 'tainacan' )`. This is exported as a global object to the Tainacan plugin javascript side, which then renders translations in the frontend.
+Un array de tuplas key-value donde la clave es una clave simple para identificar una cadena traducible y el valor es la cadena traducida, usando `__( 'Some string here', 'tainacan' )`. Esto se exporta como un objeto global a la parte javascript del plugin Tainacan, que luego renderiza las traducciones en el frontend.
 
-#### Paramethers
+#### Parametros
 
-| Name    | Type    | Description                                                                                                                                                                                        |
+| Nombre    | Tipo    | Descripcion                                                                                                                                                                                        |
 | ------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| strings | `array` | Array of objects containing key an value for translatable strings. Defaults to [the array from this file](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php ":ignore"). |
+| strings | `array` | Array de objetos que contienen la clave y el valor de las cadenas traducibles. Por defecto es [el array de este fichero].(https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php ":ignore"). |
 
 ### tainacan-admin-hooks-positions
 
@@ -271,13 +271,13 @@ add_filter(
 );
 ```
 
-List of available forms regions where form hooks may be placed.
+Lista de regiones de formularios disponibles donde se pueden colocar ganchos de formulario.
 
-#### Paramethers
+#### Parametros
 
-| Name      | Type    | Description                                                                                                   |
+| Nombre      | Tipo    | Descripcion                                                                                                   |
 | --------- | ------- | ------------------------------------------------------------------------------------------------------------- |
-| positions | `array` | Possible forms regions with form hooks. Defaults to `['begin-left', 'begin-right', 'end-left', 'end-right']`. |
+| posiciones | `array` | Posibles regiones de formulario con hooks de formulario. Por defecto `['begin-left', 'begin-right', 'end-left', 'end-right']`. |
 
 ### tainacan-admin-hooks-contexts
 
@@ -288,15 +288,15 @@ add_filter(
 );
 ```
 
-List of available forms where admin form hooks can be used.
+Lista de formularios disponibles en los que se pueden utilizar hooks de formulario de administración.
 
-#### Paramethers
+#### Parametros
 
 | Name     | Type    | Description                                                                                                                                       |
 | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | contexts | `array` | Possible forms to receive form hooks. Defaults to `['collection', 'metadatum', 'item', 'taxonomy', 'term', 'filter', 'role', 'metadataSection']`. |
 
-## Frontend Filters
+## Filtros fronted
 
 ### tainacan_use_legacy_masonry_view_mode_cols
 
@@ -307,13 +307,13 @@ wp.hooks.addFilter(
 );
 ```
 
-This filter allow developers to use the legacy Masonry layout, in oposition to the one introduced in Tainacan 0.19. The legacy one has more columns-per-screen an thus smaller images, using the `tainacan-media-full` size, where the new one uses less columns, using the `tainacan-large-fill` image size.
+Este filtro permite a los desarrolladores utilizar el antiguo diseño Masonry, en oposición al introducido en Tainacan 0.19. La anterior tiene más columnas por pantalla y, por tanto, imágenes más pequeñas, utilizando el tamaño `tainacan-media-full`, mientras que la nueva utiliza menos columnas, utilizando el tamaño de imagen `tainacan-large-fill`.
 
-#### Paramethers
+#### Parametros
 
-| Name   | Type      | Description                                                          |
+| Nombre   | Tipo      | Descripcion                                                          |
 | ------ | --------- | -------------------------------------------------------------------- |
-| enable | `Boolean` | Whether the legacy layout should be used or not. Defaults to `false` |
+| habilitado | `Boolean` | Si se debe utilizar o no el diseño heredado. Por defecto `false` |
 
 ### tainacan_faceted_search_search_control\_(before/after)
 
@@ -324,13 +324,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around the search control bar (where the sorting, textual search, view mode options, etc.. are available). A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_search_control_(before/after)`.
+Permite insertar contenido html alrededor de la barra de control de búsqueda (donde están disponibles las opciones de ordenación, búsqueda textual, modo de vista, etc.). Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_search_control_(before/after)`.
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                             |
+| Nombre        | Tipo     | Descripcion                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_advanced_search\_(before/after)
 
@@ -341,13 +341,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around advanced search panel. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_advanced_search_(before/after)`.
+Permite insertar contenido html alrededor del panel de búsqueda avanzada. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_advanced_search_(before/after)`.
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                             |
+| Nombre        | Tipo     | Descripcion                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_filters\_(before/after)
 
@@ -358,13 +358,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around the filters panel. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_filters_(before/after)`.
+Permite insertar contenido html alrededor del panel de filtros. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_filters_(before/after)`.
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                             |
+| Nombre        | Tipo     | Descripcion                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_filter_tags\_(before/after)
 
@@ -375,13 +375,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around the filters tags, which appear above the items list when a filter is applied. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_filter_tags_(before/after)`.
+Permite insertar contenido html alrededor de las etiquetas de filtro, que aparecen encima de la lista de elementos cuando se aplica un filtro. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_filter_tags_(before/after)`.
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                             |
+| Nombre        | Tipo     | Descripcion                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_items_list\_(before/after)
 
@@ -392,13 +392,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around the items list. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_items_list_(before/after)`.
+Permite insertar contenido html alrededor de la lista de elementos. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_items_list_(before/after)`.
 
 #### Paramethers
 
 | Name        | Type     | Description                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_pagination\_(before/after)
 
@@ -409,13 +409,13 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around the pagination region. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_pagination_(before/after)`.
+Permite insertar contenido html alrededor de la región de paginación. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_pagination_(before/after)`.
 
 #### Paramethers
 
 | Name        | Type     | Description                             |
 | ----------- | -------- | --------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto |
 
 ### tainacan_faceted_search_item\_(before/after)
 
@@ -426,14 +426,14 @@ wp.hooks.addFilter(
 );
 ```
 
-Allows insertion of html content around an item unit in the items list. Notice that this will take effect on several view modes. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_item_(before/after)`.
+Permite insertar contenido html alrededor de una unidad de elemento en la lista de elementos. Tenga en cuenta que esto tendrá efecto en varios modos de vista. Existe una versión dinámica para colecciones específicas: `tainacan_faceted_search_collection_${collectionId}_item_(before/after)`.
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                                                      |
+| Nombre        | Tipo     | Descripcion                                                      |
 | ----------- | -------- | ---------------------------------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty                          |
-| item        | `Object` | Item object with several attributes, such as ID, title, url, etc |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto                          |
+| item        | `Object` | Objeto con varios atributos, como ID, título, url, etc. |
 
 ### tainacan_item_submission_collection\_${$collectionId}\_${location}\_(before/after)
 
@@ -444,19 +444,19 @@ wp.hooks.addFilter(
 );
 ```
 
-Dynamic filter which allows insertion of html content around different parts of the item submission block. The location are:
+Filtro dinámico que permite insertar contenido html alrededor de diferentes partes del bloque de envío de artículos. Las ubicaciones son:
 
-- `document` - The form Document input;
-- `attachments` - The form Attachments upload field;
-- `thumbnail` - The form Thumbnail upload field;
-- `metadata` - The form Metadata list;
-- `metadata_section` - Each Metadata Section (entity = the Metadata Section);
-- `metadatum` - Each Metadatum (entity = the Metadatum);
-- `footer` - The form footer;
+- `document` - La entrada Documento del formulario;
+- `attachments` - El campo Adjuntos del formulario;
+- `thumbnail` - El campo Thumbnail del formulario;
+- `metadata` - La lista de metadatos del formulario;
+- `metadata_section` - Cada sección de metadatos (entidad = la sección de metadatos);
+- `metadatum` - Cada metadato (entidad = el metadato);
+- `footer` - El pie de página del formulario;
 
-#### Paramethers
+#### Parametros
 
-| Name        | Type     | Description                                                     |
+| Nombre        | Tipo     | Descripcion                                                     |
 | ----------- | -------- | --------------------------------------------------------------- |
-| htmlContent | `String` | Html content to be added. Default empty.                        |
-| entity      | `Object` | Entity object if the entity is Metadatum or a Metadatum Section |
+| htmlContent | `String` | Contenido html a añadir. Vacío por defecto.                        |
+| entity      | `Object` | Objeto entidad si la entidad es metadato o una sección metadato |
