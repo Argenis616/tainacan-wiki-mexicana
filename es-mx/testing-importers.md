@@ -4,7 +4,7 @@ Existen varios importadores para Tainacan, incluyendo algunos que pueden ser cre
 
 ## Lo básico
 
-1. 1. Vaya a la página Importadores, accesible desde el menú del repositorio;
+1. Vaya a la página Importadores, accesible desde el menú del repositorio;
 2. Seleccione el Importador CSV;
 3. Elija un archivo CSV para probarlo. Es importante que su archivo cubra algunos de los casos de importación más comunes. Si no tienes ninguno a mano, puedes utilizar uno [de estos aquí](http://oficinas.tainacan.org/ ":ignorar");
 4. Rellene el formulario, seleccionando una Colección de destino y cargando el archivo CSV;
@@ -41,7 +41,7 @@ Existen varios importadores para Tainacan, incluyendo algunos que pueden ser cre
 
 1. Vaya a la página Importadores, accesible desde el menú del repositorio;
 2. Seleccione el Importador CSV;
-3. Elija un archivo CSV para probarlo. En este caso, lo ideal es que tenga **configuraciones relacionadas con metadatos con [campos especiales](/es-mx/importers#special-columns)**. [En esta página](http://oficinas.tainacan.org/) puede encontrar un ejemplo en el último enlace, pero también le sugerimos que cree sus propias configuraciones basándose en la [documentación del importador](/es-mx/importers#create-metadata-automatically).
+3. Elija un archivo CSV para probarlo. En este caso, lo ideal es que tenga **configuraciones relacionadas con metadatos con [campos especiales](/es-mx/importers#columnas-especiales)**. [En esta página](http://oficinas.tainacan.org/) puede encontrar un ejemplo en el último enlace, pero también le sugerimos que cree sus propias configuraciones basándose en la [documentación del importador](/es-mx/importers#crear-metadatos-automáticamente).
 4. Rellena el formulario, seleccionando una **Colección que aún no tenga metadatos configurados** y subiendo el archivo CSV;
 5. Haga clic en `Siguiente`;
 6. En el mapeo, permita que el importador cree los metadatos;
