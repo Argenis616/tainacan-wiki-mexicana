@@ -21,7 +21,7 @@ En cuanto inserto el bloque, tengo que configurar mi búsqueda. Este proceso com
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.png ":size=200")
+![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ":size=200")
 
 </div>
 
@@ -146,7 +146,7 @@ Pero no tenemos por qué detenernos ahí. De forma similar a los bloques [Lista 
 
 ![Configuración de la cabecera de la colección](/_assets/gifs/blocks-search-bar-3.gif)
 
-!> La Barra de Búsqueda es uno de los pocos bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea una, se desactiva la opción de insertar una nueva.
+> La Barra de Búsqueda es uno de los pocos bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea una, se desactiva la opción de insertar una nueva.
 ---
 
 ## Búsqueda por aspectos
