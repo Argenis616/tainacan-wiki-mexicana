@@ -83,7 +83,7 @@ El salto de línea que la [Lista de elementos de la colección](#lista-de-elemen
 
 ### Ajustes iniciales del Bloque
 
-![Selección de la colección en el bloque](/_assets/gifs/blocks-items-carousel-1.gif)
+![Selección de la colección en el bloque](/_assets/gifs/blocks-collection-items-7.gif)
 
 Al igual que con los ajustes del Bloque [Lista de elementos de la colección](#lista-de-elementos-de-la-colección#ajustes-iniciales-del-bloque) puede configurar una búsqueda para mostrar sus elementos en el carrusel. De esta forma, se buscarán dinámicamente según determinados parámetros de búsqueda, ordenación y filtrado que tú definas. Pero en este bloque también existe la posibilidad de elegir "a mano" qué elementos quieres mostrar. Tenga en cuenta que las opciones son excluyentes. Tiene que utilizar una estrategia u otra. En el caso de la selección manual de elementos, añades elementos a través del modal y los eliminas en la propia lista haciendo clic en el botón "X" que aparece encima del elemento insertado.
 
@@ -91,7 +91,7 @@ Con los elementos cargados, puede observar que el carrusel no se mueve. De hecho
 
 ### Cabecera de la colección
 
-![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-items-carousel-2.gif)
+![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-collection-items-8.gif)
 
 <div style="float: right; margin-left: 32px;">
 
@@ -122,7 +122,7 @@ Este bloque es un poco diferente de los anteriores. En lugar de mostrar una vist
 
 Configurar el bloque es muy sencillo: Sólo tiene que elegir el destino de su búsqueda: una lista de elementos del repositorio o una lista de elementos de una colección específica.
 
-![Seleccionando la fuente de búsqueda del bloque](/_assets/gifs/blocks-search-bar-1.gif)
+![Seleccionando la fuente de búsqueda del bloque](/_assets/gifs/blocks-collection-items-9.gif)
 
 ### Alineación de Barras
 
@@ -136,7 +136,7 @@ En el panel lateral, en los ajustes del bloque, hay 3 estilos que se pueden apli
 - El estilo Alternativo comienza sin borde y con un fondo transparente claro. Su tamaño es menor al principio y aumenta cuando se pasa el ratón por encima de la barra o se hace clic en ella. Cuando se activa, aparece un borde blanco;
 - Por último, el modesto estilo "Elegante" comienza con sólo un icono y un gran botón redondeado, que se expande para mostrar el campo de búsqueda;
 
-![Estilos y alineación de la barra de búsqueda](/_assets/gifs/blocks-search-bar-2.gif)
+![Estilos y alineación de la barra de búsqueda](/_assets/gifs/blocks-collection-items-10.gif)
 
 ### Opciones generales de la barra
 
@@ -144,7 +144,7 @@ Una vez elegido el estilo, puede determinar la anchura de la barra en su versió
 
 Pero no tenemos por qué detenernos ahí. De forma similar a los bloques [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) y [Carrusel de elementos](#carrusel-de-elementos]), en este bloque puedes mostrar una cabecera de la colección. Puede definir la altura y el color de fondo de la cabecera, así como el color y el tamaño del texto. Tenga en cuenta que al combinar diferentes estilos y alineaciones, su barra y cabecera cambiarán un poco:
 
-![Configuración de la cabecera de la colección](/_assets/gifs/blocks-search-bar-3.gif)
+![Configuración de la cabecera de la colección](/_assets/gifs/blocks-collection-items-11.gif)
 
 > La Barra de Búsqueda es uno de los pocos bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea una, se desactiva la opción de insertar una nueva.
 ---
@@ -155,7 +155,7 @@ La **Busqueda por aspectos** es el bloque más complejo que ofrece el plugin. Co
 
 ### Ajustes iniciales del bloque
 
-![Selección de la colección del bloque](/_assets/gifs/blocks-faceted-search-1.gif)
+![Selección de la colección del bloque](/_assets/gifs/blocks-collection-items-12.gif)
 
 Cuando inserte el bloque, tendra que configurar la fuente de la búsqueda. Puede ser la lista de todos los elementos del repositorio, la lista de elementos de una colección o la lista de elementos asociados a una condición. En los dos últimos casos, un modal ofrecerá las opciones disponibles para elegir. Una vez configurado esto, aparecerá una figura ilustrativa donde se renderizará la Lista. Esto es sólo una demostración porque la lista completa es demasiado compleja para mostrarla dentro del editor, pero puede ver los resultados previsualizando la página o publicándola.
 
