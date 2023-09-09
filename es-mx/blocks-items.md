@@ -2,10 +2,10 @@
 
 Los bloques de elementos son una forma de mostrar una vista previa o lo más destacado de su colección, sin tener que exponer al usuario a toda la complejidad de la colección. [Lista de elementos con búsqueda por aspectos](/es-mx/tainacan-pages#páginas-de-elementos-de-una-colección). Actualmente, hay 4 bloques relacionados con artículos de Tainacan:
 
-1. [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) _(Dinâmico)_
+1. [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) _(Dinámica)_
 2. [Carrusel de elementos](#carrusel-de-elementos)
 3. [Barra de búsqueda Tainacan](#barra-de-búsqueda)
-4. [Búsqueda por aspectos](#búsqueda-por-aspectos) _(A Lista de Itens Completa)_
+4. [Búsqueda por aspectos](#búsqueda-por-aspectos) _(Una lista de elementos completa)_
 
 ---
 
