@@ -31,7 +31,7 @@ Para utilizar uno de los bloques, basta con editar una entrada o página y busca
 - [Lista de condiciones](/es-mx/blocks-terms#lista-de-condiciones) _(estático)_;
 - [Lista de elementos de la colección](/es-mx/blocks-items#lista-de-elementos-de-la-colección);
 - [Galería multimedia de elementos](/es-mx/block-item#galería-multimedia-de-elementos);
-- [Formulario de presentación de elementos](/es-mx/blocks-item#formulario-de-presentación-de-elementos);
+- [Formulario de presentación de elementos](/es-mx/block-item#formulario-de-presentación-de-elementos);
 - [Barra de Búsqueda](/es-mx/blocks-items#barra-de-búsqueda-tainacan) Tainacan;
 - [Búsqueda por atributos](/es-mx/blocks-items#búsqueda-por-atributos) - _(Lista completa de elementos)_;
 - [Lista de Aspectos](/es-mx/blocks-facets#lista-de-aspectos);
