@@ -1,6 +1,5 @@
-# Blocos do Item
+# Bloques de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 Los bloques de artículos son bloques relacionados con el envío o la visualización de un solo artículo. Actualmente hay 2 bloques con este perfil:
 
