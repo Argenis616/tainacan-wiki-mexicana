@@ -1,16 +1,16 @@
-# The Importer flow
+# El flujo del importador
 
-This page describes how Tainacan importer works and is a reference to write your custom importer. 
+Esta página describe cómo funciona el importador de Tainacan y es una referencia para escribir tu importador personalizado. 
 
-This documentation is still in construction. A very effective way to learn more on how to build an importer is to look at the source code of the Test Importer and the CSV Importer classes that are included in the Tainacan package.
+Esta documentación está todavía en construcción. Una forma muy efectiva de aprender más sobre cómo construir un importador es mirar el código fuente de las clases Test Importer y CSV Importer que se incluyen en el paquete Tainacan.
 
-## Introduction
+## Introducción
 
-Importers can import items inside a collection, or even create a bunch of collections, taxonomies, and items all at once.
+Los importadores pueden importar elementos dentro de una colección, o incluso crear un montón de colecciones, taxonomías y elementos a la vez.
 
-In order to create an Importer, you have to extend the `\Tainacan\Importer` Class and register it using the global `Tainacan_Importer_Handler->register_importer()` method.
+Para crear un Importador, hay que extender la clase `\Tainacan\Importer` y registrarlo utilizando el método global `Tainacan_Importer_Handler->register_importer()`.
 
-This method takes an array as argument, with the definition of your importer. These are the expected attributes.
+Este método toma un array como argumento, con la definición de su importador. Estos son los atributos esperados.
 
 ```php
 	@type string	$name					The name of the importer. e.g. 'Example Importer'
@@ -31,26 +31,26 @@ This method takes an array as argument, with the definition of your importer. Th
 											Otherwise, the child importer class must create the collections and add them to the collections property also using add_collection()
 ```
 
-Note that depending on the value of `manual_mapping` and `manual_collection` you will have to implement some methods in your importer class.
+Ten en cuenta que dependiendo del valor de `manual_mapping` y `manual_collection` tendrás que implementar algunos métodos en tu clase importadora.
 
-## Initializing a new importer
+## Inicializar un nuevo importador
 
-When the user starts a new import process, he/she first choose which import to use.
+Cuando el usuario inicia un nuevo proceso de importación, primero elige qué importador utilizar.
 
-Once the Importer is chosen, the first thing that happens is the creation of a new instance of the chosen Importer. This fires the `__construct()` method.
+Una vez elegido el importador, lo primero que ocurre es la creación de una nueva instancia del importador elegido. Esto dispara el método `__construct()`.
 
 
-## Choose a collection (if `manual_collection` is true)
+## Elegir una colección (si `manual_collection` es verdadero)
 
-After choosing the importer, the user will be given the choice to choose the destination collection.
+Después de elegir el importador, el usuario podrá elegir la colección de destino.
 
-If called from inside a collection, this step is skipped and the current collection is set as the destination.
+Si se llama desde dentro de una colección, este paso se omite y la colección actual se establece como destino.
 
-## Set options
+## Establecer opciones
 
-Now its time to set the importer options. Each importer may have its own set of options, that will be used during the import process. It could be anything, from the delimiter character in a CSV importer to an API key for an importer that fetches something from an API.
+Ahora es el momento de configurar las opciones del importador. Cada importador puede tener su propio conjunto de opciones, que se utilizarán durante el proceso de importación. Puede ser cualquier cosa, desde el carácter delimitador en un importador CSV hasta una clave API para un importador que obtiene algo de una API.
 
-Importer classes should declare the default values for its options in the `__construct()` method, by calling `set_default_options()`.
+Las clases importadoras deben declarar los valores por defecto para sus opciones en el método `__construct()`, llamando a `set_default_options()`.
 
 ```php
 namespace Tainacan\Importer;
@@ -65,7 +65,7 @@ class MyImporter extends Importer {
 }
 ```
 
-The Importer classes must also implement the `options_form` method, in which it will echo the form that the user will interact to set the options.
+Las clases del Importador también deben implementar el método `options_form`, en el que se hará eco del formulario con el que interactuará el usuario para configurar las opciones.
 
 ```php
 	function options_form() {
@@ -80,11 +80,11 @@ The Importer classes must also implement the `options_form` method, in which it 
 	}
 ```
 
-## Fetch source
+## Buscar fuente
 
-Next, users will choose the source. Each importer declares the kind of sources they accept: URL, file, or both.
+A continuación, los usuarios elegirán la fuente. Cada importador declara el tipo de fuentes que acepta: URL, archivo o ambos.
 
-Importers do this by calling the `add_import_method()` and `remove_import_method` in its construction. By default, importers will support only `file` method. Here is an example of what an importer that accepts only URLs should do:
+Los importadores hacen esto llamando a `add_import_method()` y `remove_import_method` en su construcción. Por defecto, los importadores sólo soportan el método `file`. He aquí un ejemplo de lo que debe hacer un importador que sólo acepte URLs:
 
 ```php
 	function __construct() {
@@ -96,18 +96,18 @@ Importers do this by calling the `add_import_method()` and `remove_import_method
 	}
 ```
 
-If the Importer accepts the `file` method, the user will be prompted with a file input to upload a file. The file will then be saved and will be accessible via the `$this->get_tmp_file()` method.
+Si el Importador acepta el método `file`, se solicitará al usuario que introduzca un archivo para cargarlo. El archivo se guardará y será accesible a través del método `$this->get_tmp_file()`.
 
-If the importer accepts the `url` method, the user will be prompted with a text input to enter a URL. By default, the importer will fetch any given URL to the same `file` attribute, as if the user had uploaded it. However, each importer may override the `fetch_from_remote()` method and do whatever it wants to create the file. For example, it could make several paged requests. 
+Si el importador acepta el método `url`, se pedirá al usuario que introduzca una URL. Por defecto, el importador buscará cualquier URL dada en el mismo atributo `file`, como si el usuario la hubiera subido. Sin embargo, cada importador puede anular el método `fetch_from_remote()` y hacer lo que quiera para crear el archivo. Por ejemplo, podría hacer varias peticiones paginadas. 
 
-From that point forward, the importer will behave just as if it was using the file method.
+A partir de ese momento, el importador se comportará como si utilizara el método file.
 
 
-## Mapping
+## Mapeo
 
-At this point, if the Importer definition has `manual_mapping` set to `true`, the user is presented with an interface to map the metadata from the source to the metadata present in the chosen collection.
+En este punto, si la definición del Importador tiene `manual_mapping` en `true`, se presenta al usuario una interfaz para mapear los metadatos de la fuente a los metadatos presentes en la colección elegida.
 
-The Importer class must implement the `get_source_metadata()` method, which will return an array of the metadata found in the source. It can either return an hard coded array or an array that is read from the source file. For example, an importer that fetches data from an API knows beforehand what is the metadata the api will return, however, an importer that reads from a csv, may want to return whatever is found in the first line of the array. 
+La clase Importador debe implementar el método `get_source_metadata()`, que devolverá un array de los metadatos encontrados en la fuente. Puede devolver una matriz codificada o una matriz leída del archivo fuente. Por ejemplo, un importador que obtiene datos de una API sabe de antemano cuáles son los metadatos que la API devolverá, sin embargo, un importador que lee de un csv, puede querer devolver lo que se encuentra en la primera línea del arreglo. 
 
 ```php
 // Example 1: returns a hard coded set of metadata
@@ -127,29 +127,29 @@ public function get_source_metadata(){
 }
 ```
 
-## Importer steps
+## Pasos del importador
 
-An Importer may have several steps, that will handle different parts of the process. Each step will be handled by a different callback in the Importer class.
+Un Importador puede tener varios pasos, que manejarán diferentes partes del proceso. Cada paso será manejado por un callback diferente en la clase Importador.
 
-First, let us have a look at a simple CSV importer, that only have one step, in which it imports the items from the source into a chosen collection. After that, we will have a look at how to create custom steps.
+En primer lugar, vamos a ver un importador CSV simple, que sólo tiene un paso, en el que importa los elementos de la fuente en una colección elegida. Después, veremos cómo crear pasos personalizados.
 
-### Simple Importer - One step that imports items
+### Importador simple - Un paso que importa elementos
 
-By default, the only method an Importer class must implement to function is the `process_item()` class.
+Por defecto, el único método que una clase Importadora debe implementar para funcionar es el de la clase `process_item()`.
 
-This method gets two parameters, the `$index` of the item to be inserted, and the `$collection_definition`, with information on the target collection.
+Este método recibe dos parámetros, el `$index` del elemento a insertar, y el `$collection_definition`, con información sobre la colección destino.
 
-Inside this method, you must fetch the item from the source and format it according to the `mapping` definition of the collection.
+Dentro de este método, debes obtener el elemento de la fuente y formatearlo de acuerdo con la definición `mapping` de la colección.
 
-The `mapping` defines how the item metadata from the source should be mapped to the metadata present in the target collection. It was created either manually, by the user, or programmatically by the importer in an earlier step (see advanced importers below). This is an array where the keys are the `metadata IDs` and the values are the `identifiers` found in the source.
+El `mapping` define cómo los metadatos del elemento de la fuente deben ser asignados a los metadatos presentes en la colección de destino. Ha sido creado manualmente por el usuario o programáticamente por el importador en un paso anterior (ver importadores avanzados más abajo). Se trata de una matriz en la que las claves son los `identificadores de metadatos` y los valores son los `identificadores` que se encuentran en la fuente.
 
-All this method should do is return the item as an associative array, where the keys are the metadata `identifiers`, and the values are the values that should be stored.
+Todo lo que este método debe hacer es devolver el elemento como un array asociativo, donde las claves son los `identificadores` de metadatos, y los valores son los valores que deben ser almacenados.
 
-And that's it. Behind the scenes, the Importer super class is handling everything and it will call `process_item()` as many times as needed to import all items into the collection
+Y eso es todo. Entre bastidores, la superclase Importador se encarga de todo y llamará a `process_item()` tantas veces como sea necesario para importar todos los elementos a la colección.
 
-### Advanced Importer - Many steps
+### Importador avanzado - Muchos pasos
 
-By default, Tainacan Importer super class is registering one single step to the importer:
+Por defecto, la superclase Tainacan Importer registra un único paso para el importador:
 
 ```php
 [
@@ -159,9 +159,9 @@ By default, Tainacan Importer super class is registering one single step to the 
 ]
 ```
 
-This step will loop through all the collections added to the importer (manual or programmatically) and add the items to it.
+Este paso realizará un bucle a través de todas las colecciones añadidas al importador (manual o programáticamente) y añadirá los elementos a la misma.
 
-You may register as many steps and callbacks as you want in your importer, but you should consider keeping this default step at some point to handle the insertion of the items. For example, see how the Test Importer adds other steps before and after but keeps this default step in the middle:
+Puede registrar tantos pasos y retrollamadas como desee en su importador, pero debería considerar mantener este paso predeterminado en algún momento para gestionar la inserción de los elementos. Por ejemplo, vea cómo el Importador de pruebas añade otros pasos antes y después, pero mantiene este paso predeterminado en el medio:
 
 ```php
 class Test_Importer extends Importer {
@@ -204,15 +204,15 @@ class Test_Importer extends Importer {
 
 ```
 
-#### Steps callbacks
+#### Devolución de llamada de los pasos
 
-Each step has its callback. The callback may do anything necessary, just keep in mind that you should allow the importer to break very long processes into several requests.
+Cada paso tiene su callback. El callback puede hacer cualquier cosa necesaria, sólo ten en cuenta que debes permitir al importador dividir procesos muy largos en varias peticiones.
 
-In order to that, your step callback might be called several times, and each time runs a part of the process and returns its current status, until it's done.
+Para ello, el callback de tu paso puede ser llamado varias veces, y cada vez ejecuta una parte del proceso y devuelve su estado actual, hasta que termina.
 
-When you run the importer, Tainacan will automatically iterate over your steps. If a step callback returns `false`, it assumes the step is over and it will pass to the next step in the next iteration. If the step callback returns an integer, it will keep the pointer in this step and call the same step again in the next iteration. The current position, which is the integer returned the last time the callback was invoked, will be accessible via the `$this->get_in_step_count()` method.
+Cuando ejecutes el importador, Tainacan iterará automáticamente sobre tus pasos. Si un callback de paso devuelve `false`, asume que el paso ha terminado y pasará al siguiente paso en la siguiente iteración. Si la llamada de retorno del paso devuelve un entero, mantendrá el puntero en este paso y volverá a llamar al mismo paso en la siguiente iteración. La posición actual, que es el entero devuelto la última vez que se invocó el callback, será accesible a través del método `$this->get_in_step_count()`.
 
-See this example found in the Test Importer:
+Vea este ejemplo en el Importador de Pruebas:
 
 ```php
 public function finish_processing() {
@@ -232,23 +232,23 @@ public function finish_processing() {
 }
 ```
 
-#### Adding collections
+#### Añadir colecciones
 
-If your importer does not use the `manual_collection` option, you might have to create the collection on your own.
+Si tu importador no utiliza la opción `manual_collection`, puede que tengas que crear la colección por tu cuenta.
 
-You will do this using the [Tainacan internal API](internal-api.md).
+Para ello, utiliza la [API interna de Tainacan](internal-api.md).
 
-After you've created one or more collections, you will have to add them to the importer queue, registering some information about them. This only if you want (and most likely you should) rely on the default step for processing items into the collections.
+Después de haber creado una o más colecciones, tendrás que añadirlas a la cola del importador, registrando alguna información sobre ellas. Esto sólo si desea (y lo más probable es que deba) confiar en el paso predeterminado para procesar los elementos en las colecciones.
 
-To add or remove a collection from the queue, use the `add_collection()` and `remove_collection()` methods passing the collection definition.
+Para añadir o eliminar una colección de la cola, utilice los métodos `add_collection()` y `remove_collection()` pasando la definición de la colección.
 
-The collection definition is an array with their IDs, an identifier from the source, the total number of items to be imported, the mapping array from the source structure to the ID of the metadata in Tainacan.
+La definición de colección es un array con sus IDs, un identificador de la fuente, el número total de elementos a importar, el array de mapeo desde la estructura fuente al ID de los metadatos en Tainacan.
 
-The format of the map is an array where the keys are the metadata IDs of the destination collection and the values are the identifier from the source. This could be an ID or a string or whatever the importer finds appropriate to handle.
+El formato del mapa es un array en el que las claves son los ID de los metadatos de la colección de destino y los valores son el identificador de la fuente. Este puede ser un ID o una cadena o lo que el importador considere apropiado manejar.
 
-The source_id can be anything you like, that helps you relate this collection to your source. You will use it in you `process_item` method to know where to fetch the item from.
+El source_id puede ser cualquier cosa que le guste, que le ayude a relacionar esta colección con su fuente. Se utilizará en el método `process_item` para saber de dónde obtener el elemento.
 
-Example of the structure of this property for one collection:
+Ejemplo de la estructura de esta propiedad para una colección:
 
 ```php
 [
@@ -262,13 +262,13 @@ Example of the structure of this property for one collection:
 ]
 ```
 
-#### Using transients
+#### Uso de transitorios
 
-Since Importers are handled as background processes, they will run across multiple requests. For that reason, you can not simply add properties to your class and trust their values will be kept during all the time the process is running.
+Dado que los Importadores se manejan como procesos en segundo plano, se ejecutarán a través de múltiples peticiones. Por esta razón, no puedes simplemente añadir propiedades a tu clase y confiar en que sus valores se mantendrán durante todo el tiempo que el proceso se esté ejecutando.
 
-If you want a value to persist so you can use it across all methods of your importer, at any time, you should use `transients` to store them in the database.
+Si quieres que un valor persista para que puedas utilizarlo en todos los métodos de tu importador, en cualquier momento, debes utilizar `transients` para almacenarlos en la base de datos.
 
-This is as simple as calling `set_transient()` and `get_transient()`. See the example below:
+Esto es tan simple como llamar a `set_transient()` y `get_transient()`. Vea el siguiente ejemplo:
 
 
 ```php
@@ -288,39 +288,39 @@ function callback_for_step_5() {
 ```
 
 
-#### Handling user feedback
+#### Manejo de la retroalimentación del usuario
 
-There are two information Tainacan Importers give to the user about the status of the process while it is running in feedback. the `progress label` and the `progress value`. 
+Hay dos informaciones que Tainacan Importadores da al usuario sobre el estado del proceso mientras se está ejecutando en la retroalimentación: la `etiqueta de progreso` y el `valor de progreso`. 
 
-The `progress label` is a string that can be anything that tells the user what is going on. By default, it is the Step Name, but you can inform a specific `progress_label` attribute when registering the steps.
+La `etiqueta de progreso` es una cadena que puede ser cualquier cosa que le diga al usuario lo que está pasando. Por defecto, es el nombre del paso, pero puede informar de un atributo específico `progress_label` al registrar los pasos.
 
-The `progress value` is a number between 0 and 100 that indicates the progress of the current step or the whole importer, That's up to you. By default, it calculates it automatically using the `total` attribute registered with the steps, against the `$this->get_in_step_count()` value. In the case of the default Process Items callback, it calculates based on the number of items found in each collection.
+El `progress value` es un número entre 0 y 100 que indica el progreso del paso actual o de todo el importador. Por defecto, lo calcula automáticamente usando el atributo `total` registrado con los pasos, contra el valor `$this->get_in_step_count()`. En el caso de la llamada de retorno por defecto Process Items, se calcula en base al número de elementos encontrados en cada colección.
 
-Remember the `finish_processing` dummy callback we saw in the Test Importer. You might have also noticed that when we registered the step, we informed a `total` attribute to this step with the value of 5. This will tell Tainacan that the total number iterations this step needs to complete is 5 and allow it to calculate the progress.
+Recuerda la llamada de retorno `finish_processing` que vimos en el Importador de Pruebas. También habrás notado que cuando registramos el paso, informamos un atributo `total` a este paso con el valor de 5. Esto le dirá a Tainacan que el número total de iteraciones que este paso necesita completar es 5 y le permitirá calcular el progreso.
 
-If it is no possible to know `total` of a step beforehand, you can set it at any time, even inside the step callback itself, using the `set_current_step_total($value)` or `set_step_total($step, $value)` methods.
-
-
-##### Final output 
-
-When the process finishes, Background processes define an "output", which is a final report to the user of what happened.
-
-This could be simply a message saying "All good", or could be a report with the names and links to the collections created. HTML is welcome.
-
-Remember that for a more detailed and technical report, you should use Logs (see Logs below). This output is meant as a short but descriptive user-friendly message.
-
-To achieve this, Importers must implement a method called `get_output()` that returns a string.
-
-This method will be called only once when the importer ends, so you might need to save information using `transients` during the process and use them in `get_output()` to compose your message.
+Si no es posible conocer el `total` de un paso de antemano, puedes establecerlo en cualquier momento, incluso dentro de la propia llamada de retorno del paso, utilizando los métodos `set_current_step_total($value)` o `set_step_total($step, $value)`.
 
 
-#### Logs
+##### Salida final 
 
-There are two useful methods to write information to the logs: `add_log()` and `add_error_log()`. These are written into a log file related to the importer background process and a link to it will be presented to the user.
+Cuando el proceso finaliza, los procesos de fondo definen una "salida", que es un informe final para el usuario sobre lo ocurrido.
+
+Puede ser simplemente un mensaje que diga "Todo bien", o un informe con los nombres y enlaces a las colecciones creadas. HTML es bienvenido.
+
+Recuerde que para un informe más detallado y técnico, debe utilizar Logs (ver Logs más abajo). Esta salida está pensada como un mensaje corto pero descriptivo y fácil de usar.
+
+Para conseguirlo, los Importadores deben implementar un método llamado `get_output()` que devuelve una cadena.
+
+Este método será llamado sólo una vez cuando el importador finalice, por lo que puede que necesites guardar información usando `transients` durante el proceso y usarlos en `get_output()` para componer tu mensaje.
 
 
-## Run importer
+#### Registros
 
-Finally, everything is ready. The importer runs.
+Existen dos métodos útiles para escribir información en los registros: `add_log()` y `add_error_log()`. Éstos se escriben en un archivo de registro relacionado con el proceso de fondo del importador y se presentará al usuario un enlace al mismo.
 
-This will trigger a Background Process (documentation needed) and the importer will run through as many background requests as needed.
+
+## Ejecutar el importador
+
+Finalmente, todo está listo. Se ejecuta el importador.
+
+Esto activará un proceso en segundo plano (documentación necesaria) y el importador ejecutará tantas peticiones en segundo plano como sean necesarias.
