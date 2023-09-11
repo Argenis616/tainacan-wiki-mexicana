@@ -1,31 +1,31 @@
-# CSV Importer
+# Importador CSV
 
-The CSV importer allows users to import items to a collection from a CSV (comma-separated values) file.
+El importador CSV permite a los usuarios importar elementos a una colección desde un archivo CSV (valores separados por comas).
 
-The input file is a standard CSV file, where each line will hold one item information, and each column will hold the value for one specific metadata. Also, the first line brings the column titles.
+El archivo de entrada es un archivo CSV estándar, en el que cada línea contendrá la información de un artículo y cada columna contendrá el valor de un metadato específico. Además, la primera línea contiene los títulos de las columnas.
 
-When the user starts the importer process, he/she must choose the right file encoding the CSV was saved in (usually UTF-8), the column separator and the cell enclosure. All these options are set when the user generates the CSV file using a spreadsheet editor.
+Cuando el usuario inicia el proceso de importación, debe elegir la codificación de archivo correcta en la que se guardó el CSV (normalmente UTF-8), el separador de columna y el relleno de la celda. Todas estas opciones se establecen cuando el usuario genera el archivo CSV utilizando un editor de hojas de cálculo.
 
-In this section user will also inform the character (or characters) used to separate values in a multi-valued cell.
+En esta sección el usuario también informará del carácter (o caracteres) utilizados para separar valores en una celda multivaluada.
 
-After configuring the importer and choosing the target collection, the CSV file is uploaded and the user has the chance to map the columns present in the CSV to the metadata present in the target collection.
+Tras configurar el importador y elegir la colección de destino, se carga el archivo CSV y el usuario tiene la posibilidad de asignar las columnas presentes en el CSV a los metadatos presentes en la colección de destino.
 
-If the metadata was not created beforehand, the user can create and map metadata in this screen, or choose the "Create metadatum" option in the mapper. If this option is selected, Tainacan will automatically create a metadatum when the importer runs (see "Creating metadata on the fly" section below to learn how to tell Tainacan the type and other attributes of the metadatum that will be created).
+Si los metadatos no se han creado previamente, el usuario puede crear y mapear los metadatos en esta pantalla, o elegir la opción "Crear metadato" en el mapeador. Si se selecciona esta opción, Tainacan creará automáticamente un metadato cuando se ejecute el importador (véase la sección "Crear metadatos sobre la marcha" más adelante para saber cómo indicar a Tainacan el tipo y otros atributos del metadato que se creará).
 
 
-## Special Columns
+## Columnas especiales
 
-Each column of the CSV must be mapped to a metadatum in the target collection. However, there are special columns that can be used to set the value for other aspects of the item. For example, the item status can be set to say the item is public to everyone, in draft or private to editors.
+Cada columna del CSV debe asignarse a un metadato en la colección de destino. Sin embargo, hay columnas especiales que pueden utilizarse para establecer el valor de otros aspectos del artículo. Por ejemplo, el estado del artículo puede ser público para todos, en borrador o privado para los editores.
 
-The special columns that can be used are:
+Las columnas especiales que pueden utilizarse son:
 
-* **special_item_status** - Inform the item status. Possible values are draft, private or publish.
-* **special_item_id** - Inform the item ID in the Tainacan database. This is useful when re-importing items and let the user decide whether to update existing items or ignore them and only add new items.
-* **special_document** - let the user inform the item document. See "Importing files and attachments"
-* **special_attachments** - let the user inform the attachments. See "Importing files and attachments"
-* **special_comment_status** - Inform if the item is open for comments. Possible values are open or closed. The default is closed.
+* **special_item_status** - Informa del estado del elemento. Los valores posibles son borrador, privado o publicar.
+* **special_item_id** - Informa del ID del elemento en la base de datos de Tainacan. Esto es útil cuando se reimportan artículos y permite al usuario decidir si actualizar los artículos existentes o ignorarlos y sólo añadir nuevos artículos.
+* **special_document** - Permite al usuario informar el documento del elemento. Ver "Importar archivos y adjuntos".
+* **special_attachments** - Permite al usuario informar de los archivos adjuntos. Ver "Importar ficheros y adjuntos".
+* **special_comment_status** - Informa si el elemento está abierto a comentarios. Los valores posibles son abierto o cerrado. El valor por defecto es cerrado.
 
-Example:
+Ejemplo:
 
 ```csv
 name, special_item_status, special_comment_status
@@ -34,15 +34,15 @@ item due, private, closed
 item tre, publish, open
 ```
 
-### Importing files and attachments
+### Importar archivos y adjuntos
 
-If you also have files you want to import, that are related to the items in your CSV, you can use some special columns in your csv to do so.
+Si también tiene archivos que desea importar y que están relacionados con los elementos de su CSV, puede utilizar algunas columnas especiales en su csv para hacerlo.
 
-There are two special columns you can use: `special_document`, which will set the Document of your item, and `special_attachments` to add one or many attachments.
+Hay dos columnas especiales que puede utilizar: `special_document`, que establecerá el Documento de su elemento, y `special_attachments` para añadir uno o varios archivos adjuntos.
 
-The values for the special_document must be prepended with 'url:'', 'file:'' or 'text:'. This will indicate the Document Type.
+Los valores de `special_document` deben ir precedidos de `url:'', `file:'' o `text:''. Esto indicará el tipo de documento.
 
-Example:
+Ejemplo:
 
 ```csv
 name, special_document
@@ -51,11 +51,11 @@ A youtube video,url:http://youtube.com/?w=123456
 A text,text:This is a sample text
 ```
 
-The values for the special_attachments is just a list of files. If you want to add many attachments, use the separator you set in the Multivalued Delimiter option.
+Los valores de special_attachments son sólo una lista de archivos. Si desea añadir muchos archivos adjuntos, utilice el separador que estableció en la opción Delimitador multivalor.
 
-In either case, you can point to a file using a full URL, or just a file name. In this last case, you should set the option below to tell Tainacan where to find the files in your server. You can then upload them directly (via FTP for example) and Tainacan will add them to your items.
+En cualquier caso, puede apuntar a un archivo utilizando una URL completa, o sólo un nombre de archivo. En este último caso, debe configurar la opción siguiente para indicar a Tainacan dónde encontrar los archivos en su servidor. A continuación, puede subirlos directamente (a través de FTP, por ejemplo) y Tainacan los añadirá a sus artículos.
 
-Example:
+Ejemplo:
 
 ```csv
 name, special_attachments
@@ -65,45 +65,45 @@ Images uploaded via FTP,myfolder/image.jpg||myfolder/image2.jpg
 ```
 
 
-## Creating metadata on the fly
+## Creación de metadatos sobre la marcha
 
-When the user maps the columns found in the CSV file to the metadata present in the collection, he/she has can choose the "Create metadatum" option, so the importer will automatically create the metadata as it processes the file.
+Cuando el usuario mapea las columnas encontradas en el archivo CSV con los metadatos presentes en la colección, tiene la posibilidad de elegir la opción "Crear metadato", para que el importador cree automáticamente los metadatos a medida que procesa el archivo.
 
-By default, it will create a public text metadatum, but you can inform Tainacan the type and other features of the metadata in the header of the CSV.
+Por defecto, creará un metadato de texto público, pero puede informar a Tainacan del tipo y otras características de los metadatos en la cabecera del CSV.
 
-In the first line, where you declare the name of each column, you can add some information that will be used by the importer to create the metadatum_id.
+En la primera línea, donde declaras el nombre de cada columna, puedes añadir alguna información que utilizará el importador para crear el metadato_id.
 
-Each information about the metadatum will be separated by a pipe "|" character. 
+Cada información sobre el metadato irá separada por una tubería "|". 
 
-The first information must be the metadata name, and the second, the metadata type.
+La primera información debe ser el nombre del metadato, y la segunda, el tipo de metadato.
 
-For example:
+Por ejemplo:
 
 ```csv
 Name,Subject|taxonomy,Date of creation|date
 ```
 
-The natively supported types right now are:
+Los tipos soportados de forma nativa en este momento son:
 
 * text
 * textarea
-* taxonomy - when this type is used, a new taxonomy will be created
-* date - Values must be informed in YYYY-MM-DD format 
+* taxonomía: cuando se utiliza este tipo, se crea una nueva taxonomía.
+* date: los valores deben indicarse en el formato AAAA-MM-DD. 
 * numeric
-* relationship - Values must be the ID of the related item
+* relationship - los valores deben ser el ID del elemento relacionado
 
-After the type, you can use keywords to inform other features:
+Después del tipo, puede utilizar palabras clave para informar de otras características:
 
-* multiple - can have multiple values 
-* required - is required
-* display_yes - display in lists: yes 
-* display_no - display in lists: not by default 
-* display_never - display in lists: never 
-* status_public - visible to everyone
-* status_private - visible only to editors 
-* collection_key_yes - set this meta as a collection key (there cannot be two items with the same value).
+* multiple - puede tener múltiples valores 
+* required - es obligatorio
+* display_yes - mostrar en listas: sí 
+* display_no - mostrar en listas: no por defecto 
+* display_never - mostrar en listas: nunca 
+* status_public - visible para todos
+* status_private - visible sólo para editores 
+* collection_key_yes - establece esta meta como clave de colección (no puede haber dos elementos con el mismo valor).
 
-Examples combining multiple features:
+Ejemplos que combinan varias funciones:
 
 ```csv
 Name,Subject|taxonomy|multiple|required,Internal code|numeric|required|collection_key_yes|status_private
