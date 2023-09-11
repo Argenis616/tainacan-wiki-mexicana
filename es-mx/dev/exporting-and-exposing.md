@@ -1,45 +1,45 @@
-# Exporting and Exposing your Repository
+# Exportar y exponer tu repositorio
 
-When you build a digital repository with Tainacan, you gain the ability to show it to the world in many different ways thanks to the power and flexibility of WordPress.
+Cuando construyes un repositorio digital con Tainacan, obtienes la capacidad de mostrarlo al mundo de muchas maneras diferentes gracias a la potencia y flexibilidad de WordPress.
 
-But sometimes you don’t want just to have your collections browsable via web, you want to download a spreadsheet to work with or you want to make it available via APIs so it can be consumed by other applications or harvested by an aggregator. This page describes how Tainacan handles these situations.
+Pero a veces no sólo quieres tener tus colecciones navegables vía web, quieres descargar una hoja de cálculo para trabajar con ella o quieres hacerla disponible a través de APIs para que pueda ser consumida por otras aplicaciones o recolectada por un agregador. Esta página describe cómo Tainacan maneja estas situaciones.
 
-## Mapping
+## Mapeo
 
-With Tainacan you have the possibility to map your collection structure to one or more known standards you may want to be compatible with. So even if you use a custom set of metadata to describe your collection, you may be compatible and interoperate with other repositories.
+Con Tainacan tienes la posibilidad de mapear la estructura de tu colección a uno o más estándares conocidos con los que quieras ser compatible. Así, aunque utilice un conjunto personalizado de metadatos para describir su colección, podrá ser compatible e interoperar con otros repositorios.
 
-You do it by informing, for each metadatum you create, what is it relative in each format you want to map your collection too. You may say for example, that you "Name" Metadatum is the equivalent to the dc:Title attribute in Dublin Core and some another attribute in other formats you choose.
+Lo hace informando, para cada metadato que crea, de qué es relativo en cada formato al que desea asignar su colección. Puedes decir, por ejemplo, que tu metadato "Nombre" es equivalente al atributo dc:Título en Dublin Core y a algún otro atributo en otros formatos que elijas.
 
-Tainacan is shipped with some Mapping standards that implement popular metadata standards. And it will be easy to create new standards.  See more [details about mapping standards](mapping-standards.md). 
+Tainacan se entrega con algunos estándares de mapeo que implementan estándares de metadatos populares. Y será fácil crear nuevos estándares.  Ver más [detalles sobre estándares de mapeo](mapping-standards.md). 
 
-You can also use these mapping standards as a preset when you create a new Collection.
+También puede utilizar estos estándares de mapeo como preajuste al crear una nueva colección.
 
-## Exporting
+## Exportar
 
-Exporting allows you to download the content of your repository to a file - or multiple files. The format of the package you will download depends on the exporter you will use. Tainacan ships with a simple CSV exporter and a Tainacan-Package exporter, that allows you to export all the content of your collections, including the attachments, to import in another Tainacan instance.
+Exportar le permite descargar el contenido de su repositorio a un archivo - o múltiples archivos. El formato del paquete que descargará depende del exportador que utilice. Tainacan incluye un sencillo exportador CSV y un exportador Tainacan-Package, que le permite exportar todo el contenido de sus colecciones, incluidos los archivos adjuntos, para importarlos en otra instancia de Tainacan.
 
-Whatever exporter you choose to you use, you will be able to choose wether you want to download the collection as it is, which means, with the metadata the way they were created in Tainacan, or if you want to download it in a mapped version. For example, if you mapped your collection to Dublin Core, you can download a CSV file either in Dublin Core format or in the original format.
+Sea cual sea el exportador que elijas, podrás elegir si quieres descargar la colección tal cual, es decir, con los metadatos tal y como se crearon en Tainacan, o si quieres descargarla en una versión mapeada. Por ejemplo, si ha mapeado su colección a Dublin Core, puede descargar un archivo CSV en formato Dublin Core o en el formato original.
 
-Tainacan makes it very easy for developers to create new exporters and publish them as plugins anyone can use.
+Tainacan facilita mucho a los desarrolladores la creación de nuevos exportadores y su publicación como plugins que cualquiera puede utilizar.
 
-## Exposing
+## Exposición de
 
-Tainacan is powered with an API that allows other applications to search and consume the content of your repository. By default, this API serves the content in JSON format, preserving the metadata in the collections the way you created them.
+Tainacan cuenta con una API que permite a otras aplicaciones buscar y consumir el contenido de tu repositorio. Por defecto, esta API sirve el contenido en formato JSON, preservando los metadatos de las colecciones tal y como usted las creó.
 
-In the same way, you can choose the format of the file when you export your collection, one can choose the format he/she wants to consume your content in. This is what exposers are for.
+Del mismo modo que puedes elegir el formato del archivo cuando exportas tu colección, uno puede elegir el formato en el que quiere consumir tu contenido. Para eso están los expositores.
 
-Each exposer implements a different way of presenting your data in the API response, and may support one or many mappings. See more [details about exposers](exposers.md).
+Cada expositor implementa una forma diferente de presentar sus datos en la respuesta de la API, y puede admitir una o varias correspondencias. Ver más [detalles sobre los expositores](exposers.md).
 
-For example, the default JSON exposer supports any mapping and can serve your content exposing any metadata standard you mapped your content to. The decision is in the hands of the application that requests your API.
+Por ejemplo, el expositor JSON por defecto soporta cualquier mapeo y puede servir tu contenido exponiendo cualquier estándar de metadatos al que hayas mapeado tu contenido. La decisión está en manos de la aplicación que solicita su API.
 
-On the other hand, OAI-PMH exposer only supports Dublin Core mapping and will always serve content this way.
+Por otro lado, el expositor OAI-PMH sólo soporta mapeado Dublin Core y siempre servirá el contenido de esta manera.
 
-Exposers are also really easy to develop and can be added to your Tainacan instance via plugins.
+Los expositores también son muy fáciles de desarrollar y se pueden añadir a tu instancia de Tainacan a través de plugins.
 
-## Exposing API
+## Exponer API
 
-Using exposing API is easy, need only to set some parameters to API call, for example, to expose an Item with id 123 using XML format on site URI http://example.com, so we need to call API with this URI: http://example.com/wp-json/tainacan/v2/items/123 with this URI the Tainacan will return the Item 123 data, but with we send this parameter at body, exposer=xml, It will return a WordPress JSON with XML formatted in data propriety.
-Example using WordPress rest server:
+El uso de la API de exposición es fácil, sólo hay que establecer algunos parámetros a la llamada de la API, por ejemplo, para exponer un artículo con id 123 utilizando el formato XML en el sitio URI http://example.com, por lo que necesitamos llamar a la API con este URI: http://example.com/wp-json/tainacan/v2/items/123 con este URI el Tainacan devolverá los datos del artículo 123, pero con enviamos este parámetro en el cuerpo, exposer=xml, se devolverá un JSON de WordPress con formato XML en la propiedad de datos.
+Ejemplo usando WordPress rest server:
 
 	$item_exposer_json = json_encode([
 				'exposer'  => 'Xml',
@@ -50,9 +50,9 @@ Example using WordPress rest server:
 			$response = $this->server->dispatch($request);
 
 
-Or if we want only the XML data, without JSON response, for example, we need only to put the expose parameter at URI, like:
+O si sólo queremos los datos XML, sin respuesta JSON, por ejemplo, sólo tenemos que poner el parámetro expose en URI, como:
 http://example.com/wp-json/tainacan/v2/items/123?exposer=xml
 
-Tainacan has support to metadata mapping, the parameter for using the mapper is  mapper=[mapper], so for our last example, if we want a CSV, using dublin-core mapper exposing the content at CSV format, not JSON:
+Tainacan tiene soporte para mapeo de metadatos, el parámetro para usar el mapeador es mapper=[mapper], así que para nuestro último ejemplo, si queremos un CSV, usando dublin-core mapper exponiendo el contenido en formato CSV, no JSON:
 http://example.com/wp-json/tainacan/v2/items/123?exposer=xml&mapper=dublin-core
 
