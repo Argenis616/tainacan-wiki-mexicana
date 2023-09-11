@@ -1,77 +1,77 @@
-# Custom Templates
+# Plantillas personalizadas
 
-When using Tainacan plugin with your custom theme enabled, you'll have access to all of [Tainacan pages](tainacan-pages.md) such as Items, Collections and Taxonomy Term Items in the same way that WordPress displays any custom **post_type**. An Item's list, for example, shall have _thumbnail_, _title_ and _description_ with the same appearance that your blog posts, without featuring a _Collection banner_, _filters list_ or the _advanced search_ that is offered by themes such as [Tainacan Interface](https://wordpress.org/themes/tainacan-interface).
+Cuando uses el plugin Tainacan con tu tema personalizado habilitado, tendrás acceso a todas las páginas [Tainacan pages](/es-mx/tainacan-pages.md) como Ítems, Colecciones y Elementos de términos taxonómicos de la misma forma que WordPress muestra cualquier **post_type** personalizado. Una lista de Elementos, por ejemplo, tendrá _thumbnail_, _title_ y _description_ con la misma apariencia que las entradas de su blog, sin presentar un _banner de Colección_, _lista de filtros_ o la _búsqueda avanzada_ que ofrecen temas como [Interfaz de Tainacan](https://wordpress.org/themes/tainacan-interface).
 
-Here is an example of an item list in a raw [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
+Este es un ejemplo de una lista de elementos en un [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) de [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
 
-![Items list, single item page, and term items list pages on TwentyTwenty theme.](/_assets/images/custom-templates-1.gif)
+![Lista de artículos, página de artículo único y páginas de lista de artículos por términos en el tema TwentyTwenty.](/_assets/images/custom-templates-1.gif)
 
-It looks like a blog, right? You can also see the Item single page, which is pretty much like any post, displaying the _thumbnail_, _document_ and then _metadata_.
+Parece un blog, ¿verdad? También puede ver la página individual del artículo, que es bastante parecida a cualquier entrada, mostrando la _miniatura_, el _documento_ y luego los _metadatos_.
 
-## Create your files for the templates
+## Cree los archivos para las plantillas
 
-The _WordPress way_ of changing this is by creating **custom templates**. To put it simply, you need `.php` files equivalent to the ones that Tainacan plugin registers by default:
+La _manera WordPress_ de cambiar esto es creando **plantillas personalizadas**. En pocas palabras, necesitas archivos `.php` equivalentes a los que el plugin Tainacan registra por defecto:
 
-- `/tainacan/archive-items.php` - Lists Collection Items
-- `/tainacan/archive-repository.php` - Lists Repository Items (all items from all collections)
-- `/tainacan/archive-taxonomy.php` - Lists Items with a Term of a Taxonomy
-- `/tainacan/single-items.php` - Single Item Page
-- `/tainacan/archive-tainacan-collection.php` - Lists all Collections (not be confused with `archive-collections.php`, which is another template, that WordPress already uses)
+- `/tainacan/archive-items.php` - Listas de elementos de la colección
+- `/tainacan/archive-repository.php` - Lista de elementos del repositorio (todos los elementos de todas las colecciones)
+- `/tainacan/archive-taxonomy.php` - Listas de elementos con un término de una taxonomía
+- `/tainacan/single-items.php` - Página de un solo artículo
+- `/tainacan/archive-tainacan-collection.php` - Lista todas las Colecciones (no confundir con `archive-collections.php`, que es otra plantilla, que WordPress ya utiliza)
 
-Ok, so all you have to do is creating these files and fill them as you wish... but how to fetch and render the content related to Tainacan there?
+De acuerdo, todo lo que tienes que hacer es crear estos archivos y rellenarlos a tu gusto... pero ¿cómo recuperar y renderizar allí el contenido relacionado con Tainacan?
 
-### Theme Helper functions
+### Funciones del ayudante de temas
 
-For helping you creating your template, exclusive functions are available on your theme once the plugin is activated. You can find all or their definitions on the [Tainacan Template Tags](/dev/template-tags.md) page. We summarize them below.
+Para ayudarte a crear tu plantilla, hay funciones exclusivas disponibles en tu tema una vez activado el plugin. Puedes encontrar todas o sus definiciones en la página [Tainacan Template Tags](/es-mx/dev/template-tags.md). Las resumimos a continuación.
 
-If you're building a custom `single-items.php`, you might be interested in:
+Si estás desarrollando un `single-items.php` personalizado, puede que te interese:
 
-- `tainacan_get_item()` - Returns the Item object according to given ID;
-- `tainacan_get_the_document()` or `tainacan_the_document()` - Get an HTML version of the "Item Document", which may be an image, an embed version of PDF, video links, tweets, etc.
-- `tainacan_has_document()` - Checks if the current item (on a loop) has a document set or not;
-- `tainacan_get_the_metadata_sections` or `tainacan_the_metadata_sections` - Get an HTML list of the metadata sections and their metadata inside. Several paramaters may be passed to tweak its appearance.
-- `tainacan_get_the_metadata()` or `tainacan_the_metadata()` - Get an HTML list of item metadata. You can pass arguments to tweak how the list is created, with similar parameters to those available in some WordPress functions for rendering lists;
-- `tainacan_get_the_attachments()` - Return an HTML list of attachments of the current item;
-- `tainacan_get_attachment_html_url()` - Return an HTML rendered attachment, given its ID;
-- `tainacan_the_item_edit_link()` - Renders an HTML link for editing an Item if the user has permission;
-- `tainacan_the_item_gallery()` - Renders the "item media gallery", a component with carousel and zoom that can be used to display the document and attachments;
-- `tainacan_the_related_items()` - Renders a list of items that has some relation to the current item in its relationship-type metadata;
+- `tainacan_get_item()` - Devuelve el Elemento objeto según el ID dado;
+- `tainacan_get_the_document()` o `tainacan_the_document()` - Obtiene una versión HTML del "Item Document", que puede ser una imagen, una versión incrustada de PDF, enlaces de vídeo, tweets, etc.
+- `tainacan_has_document()` - Comprueba si el elemento actual (en un bucle) tiene un documento establecido o no;
+- `tainacan_get_the_metadata_sections` o `tainacan_the_metadata_sections` - Obtiene una lista HTML de las secciones de metadatos y los metadatos que contienen. Se pueden pasar varios parámetros para modificar su apariencia.
+- `tainacan_get_the_metadata()` o `tainacan_the_metadata()` - Obtiene una lista HTML de los metadatos de los elementos. Puede pasar argumentos para ajustar cómo se crea la lista, con parámetros similares a los disponibles en algunas funciones de WordPress para la representación de listas;
+- `tainacan_get_the_attachments()` - Devuelve una lista HTML de los adjuntos del elemento actual;
+- `tainacan_get_attachment_html_url()` - Devuelve un adjunto HTML renderizado, dado su ID;
+- `tainacan_the_item_edit_link()` - Genera un enlace HTML para editar un elemento si el usuario tiene permiso;
+- `tainacan_the_item_gallery()` - Genera la "galería multimedia del elemento", un componente con carrusel y zoom que puede utilizarse para mostrar el documento y los archivos adjuntos;
+- `tainacan_the_related_items()` - Muestra una lista de elementos que tienen alguna relación con el elemento actual en sus metadatos de tipo relación;
 
-If you are building any items archive listing, the following functions are essential:
+Si está desarrollando cualquier listado de archivo de artículos, las siguientes funciones son esenciales:
 
-- `tainacan_the_faceted_search()` - Renders an HTML div with ID and parameters for the Vue.js (client-side) instance responsible for an items list with filters menu, search control and view modes. It is applicable for Collection Items, Term Items, and Repository Items. Learn more about it [in The Vue Items List Component section](/dev/the-vue-items-list-component.md);
-- `tainacan_register_view_mode()` - Registers a view mode. This is used by themes or plugins that implemented [custom extra view modes](/dev/extra-view-modes.md);
-- `tainacan_current_view_displays()` - Checks if a certain metadata or property is to be displayed on this view mode;
+- `tainacan_the_faceted_search()` - Renderiza un div HTML con ID y parámetros para la instancia de Vue.js (del lado del cliente) responsable de un listado de ítems con menú de filtros, control de búsqueda y modos de vista. Es aplicable a elementos de colecciones, elementos de términos y elementos de repositorios. Más información [en la sección The Vue Items List Component](/dev/the-vue-items-list-component.md);
+- `tainacan_register_view_mode()` - Registra un modo de vista. Lo utilizan los temas o plugins que implementan [modos personalizados de vista extra](/dev/extra-view-modes.md);
+- `tainacan_current_view_displays()` - Comprueba si un determinado metadato o propiedad debe mostrarse en este modo de vista;
 
-If you're building a custom items or collection archive, these functions may help:
+Si está desarrollando un archivo personalizado de artículos o colecciones, estas funciones pueden serle de ayuda:
 
-- `tainacan_get_collection_id()` - Returns the current collection ID inside an items archive or single;
-- `tainacan_get_collection()` - Returns the current collection object inside an items archive or single;
-- `tainacan_get_the_collection_name()` or `tainacan_the_collection_name()` - Returns the current collection name inside an items archive or single;
-- `tainacan_get_the_collection_description()` or `tainacan_the_collection_description()` - Returns the current collection description inside an items archive or single;
-- `tainacan_the_items_carousel` - Template tag for rendering the [Items Carousel Block](/blocks-items.md#carrossel-de-itens);
+- `tainacan_get_collection_id()` - Devuelve el ID de la colección actual dentro de un archivo de elementos o individual;
+- `tainacan_get_collection()` - Devuelve el objeto de la colección actual dentro de un archivo de elementos o individual;
+- `tainacan_get_the_collection_name()` o `tainacan_the_collection_name()` - Devuelve el nombre de la colección actual dentro de un archivo de elementos o individual;
+- `tainacan_get_the_collection_description()` o `tainacan_the_collection_description()` - Devuelve la descripción actual de la colección dentro de un archivo de elementos o individual;
+- `tainacan_the_items_carousel` - Etiqueta de plantilla para representar el [Bloque de carrusel de elementos](/es-mx/blocks-items.md#carrusel-de-elementos);
 
-If you're building a custom term items archive, these functions may help:
+Si está desarrollando un archivo de elementos de términos personalizado, estas funciones pueden ayudarle:
 
-- `tainacan_get_term()` - Returns the current term object inside a term items archive;
-- `tainacan_get_the_term_name()` or `tainacan_the_term_name()` - Returns the current term name inside a term items archive;
-- `tainacan_get_the_term_description()` or `tainacan_the_term_description()` - Returns the current term description inside a term items archive;
+- `tainacan_get_term()` - Devuelve el objeto término actual dentro de un archivo de términos;
+- `tainacan_get_the_term_name()` o `tainacan_the_term_name()` - Devuelve el nombre del término actual dentro de un archivo de términos;
+- `tainacan_get_the_term_description()` o `tainacan_the_term_description()` - Devuelve la descripción del término actual dentro de un archivo de términos;
 
-And more...
+Y más...
 
-- `tainacan_get_the_mime_type_icon()` - Gets a mime-type icon to a file according to its type. This generates the thumbnails used in the attachments and blocks carousels;
-- `tainacan_get_initials()` - A presentation function used by some thumbnails in some themes. It outputs a string version of a name with its initials - for example: "Classic Paintings" would be returned as "CP";
+- `tainacan_get_the_mime_type_icon()` - Obtiene un icono de tipo mime para un archivo según su tipo. Esto genera las miniaturas utilizadas en los carruseles de adjuntos y bloques;
+- `tainacan_get_initials()` - Función de presentación utilizada por algunas miniaturas en algunos temas. Produce una versión de cadena de un nombre con sus iniciales - por ejemplo: "Pinturas Clásicas" sería devuelto como "PC";
 
-Those are, of course, _helper functions_. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code](https://github.com/tainacan/tainacan/blob/develop/src/classes/) for a more complete idea of how to fetch Tainacan content. You can also hook into several of this functions using [our actions and filters](/dev/filters.md). There is also [an example](/dev/the-vue-items-list-component) of an `archive-items.php` implementation in the next section.
+Se trata, por supuesto, de _funciones de ayuda_. Si no está satisfecho con la forma en que se realiza el renderizado, puede crear la suya propia. Consulta [el código fuente](https://github.com/tainacan/tainacan/blob/develop/src/classes/) para tener una idea más completa de cómo obtener el contenido de Tainacan. También puedes engancharte a varias de estas funciones usando [nuestras acciones y filtros](/es-mx/dev/filters.md). También hay [un ejemplo](/es-mx/dev/the-vue-items-list-component) de una implementación de `archive-items.php` en la siguiente sección.
 
-## Even more specific templates
+## Plantillas aún más específicas
 
-We mentioned [above](#create-your-files-for-the-templates) templates for the basic four [Tainacan pages](tainacan-pages.md) that the plugin will generate for you. Nevertheless, you are still able to create more specific templates, using the standard [WordPress template file hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/).
+Hemos mencionado [arriba](#cree-los-archivos-para-las-plantillas) plantillas para las cuatro [páginas de Tainacan](/es-mx/tainacan-pages.md) básicas que el plugin generará para ti. Sin embargo, aún puede crear plantillas más específicas, usando la [jerarquía de archivos de plantilla de WordPress](https://developer.wordpress.org/themes/basics/template-hierarchy/) estándar.
 
-Examples:
+Ejemplos:
 
-- A template for single items page in the collection with ID 4: `single-tnc_col_4_item.php`;
-- A template for a single specific item: `single-tnc_col_4_item-item-name.php`;
-- A template for the list of items of the collection with ID 4: `archive-tnc_col_4_item.php`;
-- A template for a specific taxonomy: `taxonomy-tnc_tax_123.php`;
-- A template for a specific term of a specific taxonomy: `taxonomy-tnc_tax_123-term-name.php`;
+- Una plantilla para la página de un solo artículo de la colección con ID 4: `single-tnc_col_4_item.php`;
+- Una plantilla para un único artículo específico: `single-tnc_col_4_item-item-name.php`;
+- Una plantilla para la lista de elementos de la colección con ID 4: `archive-tnc_col_4_item.php`;
+- Una plantilla para una taxonomía específica: `taxonomy-tnc_tax_123.php`;
+- Una plantilla para un término específico de una taxonomía específica: `taxonomy-tnc_tax_123-term-name.php`;
