@@ -1,16 +1,16 @@
-# The Exporter flow
+# El flujo del exportador
 
-This page describes how Tainacan exporters work and is a reference to write your custom exporter. 
+Esta página describe cómo funcionan los exportadores de Tainacan y es una referencia para escribir tu exportador personalizado. 
 
-This documentation is still in construction. A very effective way to learn more about how to build an exporter is to look at the source code of the CSV Exporter class that is included in the tainacan package.
+Esta documentación está todavía en construcción. Una forma muy efectiva de aprender más sobre cómo construir un exportador es mirar el código fuente de la clase CSV Exporter que se incluye en el paquete tainacan.
 
-## Introduction
+## Introducción
 
-Exporters can export items from a single collection, or even create a bunch of collections, taxonomies, and items all at once.
+Los exportadores pueden exportar elementos de una sola colección, o incluso crear un montón de colecciones, taxonomías y elementos a la vez.
 
-To create an Exporter, you have to extend the `\Tainacan\Exporter` Class and register it using the global `Tainacan\Export_Handler->register_exporter()` method.
+Para crear un exportador, debe extender la clase `Tainacan\Exporter` y registrarlo utilizando el método global `Tainacan\Export_Handler->register_exporter()`.
 
-This method takes an array as argument, with the definition of your exporter. These are the expected attributes.
+Este método toma un array como argumento, con la definición de su exportador. Estos son los atributos esperados.
 
 ```php
 	@type string	$name					The name of the exporter. e.g. 'Example exporter'
@@ -34,26 +34,26 @@ This method takes an array as argument, with the definition of your exporter. Th
 											(it could be in its options form) and add them to the collections property using `add_collection()`
 ```
 
-Note that depending on the value of `manual_mapping` and `manual_collection` you will have to implement some methods in your exporter class.
+Ten en cuenta que dependiendo del valor de `manual_mapping` y `manual_collection` tendrás que implementar algunos métodos en tu clase exportadora.
 
-## Initializing a new exporter
+## Inicializar un nuevo exportador
 
-When the user starts a new export process, he/she first choose which export to use.
+Cuando el usuario inicia un nuevo proceso de exportación, primero elige qué exportador va a utilizar.
 
-Once the Exporter is chosen, the first thing that happens is the creation of a new instance of the chosen Exporter. This fires the `__construct()` method.
+Una vez elegido el exportador, lo primero que ocurre es la creación de una nueva instancia del exportador elegido. Para ello se dispara el método `__construct()`.
 
 
-## Choose a collection (if `manual_collection` is true)
+## Elegir una colección (si `manual_collection` es true)
 
-After choosing the exporter, the user will be given the choice to choose the source collection.
+Después de elegir el exportador, el usuario tendrá la opción de elegir la colección de origen.
 
-If called from inside a collection, this step is skipped and the current collection is set as the source.
+Si se llama desde dentro de una colección, este paso se omite y la colección actual se establece como origen.
 
-## Set options
+## Establecer opciones
 
-Now its time to set the exporter options. Each exporter may have its own set of options, that will be used during the export process. It could be anything, from the delimiter character in a CSV exporter to an API key for an exporter that sends data to an external API.
+Ahora es el momento de configurar las opciones del exportador. Cada exportador puede tener su propio conjunto de opciones, que se utilizarán durante el proceso de exportación. Puede ser cualquier cosa, desde el carácter delimitador en un exportador CSV hasta una clave API para un exportador que envía datos a una API externa.
 
-exporter classes should declare the default values for its options in the `__construct()` method, by calling `set_default_options()`.
+Las clases exportadoras deben declarar los valores por defecto para sus opciones en el método `__construct()`, llamando a `set_default_options()`.
 
 ```php
 namespace Tainacan\exporter;
@@ -68,7 +68,7 @@ class Myexporter extends Exporter {
 }
 ```
 
-The exporter classes must also implement the `options_form` method, in which it will echo the form that the user will interact to set the options.
+Las clases exportadoras también deben implementar el método `options_form`, en el que se hará eco del formulario con el que interactuará el usuario para configurar las opciones.
 
 ```php
 	function options_form() {
@@ -83,64 +83,64 @@ The exporter classes must also implement the `options_form` method, in which it 
 	}
 ```
 
-## Accepting mappers 
+## Aceptar mapeadores 
 
-If you set `manual_mapping` as true and want to give users the ability to export a mapped version of their collections, you can also 
-define which mappers you accept. 
+Si establece `manual_mapping` como verdadero y desea ofrecer a los usuarios la posibilidad de exportar una versión mapeada de sus colecciones, también puede 
+definir qué mapeadores aceptar. 
 
 ```php
 public function __construct($attributes = array()) {
 	parent::__construct($attributes);
-	$this->set_accepted_mapping_methods('any'); // set all method to mapping
+	$this->set_accepted_mapping_methods('any'); // establecer todos los métodos en la asignación
 	$this->accept_no_mapping = true;
 }
 ```
 
-`$this->set_accepted_mapping_methods()` lets you do that. If you set it to "any", all mappers will be available. If you set it to "list", you can then pass a second argument with the list of mappers you want to be available for the users.
+`$this->set_accepted_mapping_methods()` te permite hacerlo. Si lo configuras como "any", todos los mapeadores estarán disponibles. Si lo configuras como "list", puedes pasar un segundo argumento con la lista de mapeadores que quieres que estén disponibles para los usuarios.
 
 ```php
 public function __construct($attributes = array()) {
 	parent::__construct($attributes);
-	$this->set_accepted_mapping_methods('list', [ "dublin-core" ]); // set specific list of methods to mapping
+	$this->set_accepted_mapping_methods('list', [ "dublin-core" ]); // establecer una lista específica de métodos en la asignación
 }
 ```
 
-Finally, `$this->accept_no_mapping = true;` informs that you also allow users to export items in their original form, without any mapping. In other words, to choose a Mapper is not mandatory if this is set to true.
+Finalmente, `$this->accept_no_mapping = true;` informa de que también permite a los usuarios exportar elementos en su forma original, sin ningún mapeo. En otras palabras, no es obligatorio elegir un mapeador si se establece en true.
 
-## exporter steps
+## pasos del exportador
 
-An exporter may have several steps, that will handle different parts of the process. Each step will be handled by a different callback in the exporter class.
+Un exportador puede tener varios pasos, que manejarán diferentes partes del proceso. Cada paso será manejado por un callback diferente en la clase del exportador.
 
-First, let us have a look at a simple CSV exporter, that only have one step, in which it exports the items from the source collection into a CSV file. After that, we will have a look at how to create custom steps.
+En primer lugar, vamos a ver un exportador CSV simple, que sólo tiene un paso, en el que exporta los elementos de la colección de origen a un archivo CSV. Después, veremos cómo crear pasos personalizados.
 
-### Simple exporter - One step that exports items
+### Exportador simple - Un paso que exporta elementos
 
-By default, exporters must implement 3 methods: `output_header`, `output_footer` and `process_item`.
+Por defecto, los exportadores deben implementar 3 métodos: `output_header`, `output_footer` y `process_item`.
 
-`output_header` and `output_footer` are invoked at the beginning and end of each collection being exported. It can be useful, for example, to write the header and footer of a csv or xml file.
+Los métodos `output_header` y `output_footer` se invocan al principio y al final de cada colección que se exporta. Pueden ser útiles, por ejemplo, para escribir la cabecera y el pie de página de un fichero csv o xml.
 
-Inside these methods, you may do whatever you want. It could be a POST to an API or to write a new file (see handling files below).
+Dentro de estos métodos, puedes hacer lo que quieras. Puede ser un POST a una API o escribir un nuevo fichero (ver manejo de ficheros más abajo).
 
-The `process_item` method will be invoked for every item being exported. Tainacan will automatically loop through the collections in the queue, fetch and prepare the items, and then send them, one at a time, to this method. (see adding collections below).
+El método `process_item` será invocado para cada elemento que se exporte. Tainacan recorrerá automáticamente las colecciones de la cola, buscará y preparará los elementos, y luego los enviará, de uno en uno, a este método. (ver añadir colecciones más abajo).
 
-This method gets two parameters, the `$item` object (instance of \Tainacan\Entities\Item), and its `$metadata`, with an array of '\Tainacan\Entities\Item_Metadata_Entity' objects.
+Este método recibe dos parámetros, el objeto `$item` (instancia de \Tainacan\Entities\Item), y su `$metadata`, con un array de objetos `\Tainacan\Entities\Item_Metadata_Entity'.
 
-Note that, in this method, you don't need to bother about mapping. If a mapper was chosen by the user, you will receive this array of metadata already mapped, which means they will be only the ones defined in the mapper. (Note that, if a collection fail to map one of its metadata to a metadatum expected by the chosen mapper, they will be empty elements in this array).
+Tenga en cuenta que, en este método, no es necesario preocuparse por el mapeo. Si un mapeador fue elegido por el usuario, recibirá este array de metadatos ya mapeados, lo que significa que serán sólo los definidos en el mapeador. (Tenga en cuenta que, si una colección no mapea uno de sus metadatos a un metadato esperado por el mapeador elegido, serán elementos vacíos en este array).
 
-Now you can loop through the metadata and access any property you want from the item to do whatever you like. In the case of the CSV exporter, it will add one line to the CSV file.
+Ahora puede recorrer los metadatos y acceder a cualquier propiedad que desee del elemento para hacer lo que quiera. En el caso del exportador CSV, añadirá una línea al archivo CSV.
 
-If you need to access the Mapper object, with everything about the chosen mapper standard, you can do so by calling `$this->get_current_mapper()`. If a object is not returned, it means no mapper was selected by the user.
+Si necesitas acceder al objeto Mapper, con todo lo referente al estándar mapper elegido, puedes hacerlo llamando a `$this->get_current_mapper()`. Si no se devuelve ningún objeto, significa que el usuario no ha seleccionado ningún mapeador.
 
-#### Adding collections
+#### Añadir colecciones
 
-If your exporter does not use the `manual_collection` option, you might want to programmatically add collections to be exported to the queue.
+Si tu exportador no utiliza la opción `manual_collection`, puede que quieras añadir mediante programación las colecciones que quieras exportar a la cola.
 
-To add or remove a collection from the queue, use the `add_collection()` and `remove_collection()` methods passing the collection definition.
+Para añadir o eliminar una colección de la cola, utilice los métodos `add_collection()` y `remove_collection()` pasando la definición de la colección.
 
-The collection definition is an array with their IDs and the total number of items to be exported.
+La definición de la colección es un array con sus IDs y el número total de elementos a exportar.
 
 
-Example of the structure of this property for one collection:
+Ejemplo de la estructura de esta propiedad para una colección:
 
 ```php
 [
@@ -149,25 +149,25 @@ Example of the structure of this property for one collection:
 ]
 ```
 
-#### Handling files 
+#### Gestión de archivos 
 
-Your export may generate one or more files, that will be downloaded by the user as a package at the end.
+Su exportación puede generar uno o más archivos, que serán descargados por el usuario como un paquete al final.
 
-To create and write content to a file, use the `append_to_file()` method.
+Para crear y escribir contenido en un fichero, utilice el método `append_to_file()`.
 
-It takes 2 arguments: `$key` and `$data`. `$key` is the file identifier and will serve as the filename, prepended with the ID of the process. If a file with this key does not exist yet, it will be created. `$data` is the content to be appended to the file.
+Toma 2 argumentos: `$clave` y `$datos`. `$key` es el identificador del fichero y servirá como nombre del fichero, precedido del ID del proceso. Si todavía no existe un fichero con esta clave, se creará. `$data` es el contenido que se añadirá al fichero.
 
-Don't forget to add a link to the generated file at the output at the end of the process. This will be the only way users will have to get them. See "Final output" below).
+No olvides añadir un enlace al fichero generado en la salida al final del proceso. Esta será la única forma que tendrán los usuarios de obtenerlos. Ver "Salida final" más abajo).
 
-TODO: If more than one file was created, Tainacan will create a zip of them at the end. Yet to be implemented.
+TODO: Si más de un archivo fue creado, Tainacan creará un zip de ellos al final. Aún por implementar.
 
-#### Using transients
+#### Uso de transitorios
 
-Since exporters are handled as background processes, they will run across multiple requests. For that reason, you can not simply add properties to your class and trust their values will be kept during all the time the process is running.
+Dado que los exportadores se manejan como procesos en segundo plano, se ejecutarán a través de múltiples peticiones. Por esta razón, no puedes simplemente añadir propiedades a tu clase y confiar en que sus valores se mantendrán durante todo el tiempo que el proceso se esté ejecutando.
 
-If you want a value to persist so you can use it across all methods of your exporter, at any time, you should use `transients` to store them in the database.
+Si quieres que un valor persista para que puedas utilizarlo en todos los métodos de tu exportador, en cualquier momento, debes utilizar `transients` para almacenarlos en la base de datos.
 
-This is as simple as calling `set_transient()` and `get_transient()`. See the example below:
+Esto es tan simple como llamar a `set_transient()` y `get_transient()`. Vea el siguiente ejemplo:
 
 
 ```php
@@ -186,40 +186,40 @@ function callback_for_step_5() {
 ```
 
 
-#### Handling user feedback
+#### Manejo de la retroalimentación del usuario
 
-There are two information Tainacan exporters give to the user about the status of the process while it is running in feedback. the `progress label` and the `progress value`. 
+Hay dos informaciones que los exportadores Tainacan dan al usuario sobre el estado del proceso mientras se está ejecutando en la retroalimentación: la `etiqueta de progreso` y el `valor de progreso`. 
 
-The `progress label` is a string that can be anything that tells the user what is going on. By default, it is the Step Name, but you can inform a specific `progress_label` attribute when registering the steps.
+La `etiqueta de progreso` es una cadena que puede ser cualquier cosa que le diga al usuario lo que está pasando. Por defecto, es el nombre del paso, pero puede informar de un atributo específico `progress_label` al registrar los pasos.
 
-The `progress value` is a number between 0 and 100 that indicates the progress of the current step or the whole exporter, That's up to you. By default, it calculates it automatically using the `total` attribute registered with the steps, against the `$this->get_in_step_count()` value. In the case of the default Process Items callback, it calculates based on the number of items found in each collection.
+El `progress value` es un número entre 0 y 100 que indica el progreso del paso actual o de todo el exportador, eso depende de ti. Por defecto, lo calcula automáticamente usando el atributo `total` registrado con los pasos, contra el valor `$this->get_in_step_count()`. En el caso de la llamada de retorno por defecto a `Process Items`, se calcula en base al número de elementos encontrados en cada colección.
 
-See the `finish_processing` dummy callback in the Test Importer. You will notice that when we registered the step, we informed a `total` attribute to this step with the value of 5. This will tell Tainacan that the total number iterations this step needs to complete is 5 and allow it to calculate the progress.
+Vea la llamada de retorno `finish_processing` en el Importador de Pruebas. Notará que cuando registramos el paso, informamos un atributo `total` a este paso con el valor de 5. Esto le dirá a Tainacan que el número de elementos encontrados en cada colección es el mismo. Esto le dirá a Tainacan que el número total de iteraciones que este paso necesita completar es 5 y le permitirá calcular el progreso.
 
-If it is no possible to know `total` of a step beforehand, you can set it at any time, even inside the step callback itself, using the `set_current_step_total($value)` or `set_step_total($step, $value)` methods.
-
-
-##### Final output 
-
-When the process finishes, Background processes define an "output", which is a final report to the user of what happened.
-
-This could be simply a message saying "All good", or could be a report with the names and links to the collections created. HTML is welcome.
-
-Remember that for a more detailed and technical report, you should use Logs (see Logs below). This output is meant as a short but descriptive user-friendly message.
-
-To achieve this, exporters must implement a method called `get_output()` that returns a string.
-
-This method will be called only once when the exporter ends, so you might need to save information using `transients` during the process and use them in `get_output()` to compose your message.
-
-To get a list of the generated files to display to users, use `$this->get_output_files()`.
-
-#### Logs
-
-There are two useful methods to write information to the logs: `add_log()` and `add_error_log()`. These are written into a log file related to the exporter background process and a link to it will be presented to the user.
+Si no es posible conocer el `total` de un paso de antemano, puedes establecerlo en cualquier momento, incluso dentro de la propia llamada de retorno del paso, utilizando los métodos `set_current_step_total($value)` o `set_step_total($step, $value)`.
 
 
-## Run exporter
+##### Salida final 
 
-Finally, everything is ready. The exporter runs.
+Cuando el proceso finaliza, los procesos de fondo definen una "salida", que es un informe final para el usuario sobre lo ocurrido.
 
-This will trigger a Background Process (documentation needed) and the exporter will run through as many background requests as needed.
+Puede ser simplemente un mensaje que diga "Todo bien", o un informe con los nombres y enlaces a las colecciones creadas. HTML es bienvenido.
+
+Recuerde que para un informe más detallado y técnico, debe utilizar Logs (ver Logs más abajo). Esta salida está pensada como un mensaje corto pero descriptivo y fácil de usar.
+
+Para conseguirlo, los exportadores deben implementar un método llamado `get_output()` que devuelve una cadena.
+
+Este método será llamado sólo una vez cuando el exportador finalice, por lo que puede que necesites guardar información usando `transients` durante el proceso y usarlos en `get_output()` para componer tu mensaje.
+
+Para obtener una lista de los ficheros generados para mostrar a los usuarios, utilice `$this->get_output_files()`.
+
+#### Registros
+
+Existen dos métodos útiles para escribir información en los registros: `add_log()` y `add_error_log()`. Éstos se escriben en un archivo de registro relacionado con el proceso de fondo del exportador y se presentará al usuario un enlace al mismo.
+
+
+## Ejecutar el exportador
+
+Finalmente, todo está listo. El exportador se ejecuta.
+
+Esto activará un proceso en segundo plano (documentación necesaria) y el exportador se ejecutará a través de tantas peticiones en segundo plano como sea necesario.
