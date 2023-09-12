@@ -1,12 +1,12 @@
-# Faceted Search 
+# Búsqueda facetada 
 
-Tainacan implements a faceted search for your collections.
+Tainacan implementa una búsqueda facetada para sus colecciones.
 
-Filters are displayed on the left side of the screen and allow users to filter the results.
+Los filtros se muestran en la parte izquierda de la pantalla y permiten a los usuarios filtrar los resultados.
 
-By default, Tainacan will filter the available values in each facet depending on the current filters selected. It means it will only display values that will bring at least one item in the results. Every time the user selects a value from one filter, all the other values from all other filters are reduced. This helps users to refine their filters.
+Por defecto, Tainacan filtrará los valores disponibles en cada faceta dependiendo de los filtros actuales seleccionados. Esto significa que sólo mostrará los valores que aporten al menos un elemento en los resultados. Cada vez que el usuario selecciona un valor de un filtro, se reducen todos los demás valores de todos los demás filtros. Esto ayuda a los usuarios a refinar sus filtros.
 
-If you want to disable this behavior, and always display all possible values for a filter, even if there are no items that will meet the criteria, add this to you `wp-config.php`:
+Si desea desactivar este comportamiento, y mostrar siempre todos los valores posibles para un filtro, incluso si no hay elementos que cumplan los criterios, añada esto a su `wp-config.php`:
 
 ```php
 define('TAINACAN_FACETS_DISABLE_FILTER_ITEMS', true);
@@ -18,4 +18,4 @@ Tainacan will also add the number of items found for each value of each filter. 
 define('TAINACAN_FACETS_DISABLE_COUNT_ITEMS', true);
 ```
 
-\* Note: Elastic Search integration for this feature is still under development
+\* Nota: La integración de Elastic Search para esta función aún está en fase de desarrollo.
