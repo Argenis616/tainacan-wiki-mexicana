@@ -1,35 +1,35 @@
-# Vocabulary Importer
+# Importador de vocabulario
 
-This importer allows the user to add terms to a given taxonomy. It's useful to import controlled vocabularies to a Tainacan installation.
+Este importador permite al usuario añadir términos a una taxonomía determinada. Es útil para importar vocabularios controlados a una instalación de Tainacan.
 
-The file format used to import vocabularies is a CSV - comma-separated values. Each line of the file will represent one term.
+El formato de archivo utilizado para importar vocabularios es un CSV - valores separados por comas. Cada línea del archivo representará un término.
 
-For each term, you can inform the name of the term and its definition.
+Para cada término, puede informar el nombre del término y su definición.
 
-For example:
+Por ejemplo:
 
 ```csv
-Term 1,Definition of term 1
-Term 2,Definition of term 2
-Term 3,Definition of term 3
+Término 1,Definición del término 1
+Término 2,Definición del término 2
+Término 3,Definición del término 3
 ```
 
-It's also possible to inform the hierarchy. You do so by leaving empty cells to the left, indicating the level in the hierarchy the term is in.
+También es posible informar de la jerarquía. Para ello, deje celdas vacías a la izquierda, indicando el nivel jerárquico en el que se encuentra el término.
 
-Your spreadsheet will look like this:
+Su hoja de cálculo tendrá el siguiente aspecto:
 
-![Vocabulary spreadsheet](_assets/images/vocabulary-importer-sample.png)
+![Hoja de cálculo de vocabulario](_assets/vocabulary-importer-sample.png)
 
-This same spreadsheet, saved in CSV format, will look like this:
+Esta misma hoja de cálculo, guardada en formato CSV, tendrá el siguiente aspecto:
 
 ```csv
-Term 1,Definition of term 1,,
-Term 2,Definition of term 2,,
-,1st Child of term 2,Definition of this term,
+Término 1,Definición del término 1,,
+Término 2,Definición del término 2,,
+,1er hijo del término 2,Definición de este término,
 ,2nd Child of term 2,Definition of this term,
-,,Gran child,Definition of grand child
-Term 3,Definition of term 3,,
-Term 4,Definition of term 4,,
+,,Nieto,Definición del nieto
+Término 3,Definición del término 3,,
+Término 4,Definición del término 4,,
 ```
 
-Once you have your CSV ready, fire the Vocabulary CSV Importer, choose the target Taxonomy (or create one), and hit "Run".
+Una vez que tengas tu CSV listo, activa el Importador de Vocabulario CSV, elige la Taxonomía de destino (o crea una), y pulsa "Ejecutar".
