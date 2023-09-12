@@ -1,26 +1,24 @@
+# Repositorio de elementos
 
-# Items Repository
+## Métodos principales
 
-## Main Methods
-
-These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-items.php).
-
-
-### fetch()
+Estos son los métodos más utilizados de este repositorio. Para una lista completa vea [el archivo del repositorio](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-items.php).
 
 
-fetch items based on ID or WP_Query args
+### buscar()
 
-Items are stored as posts. Check WP_Query docs
-to learn all args accepted in the $args parameter (@see https://developer.wordpress.org/reference/classes/wp_query/)
-You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
-appropriate WP_Query argument
+Obtener elementos basados en ID o argumentos WP_Query
 
-If a number is passed to $args, it will return a \Tainacan\Entities\Item object.  But if the post is not found or
-does not match the entity post type, it will return an empty array
+Los elementos se almacenan como entradas. Consulte la documentación de WP_Query
+para conocer todos los argumentos aceptados en el parámetro $args (@mirar https://developer.wordpress.org/reference/classes/wp_query/)
+También puede utilizar una propiedad asignada, como nombre y descripción, como argumento y se asignará al argumento
+argumento WP_Query apropiado
 
-The second parameter specifies from which collections item should be fetched.
-You can pass the Collection ID or object, or an Array of IDs or collection objects
+Si se pasa un número a $args, devolverá un objeto \Tainacan\Entities\Item.  Pero si el post no se encuentra o
+no coincide con el tipo de entrada de la entidad, devolverá un array vacío.
+
+El segundo parámetro especifica de qué colecciones debe obtenerse el elemento.
+Puede pasar el ID u objeto de la colección, o un array de IDs u objetos de colección
 
 @param array $args WP_Query args || int $args the item id
 @param array $collections Array Entities\Collection || Array int collections IDs || int collection id || Entities\Collection collection object
@@ -29,29 +27,28 @@ You can pass the Collection ID or object, or an Array of IDs or collection objec
 @return \WP_Query|Array|Item an instance of wp query OR array of entities OR an Item;
  
 
-### fetch_one()
+### buscar_uno()
 
 
-Fetch one Entity based on query args.
+Obtiene una Entidad basándose en los argumentos de la consulta.
 
-Note: Does not work with Item_Metadata Repository
+Nota: No funciona con el repositorio Item_Metadata.
 
 @param array $args Query Args as expected by fetch
 
 @return false|\Tainacan\Entities The entity or false if none was found
  
 
-### fetch_ids()
+### buscar_ids()
 
 
-fetch items IDs based on WP_Query args
+Obtener IDs de elementos basados en argumentos WP_Query
 
-to learn all args accepted in the $args parameter (@see https://developer.wordpress.org/reference/classes/wp_query/)
-You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
-appropriate WP_Query argument
+para conocer todos los argumentos aceptados en el parámetro $args (@see https://developer.wordpress.org/reference/classes/wp_query/)
+También puede utilizar una propiedad asignada, como nombre y descripción, como argumento y se asignará al argumento WP_Query apropiado
 
-The second parameter specifies from which collection items should be fetched.
-You can pass the Collection ID or object, or an Array of IDs or collection objects
+El segundo parámetro especifica de qué colección deben obtenerse los elementos.
+Puede pasar el ID u objeto de la colección, o un array de IDs u objetos de la colección
 
 @param array $args WP_Query args || int $args the item id
 @param array $collections Array Entities\Collection || Array int collections IDs || int collection id || Entities\Collection collection object
@@ -62,30 +59,22 @@ You can pass the Collection ID or object, or an Array of IDs or collection objec
 ### get_thumbnail_id_from_document()
 
 
-Get a default thumbnail ID from the item document.
+Obtiene un ID de miniatura por defecto del documento del artículo.
 
 @param  Entities\Item $item The item
 
 @return int|null           The thumbnail ID or null if it was not possible to find a thumbnail
  
 
-### insert()
+### insertar()
 
 
 
-### update()
+### actualizar()
 
 
 
-### delete()
-
-
-@param $item_id
-
-@return mixed|Item
- 
-
-### trash()
+### eliminar()
 
 
 @param $item_id
@@ -93,42 +82,50 @@ Get a default thumbnail ID from the item document.
 @return mixed|Item
  
 
-## Usage 
+### basura()
+
+
+@param $item_id
+
+@return mixed|Item
+ 
+
+## Uso
 
 ```php
 $repository = \Tainacan\Repositories\Items::get_instance();
 ```
 
-## Entity Properties 
+## Propiedades de la Entidad
 
-These are the Entity attributes for this repository. The Entity class is at [classes/entities folder](../src/classes/entities/class-tainacan-item.php)
+Estos son los atributos de Entidad para este repositorio. La clase Entity está en [classes/entities folder](../src/classes/entities/class-tainacan-item.php)
 
-Property | Description | Slug | Getter | Setter | Stored as
+Propiedad | Descripción | Slug | Obtener | Asignar | Almacenado como
 --- | --- | --- | --- | --- | --- 
-Status|The posts status|status|`$entity->get_status()`|`$entity->set_status()`|post_status
-ID|Unique identifier|id|`$entity->get_id()`|`$entity->set_id()`|ID
-Title|Title of the item|title|`$entity->get_title()`|`$entity->set_title()`|post_title
-Description|The item description|description|`$entity->get_description()`|`$entity->set_description()`|post_content
-Collection|The collection ID|collection_id|`$entity->get_collection_id()`|`$entity->set_collection_id()`|meta
-Author|The item author's user ID (numeric string)|author_id|`$entity->get_author_id()`|`$entity->set_author_id()`|post_author
-Creation Date|The item creation date|creation_date|`$entity->get_creation_date()`|`$entity->set_creation_date()`|post_date
-Modification Date|The item modification date|modification_date|`$entity->get_modification_date()`|`$entity->set_modification_date()`|post_modified
-Term IDs|The item term IDs|terms|`$entity->get_terms()`|`$entity->set_terms()`|terms
-Document Type|The document type, can be a local attachment, an external URL or a text|document_type|`$entity->get_document_type()`|`$entity->set_document_type()`|meta
-Document|The document itself. An ID in case of attachment, an URL in case of link or a text in the case of text.|document|`$entity->get_document()`|`$entity->set_document()`|meta
-Thumbnail|Squared reduced-size version of a picture that helps recognizing and organizing files|_thumbnail_id|`$entity->get__thumbnail_id()`|`$entity->set__thumbnail_id()`|meta
-Comment Status|Item comment status: "open" means comments are allowed, "closed" means comments are not allowed.|comment_status|`$entity->get_comment_status()`|`$entity->set_comment_status()`|comment_status
+Estado|El estado del post|status|`$entity->get_status()`|`$entity->set_status()`|post_status
+ID|Identificador unico|id|`$entity->get_id()`|`$entity->set_id()`|ID
+Titulo|Titulo del elemento|title|`$entity->get_title()`|`$entity->set_title()`|post_title
+Descripción|La descripción del elemento|description|`$entity->get_description()`|`$entity->set_description()`|post_content
+Colección|El ID de la colección|collection_id|`$entity->get_collection_id()`|`$entity->set_collection_id()`|meta
+Autor|El ID de usuario del autor del elemento(numeric string)|author_id|`$entity->get_author_id()`|`$entity->set_author_id()`|post_author
+Fecha de creación|La fecha de creación del elemento|creation_date|`$entity->get_creation_date()`|`$entity->set_creation_date()`|post_date
+Fecha de modificación|La fecha de modificación del elemento|modification_date|`$entity->get_modification_date()`|`$entity->set_modification_date()`|post_modified
+Términos ID|Los ID de los términos de los elementos|terms|`$entity->get_terms()`|`$entity->set_terms()`|terms
+Tipo de documento|El tipo de documento, puede ser archivo adjunto local, un URL externo o un texto|document_type|`$entity->get_document_type()`|`$entity->set_document_type()`|meta
+Documento|El documento mismo. Un ID en caso de archivo adjunto, un URL en caso de enlace o un texto en el caso de texto.|document|`$entity->get_document()`|`$entity->set_document()`|meta
+Miniatura|Versión a tamaño reducido de una imagen que ayuda a reconocer y organizar archivos|_thumbnail_id|`$entity->get__thumbnail_id()`|`$entity->set__thumbnail_id()`|meta
+Estado de los comentarios|Estado de los comentarios: "abierto" significa que se permiten comentarios, "cerrado" significa que no se permiten comentarios.|comment_status|`$entity->get_comment_status()`|`$entity->set_comment_status()`|comment_status
 
-### Entity usage
+### Uso de la Entidad
 
 
-Create new
+Crear nuevo
 
 ```php
 $entity = new \Tainacan\Entities\Item();
 ```
 
-Get existing by ID
+Obtener existente por ID
 ```php
 $repository = \Tainacan\Repositories\Items::get_instance();
 $entity = $repository->fetch(12);
