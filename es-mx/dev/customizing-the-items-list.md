@@ -2,7 +2,7 @@
 
 Se puede hacer mucho para añadir soporte de Tainacan a tu tema usando la lógica de jerarquía de plantillas mencionada en la sección [Plantillas personalizadas](/es-mx/dev/custom-templates.md). Aunque esto puede ser suficiente puede que estés interesado en ajustar un poco más la apariencia de la página más compleja que Tainacan te ofrece: **La Página de Lista de Artículos**. Mira el ejemplo de abajo, del tema hijo de [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') que implementó un `archive-items.php` básico:
 
-![Plantilla añadida a la página de lista de items.](/_assets/images/the-vue-items-list-component-1-new.png)
+![Plantilla añadida a la página de lista de items.](/_assets/the-vue-items-list-component-1-new.png)
 
 Parece una potente interfaz de búsqueda facetada, pero definitivamente podríamos hacer algunos ajustes para que encaje mejor con nuestro tema padre. Resulta que esta página funciona con una estrategia muy diferente, que se explica en detalle en [la sección "Vue Items List Component"](/es-mx/dev/the-vue-items-list-component.md). 
 
@@ -20,17 +20,17 @@ Aquí hay tres ejemplos de resultados de plantillas después de jugar con estas 
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Ejemplo de lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg)
+![Ejemplo de lista configurada 1](/_assets/blocks-faceted-search-2.jpg)
 
 </div>
 <div style="margin: 0 12px">
 
-![Ejemplo de lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
+![Ejemplo de lista configurada 2](/_assets/blocks-faceted-search-3.jpg)
 
 </div>
 <div>
 
-![Ejemplo de lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
+![Ejemplo de lista configurada 3](/_assets/blocks-faceted-search-4.jpg)
 
 </div>
 </div>
