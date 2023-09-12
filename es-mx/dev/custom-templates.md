@@ -4,7 +4,7 @@ Cuando uses el plugin Tainacan con tu tema personalizado habilitado, tendrás ac
 
 Este es un ejemplo de una lista de elementos en un [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) de [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
 
-![Lista de artículos, página de artículo único y páginas de lista de artículos por términos en el tema TwentyTwenty.](/_assets/images/custom-templates-1.gif)
+![Lista de artículos, página de artículo único y páginas de lista de artículos por términos en el tema TwentyTwenty.](/_assets/gifs/custom-templates-1.gif)
 
 Parece un blog, ¿verdad? También puede ver la página individual del artículo, que es bastante parecida a cualquier entrada, mostrando la _miniatura_, el _documento_ y luego los _metadatos_.
 
