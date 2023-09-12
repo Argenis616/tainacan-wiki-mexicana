@@ -1,46 +1,45 @@
 
-# Taxonomies Repository
+# Repositorio de taxonomías
 
-## Main Methods
+## Métodos principales
 
-These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-taxonomies.php).
-
-
-### fetch()
+Estos son los métodos más utilizados de este repositorio. Para una lista completa vea [el archivo del repositorio](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-taxonomies.php).
 
 
-fetch taxonomies based on ID or WP_Query args
+### buscar()
 
-Taxonomies are stored as posts. Check WP_Query docs
-to learn all args accepted in the $args parameter (@see https://developer.wordpress.org/reference/classes/wp_query/)
-You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
-appropriate WP_Query argument
 
-If a number is passed to $args, it will return a \Tainacan\Entities\Taxonomy object.  But if the post is not found or
-does not match the entity post type, it will return an empty array
+buscar taxonomías basadas en ID o argumentos WP_Query
+
+Las taxonomías se almacenan como entradas. Consulta la documentación de WP_Query
+para conocer todos los argumentos aceptados en el parámetro $args (@see https://developer.wordpress.org/reference/classes/wp_query/)
+También puede utilizar una propiedad asignada, como nombre y descripción, como argumento y se asignará al
+argumento WP_Query apropiado
+
+Si se pasa un número a $args, devolverá un objeto \Tainacan\Entities\Taxonomy. Pero si el post no se encuentra o no coincide con el tipo de entrada de la entidad, devolverá una matriz vacía
 
 @param array $args WP_Query args | int $args the taxonomy id
-@param string $output The desired output format (@see \Tainacan\Repositories\Repository::fetch_output() for possible values)
+@param string $output  El formato de salida deseado (@ver \Tainacan\Repositories\Repository::fetch_output() para posibles valores)
 
-@return \WP_Query|Array an instance of wp query OR array of entities;
+@return \WP_Query|Array una instancia de wp query o un array de entidades;
  
 
-### fetch_one()
+### buscar_uno()
 
 
-Fetch one Entity based on query args.
+Obtiene una Entidad basándose en los argumentos de la consulta.
 
-Note: Does not work with Item_Metadata Repository
+Nota: No funciona con el repositorio Item_Metadata.
 
 @param array $args Query Args as expected by fetch
 
-@return false|\Tainacan\Entities The entity or false if none was found
+@return false|\Tainacan\Entities La entidad o falso si no se ha encontrado ninguna
  
 
-### fetch_by_collection()
+### buscar_por_coleccion()
 
 
-fetch taxonomies by collection, considering inheritance
+buscar taxonomías por colección, teniendo en cuenta la herencia
 
 @param Entities\Collection $collection
 @param array $args WP_Query args plus disabled_metadata
@@ -50,36 +49,35 @@ fetch taxonomies by collection, considering inheritance
 @throws \Exception
  
 
-### term_exists()
+### términos_existentes()
 
 
-* Check if a term already exists 
+* Comprobar si ya existe un término 
 *
-* @param Entities\Taxonomy $taxonomy The taxonomy object where to look for terms
-* @param string $term_name The term name 
-* @param int|null $parent The ID of the parent term to look for children or null to look for terms in any hierarchical position. Default is null 
-* @param bool $return_term whether to return the term object if it exists. default is to false 
+* @param Entities\Taxonomy $taxonomy El objeto de taxonomía donde buscar los términos
+* @param string $term_name El término nombre
+* @param int|null $parent El ID del término padre para buscar hijos o null para buscar términos en cualquier posición jerárquica. Por defecto es null 
+* @param bool $return_term se devuelve el objeto término si existe. por defecto es false 
 * 
-* @return bool|WP_Term return boolean indicating if the term exists. If $return_term is true and term exists, return WP_Term object 
+* @return bool|WP_Term devuelve un booleano que indica si el término existe. Si $return_term es true y el término existe, devuelve el objeto WP_Term 
 
 
-### insert()
-
+### insertar()
 
 @param Entities\Taxonomy $taxonomy
 
 @return Entities\Entity
  
 
-### update()
+### actualizar()
 
 
 
-### delete()
+### eliminar()
 
 
 
-### trash()
+### basura()
 
 
 @param $taxonomy_id
@@ -87,37 +85,37 @@ fetch taxonomies by collection, considering inheritance
 @return mixed|Entities\Taxonomy
  
 
-## Usage 
+## Uso
 
 ```php
 $repository = \Tainacan\Repositories\Taxonomies::get_instance();
 ```
 
-## Entity Properties 
+## Propiedades de entidad 
 
 These are the Entity attributes for this repository. The Entity class is at [classes/entities folder](../src/classes/entities/class-tainacan-taxonomy.php)
 
-Property | Description | Slug | Getter | Setter | Stored as
+Propiedad | Descripción | Slug | Obtener | Asignar | Almacenado como
 --- | --- | --- | --- | --- | --- 
-Status|Status|status|`$entity->get_status()`|`$entity->set_status()`|post_status
-ID|Unique identifier|id|`$entity->get_id()`|`$entity->set_id()`|ID
-Name|Name of the taxonomy|name|`$entity->get_name()`|`$entity->set_name()`|post_title
-Description|The taxonomy description|description|`$entity->get_description()`|`$entity->set_description()`|post_content
-Slug|The taxonomy slug|slug|`$entity->get_slug()`|`$entity->set_slug()`|post_name
-Allow insert|Allow/Deny the creation of new terms in the taxonomy|allow_insert|`$entity->get_allow_insert()`|`$entity->set_allow_insert()`|meta
-Enabled for post types|Also enable this taxonomy for other WordPress post types|enabled_post_types|`$entity->get_enabled_post_types()`|`$entity->set_enabled_post_types()`|meta_multi
-Collections|The IDs of collection where the taxonomy is used|collections_ids|`$entity->get_collections_ids()`|`$entity->set_collections_ids()`|meta_multi
+Estado|Estado|status|`$entity->get_status()`|`$entity->set_status()`|post_status
+ID|Identificador unico|id|`$entity->get_id()`|`$entity->set_id()`|ID
+Nombre|Nombre de la taxonomía|name|`$entity->get_name()`|`$entity->set_name()`|post_title
+Descripción|La descripción de la taxonomía|description|`$entity->get_description()`|`$entity->set_description()`|post_content
+Slug|El slug de la taxonomía|slug|`$entity->get_slug()`|`$entity->set_slug()`|post_name
+Permitir insertar|Permitir/Denegar la creación de nuevos términos en la taxonomía|allow_insert|`$entity->get_allow_insert()`|`$entity->set_allow_insert()`|meta
+Habilitado para tipos de entradas|Habilite también esta taxonomía para otros tipos de entradas de WordPress|enabled_post_types|`$entity->get_enabled_post_types()`|`$entity->set_enabled_post_types()`|meta_multi
+Colecciones|Identificadores de las colecciones en las que se utiliza la taxonomía|collections_ids|`$entity->get_collections_ids()`|`$entity->set_collections_ids()`|meta_multi
 
-### Entity usage
+### Uso de la Entidad
 
 
-Create new
+Crear nuevo
 
 ```php
 $entity = new \Tainacan\Entities\Taxonomy();
 ```
 
-Get existing by ID
+Obtener existente por ID
 ```php
 $repository = \Tainacan\Repositories\Taxonomies::get_instance();
 $entity = $repository->fetch(12);
