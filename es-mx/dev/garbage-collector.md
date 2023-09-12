@@ -1,21 +1,21 @@
-# Garbage Collector 
+# Recolector de Basura 
 
-There is a first, experimental version of a WP CLI command for that:
+Existe una primera versión experimental de un comando CLI de WP para ello:
 
 ```
 wp tainacan garbage-collector 
 ``` 
 
-For more info: 
+Para más información:
 ```
 wp help tainacan garbage-collector 
 ``` 
 
-It will clean:
+Limpiará:
 
-* items from deleted collections (and its comments and metadata)
-* documents and attachments from deleted items
-* deleted metadata (currently there is an interface to untrash them)
-* post_meta of deleted metadata
-* orphan terms (with a taxonomy that does not exist)
-* tnc_bulk postmeta (temporary metadata used to group items for bulk edit operations)
+* elementos de colecciones eliminadas (y sus comentarios y metadatos)
+* documentos y archivos adjuntos de elementos eliminados
+* metadatos eliminados (actualmente existe una interfaz para eliminarlos)
+* post_meta de metadatos eliminados
+* términos huérfanos (con una taxonomía que no existe)
+* tnc_bulk postmeta (metadatos temporales utilizados para agrupar elementos en operaciones de edición masiva)
