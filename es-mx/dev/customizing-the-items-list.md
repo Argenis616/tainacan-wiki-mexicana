@@ -20,17 +20,17 @@ Aquí hay tres ejemplos de resultados de plantillas después de jugar con estas 
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Ejemplo de lista configurada 1](../pt-br/_assets/images/blocks-faceted-search-2.jpg)
+![Ejemplo de lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg)
 
 </div>
 <div style="margin: 0 12px">
 
-![Ejemplo de lista configurada 2](../pt-br/_assets/images/blocks-faceted-search-3.jpg)
+![Ejemplo de lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
 
 </div>
 <div>
 
-![Ejemplo de lista configurada 3](../pt-br/_assets/images/blocks-faceted-search-4.jpg)
+![Ejemplo de lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
 
 </div>
 </div>
