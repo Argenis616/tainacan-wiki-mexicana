@@ -1,4 +1,3 @@
-
 # Repositorio de taxonomías
 
 ## Métodos principales
@@ -43,7 +42,7 @@ buscar taxonomías por colección, teniendo en cuenta la herencia
 
 @param Entities\Collection $collection
 @param array $args WP_Query args plus disabled_metadata
-@param string $output The desired output format (@see \Tainacan\Repositories\Repository::fetch_output() for possible values)
+@param string $output The desired output format (@mirar \Tainacan\Repositories\Repository::fetch_output() para posibles valores)
 
 @return array Entities\Metadatum
 @throws \Exception
