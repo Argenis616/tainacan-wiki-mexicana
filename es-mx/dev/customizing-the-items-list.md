@@ -1,68 +1,68 @@
-# Customizing the Items List
+# Personalización de la lista de elementos
 
-A lot can be done for adding Tainacan support to your theme using the template hierarchy logic mentioned in the section [Custom Templates](/dev/custom-templates.md). While this might be enough you may be interested in tweaking a bit more of the appearance of the most complex page that Tainacan offers to you: **The Items List Page**. Check the example bellow, of the child theme of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') that implemented a basic `archive-items.php`:
+Se puede hacer mucho para añadir soporte de Tainacan a tu tema usando la lógica de jerarquía de plantillas mencionada en la sección [Plantillas personalizadas](/es-mx/dev/custom-templates.md). Aunque esto puede ser suficiente puede que estés interesado en ajustar un poco más la apariencia de la página más compleja que Tainacan te ofrece: **La Página de Lista de Artículos**. Mira el ejemplo de abajo, del tema hijo de [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') que implementó un `archive-items.php` básico:
 
-![Template added to the items list page.](/_assets/images/the-vue-items-list-component-1-new.png)
+![Plantilla añadida a la página de lista de items.](/_assets/images/the-vue-items-list-component-1-new.png)
 
-Looks like a powerful faceted search interface, but we definitely could make some adjustments to match better with our parent theme. It turns out that this page works in a much different strategy, which is explained in detail in [the "Vue Items List Component" section](/dev/the-vue-items-list-component.md). 
+Parece una potente interfaz de búsqueda facetada, pero definitivamente podríamos hacer algunos ajustes para que encaje mejor con nuestro tema padre. Resulta que esta página funciona con una estrategia muy diferente, que se explica en detalle en [la sección "Vue Items List Component"](/es-mx/dev/the-vue-items-list-component.md). 
 
-> To summarize, **the Items List returned by _tainacan_the_faceted_search()_ is actually a Vue.js component**, rendered on the client-side. Most of its code is shared with the admin panel version of the items list. 
+> En resumen, **la lista de elementos devuelta por _tainacan_the_faceted_search()_ es en realidad un componente Vue.js**, renderizado en el lado del cliente. La mayor parte de su código se comparte con la versión del panel de administración de la lista de elementos. 
 
-## Playing with some customization variables
+## Jugando con algunas variables de personalización
 
-Luckily for theme developers, a lot of customization options are offered since Tainacan 0.16. There are two types of customizations that can easily be applied:
+Por suerte para los desarrolladores de temas, desde Tainacan 0.16 se ofrecen muchas opciones de personalización. Hay dos tipos de personalizaciones que se pueden aplicar fácilmente:
 
-* [Passing `php` variables do the template function call](/dev/customizing-the-items-list#passing-php-variables-to-tainacan_the_faceted_search);
-* [Passing `css` variables to the items list class](/dev/customizing-the-items-list#passing-css-variables-to-the-items-list-class);
+* [Pasar variables `php` a la llamada a la función de plantilla](/es-mx/dev/customizing-the-items-list#passing-php-variables-to-tainacan_the_faceted_search);
+* [Pasar variables `css` a la clase de lista de elementos](/es-mx/dev/customizing-the-items-list#passing-css-variables-to-the-items-list-class);
 
-Here are three examples of template results after playing with this variables:
+Aquí hay tres ejemplos de resultados de plantillas después de jugar con estas variables:
 
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 1](../pt-br/_assets/images/blocks-faceted-search-2.jpg)
+![Ejemplo de lista configurada 1](../pt-br/_assets/images/blocks-faceted-search-2.jpg)
 
 </div>
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 2](../pt-br/_assets/images/blocks-faceted-search-3.jpg)
+![Ejemplo de lista configurada 2](../pt-br/_assets/images/blocks-faceted-search-3.jpg)
 
 </div>
 <div>
 
-![Exemplo da lista configurada 3](../pt-br/_assets/images/blocks-faceted-search-4.jpg)
+![Ejemplo de lista configurada 3](../pt-br/_assets/images/blocks-faceted-search-4.jpg)
 
 </div>
 </div>
 
-Lets see how this is possible:
+Veamos cómo es posible:
 
-### Passing `php` variables to _tainacan_the_faceted_search()_
+### Pasando variables `php` a _tainacan_the_faceted_search()_
 
-As seen in our introdution of [introduction about creating compatible theme](/dev/creating-compatible-themes). Having a rich faceted search items list is as simple as creating a file with three lines. The magic is done by the `tainacan_the_faceted_search()` helper function, which renders the Vue.js component. Not surprisingly, this function offers several customization variables, that we describe bellow:
+Como vimos en nuestra introducción de [introduction about creating compatible theme](/es-mx/dev/creating-compatible-themes). Tener una lista de elementos de búsqueda rica en facetas es tan sencillo como crear un archivo con tres líneas. La magia la hace la función de ayuda `tainacan_the_faceted_search()`, que renderiza el componente Vue.js. Como es lógico, esta función ofrece varias variables de personalización, que describimos a continuación:
 
 | Variable name                                | Type        | Default        | Description                          |
 |----------------------------------------------|-------------|-------------|--------------------------------------|
-| `$hide_filters`                              | `bool`      | `false`      | Completely hide filter sidebar or modal                                                         |
-| `$hide_hide_filters_button`                  | `bool`      | `false`      | Hides the button resonsible for collpasing filters sidebar on desktop                           |   |
-| `$hide_search`                               | `bool`      | `false`      | Hides the complete search bar, including advanced search link                                   |   |
-| `$hide_advanced_search`                      | `bool`      | `false`      | Hides only the advanced search link                                                             |   |
-| `$hide_displayed_metadata_dropdown`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
-| `$hide_sorting_area`                         | `bool`      | `false`      | Completely hides all sorting controls                                                           |   |
-| `$hide_sort_by_button`                       | `bool`      | `false`      | Hides the button where user can select the metadata to sort by items (keeps the sort direction) |   |
-| `$hide_exposers_button`                      | `bool`      | `false`      | Hides the "View as..." button, a.k.a. Exposers modal                                            |   |
-| `$hide_items_per_page_button`                | `bool`      | `false`      | Hides the button for selecting amount of items loaded per page                                  |   |
-| `$hide_go_to_page_button`                    | `bool`      | `false`      | Hides the button for skiping to a specific page                                                 |   |
-| `$hide_pagination_area`                      | `bool`      | `false`      | Completely hides pagination controls                                                            |   |
-| `$default_items_per_page`                    | `int`       | `12`       | Default number of items per page loaded                                                         |   |
-| `$show_filters_button_inside_search_control` | `bool`      | `false`      | Display the "hide filters" button inside of the search control instead of floating              |   |
-| `$start_with_filters_hidden`                 | `bool`      | `false`      | Loads the filters list hidden from start                                                        |   |
-| `$filters_as_modal`                          | `bool`      | `false`      | Display the filters as a modal instead of a collapsable region on desktop                       |   |
-| `$show_inline_view_mode_options`             | `bool`      | `false`      | Display view modes as inline icon buttons instead of the dropdown                               |   |
-| `$show_fullscreen_with_view_modes`           | `bool`      | `false`      | Lists fullscreen viewmodes alongside with other view modes istead of separatelly                |   |
-| `$default_view_mode`                         | `string`    | `masonry`    | The default view mode                                                                           |   |
-| `$is_forced_view_mode`                       | `bool`      | `false`      | Ignores user prefs to always render the choosen default view mode                               |   |
-| `$enabled_view_modes`                        | `string[]`  | *All registered view modes for repository and terms page. Enabled view modes on the collection settings for collection items list.*  | The list of enable view modes to display                                                        |   |
+| `$hide_filters`                              | `bool`      | `false`      | Oculta completamente la barra de filtros o el modal                                                         |
+| `$hide_hide_filters_button`                  | `bool`      | `false`      | Oculta el botón responsable de colapsar la barra lateral de filtros en el escritorio                       |   |
+| `$hide_search`                               | `bool`      | `false`      | Oculta la barra de búsqueda completa, incluyendo el enlace de búsqueda avanzada                                   |   |
+| `$hide_advanced_search`                      | `bool`      | `false`      | Oculta sólo el enlace de búsqueda avanzada.                                                             |   |
+| `$hide_displayed_metadata_dropdown`          | `bool`      | `false`      | Oculta el desplegable "Metadatos mostrados" incluso si los modos de vista actuales lo permiten                |   |
+| `$hide_sorting_area`                         | `bool`      | `false`      | Oculta completamente todos los controles de ordenación                                                           |   |
+| `$hide_sort_by_button`                       | `bool`      | `false`      | Oculta el botón donde el usuario puede seleccionar los metadatos para ordenar por elementos (mantiene la dirección de ordenación) |   |
+| `$hide_exposers_button`                      | `bool`      | `false`      | Oculta el botón "Ver como...", también conocido como modal Expositores                                            |   |
+| `$hide_items_per_page_button`                | `bool`      | `false`      | Oculta el botón para seleccionar la cantidad de elementos cargados por página                                  |   |
+| `$hide_go_to_page_button`                    | `bool`      | `false`      | Oculta el botón para saltar a una página específica                                                 |   |
+| `$hide_pagination_area`                      | `bool`      | `false`      | Oculta completamente los controles de paginación                                                            |   |
+| `$default_items_per_page`                    | `int`       | `12`       | Número predeterminado de elementos por página cargada                                                         |   |
+| `$show_filters_button_inside_search_control` | `bool`      | `false`      | Muestra el botón "ocultar filtros" dentro del control de búsqueda en lugar de flotante              |   |
+| `$start_with_filters_hidden`                 | `bool`      | `false`      | Carga la lista de filtros ocultos desde el inicio                                                        |   |
+| `$filters_as_modal`                          | `bool`      | `false`      | Muestra los filtros como un modal en lugar de como una región colapsable en el escritorio                       |   |
+| `$show_inline_view_mode_options`             | `bool`      | `false`      | Muestra los modos de vista como botones con iconos en línea en lugar de desplegables                               |   |
+| `$show_fullscreen_with_view_modes`           | `bool`      | `false`      | Muestra los modos de vista de pantalla completa junto con otros modos de vista en lugar de por separado                |   |
+| `$default_view_mode`                         | `string`    | `masonry`    | El modo de visualización por defecto                                                                           |   |
+| `$is_forced_view_mode`                       | `bool`      | `false`      | Ignora las preferencias del usuario para mostrar siempre el modo de vista elegido por defecto                               |   |
+| `$enabled_view_modes`                        | `string[]`  | Todos los modos de vista son registrados para el repositorio y la página de términos. Modos de vista habilitados en la configuración de la colección para la lista de elementos de la colección                                                        |   |
 
 Notice that `$enabled_view_modes` are overided by collections setting when the items list is a collection items archive.
 
