@@ -1,21 +1,20 @@
+# Repositorio de términos
 
-# Terms Repository
+## Métodos principales
 
-## Main Methods
-
-These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-terms.php).
-
-
-### fetch()
+Estos son los métodos más utilizados de este repositorio. Para una lista completa vea [el archivo del repositorio](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-terms.php).
 
 
-fetch terms based on ID or get terms args
+### buscar()
 
-Terms are stored as WordPress regular terms. Check (@see https://developer.wordpress.org/reference/functions/get_terms/) get_terms() docs
-to learn all args accepted in the $args parameter
 
-The second parameter specifies from which taxonomies terms should be fetched.
-You can pass the Taxonomy ID or object, or an Array of IDs or taxonomies objects
+Obtener términos basados en ID u obtener términos args
+
+Los términos se almacenan como términos normales de WordPress. Comprobar (@ver https://developer.wordpress.org/reference/functions/get_terms/) get_terms() documentos
+para conocer todos los argumentos aceptados en el parámetro $args
+
+El segundo parámetro especifica de qué taxonomías deben obtenerse los términos.
+Puede pasar el ID u objeto de taxonomía, o una matriz de IDs u objetos de taxonomías
 
 @param array $args WP_Query args || int $args the term id
 @param array $taxonomies Array Entities\Taxonomy || Array int terms IDs || int collection id || Entities\Taxonomy taxonomy object
@@ -23,19 +22,18 @@ You can pass the Taxonomy ID or object, or an Array of IDs or taxonomies objects
 @return array of Entities\Term objects || Entities\Term
  
 
-### fetch_one()
+### buscar_uno()
 
+Obtiene una Entidad basándose en los argumentos de la consulta.
 
-Fetch one Entity based on query args.
-
-Note: Does not work with Item_Metadata Repository
+Nota: No funciona con el repositorio Item_Metadata.
 
 @param array $args Query Args as expected by fetch
 
 @return false|\Tainacan\Entities The entity or false if none was found
  
 
-### insert()
+### insertar()
 
 
 @param Entities\Entity $term
@@ -44,11 +42,11 @@ Note: Does not work with Item_Metadata Repository
 @throws \Exception
  
 
-### update()
+### actualizar()
 
 
 
-### delete()
+### eliminar()
 
 
 @param Array $delete_args has ['term_id', 'taxonomy']
@@ -56,7 +54,7 @@ Note: Does not work with Item_Metadata Repository
 @return bool|int|mixed|\WP_Error
  
 
-### trash()
+### basura()
 
 
 @param $term_id
@@ -64,38 +62,38 @@ Note: Does not work with Item_Metadata Repository
 @return mixed|void
  
 
-## Usage 
+## Uso 
 
 ```php
 $repository = \Tainacan\Repositories\Terms::get_instance();
 ```
 
-## Entity Properties 
+## Propiedades de Entidad
 
 These are the Entity attributes for this repository. The Entity class is at [classes/entities folder](../src/classes/entities/class-tainacan-term.php)
 
-Property | Description | Slug | Getter | Setter | Stored as
+Propiedad | Descripción | Slug | Obtener | Asignar | Almacenado como
 --- | --- | --- | --- | --- | --- 
-Status|Status|status|`$entity->get_status()`|`$entity->set_status()`|post_status
-ID|Unique identifier|term_id|`$entity->get_term_id()`|`$entity->set_term_id()`|term_id
-Name|Name of the term|name|`$entity->get_name()`|`$entity->set_name()`|name
-Parent|The parent of the term|parent|`$entity->get_parent()`|`$entity->set_parent()`|parent
-Description|The term description|description|`$entity->get_description()`|`$entity->set_description()`|description
-Taxonomy|The term taxonomy|taxonomy|`$entity->get_taxonomy()`|`$entity->set_taxonomy()`|taxonomy
-User|The term creator|user|`$entity->get_user()`|`$entity->set_user()`|termmeta
-Header Image|The image to be used in term header|header_image_id|`$entity->get_header_image_id()`|`$entity->set_header_image_id()`|termmeta
-Hide empty|Hide empty terms|hide_empty|`$entity->get_hide_empty()`|`$entity->set_hide_empty()`|hide_empty
+Estado|Estado|status|`$entity->get_status()`|`$entity->set_status()`|post_status
+ID|Identificador único|term_id|`$entity->get_term_id()`|`$entity->set_term_id()`|term_id
+Nombre|Nombre del término|name|`$entity->get_name()`|`$entity->set_name()`|name
+Padre|Padre del término|parent|`$entity->get_parent()`|`$entity->set_parent()`|parent
+Descripción|Descripción del término|description|`$entity->get_description()`|`$entity->set_description()`|description
+Taxonomía|El término taxonomía|taxonomy|`$entity->get_taxonomy()`|`$entity->set_taxonomy()`|taxonomy
+Usuario|El creador del término|user|`$entity->get_user()`|`$entity->set_user()`|termmeta
+Imagen de cabecera|La imagen que se utilizará en la cabecera del término|header_image_id|`$entity->get_header_image_id()`|`$entity->set_header_image_id()`|termmeta
+Ocultar vacíos|Ocultar términos vacíos|hide_empty|`$entity->get_hide_empty()`|`$entity->set_hide_empty()`|hide_empty
 
-### Entity usage
+### Uso de la Entidad
 
 
-Create new
+Crear nuevo
 
 ```php
 $entity = new \Tainacan\Entities\Term();
 ```
 
-Get existing by ID
+Obtener existente por ID
 ```php
 $repository = \Tainacan\Repositories\Terms::get_instance();
 $entity = $repository->fetch(12);
