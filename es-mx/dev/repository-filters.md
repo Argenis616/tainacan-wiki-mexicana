@@ -1,23 +1,22 @@
+# Repositorio de filtros
 
-# Filters Repository
+## Métodos principales
 
-## Main Methods
-
-These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-filters.php).
-
-
-### fetch()
+Estos son los métodos más utilizados de este repositorio. Para obtener una lista completa, consulte [el archivo del repositorio](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-filters.php).
 
 
-fetch filter based on ID or WP_Query args
+### buscar()
 
-Filters are stored as posts. Check WP_Query docs
-to learn all args accepted in the $args parameter (@see https://developer.wordpress.org/reference/classes/wp_query/)
-You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
-appropriate WP_Query argument
 
-If a number is passed to $args, it will return a \Tainacan\Entities\Filter object.  But if the post is not found or
-does not match the entity post type, it will return an empty array
+Obtener filtro basado en ID o argumentos WP_Query
+
+Los filtros se almacenan como entradas. Consulte la documentación de WP_Query
+para conocer todos los argumentos aceptados en el parámetro $args (@see https://developer.wordpress.org/reference/classes/wp_query/)
+También puede utilizar una propiedad asignada, como nombre y descripción, como argumento y se asignará al
+argumento WP_Query apropiado
+
+Si se pasa un número a $args, devolverá un objeto \Tainacan\Entities\Filter.  Pero si la entrada no se encuentra o
+no coincide con el tipo de entrada de la entidad, devolverá una matriz vacía.
 
 @param array $args WP_Query args || int $args the filter id
 @param string $output The desired output format (@see \Tainacan\Repositories\Repository::fetch_output() for possible values)
@@ -28,23 +27,22 @@ does not match the entity post type, it will return an empty array
 ### fetch_one()
 
 
-Fetch one Entity based on query args.
+Obtiene una Entidad basándose en los argumentos de la consulta.
 
-Note: Does not work with Item_Metadata Repository
+Nota: No funciona con el repositorio Item_Metadata.
 
 @param array $args Query Args as expected by fetch
 
-@return false|\Tainacan\Entities The entity or false if none was found
+@return false|\Tainacan\Entities La entidad o falso si no se ha encontrado ninguna
  
 
-### fetch_ids()
+### buscar_ids()
 
 
-fetch filters IDs based on WP_Query args
+obtener filtros ID basados en argumentos WP_Query
 
-to learn all args accepted in the $args parameter (@see https://developer.wordpress.org/reference/classes/wp_query/)
-You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
-appropriate WP_Query argument
+para conocer todos los argumentos aceptados en el parámetro $args (@see https://developer.wordpress.org/reference/classes/wp_query/)
+También puede utilizar una propiedad asignada, como nombre y descripción, como argumento y se asignará al argumento WP_Query apropiado
 
 @param array $args WP_Query args || int $args the item id
 
@@ -52,10 +50,10 @@ appropriate WP_Query argument
 @throws \Exception
  
 
-### fetch_by_collection()
+### buscar_por_coleccion()
 
 
-fetch filters by collection, searches all filters available
+buscar filtros por colección, busca todos los filtros disponibles
 
 @param Entities\Collection $collection
 @param array $args WP_Query args plus disabled_metadata
@@ -65,10 +63,10 @@ fetch filters by collection, searches all filters available
 @throws \Exception
  
 
-### fetch_ids_by_collection()
+### buscar_ids_por_colección()
 
 
-fetch filters IDs by collection, considering inheritance
+fetch filtra los ID por colección, teniendo en cuenta la herencia
 
 @param Entities\Collection|int $collection object or ID
 @param array $args WP_Query args plus disabled_metadata
@@ -77,7 +75,7 @@ fetch filters IDs by collection, considering inheritance
 @throws \Exception
  
 
-### insert()
+### insertar()
 
 
 
@@ -87,11 +85,11 @@ fetch filters IDs by collection, considering inheritance
 @throws \Exception
  
 
-### update()
+### actualizar()
 
 
 
-### delete()
+### eliminar()
 
 
 @param $filter_id
@@ -99,7 +97,7 @@ fetch filters IDs by collection, considering inheritance
 @return Entities\Filter
  
 
-### trash()
+### basura()
 
 
 @param $filter_id
@@ -107,40 +105,39 @@ fetch filters IDs by collection, considering inheritance
 @return mixed|Entities\Filter
  
 
-## Usage 
+## Uso
 
 ```php
 $repository = \Tainacan\Repositories\Filters::get_instance();
 ```
 
-## Entity Properties 
+## Propiedades de la entidad 
 
-These are the Entity attributes for this repository. The Entity class is at [classes/entities folder](../src/classes/entities/class-tainacan-filter.php)
+Estos son los atributos de Entidad para este repositorio. La clase Entity está en [classes/entities folder](../src/classes/entities/class-tainacan-filter.php)
 
-Property | Description | Slug | Getter | Setter | Stored as
+Propiedad | Descripción | Slug | Obtención | Asignación | Almacenado como
 --- | --- | --- | --- | --- | --- 
-Status|Status|status|`$entity->get_status()`|`$entity->set_status()`|post_status
-ID|Unique identifier|id|`$entity->get_id()`|`$entity->set_id()`|ID
-Name|Name of the filter|name|`$entity->get_name()`|`$entity->set_name()`|post_title
+Estado|Estado|status|`$entity->get_status()`|`$entity->set_status()`|post_status
+ID|Identificador unico|id|`$entity->get_id()`|`$entity->set_id()`|ID
+Nombre|Nombre del filtro|name|`$entity->get_name()`|`$entity->set_name()`|post_title
 Order|Filter order. This metadata is used if filters were manually ordered.|order|`$entity->get_order()`|`$entity->set_order()`|menu_order
-Description|The filter description|description|`$entity->get_description()`|`$entity->set_description()`|post_content
-Filter type options|The filter type options|filter_type_options|`$entity->get_filter_type_options()`|`$entity->set_filter_type_options()`|meta
-Type|The filter type|filter_type|`$entity->get_filter_type()`|`$entity->set_filter_type()`|meta
-Collection|The collection ID|collection_id|`$entity->get_collection_id()`|`$entity->set_collection_id()`|meta
-Color|Filter color|color|`$entity->get_color()`|`$entity->set_color()`|meta
-Metadata|Filter metadata|metadatum|`$entity->get_metadatum()`|`$entity->set_metadatum()`|meta
-Max of options|The max number of options to be showed in filter sidebar.|max_options|`$entity->get_max_options()`|`$entity->set_max_options()`|meta
+Descripción|La descripción del filtro|description|`$entity->get_description()`|`$entity->set_description()`|post_content
+Opciones de tipo de filtro|Opciones de tipo de filtro|filter_type_options|`$entity->get_filter_type_options()`|`$entity->set_filter_type_options()`|meta
+Tipo|El tipo de filtro|filter_type|`$entity->get_filter_type()`|`$entity->set_filter_type()`|meta
+Colección|El ID de la colección|collection_id|`$entity->get_collection_id()`|`$entity->set_collection_id()`|meta
+Color|Color del filtro|color|`$entity->get_color()`|`$entity->set_color()`|meta
+Metadato|Filtrar metadatos|metadatum|`$entity->get_metadatum()`|`$entity->set_metadatum()`|meta
+Máximo de opciones|El número máximo de opciones para ser mostrado en la barra lateral de filtro|max_options|`$entity->get_max_options()`|`$entity->set_max_options()`|meta
 
-### Entity usage
+### Uso de la entidad
 
-
-Create new
+Crear nuevo
 
 ```php
 $entity = new \Tainacan\Entities\Filter();
 ```
 
-Get existing by ID
+Obtener existente por ID
 ```php
 $repository = \Tainacan\Repositories\Filters::get_instance();
 $entity = $repository->fetch(12);
