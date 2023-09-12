@@ -1,6 +1,6 @@
-# The Vue Items List Component
+# El componente de lista de elementos Vue
 
-Theme developers interested on having a *fully-featured* Items List - including filters, advanced search and view modes - on certain page can make use of the [helper function](/dev/custom-templates#theme-helper-functions) `tainacan_the_faceted_search()`. For example, let us use it in a child theme of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') to see how an Items list is rendered:
+Los desarrolladores de temas interesados en disponer de una lista de elementos *con todas las funciones* -incluidos filtros, búsqueda avanzada y modos de visualización- en determinadas páginas pueden hacer uso de la [helper function](/es-mx/dev/custom-templates#theme-helper-functions) `tainacan_the_faceted_search()`. Por ejemplo, usémosla en un tema hijo de [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') para ver cómo se muestra una lista de elementos:
 
 ```php
 /**
