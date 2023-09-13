@@ -1,20 +1,20 @@
-# Releasing a new version
+# Publicar una nueva versión
 
-This is a work in progress documentation on how to release a new version.
+Esta es una documentación en progreso sobre cómo publicar una nueva versión.
 
-Assuming:
+Suponiendo:
 
-- `$CURRENT_VERSION` is the current "old" version (e.g. 0.10)
-- `$NEW_VERSION` is the version we are releasing (e.g. 0.11)
-- `$GIT_PATH` is where our repository is cloned
-- `$BUILD_PATH` is where the plugin is configured to build, inside your WordPress plugins folder
-- `$SVN_PATH` is where the WordPress.org SVN repo is
+- `$CURRENT_VERSION` es la versión "antigua" actual (e.g. 0.10)
+- `$NEW_VERSION` es la versión que estamos publicando (e.g. 0.11)
+- `$GIT_PATH` es donde se clona nuestro repositorio
+- `$BUILD_PATH` es donde el plugin está configurado para construir, dentro de su carpeta de plugins de WordPress
+- `$SVN_PATH` es donde está el repositorio SVN de WordPress.org
 
-## Pre-release
+## Pre-lanzamiento
 
-Before we publish a new version, we always release one or more Release Candidates so the community has time to [test and make sure](/dev/tests-script) the new version of Tainacan is clean and ready to reach the world.
+Antes de publicar una nueva versión, siempre lanzamos uno o más Release Candidates para que la comunidad tenga tiempo de [probar y asegurarse](/dev/tests-script) que la nueva versión de Tainacan está limpia y lista para llegar al mundo.
 
-### Start in the git repository
+### Empezar en el repositorio git
 
 ```
 cd $GIT_PATH
@@ -22,25 +22,25 @@ git checkout develop
 git pull
 ```
 
-### Create a new Release branch
+### Crear una nueva rama Release
 
-Create a new `release/$NEW_VERSION` branch. If using git flow:
+Crear una nueva rama `release/$NEW_VERSION`. Si utiliza git flow:
 
 ```
 git flow release start $NEW_VERSION
 ```
 
-### Edit version numbers
+### Editar los números de versión
 
-Edit `src/tainacan.php` and change the version numbers to `$NEW_VERSION`. Also, change the `TAINACAN_VERSION` constant after the comments section.
+Edite `src/tainacan.php` y cambie los números de versión a `$NEW_VERSION`. Además, cambie la constante `TAINACAN_VERSION` después de la sección de comentarios.
 
-When releasing an RC version, append RC (number) to the version.
+Cuando publique una versión RC, añada RC (número) a la versión.
 
-Also increase the `Tested Up` version, if applicable.
+Aumente también la versión `Tested Up`, si procede.
 
-### Build in production mode
+### Construir en modo de producción
 
-It is extremely important to build the release version in _production_ mode. Take time to compare your bundle final sizes, which should be considerably smaller than in _development_ mode.
+Es extremadamente importante compilar la versión de lanzamiento en modo _producción_. Tómese su tiempo para comparar los tamaños finales de los paquetes, que deberían ser considerablemente más pequeños que en modo _desarrollo_.
 
 ```
 ./build.sh --prod
@@ -48,47 +48,47 @@ cd $BUILD_PATH
 ```
 
 
-### Commit and push
+### Commit y push
 
-Commit and push this release branch.
+Commit y push de esta rama de lanzamiento.
 
 ```
 git commit -am"version $NEW_VERSION"
 git push
 ```
 
-### Update trunk in SVN
+### Actualizar trunk en SVN
 
-When we release the RC is a good time to update the SVN trunk. This will allow the community to work on the translations before the final release.
+Cuando lanzamos la RC es un buen momento para actualizar el tronco SVN. Esto permitirá a la comunidad trabajar en las traducciones antes del lanzamiento final.
 
-Note that the `Stable tag` in the `readme.txt` file must not be edited and keep pointing to \$CURRENT_VERSION.
+Tenga en cuenta que la etiqueta `Stable` en el archivo `readme.txt` no debe ser editada y debe seguir apuntando a \$CURRENT_VERSION.
 
-1. Go to the SVN folder
+1. Vaya a la carpeta SVN
 
 ```
 cd $SVN_PATH
 ```
 
-2. Make sure your local SVN is up to date
+2. Asegúrese de que su SVN local está actualizado
 
 ```
 svn cleanup
 svn update
 ```
 
-1. Clean trunk
+1. Limpiar el trunk.
 
 ```
 rm -rf trunk/*
 ```
 
-2. Copy new files
+2. Copiar nuevos archivos
 
 ```
 cp -R $BUILD_PATH/* trunk/
 ```
 
-4. `svn rm` all files that have been removed
+4. `svn rm` todos los ficheros eliminados
 
 ```
 svn st | grep '^!' | awk '{print $2}' | xargs svn rm
@@ -96,7 +96,7 @@ svn st | grep '^!' | awk '{print $2}' | xargs svn rm
 
 ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
-5. `svn add` every new files
+5. `svn add` cada nuevos archivos
 
 ```
 svn st | grep '^?' | awk '{print $2}' | xargs svn add
@@ -108,27 +108,27 @@ svn st | grep '^?' | awk '{print $2}' | xargs svn add
 svn ci
 ```
 
-### Publish the RC
+### Publicar el RC
 
-Create a ZIP package with the built plugin and publish a blog post calling for tests.
+Crea un paquete ZIP con el plugin creado y publica una entrada en el blog solicitando pruebas.
 
-Use previous blog posts as templates, keeping all the content explaining what an RC is and how to contribute.
+Utiliza entradas anteriores del blog como plantillas, manteniendo todo el contenido que explica qué es un RC y cómo contribuir.
 
-### Test
+### Prueba
 
-Using the Test guide as a resource, test every feature of the plugin, including importers and exporters. With time, we can build more detailed test scripts and distribute tests among people in the community.
+Utilizando la guía de pruebas como recurso, prueba todas las funciones del complemento, incluidos los importadores y exportadores. Con el tiempo, podemos construir scripts de prueba más detallados y distribuir las pruebas entre la gente de la comunidad.
 
-### Fix and publish new RC, or finish
+### Corregir y publicar nueva RC, o terminar
 
-If bugs are found, fix them and commit to the release branch. Publish a new RC, following the steps above, until we have a stable version we feel confident to release.
+Si se encuentran errores, corríjalos y envíelos a la rama de publicación. Publica una nueva RC, siguiendo los pasos anteriores, hasta que tengamos una versión estable que podamos publicar.
 
-## Release
+## Lanzamiento
 
-The plugin is ready to go. We have published one or more RCs and the community has tested it. Let us get it live to the world!
+El plugin está listo para funcionar. Hemos publicado uno o más RCs y la comunidad lo ha probado. ¡Lancémoslo al mundo!
 
-### Finish version number
+### Número de versión final
 
-Back to the git repository, make sure everything is up to date:
+De vuelta al repositorio git, asegúrate de que todo está actualizado:
 
 ```
 cd $GIT_PATH
@@ -136,66 +136,66 @@ git checkout release/$NEW_VERSION
 git pull
 ```
 
-Edit `src/readme.txt` and `src/tainacan.php` and change the version numbers to `$NEW_VERSION`.
+Edita `src/readme.txt` y `src/tainacan.php` y cambia los números de versión a `$NEW_VERSION`.
 
-In `src/readme.txt`:
+En `src/readme.txt`:
 
 - Edit `Stable tag` to \$NEW_VERSION
 - If applicable, edit `Tested up to`
 
-In `src/tainacan.php`:
+En `src/tainacan.php`:
 
 - Edit `Version`
 - Edit the `TAINACAN_VERSION` constant
 
-Commit and push.
+Commit y push.
 
-### Clean your folder to make sure everything is built
+### Limpie su carpeta para asegurarse de que todo está construido
 
 ```
 rm last-*
 ```
 
-### Build in production mode
+### Construir en modo producción
 
-It is extremely important to build the release version in _production_ mode. Take time to compare your bundle final sizes, which should be considerably smaller than in _development_ mode.
+Es extremadamente importante construir la versión de lanzamiento en modo _producción_. Tómese su tiempo para comparar los tamaños finales de sus paquetes, que deberían ser considerablemente más pequeños que en modo _desarrollo_.
 
 ```
 ./build.sh --prod
 ```
 
 
-### Prepare SVN repo
+### Preparar repositorio SVN
 
-clean trunk
+limpiar el trunk
 
 ```
 rm -rf $SVN_PATH/trunk/*
 ```
 
-### Copy new files
+### Copiar nuevos archivos
 
 ```
 cp -R $BUILD_PATH/* $SVN_PATH/trunk/
 ```
 
-Update assets
+Actualizar recursos(assets)
 
 ```
 cp $GIT_PATH/wp-repo-assets/* $SVN_PATH/assets/
 ```
 
-### Commit
+### Confirmar (Commit)
 
-Before commit, verify the output of `svn st` and check if there are no undesired files or folders. Also, verify the total size of the trunk folder to see it looks ok.
+Antes de confirmar, verifique la salida de `svn st` y compruebe que no hay archivos o carpetas no deseados. También, verifique el tamaño total de la carpeta trunk para ver que se ve bien.
 
-1. Go to the SVN folder
+1. Vaya a la carpeta SVN
 
 ```
 cd $SVN_PATH
 ```
 
-2. `svn rm` all files that have been removed
+2. `svn rm` todos los ficheros que han sido eliminados
 
 ```
 svn st | grep '^!' | awk '{print $2}' | xargs svn rm
@@ -203,37 +203,37 @@ svn st | grep '^!' | awk '{print $2}' | xargs svn rm
 
 ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
-3. `svn add` every new files
+3. `svn add` cada nuevos archivos
 
 ```
 svn st | grep '^?' | awk '{print $2}' | xargs svn add
 ```
 
-4. Commit!
+4. Confirmado (commit)!
 
 ```
 svn ci
 ```
 
-### Create the tag folder
+### Crear la carpeta de etiquetas
 
 ```
 svn cp https://plugins.svn.wordpress.org/tainacan/trunk https://plugins.svn.wordpress.org/tainacan/tags/$NEW_VERSION
 ```
 
-### Check
+### Comprobar
 
-In a few minutes, the new release should be available in the WordPress directory.
+En unos minutos, la nueva versión debería estar disponible en el directorio de WordPress.
 
-Check if everything is ok.
+Comprueba que todo está bien.
 
-### Commit and create the tag on git
+### Confirmar y crear la etiqueta en git
 
-Once the release is tested and confirmed, commit and create the tag on git.
+Una vez probada y confirmada la versión, confirma y crea la etiqueta en git.
 
-Merge the release branch into master and develop branches and create a tag.
+Fusiona la rama release con las ramas master y develop y crea una etiqueta.
 
-Using git flow:
+Usando git flow:
 
 ```
 cd $GIT_PATH
@@ -243,6 +243,6 @@ git push --all
 git push --tags
 ```
 
-## Update this wiki!
+## ¡Actualiza este wiki!
 
-The `/_coverpage.md` and `/pt-br/_coverpage.md` files of this Wiki have the version number on it, that is displayed on [home page](/). Make sure to keep it updated following our [contributing guidelines](/CONTRIBUTING)!
+Los archivos `/_coverpage.md` y `/es-mx/_coverpage.md` de esta Wiki tienen el número de versión, que se muestra en [home page](/). ¡Asegúrate de mantenerlo actualizado siguiendo nuestras [directrices de contribución](/CONTRIBUTING.md)!
