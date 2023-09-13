@@ -60,7 +60,7 @@ Algunos Bloques Gutenberg (incluyendo la mayoría de los Bloques Tainacan) ofrec
    
    Aunque los bloques `full` siempre deben ser "full-page", no hay ninguna regla oficial sobre cómo de "ancha" debe ser una alineación `wide`, nosotros simplemente decidimos usar nuestra lógica de 24 columnas, pero tu tema puede ser tan simplista como `margin-left: -42px; margin-right: -42px;`.
 
-## Agregar hoja de estilo *del lado del editor
+## Agregar hoja de estilo del lado del editor
 
 La experiencia de edición con el nuevo Editor de Bloques, *aka* Gutenberg, puede ser a la vez mágica y frustrante dependiendo del soporte de tu tema. Eso es porque, a pesar de la promesa, no es realmente *lo que ves es lo que obtienes* a menos que te ocupes de ello, lo que significa que necesitas una hoja de estilos dedicada para garantizar que la apariencia del lado de edición sea lo más parecida posible al lado *preview/published* de tu entrada.
 
