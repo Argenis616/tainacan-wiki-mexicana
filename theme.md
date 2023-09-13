@@ -11,37 +11,37 @@ En esta página hablamos de:
 
 ## Temas compatibles
 
-Besides inserting a new field in your _WordPress_ admin panel, where you access the Tainacan admin panel itself, the Tainacan plugin also generates [special pages](/tainacan-pages.md) on your site. If your theme was thought to present these pages, item and collection listings will be displayed with all the navigation features of the collection such as item search, filters, different view modes, etc. Otherwise, these listings should be very close to the way the theme displays blog posts.
+Además de insertar un nuevo campo en tu panel de administración de _WordPress_, desde donde se accede al propio panel de administración de Tainacan, el plugin Tainacan también genera [páginas especiales](/es-mx/tainacan-pages.md) en tu sitio. Si tu tema ha sido pensado para presentar estas páginas, los listados de artículos y colecciones se mostrarán con todas las características de navegación de la colección como búsqueda de artículos, filtros, diferentes modos de vista, etc. De lo contrario, estos listados deberían ser muy parecidos a la forma en que el tema muestra las entradas del blog.
 
-Developing a compatible theme is not complicated and also does not need to be done from scratch, since many can be generated from [child themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of others that already exist. Here on the Wiki we have [an entire session](/dev/creating-compatible-themes.md) dedicated to teaching this to developers.
+Desarrollar un tema compatible no es complicado y tampoco es necesario hacerlo desde cero, ya que muchos se pueden generar a partir de [temas hijo](https://developer.wordpress.org/themes/advanced-topics/child-themes/) de otros que ya existen. Aquí en la Wiki tenemos [una sesión entera](/es-mx/dev/creating-compatible-themes.md) dedicada a enseñar esto a los desarrolladores.
 
-Currently, there is a theme developed by the Tainacan community and published in [WordPress official repository](https://wordpress.org/themes/). The others are available via GitHub. To install themes, access the WordPress theme installation panel and follow the steps in the [installation section](manage-themes).
+Actualmente, hay un tema desarrollado por la comunidad Tainacan y publicado en [repositorio oficial de WordPress](https://wordpress.org/themes/). Los demás están disponibles a través de GitHub. Para instalar los temas, accede al panel de instalación de temas de WordPress y sigue los pasos de la [sección de instalación](#manage-themes).
 
-### Tainacan Interface
+### Interfaz Tainacan
 
-This is the standard theme of the Tainacan project and is available in the official Wordpress repos [in this link](https://br.wordpress.org/themes/tainacan-interface/). It was developed by the same design team that developed the administrative interface of the Tainacan plugin, so it should bring the same formality, with good readability and layouts that support large amounts of information displayed on the same screen. This theme is ideal for museums, galleries, libraries and anyone who has a digital repository. We highlight its main advantages:
+Este es el tema estándar del proyecto Tainacan y está disponible en los repos oficiales de Wordpress [en este enlace](https://br.wordpress.org/themes/tainacan-interface/). Fue desarrollado por el mismo equipo de diseño que desarrolló la interfaz administrativa del plugin Tainacan, por lo que debería aportar la misma formalidad, con buena legibilidad y diseños que soporten grandes cantidades de información mostrada en la misma pantalla. Este tema es ideal para museos, galerías, bibliotecas y cualquiera que tenga un repositorio digital. Destacamos sus principales ventajas:
 
-- Specific templates for the Repository, Collection and Term item lists, with various configurations including:
-  - Overwrite the default view mode for term listings;
-  - Hiding various search control elements;
-  - Change filter bar behavior, such as its size or whether it appears hidden at first;
-- Template specific to the collection list, with two view modes, text search and sorting;
-- Specific template for the item's page, with several options, among them:
-  - Change the order in which attachments, metadata and document are displayed;
-  - Display the metadata list in more than one column;
-  - Show attachments as a carousel and integrate the document in this same list;
-  - Display a custom header that resembles the collection;
-  - Download button on the Document;
-  - Item navigation (next and previous);
-- Frequent updates and in sync with new versions of the Tainacan plugin;
-- Customizable color palette;
-- Header color of each customizable collection within the plugin, when the theme is active;
-- New "Thumbnail" view mode;
-- Share buttons for Facebook, Twitter, WhatsApp and Telegram on most pages;
-- Standard Gutenberg blocks stylized according to the visual identity of the theme;
-- Sidebar support;
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, con varias configuraciones, entre ellas:
+  - Sobrescribir el modo de vista por defecto para los listados de términos;
+  - Ocultar varios elementos de control de búsqueda;
+  - Cambiar el comportamiento de la barra de filtros, como su tamaño o si aparece oculta al principio;
+- Plantilla específica para el listado de colecciones, con dos modos de vista, búsqueda por texto y ordenación;
+- Plantilla específica para la página del artículo, con varias opciones, entre ellas:
+  - Cambiar el orden en que se muestran los archivos adjuntos, los metadatos y el documento;
+  - Mostrar la lista de metadatos en más de una columna;
+  - Mostrar los archivos adjuntos como un carrusel e integrar el documento en esta misma lista;
+  - Mostrar una cabecera personalizada que se asemeje a la colección;
+  - Botón de descarga en el documento;
+  - Navegación por los elementos (siguiente y anterior);
+- Actualizaciones frecuentes y sincronizadas con las nuevas versiones del plugin Tainacan;
+- Paleta de colores personalizable;
+- Color de cabecera de cada colección personalizable dentro del plugin, cuando el tema está activo;
+- Nuevo modo de vista "Miniatura";
+- Botones de compartir para Facebook, Twitter, WhatsApp y Telegram en la mayoría de las páginas;
+- Bloques Gutenberg estándar estilizados según la identidad visual del tema;
+- Soporte de barra lateral;
 
-![Some screens of the Tainacan Interface theme](/pt-br/_assets/gifs/themes-tainacan-interface.gif)
+![Some screens of the Tainacan Interface theme](/_assets/gifs/themes-tainacan-interface.gif)
 
 ### Blocksy
 
