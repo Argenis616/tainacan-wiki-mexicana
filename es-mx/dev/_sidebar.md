@@ -24,7 +24,7 @@
 	  * [Taxonomías del repositoriot](/es-mx/dev/repository-taxonomies.md)
 	  * [Términos del repositorio](/es-mx/dev/repository-terms.md) 
 * Desarrollo y ampliación de temas 
-  	* [Creación de temas compatibles](/es-mx/dev/creating-compatible-themes.md)
+  	* [Creación de temas compatibles](es-mx/dev/creating-compatible-themes.md)
 	* [Plantillas personalizadas](/es-mx/dev/custom-templates.md)
 	* [Modos de visualización adicionales](/es-mx/dev/extra-view-modes.md)
 * Configuración y rendimiento
