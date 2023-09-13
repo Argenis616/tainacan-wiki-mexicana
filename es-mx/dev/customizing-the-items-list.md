@@ -39,7 +39,7 @@ Veamos cómo es posible:
 
 ### Pasando variables `php` a _tainacan_the_faceted_search()_
 
-Como vimos en nuestra introducción de [creación de temas compatibles](/es-mx/dev/creating-compatible-themes). Tener una lista de elementos de búsqueda rica en facetas es tan sencillo como crear un archivo con tres líneas. La magia la hace la función de ayuda `tainacan_the_faceted_search()`, que renderiza el componente Vue.js. Como es lógico, esta función ofrece varias variables de personalización, que describimos a continuación:
+Como vimos en nuestra introducción de [creación de temas compatibles](/es-mx/dev/creating-compatible-themes.md). Tener una lista de elementos de búsqueda rica en facetas es tan sencillo como crear un archivo con tres líneas. La magia la hace la función de ayuda `tainacan_the_faceted_search()`, que renderiza el componente Vue.js. Como es lógico, esta función ofrece varias variables de personalización, que describimos a continuación:
 
 | Variable name                                | Type        | Default        | Description                          |
 |----------------------------------------------|-------------|-------------|--------------------------------------|
