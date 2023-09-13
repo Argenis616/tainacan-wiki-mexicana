@@ -6,7 +6,7 @@ El plugin Tainacan ofrece herramientas para gestionar tu repositorio digital, pe
 
 Considerando eso, el desarrollo del plugin fue hecho _en sincronía_ con la producción de un "tema oficial", planeado para atender a la mayoría de los casos de uso, que es la [Interfaz Tainacan](https://wordpress.org/themes/tainacan-interface/). Sin embargo, si eres un desarrollador y tienes interés en adaptar tu tema para soportar algunas características de Tainacan, eres libre de hacerlo usando las estrategias que se describen en esta sección.
 
-![Ejemplos de una lista de elementos en temas personalizados](/_assets/creating-compatible-themes.png)
+![Ejemplos de una lista de elementos en temas personalizados](_assets/creating-compatible-themes.png)
 
 Para darte una idea de lo que es posible, mira este archivo con tres simples líneas añadidas a un _child-theme_ del famoso tema de WordPress [TwentyNineteen](https://wordpress.org/themes/twentynineteen/ ":ignore"):
 
@@ -19,7 +19,7 @@ Para darte una idea de lo que es posible, mira este archivo con tres simples lí
 <?php get_footer(); ?>
 ```
 
-![Twenty Nineteen child theme adapted to Tainacan items list.](/_assets/creating-compatible-themes-2.png):
+![Twenty Nineteen child theme adapted to Tainacan items list.](_assets/creating-compatible-themes-2.png):
 
 Tenemos un tema hijo de ejemplo hecho para ocuparse de este pequeño ajuste, que puede descargar aquí:
 
