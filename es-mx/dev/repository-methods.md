@@ -1,9 +1,9 @@
-# Repository Methods
+# Métodos del repositorio
 
-In this section you can see the documentation for the most relevant methods related to Tainacan entities. They are:
+En esta sección puedes ver la documentación de los métodos más relevantes relacionados con las entidades de Tainacan. Estos son:
 
-* [Repository Filters](/dev/repository-filters.md) 
-* [Repository Items](/dev/repository-items.md) 
-* [Repository Metadata](/dev/repository-metadata.md) 
-* [Repository Taxonomies](/dev/repository-taxonomies.md)
-* [Repository Terms](/dev/repository-terms.md) 
+* [Filtros de repositorio](/es-mx/dev/repository-filters.md) 
+* [Elementos del repositorio](/es-mx/dev/repository-items.md) 
+* [Metadatos del repositorio](/es-mx/dev/repository-metadata.md) 
+* [Taxonomías del repositorio](/es-mx/dev/repository-taxonomies.md)
+* [Términos del repositorio](/es-mx/dev/repository-terms.md) 
