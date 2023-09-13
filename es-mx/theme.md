@@ -14,7 +14,7 @@ En esta página hablaremos sobre:
 
 Además de insertar un nuevo campo en su panel de administración _WordPress_, desde donde se accede al propio panel de administración de Tainacan, el plugin Tainacan también genera [páginas especiales](/es-mx/tainacan-pages.md) en su sitio web. Si tu tema está diseñado para mostrar estas páginas, los listados de artículos y colecciones se mostrarán con todas las funciones de navegación de las colecciones, como la búsqueda de artículos, los filtros, las distintas formas de mostrarlos, etc. De lo contrario, estos listados deberían ser muy similares a la forma en que el tema muestra las entradas del blog.
 
-Desarrollar un tema compatible no es complicado y tampoco hay que hacerlo desde cero, ya que muchos pueden generarse a partir de [temas hijo](https://codex.wordpress.org/es:Temas_hijos) de otros ya existentes. Aquí en la Wiki tenemos [una sesión entera](/dev/creating-compatible-themes.md) dedicada a enseñar esto a los desarrolladores.
+Desarrollar un tema compatible no es complicado y tampoco hay que hacerlo desde cero, ya que muchos pueden generarse a partir de [temas hijo](https://codex.wordpress.org/es:Temas_hijos) de otros ya existentes. Aquí en la Wiki tenemos [una sesión entera](/es-mx/dev/creating-compatible-themes.md) dedicada a enseñar esto a los desarrolladores.
 
 Actualmente existe un tema desarrollado por la comunidad Tainacan y publicado en el [repositorio oficial de WordPress](https://es.wordpress.org/themes/). El resto están disponibles a través de GitHub. Para instalar temas, vaya al panel de instalación de temas de WordPress y siga los pasos de la sección de instalación.
 
