@@ -12,8 +12,8 @@ Parece una potente interfaz de búsqueda facetada, pero definitivamente podríam
 
 Por suerte para los desarrolladores de temas, desde Tainacan 0.16 se ofrecen muchas opciones de personalización. Hay dos tipos de personalizaciones que se pueden aplicar fácilmente:
 
-* [Pasar variables `php` a la llamada a la función de plantilla](/es-mx/dev/customizing-the-items-list#passing-php-variables-to-tainacan_the_faceted_search);
-* [Pasar variables `css` a la clase de lista de elementos](/es-mx/dev/customizing-the-items-list#passing-css-variables-to-the-items-list-class);
+* [Pasar variables `php` a la llamada a la función de plantilla](/#pasando-variables-php-a-tainacan-the-faceted-search); 
+* [Pasar variables `css` a la clase de lista de elementos](/#pasando-variables-css-a-la-clase-items-list); 
 
 Aquí hay tres ejemplos de resultados de plantillas después de jugar con estas variables:
 
