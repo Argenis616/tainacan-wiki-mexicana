@@ -1,15 +1,15 @@
-# Themes
+# Temas
 
-One of the reasons why _WordPress_ is so famous and versatile is its diversity of [themes](https://wordpress.org/themes/ ":ignore"). There are thousands of themes that you can attribute to your site style and structure more formal, appealing or minimalist. The vast majority are free and one click away from installation.
+Una de las razones por las que _WordPress_ es tan famoso y versátil es su diversidad de [temas](https://wordpress.org/themes/ ":ignorar"). Hay miles de temas que usted puede atribuir a su estilo del sitio y la estructura más formal, atractivo o minimalista. La gran mayoría son gratuitos y se instalan con un solo clic.
 
-?> **It is possible to use the Tainacan plugin with any activated theme**, but the experience can be better with themes that offer compatibility for your pages.
+?> **Es posible utilizar el plugin Tainacan con cualquier tema activado**, pero la experiencia puede ser mejor con temas que ofrezcan compatibilidad para tus páginas.
 
-On this page we talk about:
+En esta página hablamos de:
 
-- What are [the themes that offer the best compatibility](#compatible-themes) for Tainacan and,
-- [How to install and manage themes](#manage-themes) in your _WordPress_.
+- Cuáles son [los temas que ofrecen la mejor compatibilidad](#temas-compatibles) para Tainacan y,
+- [Cómo instalar y gestionar temas](#manage-themes) en tu _WordPress_.
 
-## Compatible Themes
+## Temas compatibles
 
 Besides inserting a new field in your _WordPress_ admin panel, where you access the Tainacan admin panel itself, the Tainacan plugin also generates [special pages](/tainacan-pages.md) on your site. If your theme was thought to present these pages, item and collection listings will be displayed with all the navigation features of the collection such as item search, filters, different view modes, etc. Otherwise, these listings should be very close to the way the theme displays blog posts.
 
