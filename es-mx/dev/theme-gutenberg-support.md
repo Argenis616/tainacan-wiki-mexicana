@@ -1,30 +1,30 @@
-?> _TODO_ This page is under construction.
+?> _TODO_ Esta página está en construcción.
 
-# Theme Gutenberg Support
+# Soporte para el Tema Gutenberg
 
-As explained on our documentation for [Gutenberg Blocks](/gutenberg-blocks.md), they are the future of WordPress content edition. If your theme is able to run on *WordPress >= 5.0*, users already have available a variety of blocks to compose post and pages, such as headings, paragraphs, images, columns, etc, which are complemented by the [Tainacan blocks](/gutenberg-blocks#os-blocos-tainacan).
+Como se explica en nuestra documentación para [Bloques Gutenberg](/es-mx/gutenberg-blocks.md), son el futuro de la edición de contenidos en WordPress. Si tu tema es capaz de funcionar en *WordPress >= 5.0*, los usuarios ya tienen disponibles una variedad de bloques para componer post y páginas, como encabezados, párrafos, imágenes, columnas, etc, que se complementan con los [Bloques Tainacan](/es-mx/gutenberg-blocks#los-bloques-de-tainacan).
 
-Although this should work out of the box, there are things you can do, as a developer, to improve the user experience with this new feature. We'll be demonstrating them here, using most of [Tainacan Interface](https://wordpress.org/themes/tainacan-interface/) code as an example:
+Aunque esto debería funcionar de inmediato, hay cosas que puedes hacer, como desarrollador, para mejorar la experiencia del usuario con esta nueva característica. Las demostraremos aquí, usando la mayor parte del código de la [Interfaz Tainacan](https://wordpress.org/themes/tainacan-interface/) como ejemplo:
 
-- [Theme Gutenberg Support](#theme-gutenberg-support)
-  - [Support new alignment options](#support-new-alignment-options)
-  - [Adding color scheme support to blocks](#adding-color-scheme-support-to-blocks)
+- [Soporte para el Tema Gutenberg](#soporte-para-el-tema-gutenberg)
+  - [Soporte de nuevas opciones de alineación](#soporte-de-nuevas-opciones-de-alineacion)
+  - [Añadir soporte de esquema de color a los bloques](#agregar-combinaciones-de-colores-a-los-bloques)
 
-## Support new alignment options
+## Soporte de nuevas opciones de alineación
 
 <div style="float: right; margin-left: 32px;">
 
-![Alignments options on an image gutenberg block](/_assets/images/theme-gutenberg-support-1.jpeg ':size=250')
+![Opciones de alineación en un bloque de imagen gutenberg](/_assets/images/theme-gutenberg-support-1.jpeg ':size=250')
 
 </div>
 
-Some Gutenberg Blocks (including most of Tainacan Blocks) offer alignment options such as `left`, `center` and `right`, which is pretty straightforward and uses CSS `float` to make the block flow into one direction. But other options require some "theme-developer" work to do its job: `wide` and `full` alignments. The idea is that `wide` blocks "leaks out" of the post or page margin, such as a highlighted media. `full` blocks, on the other hand, cover the whole post or page width, making them really "attention-attractive". So how to make them available to our users?
+Algunos Bloques Gutenberg (incluyendo la mayoría de los Bloques Tainacan) ofrecen opciones de alineación como `left`, `center` y `right`, que es bastante sencillo y utiliza CSS `float` para hacer que el bloque fluya en una dirección. Pero hay otras opciones que requieren cierto trabajo de "desarrollador temático": las alineaciones `wide` y `full`. La idea es que los bloques `wide` "se escapen" del margen del post o de la página, como un medio destacado. Los bloques `full`, por otro lado, cubren todo el ancho del post o de la página, haciéndolos realmente "atractivos". Entonces, ¿cómo ponerlos a disposición de nuestros usuarios?
 
-1. Go to your theme `functions.php` and insert the option registration routine:
+1. Vaya a su tema `functions.php` e inserte la rutina de registro de opciones:
    ```php
     <?php
         /**
-        * Register support for Gutenberg wide and full blocks
+        * Soporte de registro para bloques anchos y completos de Gutenberg
         */
         function your_theme_gutenberg_support_setup() {
             add_theme_support( 'align-wide' );
@@ -32,7 +32,7 @@ Some Gutenberg Blocks (including most of Tainacan Blocks) offer alignment option
         add_action( 'after_setup_theme', 'your_theme_gutenberg_support_setup' );
     ?>
    ``` 
-2. Go to your `style.css` (or whichever css you prefer that is loaded) and add the logic to make blocks with `.alignwide` and `.alignfull` classes to work as expected. This will depend on certain circunstances, such as your theme `max-width` and `margin` setup, as well as if it allows sidebars or not. Here is how we did it on *Tainacan Interface* theme:
+2. Ve a tu `style.css` (o al css que prefieras que esté cargado) y añade la lógica para que los bloques con las clases `.alignwide` y `.alignfull` funcionen como se espera. Esto dependerá de ciertas circunstancias, como la configuración de `max-width` y `margin` de tu tema, así como si permite barras laterales o no. Así es como lo hicimos en el tema *Tainacan Interface*:
     ```css
     .alignwide {
         margin-left: calc(-8.3333333333vw + 3.1%) !important;
@@ -40,8 +40,8 @@ Some Gutenberg Blocks (including most of Tainacan Blocks) offer alignment option
         width: 116.66667%;
         max-width: 1400px;
 
-        /* 1400px is the maximum the inner cointainer should get, so we */
-        /* use 1526px - 1 column - 1 column; */
+        /* 1400px es el máximo que debe tener el cointainer interior, así que */
+        /* usamoas 1526px - 1 column - 1 column; */
         @media only screen and (min-width: 1526px) {
             margin-left: calc(-1*(87.5vw - 1400px)/2) !important !important;
             margin-right: calc(-1*(87.5vw - 1400px)/2) !important !important;
@@ -56,37 +56,37 @@ Some Gutenberg Blocks (including most of Tainacan Blocks) offer alignment option
         width: 100vw;
     }
    ```
-   !> We're using CSS `viewport measures` (vw) here, which may [not be fully supported](https://caniuse.com/#feat=viewport-units ':ignore') in older browsers, thus the "%" fallback for every "vw". 
+   !> Estamos usando CSS `viewport measures` (vw) aquí, que puede [no estar totalmente soportado](https://caniuse.com/#feat=viewport-units ':ignore') en navegadores antiguos, de ahí el "%" fallback para cada "vw". 
    
-   Although `full` blocks should always be "full-page", there is no official rule for how "wide" a `wide` alignment should be, we just decided to use our 24-columns logic, but your theme can be as simplistic as `margin-left: -42px; margin-right: -42px;`.
+   Aunque los bloques `full` siempre deben ser "full-page", no hay ninguna regla oficial sobre cómo de "ancha" debe ser una alineación `wide`, nosotros simplemente decidimos usar nuestra lógica de 24 columnas, pero tu tema puede ser tan simplista como `margin-left: -42px; margin-right: -42px;`.
 
-## Add *editor-side* stylesheet
+## Agregar hoja de estilo *del lado del editor
 
-The editing experience with the new Block Editor, *aka* Gutenberg, can be both magical and frustrating depending on your theme support. That's because, despite the promise, it is not really *What You See Is What You Get* unless you take care of it, which means you need a dedicated stylesheet to guarantee that your editing-side appearance is as close as possible as the *preview/published* side of your post.
+La experiencia de edición con el nuevo Editor de Bloques, *aka* Gutenberg, puede ser a la vez mágica y frustrante dependiendo del soporte de tu tema. Eso es porque, a pesar de la promesa, no es realmente *lo que ves es lo que obtienes* a menos que te ocupes de ello, lo que significa que necesitas una hoja de estilos dedicada para garantizar que la apariencia del lado de edición sea lo más parecida posible al lado *preview/published* de tu entrada.
 
-> It may sound redundant at first, but having to implement an **editor stylesheet** makes sense: On your *theme-side*, you may have classes to style a `<button>` as you wish, but on the *editor-side*, that button is actually a `<input type="text">` form, waiting for content to be inserted by the user. So you have to fake it to look like a button. Furthermore, a post on your theme may have zero or lots or lateral margin, while the *editor-side* has to display admin menus, block controls, and document options aside from the content editor. 
+> Puede sonar redundante al principio, pero tener que implementar una **hoja de estilo del editor** tiene sentido: En el *lado del tema*, puedes tener clases para dar estilo a un `<botón>` como desees, pero en el *lado del editor*, ese botón es en realidad un formulario `<input type="text">`, esperando a que el usuario inserte el contenido. Así que tienes que fingir que parece un botón. Además, un post en tu tema puede tener cero o mucho margen lateral, mientras que el *lado del editor* tiene que mostrar menús de administración, controles de bloque y opciones de documento aparte del editor de contenido. 
 
-So it is time to face the beast! 
+¡Así que es hora de enfrentarse a la bestia!
 
-1. Go to your theme `functions.php` and register the editor style:
+1. Vaya a su tema `functions.php` y registre el estilo del editor:
    ```php
     <?php
         /**
-        * Enqueue editor styles for Gutenberg
+        * Estilos del editor de cola para Gutenberg
         */
         function your_theme_editor_styles() {
 
-         	// Adds Your Theme editor style for Gutenberg.
+         	// Añade el estilo de editor tu Tema para Gutenberg.
             wp_enqueue_style( 'your-theme-editor-style', get_template_directory_uri() . '/editor-style.css' );
          	
-         	// Add other necessary styles, such as font files.
+         	// Añada otros estilos necesarios, como archivos de fuentes.
          	wp_enqueue_style( 'RobotoFonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i' );
         }
         add_action( 'enqueue_block_editor_assets', 'your_theme_editor_styles' );
     ?>
    ```
-2. Now, feel the `/editor-style.css` file with the necessary content. There is no single solution for this and it really depends on how much "tweaked" is your theme from the standard Gutenberg styling. To check how this was made on *Tainacan Interface*, take a look at this [source file](https://github.com/tainacan/tainacan-theme/blob/develop/src/assets/scss/editor-style.scss ':ignore').
+2. Ahora, cree el archivo `/editor-style.css` con el contenido necesario. No hay una solución única para esto y realmente depende de lo "ajustado" que esté tu tema con respecto al estilo estándar de Gutenberg. Para comprobar cómo se hizo en la *Interfaz Tainacan*, echa un vistazo a este [archivo fuente](https://github.com/tainacan/tainacan-theme/blob/develop/src/assets/scss/editor-style.scss ':ignore').
 
-## Adding color scheme support to blocks
+## Agregar combinaciones de colores a los bloques
 
-Another interesting feature that Gutenberg offers is the ability to customize which colors will be offered on color-pickers available across many of the blocks.
+Otra característica interesante que ofrece Gutenberg es la posibilidad de personalizar qué colores se ofrecerán en los selectores de color disponibles en muchos de los bloques.
