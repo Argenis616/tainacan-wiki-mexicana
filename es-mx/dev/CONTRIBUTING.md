@@ -1,23 +1,23 @@
-## Contribution guidelines
+## Directrices para las contribuciones
 
-Interested in contributing to Tainacan? That's awesome! :muscle: In this page, we'll talk about paths of contribution and what we consider a quality contribution.
+¿Te interesa contribuir a Tainacan? :muscle: En esta página, hablaremos de las vías de contribución y de lo que consideramos una contribución de calidad.
 
-### Our language policy
-While Tainacan is a Brazilian project, we have adopted English as our primary language on development matters. Writing comments in Portuguese on [issues](https://github.com/tainacan/tainacan/issues) and [pull requests](https://github.com/tainacan/tainacan/pulls) is allowed as long as you provide an English translation of your comments. Writing comments in Portuguese on commits is expressively prohibited. Comments on the codebase and variable names should also be written in English only.
+### Nuestra política lingüística
+Aunque Tainacan es un proyecto brasileño, hemos adoptado el inglés como lengua principal en cuestiones de desarrollo. Escribir comentarios en portugués sobre [issues](https://github.com/tainacan/tainacan/issues) y [pull requests](https://github.com/tainacan/tainacan/pulls) siempre que proporcione una traducción al inglés de sus comentarios. Está expresamente prohibido escribir comentarios en portugués en los commits. Los comentarios sobre la base de código y los nombres de las variables también deben escribirse únicamente en inglés.
 
-### Thinking about how you can contribute
+### Piense cómo puede contribuir
 
-Ask yourself the following questions: do you work, directly or indirectly, with cultural preservation? If yes, what do you do? If not, are you just a curious person just excited about it? What kind of skills do you have? Is there something you find fun to do you think you can shape as a contribution to Tainacan?
+Hágase las siguientes preguntas: ¿trabaja, directa o indirectamente, en la preservación cultural? En caso afirmativo, ¿a qué se dedica? Si no es así, ¿es sólo una persona curiosa y entusiasmada por el tema? ¿Qué tipo de habilidades tiene? ¿Hay algo que te divierta hacer y que creas que puedes plasmar como contribución a Tainacan?
 
-Free and open source projects offer a diversity of contributions options that go from direct involvement with the development of a software (submiting patches to eliminate a bug, implementing new features, creating new tests) to works related to localization (translating the software interface), design (creative works), user experience (testing new iterations of Tainacan and reporting issues), documentation (contributing to our wiki with new articles or improving existing ones) and communication (creating videos about Tainacan, giving talks mentioning it). Here, we'll talk about in particular about contributions to this repository.
+Los proyectos libres y de código abierto ofrecen una diversidad de opciones de contribución que van desde la implicación directa con el desarrollo de un software (enviando parches para eliminar un error, implementando nuevas características, creando nuevas pruebas) hasta trabajos relacionados con la localización (traduciendo la interfaz del software), el diseño (trabajos creativos), la experiencia de usuario (probando nuevas iteraciones de Tainacan y reportando problemas), la documentación (contribuyendo a nuestra wiki con nuevos artículos o mejorando los existentes) y la comunicación (creando vídeos sobre Tainacan, dando charlas mencionándolo). Aquí hablaremos en particular de las contribuciones a este repositorio.
 
-### Issue system
-An issue is a thread within the project's GitHub repository focused on debating bugs, feature requests or errors one may stumble upon. To gather as much information as possible and organize discussions to be clearer and more searchable, this repository has a few templates for the most common issues:
+### Sistema de cuestiones (issues)
+Un issue es un hilo dentro del repositorio GitHub del proyecto centrado en debatir bugs, peticiones de funcionalidades o errores con los que uno pueda tropezar. Para recopilar la mayor cantidad de información posible y organizar los debates para que sean más claros y se puedan realizar búsquedas, este repositorio cuenta con algunas plantillas para las cuestiones más comunes:
 
-#### Bug report
-If something is not working properly on Tainacan, use this template.
+#### Informe de error
+Si algo no funciona correctamente en Tainacan, utiliza esta plantilla.
  
-#### Feature request
-If you have any feature ideas you would like to suggest to our developers, use this template.
+#### Petición de características
+Si tienes alguna idea que quieras sugerir a nuestros desarrolladores, utiliza esta plantilla.
 
-A great issue is one that includes a concise description of errors you are stumbling upon along with crucial information such as which version of Tainacan you are using, which web browser, or which WordPress version. It's also important to search our repository for duplicates—and if you find one, opt to participate in the original discussion adding new information instead of creating your own. That will help contributors and users to keep track of a specific subject more easily.
+Un gran problema es aquel que incluye una descripción concisa de los errores con los que te estás topando junto con información crucial como qué versión de Tainacan estás utilizando, qué navegador web o qué versión de WordPress. También es importante que busques duplicados en nuestro repositorio, y si encuentras alguno, opta por participar en la discusión original añadiendo nueva información en lugar de crear la tuya propia. Eso ayudará a los colaboradores y usuarios a seguir la pista de un tema específico más fácilmente.
