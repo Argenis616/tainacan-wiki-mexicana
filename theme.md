@@ -7,7 +7,7 @@ Una de las razones por las que _WordPress_ es tan famoso y versátil es su diver
 En esta página hablamos de:
 
 - Cuáles son [los temas que ofrecen la mejor compatibilidad](#temas-compatibles) para Tainacan y,
-- [Cómo instalar y gestionar temas](#manage-themes) en tu _WordPress_.
+- [Cómo instalar y gestionar temas](#administración-de-temas-en-wordpress) en tu _WordPress_.
 
 ## Temas compatibles
 
@@ -15,7 +15,7 @@ Además de insertar un nuevo campo en tu panel de administración de _WordPress_
 
 Desarrollar un tema compatible no es complicado y tampoco es necesario hacerlo desde cero, ya que muchos se pueden generar a partir de [temas hijo](https://developer.wordpress.org/themes/advanced-topics/child-themes/) de otros que ya existen. Aquí en la Wiki tenemos [una sesión entera](/es-mx/dev/creating-compatible-themes.md) dedicada a enseñar esto a los desarrolladores.
 
-Actualmente, hay un tema desarrollado por la comunidad Tainacan y publicado en [repositorio oficial de WordPress](https://wordpress.org/themes/). Los demás están disponibles a través de GitHub. Para instalar los temas, accede al panel de instalación de temas de WordPress y sigue los pasos de la [sección de instalación](#manage-themes).
+Actualmente, hay un tema desarrollado por la comunidad Tainacan y publicado en [repositorio oficial de WordPress](https://wordpress.org/themes/). Los demás están disponibles a través de GitHub. Para instalar los temas, accede al panel de instalación de temas de WordPress y sigue los pasos de la [sección de instalación](#administración-de-temas-en-wordpress).
 
 ### Interfaz Tainacan
 
@@ -96,30 +96,30 @@ Creado para el proyecto [Covid-19 - UnB en Acción](http://repositoriocovid19.un
 
 ![Algunas pantallas del tema Veganos](/_assets/themes-veganos.gif)
 
-### Rife Free (Child theme)
+### Rife Free (tema hijo)
 
-This is a [child theme](https://github.com/tainacan/rife-free-child ":ignore") from the popular [Rife Free theme](https://wordpress.org/themes/rife-free/ ":ignore"). It has a dependency on an installed plugin, [Apollo13 Framework extensions](https://apollo13themes.com/rife/free ":ignore"), but in compensation, it brings many customization options, from page and post format to header behavior. Other highlights are
+Este es un [tema hijo](https://github.com/tainacan/rife-free-child ":ignore") del popular [tema Rife Free](https://wordpress.org/themes/rife-free/ ":ignore"). Tiene una dependencia de un plugin instalado, [Apollo13 Framework extensions](https://apollo13themes.com/rife/free ":ignore"), pero en compensación, trae muchas opciones de personalización, desde el formato de página y post hasta el comportamiento de la cabecera. Otros aspectos destacados son
 
-- Specific templates for the Repository, Collection and Term item lists including header images;
-- Specific templates for the item page, including next and previous buttons, which show their thumbnails;
-- Scroll button to the top;
-- Diverse and customizable color palette;
-- Animations and transition effects;
-- List of posts in blocks, optionally in a list of three columns;
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, incluyendo imágenes de cabecera;
+- Plantillas específicas para la página de elementos, incluyendo los botones siguiente y anterior, que muestran sus miniaturas;
+- Botón de desplazamiento a la parte superior;
+- Paleta de colores diversa y personalizable;
+- Animaciones y efectos de transición;
+- Lista de artículos en bloques, opcionalmente en una lista de tres columnas;
 
-![Algumas telas do Tema Rife Free](/pt-br/_assets/gifs/themes-rife-free.gif)
+![Algunas imágenes del Tema Rife Free](/_assets/themes-rife-free.gif)
 
-### Twenty Twenty (Child theme)
+### Twenty Twenty (tema hijo)
 
-Every year WordPress releases an "official theme", which is activated by default in its installations and usually has a popular design, with good application of gutenberg blocks in addition to accessibility and responsiveness tests. To validate our tests with the plugin, we created a child theme of [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), available [at this link](https://github.com/tainacan/TwentyTwentyChild ":ignore").
+Cada año WordPress lanza un "tema oficial", que se activa por defecto en sus instalaciones y suele tener un diseño popular, con buena aplicación de los bloques gutenberg además de pruebas de accesibilidad y responsiveness. Para validar nuestras pruebas con el plugin, creamos un tema hijo de [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), disponible [en este enlace](https://github.com/tainacan/TwentyTwentyChild ":ignore").
 
-![Algumas telas do Tema Twenty Twenty](/pt-br/_assets/gifs/themes-twentytwenty.gif)
+![Algunas imágenes del Tema Twenty Twenty](/_assets/themes-twentytwenty.gif)
 
 ---
 
-## Manage themes on Wordpress
+## Administración de temas en Wordpress
 
-### Video Tutorial: Installing Themes (Portuguese only)
+### Video Tutorial: Instalación de temas (sólo en portugués)
 
 <iframe
     width="560"
@@ -130,27 +130,27 @@ Every year WordPress releases an "official theme", which is activated by default
     allowfullscreen>
 </iframe>
 
-> See also how to install the [Tainacan plugin](/tainacan) for WordPress.
+> Vea también cómo instalar el [plugin Tainacan](/es-mx/tainacan) para WordPress.
 
-### Update a theme
+### Actualizar un tema
 
-1. Access the _WordPress_ Control Panel;
-2. In the left side menu, click on **Appearance**;
-3. Select the submenu **Theme**;
-4. In the block of each theme the message "_New version available. Update now_" is displayed whenever a new version is released;
-5. Click **Update Now** to receive the last stable version of the Theme.
+1. Acceda al panel de control de _WordPress_;
+2. En el menú lateral izquierdo, haz clic en **Apariencia**;
+3. Seleccione el submenú **Tema**;
+4. En el bloque de cada tema aparece el mensaje "_Nueva versión disponible. Actualizar ahora_" aparece cada vez que se publica una nueva versión;
+5. Haga clic en **Actualizar ahora** para recibir la última versión estable del Tema.
 
-### Change or Delete the Theme
+### Cambiar o eliminar el tema
 
-1. Access the _WordPress_ Control Panel
-2. In the left side menu, click on `Appearance`
-3. Select the `Theme submenu`
-4. To change the current theme, activate another theme of your choice
-5. To delete the theme click on theme information in the desired theme block
-6. In the lower right corner click `Delete`
+1. Acceda al panel de control de _WordPress_.
+2. En el menú lateral izquierdo, haga clic en `Apariencia`.
+3. Selecciona el submenú `Tema`.
+4. Para cambiar el tema actual, active otro tema de su elección
+5. Para eliminar el tema haga clic en información del tema en el bloque del tema deseado
+6. En la esquina inferior derecha, haga clic en `Eliminar`
 
 !> **Warning**: To preserve the settings and navigability of items and collections, use themes compatible with good development practices for Tainacan.
 
-!> **Warning**: Disabling the Tainacan theme affects the display and navigability settings for items and collections in the repository. This operation can only be undone by administrators.
+!> **Atención**: Deshabilitar el tema Tainacan afecta a los ajustes de visualización y navegabilidad de los ítems y colecciones del repositorio. Esta operación sólo puede ser deshecha por los administradores.
 
-!> **Warning**: For safety, it is always recommended to backup the installation before any modification. Delete the subject only if you are sure that there will be no serious loss of information. This operation can only be reversed by restoring backups of the installation.
+!> **Atención**: Por seguridad, se recomienda siempre hacer una copia de seguridad de la instalación antes de cualquier modificación. Elimínela sólo si está seguro de que no se producirá una pérdida grave de información. Esta operación sólo puede revertirse restaurando copias de seguridad de la instalación.
