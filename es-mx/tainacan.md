@@ -1,6 +1,6 @@
 # Cómo instalar el plugin Tainacan en Wordpress
 
-Continuando con la instalación de **Wordpress**, ahora comenzaremos la instalación de **Tainacan**. Si aún no has instalado Wordpress, [consulta este tutorial sobre cómo instalarlo](/es-mx/wordpress#how-to-install-wordpress-on-windows). Si aún no tiene un servidor web en su máquina local, [vea este tutorial](#acceso-a-la-administración).
+Continuando con la instalación de **Wordpress**, ahora comenzaremos la instalación de **Tainacan**. Si aún no has instalado Wordpress, [consulta este tutorial sobre cómo instalarlo](/es-mx/wordpress.md). Si aún no tiene un servidor web en su máquina local, [vea este tutorial](#acceso-a-la-administración).
 
 Si lo prefiere, puede ver los mismos tutoriales en vídeo:
 
