@@ -4,7 +4,7 @@ Desde la versión 0.15 de Tainacan, es posible configurar **roles de usuario** c
 
 Esta función está disponible a través del menú del plugin, al que se puede acceder desde el menú lateral del panel de administración de WordPress:
 
-![Pantalla de gestión de roles de usuario](/es-mx/_assets/images/manage-user-roles-1.png)
+![Pantalla de gestión de roles de usuario](_assets/images/manage-user-roles-1.png)
 
 Sólo los usuarios que tengan el permiso [Gestionar permisos de usuario](/es-mx/capabilities#repositorio-general) pueden acceder a esta pantalla.
 
@@ -18,13 +18,13 @@ Con esta división, tus usuarios que sólo tengan roles de Tainacan no tendrán 
 
 Pulsando _Editar_ en cualquiera de los roles anteriores, aparecerá la siguiente pantalla:
 
-![Pantalla de configuración de roles de usuario en la pestaña del repositorio](/es-mx/_assets/images/manage-user-roles-2.png)
+![Pantalla de configuración de roles de usuario en la pestaña del repositorio](_assets/images/manage-user-roles-2.png)
 
 Además del nombre, puede marcar en las casillas qué permiso está asignado a ese rol de usuario. Tenga en cuenta que, como se explica en la página [permisos](/es-mx/capabilities), algunos permisos afectan a otros. El permiso "Gestionar Tainacan", en este caso, ya otorga al rol todos los demás permisos por defecto.
 
 En la pestaña "Colecciones", podemos gestionar no sólo los permisos que afectan a todas las colecciones, sino también especificar para determinadas colecciones si habrá o no un permiso para ese rol:
 
-![Pantalla de configuración del rol de usuario en la pestaña de Colecciones](/es-mx/_assets/images/manage-user-roles-3.png)
+![Pantalla de configuración del rol de usuario en la pestaña de Colecciones](_assets/images/manage-user-roles-3.png)
 
 En este caso, cualquier permiso que esté marcado para todas las colecciones afectará al permiso del mismo nombre cuando se cambie a las colecciones específicas.
 
@@ -32,7 +32,7 @@ En este caso, cualquier permiso que esté marcado para todas las colecciones afe
 
 <div style="float: right; margin-left: 32px;">
 
-![Crear una función de usuario a partir de otra](/es-mx/_assets/images/manage-user-roles-4.png ":size=220")
+![Crear una función de usuario a partir de otra](_assets/images/manage-user-roles-4.png ":size=220")
 
 </div>
 
