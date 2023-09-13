@@ -277,7 +277,7 @@ No obstante, podemos mencionar algunas de las clases "principales" que pueden in
 
 Así que aquí hay algunos ejemplos de personalizaciones que puedes hacer, ahora que entiendes más del componente de lista de elementos:
 
-1. __Ocultar o cambiar el orden de los elementos__. Supongamos que deseas modificar un poco la sección *paginación*. No quiere que aparezca la selección "Elementos por página" y la selección "Ir a la página" probablemente debería estar después de los enlaces de paginación. Un vistazo a Pagination [component](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/search/pagination.vue ':ignore') y [scss](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_pagination.scss ':ignore') puede darnos una pista sobre qué hacer:
+1. __Ocultar o cambiar el orden de los elementos__. Supongamos que deseas modificar un poco la sección *paginación*. No quiere que aparezca la selección "Elementos por página" y la selección "Ir a la página" probablemente debería estar después de los enlaces de paginación. Un vistazo al [componente de Paginación](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/search/pagination.vue ':ignore') y [scss](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_pagination.scss ':ignore') puede darnos una pista sobre qué hacer:
     ```css
     /* Esconde este, por favor */
     .pagination-area .items-per-page:not(.go-to-page) {
