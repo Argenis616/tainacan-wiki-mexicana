@@ -115,7 +115,7 @@ Además, puedes usar variables css para sobreescribir las propias variables CSS 
 
 ```
 
-?> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda facetada](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
+?> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda por aspectos](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
 
 ## Personalización más avanzada
 
@@ -261,66 +261,66 @@ El árbol de archivos de abajo contiene sólo los elementos que de alguna manera
         └── theme-search.vue
 ```
 
-As you can see, there is a similar structure on both `/src/view/theme-search` and `/src/view/admin` folders, but the last one is considerably more complex. The stuff that is used by both is always inside "admin" as it is the main "module" of the plugin. Because of that, if you want to override any css class, for example, you will probably find its definition inside `/src/view/admin/scss/`. But Vue components have a particularity of allowing `scoped css` inside their code, which means you may find what you are looking for inside one of the `.vue` files across the code as well.
+Como puedes ver, hay una estructura similar en ambas carpetas `/src/view/theme-search` y `/src/view/admin`, pero la última es considerablemente más compleja. Las cosas que son usadas por ambos están siempre dentro de "admin" ya que es el "módulo" principal del plugin. Por eso, si quieres sobreescribir cualquier clase css, por ejemplo, probablemente encontrarás su definición dentro de `/src/view/admin/scss/`. Pero los componentes Vue tienen la particularidad de permitir `scoped css` dentro de su código, lo que significa que también puedes encontrar lo que buscas dentro de uno de los archivos `.vue` a través del código.
 
-Nevertheless, we can mention some of the "main" classes that you may be interested on:
-* `.theme-items-list`: the parent container;
-  * `.filters-menu`: the sidebar container where textual search and filters list lives in;
-  * `.items-list-area`: the container where the search control, the items list itself and the pagination is inside;
-    * `.search-control`: the bar where sorting, displayed metadata and view mode options are available;
-    * `.filter-tags-list`: a container for the filter tags list, only existing when some is applyied;
-    * `.above-search-control`: a container for everything bellow the search control; 
-      * `.table-container>.table-wrapper`: where the items list result is rendered with different view modes;
-      * `.pagination-area`: the footer bar with pagination-related stuff;
+No obstante, podemos mencionar algunas de las clases "principales" que pueden interesarte:
+* `.theme-items-list`: el contenedor padre;
+  * `.filters-menu`: el contenedor de la barra lateral donde vive la búsqueda textual y la lista de filtros;
+  * `.items-list-area`: el contenedor donde está el control de búsqueda, la propia lista de elementos y la paginación;
+    * `.search-control`: la barra donde están las opciones de ordenación, metadatos mostrados y modo de vista;
+    * `.filter-tags-list`: un contenedor para la lista de etiquetas de filtrado, que sólo existe cuando se aplica alguna;
+    * `.above-search-control`: un contenedor para todo lo que hay debajo del control de búsqueda; 
+      * `.table-container>.table-wrapper`: donde se muestra el resultado de la lista de elementos con diferentes modos de visualización;
+      * `.pagination-area`: la barra de pie de página con cosas relacionadas con la paginación;
 
-### Advanced CSS Customizations to the Vue component
+### Personalizaciones CSS avanzadas del componente Vue
 
-So here are a few examples of customizations that you can do, now that you understand more of the Items list component:
+Así que aquí hay algunos ejemplos de personalizaciones que puedes hacer, ahora que entiendes más del componente de lista de elementos:
 
-1. __Hide or change the order of elements__. Let us suppose that you wish to tweak the *pagination* section a bit. You don't want the "Items per Page select" to appear and the "Go to Page" select should probably be after the pagination links. A look into the Pagination [component](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/search/pagination.vue ':ignore') and [scss](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_pagination.scss ':ignore') may give us a hint on what do do:
+1. __Ocultar o cambiar el orden de los elementos__. Supongamos que deseas modificar un poco la sección *paginación*. No quiere que aparezca la selección "Elementos por página" y la selección "Ir a la página" probablemente debería estar después de los enlaces de paginación. Un vistazo a Pagination [component](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/search/pagination.vue ':ignore') y [scss](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_pagination.scss ':ignore') puede darnos una pista sobre qué hacer:
     ```css
-    /* Hide this one, please */
+    /* Esconde este, por favor */
     .pagination-area .items-per-page:not(.go-to-page) {
         display: none;
         visibility: hidden;
     }
-    /* Move this to end of .pagination-area */
+    /* Mueve esto al final de .pagination-area */
     .pagination-area .go-to-page {
         order: 2;
     }
     ```
-2. __Increase the font size of some element__. *Tainacan Interface* font sizes are rather small due to its formal styling, but you can tweak that too looking for *font-size* definitions of your elements. Here are some adjustments made to Items list Search Control (the region where the Sorting option and View Mode selection are available). We may find definitions that affect this [here](), [here]() and [here]():
+2. __Aumentar el tamaño de la fuente de algún elemento__. Los tamaños de fuente de *la interfaz de Tainacan* son más bien pequeños debido a su estilo formal, pero puedes ajustarlo también buscando las definiciones de *font-size* de tus elementos. Aquí hay algunos ajustes hechos al Control de Búsqueda de la lista de Elementos (la región donde la opción de Ordenación y la selección del Modo de Vista están disponibles). Podemos encontrar definiciones que afectan a esto [aquí](), [aquí]() y [aquí]():
     ```css
-    /* This shall increase labels */
+    /* Esto aumentará las etiquetas */
     .search-control-item .label {
         font-size: 1.5rem;
     }
-    /* This will make dropdown buttons and other buttons bigger*/
+    /* Esto hará que los botones desplegables y otros botones sean más grandes*/
     .button:not(.is-small):not(.is-medium):not(.is-large) {
         font-size: 1.5rem !important;
     }
-    /* This one is for dropdown list items */
+    /* Este es para los elementos de la lista desplegable */
     .dropdown .dropdown-menu .dropdown-content .dropdown-item {
         font-size: 1.25rem;
     }
-    /* Finally, for the icon font */
+    /* Por último, para la fuente del icono */
     .theme-items-list .search-control .gray-icon i::before, 
     .theme-items-list .search-control .gray-icon .icon i::before {
         font-size: 1.5rem;
     }
     ```
-    Of course, you need to take care of margins and paddings here too, depending on how much you are changing these values;
-3. __Ajust the list container according to site margin__. In many themes, a page has a lateral margin, that keeps content inside a container of a certain `max-width`, which can leave the items list a bit...tight. The best way to handle this is to have a [Custom Template](/dev/custom-templates.md) for the items list that provides proper container classes for the list section. If you are not able to do that, you can still solve it with negative margins and a bit of work:
+    Por supuesto, aquí también tienes que tener cuidado con los márgenes y los paddings, dependiendo de cuánto estés cambiando estos valores;
+3. __Ajustar el contenedor de la lista según el margen del sitio__. En muchos temas, una página tiene un margen lateral, que mantiene el contenido dentro de un contenedor de un cierto `max-width`, que puede dejar la lista de elementos un poco...apretada. La mejor manera de manejar esto es tener una [Plantilla Personalizada](/es-mx/dev/custom-templates.md) para la lista de elementos que proporcione las clases contenedoras adecuadas para la sección de la lista. Si no puedes hacer eso, aún puedes solucionarlo con márgenes negativos y un poco de trabajo:
     ```css
-    /* Replace $max-width by your container max-width. Remember that it may change according to the screen size, which can be adapted with media queries. /*
-    /* The items list container */
+    /* Reemplaza $max-width por el max-width de tu contenedor. Recuerda que puede cambiar según el tamaño de la pantalla, que se puede adaptar con media queries. /*
+    /* El contenedor de la lista de elementos */
     .theme-items-list {
         width: 100%;
         margin-left: calc( - (100vw - $max-width) / 2);
         margin-right: calc( - (100vw - $max-width) / 2);
     }
     ```
-4. __Change width of filters list__. Here is a more tricky one. Because of its scroll logic, the `#filters-desktop-aside` element has a position absolute (you can check this [here]()). This means that changing its width will alson require an adjustment to `#items-list-area`, which is right aside it:
+4. __Cambiar el ancho de la lista de filtros__. Aquí hay uno más complicado. Debido a su lógica de scroll, el elemento `#filters-desktop-aside` tiene una posición absoluta (puedes comprobarlo [aquí]()). Esto significa que cambiar su anchura también requerirá un ajuste en `#items-list-area`, que está justo a su lado:
     ```css
     #filters-desktop-aside {
         min-width: 15%;
@@ -330,4 +330,4 @@ So here are a few examples of customizations that you can do, now that you under
         margin-left: 15%;
     }
     ```
-    We use the *id* `#filters-desktop-aside` instead of the *class* `.filters-menu` because that would also affect the filters modal that appear on the mobile version.
+    Usamos el *id* `#filters-desktop-aside` en lugar de *class* `.filters-menu` porque eso también afectaría al modal de filtros que aparece en la versión móvil.
