@@ -64,66 +64,66 @@ Como vimos en nuestra introducción de [introduction about creating compatible t
 | `$is_forced_view_mode`                       | `bool`      | `false`      | Ignora las preferencias del usuario para mostrar siempre el modo de vista elegido por defecto                               |   |
 | `$enabled_view_modes`                        | `string[]`  | Todos los modos de vista son registrados para el repositorio y la página de términos. Modos de vista habilitados en la configuración de la colección para la lista de elementos de la colección                                                        |   |
 
-Notice that `$enabled_view_modes` are overided by collections setting when the items list is a collection items archive.
+Tenga en cuenta que `$enabled_view_modes` son anulados por la configuración de colecciones cuando la lista de elementos es un archivo de elementos de colección.
 
-### Passing `css` variables to the items list class;
+### Pasando variables `css` a la clase items list;
 
-Besides that, you can use css variables to override Tainacan's own CSS variables. You can check all the existing ones [in this file](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_custom_variables.scss). Notice, although, that it wouldn't be interesting to override them directly on the `:root` selector, as this would affect all of your Tainacan Admin styles as well. For themes, a better approach would be to override them directly on the `.theme-items-list` class. Bellow you can see the ones we consider more relevant for this part of the rendered Vue.js content:
+Además, puedes usar variables css para sobreescribir las propias variables CSS de Tainacan. Puedes comprobar todas las existentes [en este archivo](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_custom_variables.scss). Ten en cuenta, sin embargo, que no sería interesante anularlas directamente en el selector `:root`, ya que esto afectaría también a todos tus estilos de Tainacan Admin. Para los temas, una mejor aproximación sería sobreescribirlos directamente en la clase `.theme-items-list`. A continuación puedes ver los que consideramos más relevantes para esta parte del contenido renderizado de Vue.js:
 
 ```css
 
 .theme-items-list {
-    /* Form and Text styling */
-    --tainacan-input-color: #1d1d1d; /* Not quite black */
+    /* Estilización de formularios y textos */
+    --tainacan-input-color: #1d1d1d; /* No es negro del todo */
     --tainacan-input-background-color: #fff;
-    --tainacan-input-border-color: #dbdbdb; /* Some input borders disabled state colors */
+    --tainacan-input-border-color: #dbdbdb; /* Algunos bordes de entrada desactivan los colores de estado */
     --tainacan-label-color: #454647;
     --tainacan-info-color: #555758;
     --tainacan-heading-color: #000;
 
-    /* Skeleton loading color */
+    /* Color de carga del esqueleto */
     --tainacan-skeleton-color: #eee;
 
-    /* Items */
+    /* Elementos */
     --tainacan-item-background-color: #fff;
     --tainacan-item-hover-background-color: #f2f2f2;
     --tainacan-item-heading-hover-background-color: #dbdbdb;
 
-    /* Derived colors */
-    --tainacan-primary: #d9eced; /* Tooltips and selected dropwdown items background (not really a good name, as secondary is the most important color overall) */
-    --tainacan-secondary: #298596; /* Link, active state, accent color! */
+    /* Colores derivados */
+    --tainacan-primary: #d9eced; /* Fondo de los tooltips y de los elementos desplegables seleccionados (en realidad no es un buen nombre, ya que el secundario es el color más importante en general) */
+    --tainacan-secondary: #298596; /* Enlace, estado activo, ¡color acentuado! */
     --tainacan-success: #25a189;
     --tainacan-danger: #a23939; 
     --tainacan-warning: #e69810;
 
-    /* Background */
+    /* Fondo */
     --tainacan-background-color: #fff;
 
     /* Font family and size */
     --tainacan-font-family: Roboto, Source Sans, Helvetica, sans-serif;
-    --tainacan-base-font-size: 1em; /* 16px on most browsers, but not necessarly in your theme. The items list will get the next parent that has font-size value defined. */
+    --tainacan-base-font-size: 1em; /* 16px en la mayoría de los navegadores, pero no necesariamente en su tema. La lista de elementos obtendrá el siguiente padre que tenga definido el valor de font-size. */
 
-    /* Filter Menu Width when not a modal */
+    /* Filtra el ancho del menú cuando no es modal */
     --tainacan-filter-menu-width-theme: 20%;
 
-    /* One column is 1/24 and it is used a lot in the horizontal space distribution */
+    /* Una columna es 1/24 y se usa mucho en la distribución del espacio horizontal */
     --tainacan-one-column: 4.16667%;
 
-    /* Not really used in EVERY container, but a rather frequent value */
+    /* No se utiliza realmente en TODOS los contenedores, pero es un valor bastante frecuente */
     --tainacan-container-padding: 25px;
 }
 
 ```
 
-?> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
+?> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda facetada](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
 
-## Further customization
+## Personalización más avanzada
 
-If you want to perform more advanced customization, you should take a look at where is the source code of each part of the list, so that if you need to change CSS for example, you can see where to look for class definitions.
+Si quieres realizar una personalización más avanzada, deberías echar un vistazo a dónde está el código fuente de cada parte de la lista, de forma que si necesitas cambiar el CSS por ejemplo, puedas ver dónde buscar las definiciones de clases.
 
-### The Vue component file structure
+### La estructura de archivos del componente Vue
 
-The file tree bellow contains only the elements that are in somehow imported to the ThemeSearch bundle - other files related to the admin panel are hidden for simplicity:
+El árbol de archivos de abajo contiene sólo los elementos que de alguna manera se importan al paquete ThemeSearch - otros archivos relacionados con el panel de administración están ocultos por simplicidad:
 
 ```
 /src/views
