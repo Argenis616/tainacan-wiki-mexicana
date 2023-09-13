@@ -27,7 +27,7 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Instalación](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/es-mx/install)
+[![Instalación](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/es-mx/instalacao)
 
 </div>
 <div class="panel-heading">
