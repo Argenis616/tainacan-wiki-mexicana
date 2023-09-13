@@ -41,34 +41,34 @@ Este es el tema estándar del proyecto Tainacan y está disponible en los repos 
 - Bloques Gutenberg estándar estilizados según la identidad visual del tema;
 - Soporte de barra lateral;
 
-![Some screens of the Tainacan Interface theme](/_assets/gifs/themes-tainacan-interface.gif)
+![Algunas pantallas del tema Interfaz Tainacan](/_assets/gifs/themes-tainacan-interface.gif)
 
 ### Blocksy
 
-The second most recommended that we mention here is not a child theme, but a popular theme [available on the WordPress repository](https://wordpress.org/themes/blocksy/ ":ignore"). It's integration with Tainacan is provided via a plugin, also released on [the WordPress repository](https://wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Having both the plugin and the theme (or a child theme of it) activated, you'll have access to a series of settings available for the customizer. We cover these options in details on [the release post](https://tainacan.org/en/blog/2021/06/14/using-the-blocksy-theme-with-tainacan/ ":ignore") and it is also a good idea to check their [official page](https://creativethemes.com/blocksy/ ":ignore"). To cover a bit its features:
+El segundo más recomendado que mencionamos aquí no es un tema hijo, sino un tema popular [disponible en el repositorio de WordPress](https://wordpress.org/themes/blocksy/ ":ignore"). Su integración con Tainacan se realiza a través de un plugin, también disponible en [el repositorio de WordPress](https://wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Teniendo tanto el plugin como el tema (o un tema hijo del mismo) activados, tendrás acceso a una serie de ajustes disponibles para el personalizador. Cubrimos estas opciones en detalle en [el post de lanzamiento](https://tainacan.org/en/blog/2021/06/14/using-the-blocksy-theme-with-tainacan/ ":ignore") y también es una buena idea revisar su [página oficial](https://creativethemes.com/blocksy/ ":ignore"). Para cubrir un poco sus características
 
-- Specific templates for the Repository, and Term item lists, including separate settings for each Collection, with various configurations including:
-  - Selecting different color palettes;
-  - Hiding various search control elements;
-  - Change filter bar behavior, such as its size or whether it appears hidden at first;
-  - Tweaking a bit of the header layout;
-- Specific template for the item's page of each collection, with several options, among them:
-  - Change the order in which attachments, metadata and document are displayed including the possibility of having two columns, with attachments aside of the metadata;
-  - Display the metadata list in more than one column;
-  - Dispaly metadata labels aside of their values;
-  - Show attachments as a carousel and integrate the document in this same list;
-  - Display a custom header that uses featured image as a banner;
-  - Download button on the Document;
-  - Item navigation (next and previous);
-  - Related Items Section;
-  - Custom share box;
-- Customizable color palette;
-- Automatic "More" dropdown button added to menu when number of items doesn't fit into current screen;
-- Many other layout options available thanks to the theme features;
+- Plantillas específicas para el Repositorio, y listas de elementos de Términos, incluyendo configuraciones separadas para cada Colección, con varias configuraciones incluyendo:
+  - Selección de diferentes paletas de colores;
+  - Ocultar varios elementos de control de búsqueda;
+  - Cambiar el comportamiento de la barra de filtros, como su tamaño o si aparece oculta al principio;
+  - Ajustar un poco el diseño de la cabecera;
+- Plantilla específica para la página del artículo de cada colección, con varias opciones, entre ellas:
+  - Cambiar el orden en que se muestran los archivos adjuntos, los metadatos y el documento, incluyendo la posibilidad de tener dos columnas, con los archivos adjuntos a un lado de los metadatos;
+  - Mostrar la lista de metadatos en más de una columna;
+  - Dispaly etiquetas de metadatos aparte de sus valores;
+  - Mostrar los archivos adjuntos como un carrusel e integrar el documento en esta misma lista;
+  - Mostrar una cabecera personalizada que utilice la imagen destacada como banner;
+  - Botón de descarga en el documento;
+  - Navegación por artículos (siguiente y anterior);
+  - Sección de elementos relacionados;
+  - Cuadro para compartir personalizado;
+- Paleta de colores personalizable;
+- Botón desplegable automático "Más" añadido al menú cuando el número de elementos no cabe en la pantalla actual;
+- Muchas otras opciones de diseño disponibles gracias a las características del tema;
 
-![Some screens from Blocksy theme](/pt-br/_assets/gifs/themes-blocksy.gif)
+![Algunas pantallas del tema Blocksy](/pt-br/_assets/gifs/themes-blocksy.gif)
 
-### Identidade do Governo (IDG-WP)
+### Identidad gubernamental (IDG-WP)
 
 This WordPress theme was developed by a team of volunteers linked to the former Brazilian Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
 
