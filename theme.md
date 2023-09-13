@@ -41,7 +41,7 @@ Este es el tema estándar del proyecto Tainacan y está disponible en los repos 
 - Bloques Gutenberg estándar estilizados según la identidad visual del tema;
 - Soporte de barra lateral;
 
-![Algunas pantallas del tema Interfaz Tainacan](/_assets/gifs/themes-tainacan-interface.gif)
+![Algunas pantallas del tema Interfaz Tainacan](/_assets/themes-tainacan-interface.gif)
 
 ### Blocksy
 
@@ -66,35 +66,35 @@ El segundo más recomendado que mencionamos aquí no es un tema hijo, sino un te
 - Botón desplegable automático "Más" añadido al menú cuando el número de elementos no cabe en la pantalla actual;
 - Muchas otras opciones de diseño disponibles gracias a las características del tema;
 
-![Algunas pantallas del tema Blocksy](/pt-br/_assets/gifs/themes-blocksy.gif)
+![Algunas pantallas del tema Blocksy](/_assets/themes-blocksy.gif)
 
 ### Identidad gubernamental (IDG-WP)
 
-This WordPress theme was developed by a team of volunteers linked to the former Brazilian Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
+Este tema de WordPress fue desarrollado por un equipo de voluntarios vinculados a la antigua Secretaría de Cultura de Brasil, con el objetivo de estandarizar varios sitios de WordPress utilizados por el gobierno federal. Un ejemplo es el propio sitio web de la [Secretaría de Cultura](http://cultura.gov.br/). El [tema original](https://github.com/culturagovbr/IDG-WP) en sí no tiene soporte para Tainacan, pero con la demanda de varios museos vinculados a Ibram para utilizarlo, se creó un _fork_, una variación del tema, en [otro repositorio](https://github.com/medialab-ufg/IDG-WP ":ignore"). Desgraciadamente, este proyecto está necesitado de mantenedores y puede presentar algunos problemas. Destacamos sus características:
 
-- Specific templates for the Repository, Collection and Term item lists but no header images;
-- Specific templates for the item page, including attachment carousel;
-- Standard integration with the Federal Government's link bar and accessibility;
-- Support for most gutenberg blocks;
-- Two menu locations: the main bar and the hidden panel next to it;
-- News carousel on the home page;
-- Customization of sessions on the home page via plugins;
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, pero sin imágenes de cabecera;
+- Plantillas específicas para la página de artículos, incluido el carrusel de anexos;
+- Integración estándar con la barra de enlaces y accesibilidad del Gobierno Federal;
+- Compatibilidad con la mayoría de los bloques gutenberg;
+- Dos ubicaciones del menú: la barra principal y el panel oculto junto a ella;
+- Carrusel de noticias en la página de inicio;
+- Personalización de sesiones en la página de inicio mediante plugins;
 
-![Some screens from IDG-WP theme](/pt-br/_assets/gifs/themes-idg-wp.gif)
+![Algunas pantallas del tema de IDG-WP](/_assets/themes-idg-wp.gif)
 
-### Veganos (Child Theme)
+### Veganos (Tema hijo)
 
-Created for the project [Covid-19 - UnB in Action](http://repositoriocovid19.unb.br/ ":ignore"), this is a theme son of the theme [Veganos](https://wordpress.org/themes/veganos/ ":ignore"), therefore, besides downloading it from its [repository](https://github.com/tainacan/tainacan-unb-covid-19 ":ignore") it is also necessary to install the parent theme. Its most remarkable feature is the "wavy" format of the header images, among others:
+Creado para el proyecto [Covid-19 - UnB en Acción](http://repositoriocovid19.unb.br/ ":ignore"), se trata de un tema hijo del tema [Veganos](https://wordpress.org/themes/veganos/ ":ignore"), por lo que además de descargarlo desde su [repositorio](https://github.com/tainacan/tainacan-unb-covid-19 ":ignore") es necesario instalar el tema padre. Su característica más destacable es el formato "ondulado" de las imágenes de cabecera, entre otras:
 
-- Specific templates for the Repository, Collection and Term item lists including header and stylized images with some borders and shadows;
-- Item page specific templates, with metadata listed before the Document and attachments;
-- Listing of posts in blocks, in a two-column list;
-- Stylized buttons with wavy effect;
-- Customizable color palette
-- Standard integration with the Federal Government's link holder and accessibility;
-- Integration with the UnB menu bar (if you don't want to use it, just pull from the [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") of GitHub);
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, incluyendo cabecera e imágenes estilizadas con algunos bordes y sombras;
+- Plantillas específicas para las páginas de artículos, con metadatos listados antes del Documento y los adjuntos;
+- Listado de entradas en bloques, en una lista de dos columnas;
+- Botones estilizados con efecto ondulado;
+- Paleta de colores personalizable
+- Integración estándar con el portaenlaces y la accesibilidad del Gobierno Federal;
+- Integración con la barra de menú de UnB (si no quieres usarla, sólo tienes que tirar de la [rama 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") de GitHub);
 
-![Some screens from Veganos theme](/pt-br/_assets/gifs/themes-veganos.gif)
+![Algunas pantallas del tema Veganos](/_assets/themes-veganos.gif)
 
 ### Rife Free (Child theme)
 
