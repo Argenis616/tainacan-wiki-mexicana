@@ -7,7 +7,7 @@ Como se explica en nuestra documentación para [Bloques Gutenberg](/es-mx/gutenb
 Aunque esto debería funcionar de inmediato, hay cosas que puedes hacer, como desarrollador, para mejorar la experiencia del usuario con esta nueva característica. Las demostraremos aquí, usando la mayor parte del código de la [Interfaz Tainacan](https://wordpress.org/themes/tainacan-interface/) como ejemplo:
 
 - [Soporte para el Tema Gutenberg](#soporte-para-el-tema-gutenberg)
-  - [Soporte de nuevas opciones de alineación](#soporte-de-nuevas-opciones-de-alineacion)
+  - [Soporte de nuevas opciones de alineación](#soporte-de-nuevas-opciones-de-alineación)
   - [Añadir soporte de esquema de color a los bloques](#agregar-combinaciones-de-colores-a-los-bloques)
 
 ## Soporte de nuevas opciones de alineación
