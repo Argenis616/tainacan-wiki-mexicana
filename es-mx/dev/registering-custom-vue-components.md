@@ -16,14 +16,14 @@ Aquí echamos un vistazo a los detalles de:
 
 Cada componente global en nuestro código Vue.JS está registrado en el archivo `/src/views/admin/js/main.js` (para el panel Administrativo) o dentro del `/src/views/theme-search/theme-main.js` (para el bundle que renderiza la [Lista de Items](/es-mx/dev/the-vue-items-list-component.md)). Estos archivos suelen tener tres secciones:
 
-1. The imports, that load libraries from the plugin bundle, such as `import VueMasonry from 'vue-masonry-css';` and `import FilterNumeric from '../../admin/components/filter-types/numeric/Numeric.vue';`;
-2. The components and plugins registrations to the global Vue instance, such as `Vue.use(VueMasonry);` and `Vue.component('tainacan-filter-numeric', FilterNumeric);`;
-3. The `new Vue(...)` instantiation, passing all the necessary settings.
+1. Las importaciones, que cargan librerías del paquete de plugins, como `import VueMasonry from 'vue-masonry-css';` e `import FilterNumeric from '../../admin/components/filter-types/numeric/Numeric.vue';`;
+2. Los registros de componentes y plugins en la instancia global de Vue, como `Vue.use(VueMasonry);` y `Vue.component('tainacan-filter-numeric', FilterNumeric);`;
+3. La instanciación `new Vue(...)`, pasando todas las configuraciones necesarias.
 
-Because of this process, tags such as `<masonry>` or `<component is="tainacan-filter-numeric">` are understood by the Vue components across the source code and the registered components are rendered. In order register our own components, we need to *hook into* the steps 1 and 2 described above. That is where the following routine (present on lines 73-78 `/src/views/admin/js/main.js` code and lines 46-51 of `/src/views/theme-search/theme-main.js`) comes in handy:
+Debido a este proceso, etiquetas como `<masonry>` o `<component is="tainacan-filter-numeric">` son entendidas por los componentes Vue a través del código fuente y los componentes registrados son renderizados. Para registrar nuestros propios componentes, necesitamos *engancharnos* a los pasos 1 y 2 descritos anteriormente. Ahí es donde la siguiente rutina (presente en las líneas 73-78 del código `/src/views/admin/js/main.js` y en las líneas 46-51 de `/src/views/theme-search/theme-main.js`) resulta útil:
 
 ```javascript
-/* Registers Extra Vue Components passed to the window.tainacan_extra_components  */
+/* Registra los componentes extra de Vue pasados a la ventana.tainacan_extra_components  */
 if (typeof window.tainacan_extra_components != "undefined") {
     for (let [extraVueComponentName, extraVueComponentObject] of Object.entries(window.tainacan_extra_components))
         Vue.component(extraVueComponentName, extraVueComponentObject);
