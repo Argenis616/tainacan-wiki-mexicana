@@ -30,7 +30,7 @@ Los _“filtros”_ permiten al usuario cambiar la vista de los _"elementos"_ de
   - **“Tiene miniatura”**: Es posible filtrar los _"elementos"_ que tienen o no una miniatura.
 
 - Los valores de los _“metadados”_ de cada _"elemento"_ aparecerán como opción de selección en cada _"filtro"_, según las configuraciones del _“tipo de metadatos”_;
-- Actualmente, Tainacan cuenta con **nueve tipos de metadatos**, pero pueden desarrollarse nuevos filtros de acuerdo a las necesidades individuales de cada instalación y agregarse al núcleo de Tainacan. Ver el artículo sobre [Desarrollo de plugins](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber más.
+- Actualmente, Tainacan cuenta con **nueve tipos de metadatos**, pero pueden desarrollarse nuevos filtros de acuerdo a las necesidades individuales de cada instalación y agregarse al núcleo de Tainacan. Ver el artículo sobre [desarrollo de plugins](/es-mx/dev/) para saber más.
 
 ## Tipos de filtros
 
