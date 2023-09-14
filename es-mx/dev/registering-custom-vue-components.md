@@ -2,19 +2,19 @@
 
 Cuando crees plugins para extender las funcionalidades de Tainacan, puede que tengas que enfrentarte a código Vue.js, que es el framework JS adoptado por nuestra comunidad para implementar el Panel de Administración de Tainacan. La mayoría de las veces, dispondrás de las herramientas necesarias para realizar el trabajo utilizando las librerías que ya incluye nuestro plugin. Pero en las situaciones en las que eso no es suficiente, surge la necesidad de registrar **componentes VueJS adicionales**. Aquí algunos ejemplos:
 
-* You may need a [Map component](https://github.com/vue-leaflet/Vue2Leaflet ':ignore') for creating a [new Metadata Type](/dev/creating-metadata-type.md) of geo-location;
-* You may want to use a [Color Picker component](https://github.com/xiaokaike/vue-color ':ignore') for registering a [new Filter Type](/dev/creating-filters-type.md) based on colors, or even adding an extra form hook to increment your Collection settings;
-* You may want some [fancy Gallery component](https://github.com/KitchenStories/vue-gallery-slideshow ':ignore') to create a new fullscreen [Extra View Mode](/dev/extra-view-modes);
+* Puede que necesites un [componente Map](https://github.com/vue-leaflet/Vue2Leaflet ':ignore') para crear un [nuevo tipo de metadatos](/es-mx/dev/creating-metadata-type.md) de geolocalización;
+* Es posible que desee utilizar un [componente de selector de color](https://github.com/xiaokaike/vue-color ':ignore') para registrar un [nuevo tipo de filtro](/es-mx/dev/creating-filters-type.md) basado en colores, o incluso añadir un hook de formulario adicional para incrementar la configuración de su colección;
+* Puede que quieras algún [componente de galería extravagante](https://github.com/KitchenStories/vue-gallery-slideshow ':ignore') para crear un nuevo [modo de vista extra a pantalla completa](/es-mx/dev/extra-view-modes);
 
-We here take a look into the details of:
+Aquí echamos un vistazo a los detalles de:
 
-* How [Global components registration](#global-components-registration) to the Tainacan Vue Instance works.
-* How to [register your custom component](#registering-your-our-custom-component).
-* How to [register third party components](#registering-third-party-components).
+* Cómo funciona el [registro de componentes globales](#registro-de-componentes-globales) en la instancia Vue de Tainacan.
+* Cómo [registrar tu componente personalizado](#registrar-tu-componente-personalizado).
+* Cómo [registrar componentes de terceros](#registrar-componentes-de-terceros).
 
-## Global components registration
+## Registro de componentes globales
 
-Every global component in our Vue.JS code is registered in the `/src/views/admin/js/main.js` file (for the Administrative panel) or inside the `/src/views/theme-search/theme-main.js` (for the bundle that renders the [Items List](/dev/the-vue-items-list-component.md)). These files have usually three sections:
+Cada componente global en nuestro código Vue.JS está registrado en el archivo `/src/views/admin/js/main.js` (para el panel Administrativo) o dentro del `/src/views/theme-search/theme-main.js` (para el bundle que renderiza la [Lista de Items](/es-mx/dev/the-vue-items-list-component.md)). Estos archivos suelen tener tres secciones:
 
 1. The imports, that load libraries from the plugin bundle, such as `import VueMasonry from 'vue-masonry-css';` and `import FilterNumeric from '../../admin/components/filter-types/numeric/Numeric.vue';`;
 2. The components and plugins registrations to the global Vue instance, such as `Vue.use(VueMasonry);` and `Vue.component('tainacan-filter-numeric', FilterNumeric);`;
