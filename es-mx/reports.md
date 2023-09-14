@@ -92,7 +92,7 @@ Al final de la pantalla de informes, se encuentran gráficos relacionados con la
 
 </div>
 
-## Actividades Diarias por Año y Usuarios
+## Actividades diarias por año y usuarios
 
 En este gráfico también se visualiza la cantidad de actividades por usuario, pero con las actividades distribuidas en el eje X, que contiene los últimos 365 días. El primer gráfico muestra la suma total de actividades de todos los usuarios, y debajo están los gráficos de los demás usuarios ordenados por los que tienen el total más alto en este año.
 
