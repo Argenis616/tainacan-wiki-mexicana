@@ -17,7 +17,7 @@ Los desarrolladores de temas interesados en disponer de una lista de elementos *
 
 Esto nos da lo siguiente una vez que entramos en la página de elementos de una colección:
 
-![Plantilla añadida a la página de lista de artículos.](/_assets/images/the-vue-items-list-component-1.png)
+![Plantilla añadida a la página de lista de artículos.](/_assets/the-vue-items-list-component-1.png)
 
 Parece ser mucho más que el simple `<main id='tainacan-items-page' $props ></main>` devuelto al [final de la función de código fuente de las etiquetas de plantilla](https://github.com/tainacan/tainacan/blob/develop/src/classes/theme-helper/template-tags.php#L280 ':ignore'), ¿verdad? 
 
@@ -29,7 +29,7 @@ Sin embargo, como te habrás dado cuenta, *no todo es perfecto*, algunos ajustes
 
 Como desarrollador de temas, no necesitas aprender Vue para usar esta interfaz, pero es importante ver cómo funciona si quieres personalizarla, especialmente su css. El siguiente diagrama nos ayudará en esta misión:
 
-![La arquitectura del componente Vue para la Búsqueda Facetada.](/_assets/images/the-vue-items-list-component-2.png)
+![La arquitectura del componente Vue para la Búsqueda Facetada.](/_assets/the-vue-items-list-component-2.png)
 
 El componente Vue [ThemeSearch]() es un contenedor que contiene todos los componentes que se ven en la figura. Recibe "props", que son la información pasada a la etiqueta `main` generada por `tainacan_the_faceted_search()`. Estos "props" son esenciales para renderizar el resto:
 
