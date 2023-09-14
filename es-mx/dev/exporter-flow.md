@@ -107,7 +107,7 @@ public function __construct($attributes = array()) {
 
 Finalmente, `$this->accept_no_mapping = true;` informa de que también permite a los usuarios exportar elementos en su forma original, sin ningún mapeo. En otras palabras, no es obligatorio elegir un mapeador si se establece en true.
 
-## pasos del exportador
+## Pasos del exportador
 
 Un exportador puede tener varios pasos, que manejarán diferentes partes del proceso. Cada paso será manejado por un callback diferente en la clase del exportador.
 
