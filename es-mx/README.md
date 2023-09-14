@@ -32,7 +32,7 @@ Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enl
 </div>
 <div class="panel-heading">
 
-[Instalación](/es-mx/install)
+[Instalación](/es-mx/instalacao)
 
 </div>
         </div>
