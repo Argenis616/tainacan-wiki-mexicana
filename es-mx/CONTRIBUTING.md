@@ -13,7 +13,7 @@ Para colaborar, sin embargo, tendrá que familiarizarse con nuestras herramienta
 
 Nuestra Wiki está alojada íntegramente en GitHub, en el siguiente repositorio: https://github.com/tainacan/tainacan-wiki. No es necesario tener mucha experiencia con Git para hacer contribuciones ocasionales; la propia plataforma simplifica gran parte del proceso. Por ejemplo, si ves un error ortográfico en un artículo, haz clic en el botón **Editar en github** que aparece en la esquina superior derecha de la página. Se le redirigirá al "código fuente" de esta página:
 
-![Captura de pantalla de la página de edición de contenidos en Github, donde aparece resaltado el botón de edición, formado por un lápiz.](/_assets/images/contributing.png)
+![Captura de pantalla de la página de edición de contenidos en Github, donde aparece resaltado el botón de edición, formado por un lápiz.](_assets/images/contributing.png)
 
 Haciendo clic en el botón de edición con forma de pincel, puedes hacer los cambios que quieras y, al final del formulario, explicar qué cambios se proponen. Al enviar una propuesta de cambio, GitHub está, entre bastidores, creando un _Fork_ para ustedes y aplicando un _Pull-Request_.
 
@@ -210,7 +210,7 @@ El resultado es la siguiente tabla:
 
 ## Contribución avanzada con Docsify
 
-Todo lo que se ha mostrado hasta ahora podría ser [editado directamente mediante GitHub](#editando-arquivos-diretamente-no-github), pero es difícil predecir cómo se verán algunas características más avanzadas, como las imágenes o las pestañas, que sólo pueden verse aunque ya se hayan enviado a la Wiki. Para estas y otras contribuciones más avanzadas, como modificar la estructura de navegación, le sugerimos que pruebe el contenido en su equipo local, lo que requerirá algunos conocimientos adicionales..
+Todo lo que se ha mostrado hasta ahora podría ser [editado directamente mediante GitHub](#editando-archivos-directamente-en-github), pero es difícil predecir cómo se verán algunas características más avanzadas, como las imágenes o las pestañas, que sólo pueden verse aunque ya se hayan enviado a la Wiki. Para estas y otras contribuciones más avanzadas, como modificar la estructura de navegación, le sugerimos que pruebe el contenido en su equipo local, lo que requerirá algunos conocimientos adicionales..
 
 ### Preparando el ambiente
 
