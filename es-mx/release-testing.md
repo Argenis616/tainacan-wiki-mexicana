@@ -10,7 +10,7 @@ Estos son los procedimientos para asegurar que las nuevas versiones del plugin T
 1. Dar a conocer la RC en [comunidad de Tainacan](https://tainacan.discourse.group) para la realización de pruebas de uso;
 2. Realizar las pruebas siguientes [Script de prueba](#script-de-pruebas-de-tainacan) a seguir;
 3. Resolver los problemas encontrados y publicar una nueva versión RC _(Release Candidate)_ hasta que las pruebas no muestren problemas.
-4. A partir de ahí, siga los pasos para [lanzar una nueva versión](/dev/release.md) para Wordpress.
+4. A partir de ahí, siga los pasos para [lanzar una nueva versión](/es-mx/dev/release.md) para Wordpress.
 
 ## Script de pruebas de Tainacan
 
