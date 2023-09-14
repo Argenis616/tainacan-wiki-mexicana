@@ -4,7 +4,7 @@ Se puede hacer mucho para añadir soporte de Tainacan a tu tema usando la lógic
 
 ![Plantilla añadida a la página de lista de items.](/_assets/the-vue-items-list-component-1-new.png)
 
-Parece una potente interfaz de búsqueda facetada, pero definitivamente podríamos hacer algunos ajustes para que encaje mejor con nuestro tema padre. Resulta que esta página funciona con una estrategia muy diferente, que se explica en detalle en [la sección "Vue Items List Component"](/es-mx/dev/the-vue-items-list-component.md). 
+Parece una potente interfaz de búsqueda facetada, pero definitivamente podríamos hacer algunos ajustes para que encaje mejor con nuestro tema padre. Resulta que esta página funciona con una estrategia muy diferente, que se explica en detalle en [la sección "El componente de lista de elementos Vue"](/es-mx/dev/the-vue-items-list-component.md). 
 
 > En resumen, **la lista de elementos devuelta por _tainacan_the_faceted_search()_ es en realidad un componente Vue.js**, renderizado en el lado del cliente. La mayor parte de su código se comparte con la versión del panel de administración de la lista de elementos. 
 
