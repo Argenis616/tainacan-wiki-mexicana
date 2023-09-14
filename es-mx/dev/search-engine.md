@@ -1,6 +1,6 @@
 # Buscador
 
-Además de la [búsqueda facetada](faceted-search.md), que permite a los usuarios filtrar artículos por metadatos específicos, Tainacan también ofrece una búsqueda textual libre.
+Además de la [búsqueda facetada](/es-mx/dev/faceted-search.md), que permite a los usuarios filtrar artículos por metadatos específicos, Tainacan también ofrece una búsqueda textual libre.
 
 Por defecto, cuando se utiliza esta opción para buscar, WordPress sólo busca dentro del Título (post_title) y la Descripción (post_content). Esto, por supuesto, es muy limitado, y este artículo presenta y discute el enfoque que Tainacan tomará para enfrentar este problema.
 
