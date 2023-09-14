@@ -432,7 +432,7 @@ Cada custom post type tiene 3 metacaps:
 
 Bien, ahora que entendemos lo que son los metacaps podemos seguir el flujo de trabajo:
 
-Cada vez que `current_user_can()` o `user_can()` son llamados, WordPress termina llamando a [`WP_User::has_cap`].(https://developer.wordpress.org/reference/classes/wp_user/has_cap/).
+Cada vez que `current_user_can()` o `user_can()` son llamados, WordPress termina llamando a [`WP_User::has_cap`](https://developer.wordpress.org/reference/classes/wp_user/has_cap/).
 
 Lo primero que hace este método es pasar el `$cap` requerido que se está comprobando a través de la función [`map_meta_cap`](https://developer.wordpress.org/reference/functions/map_meta_cap/). A continuación, esta función comprueba si `$cap` es una meta_cap y formula las preguntas teniendo en cuenta el contexto pasado en parámetros adicionales. Entonces devuelve `una o más` capacidades a comprobar.
 
