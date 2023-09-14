@@ -8,7 +8,7 @@ Añade soporte para documentos con modelos 3D utilizando [3D HOP](http://3dhop.n
 
 ## Descarga
 
-Descargar el archivo [.zip](https://github.com/tainacan/wordpress-3dhop/archive/master.zip) del [repositorio Github](https://github.com/tainacan/wordpress-3dhop) y siga las instrucciones de [la página plugins](/plugins#instalación-de-plugins) para instalarlo.
+Descargar el archivo [.zip](https://github.com/tainacan/wordpress-3dhop/archive/master.zip) del [repositorio Github](https://github.com/tainacan/wordpress-3dhop) y siga las instrucciones de [la página plugins](/es-mx/plugins#instalación-de-plugins) para instalarlo.
 
 ## Configuración
 
