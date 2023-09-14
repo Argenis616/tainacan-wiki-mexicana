@@ -1,12 +1,12 @@
-# Normas de mapeo
+# Mapping Standards
 
-Las normas de mapeo son declaraciones de estándares de metadatos. Una vez que están disponibles y activadas en su repositorio, puede asignar los metadatos de sus colecciones a ellas.
+Mapping Standards are declarations of standards of metadata. Once they are available and activated in your repository, you can map the metadata of your collections to them.
 
-## Estructura
+## Structure
 
-Una norma de mapeo tiene los siguientes atributos.
+A Mapping Standard has the following attributes.
 
-### Nombre
+### Name
 
 ```php
 String $name
@@ -14,20 +14,20 @@ String $name
 
 The name of the Mapping Standard.
 
-### Metadato
+### Metadata
 
 ```php
 Array or false $metadata
 ```
 
-Una lista de metadatos, términos o atributos que tiene este mapeo. Estos son los elementos con los que podrá mapear los metadatos de su colección.
+A list of metadata, terms or attributes that this mapping has. These are the element you will be able to map your Collection's Metadata.
 
-Cada metadato tiene los siguientes atributos:
+Each metadatum has the following attributes:
 
-* `slug` - El nombre del metadato, que hace referencia al nombre del atributo en el vocabulario u ontología de origen. (por ejemplo titulo)
+* `slug` - The metadatum name, that refers to the name of the attribute in the origin vocabulary or ontology (e.g. title)
 * `label` - The human-readable name
-* `URI` - El URI de este término/atributo en la Ontología/Vocabulario de origen
-* `metadata_type` - El tipo preferido para el metadato
+* `URI` - The URI of this term/attribute in the origin Ontology/Vocabulary
+* `metadata_type` - The preferred type for the metadatum
 
 Array of:
 ```php
@@ -38,13 +38,13 @@ Array of:
 ]
 ```
 
-Permitir metadatos personalizados adicionales
+### Allow additional custom metadata
 
-	Booleano $allow_extra_metadata
+	Boolean $allow_extra_metadata
 
-Booleano que indica si esta asignación permite añadir metadatos personalizados adicionales.
+Boolean indicating whether this mapping allows additional custom metadata to be added.
 
-### URL de contexto / URL de vocabulario
+### Context URL / Vocab URL
 
 	String $context_url
 
@@ -56,23 +56,23 @@ The URL of the Ontology or vocabulary. For example `http://schema.org` or  `http
 
 The Class of the ontology that this mapping refers to. For example `CreativeWork`, which is a class of Schema.org, if applied
 
-###  Encabezado
+### Header
 
-	Cadena $header
+	String $header
 
-La cabecera a añadir a la respuesta API, como para Dublin Core, si necesitamos añadir RDF a la cabecera xml cuando usamos Dublin Core como mapeador, así:
+The header to be append to API answer, like for Dublin Core, if we need to add RDF to xml header when using Dublin Core as mapper, so:
 ```php
 public $header = '<?xml version="1.0"?><!DOCTYPE rdf:RDF SYSTEM "http://dublincore.org/2000/12/01-dcmes-xml-dtd.dtd"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" ></rdf:RDF>';
 ```
 
-### Prefiijo
+### Prefix
 
 	String $prefix
 	
-El prefijo opcional para las etiquetas de las claves, como `dc:` para Dublin Core en la exposición XML. 
+The optional prefix for the key labels, like `dc:` for Dublin Core in XML exposing. 
 
-### Registrar un nuevo mapeador
-Para registrar un nuevo mapeador, la acción debe añadirse al hook `tainacan-register-mappers`, como:
+### Registering a new mapper
+For register a new mapper, the action needs to be added to `tainacan-register-mappers` hook, like:
 ```php
 	function myNewMapper($exposers) {
 		$exposers->register_exposer_mapper('Tainacan\Exposers\Mappers\NewMapper');
@@ -80,7 +80,7 @@ Para registrar un nuevo mapeador, la acción debe añadirse al hook `tainacan-re
 	add_action('tainacan-register-mappers', 'myNewMapper');
 ```
 
-## Ejemplo
+## Examples
 
 ```php
 namespace Tainacan\Exposers\Mappers;
