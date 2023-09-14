@@ -1,12 +1,12 @@
-# Cómo crear un Expositor
+# How to create an Exposer
 
-Los Expositores son clases que implementan un nuevo expositor que puede ser utilizado por Tainacan para exponer el contenido de un repositorio a través de una API.
+Exposers are classes that implement a new Exposer that can be used by Tainacan to expose the content of a repository via API.
 
-Para crear un nuevo exposer básicamente tienes que crear una clase Exposer y registrarla.
+In order to create a new exposer you basically have to create an Exposer class and register it.
 
-## Creación de una clase expositora
+## Creating an Exposer class
 
-Crear una clase que extienda `\Tainacan\Exposers\Exposer`.
+Create a class that extends `\Tainacan\Exposers\Exposer`.
 
 ```php 
 <?php 
@@ -17,15 +17,15 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 ```
 
-En esta clase tendrás que configurar algunos atributos y métodos:
+In this class you will have to set up some attributes and methods:
 
-### Atributos
+### Attributes
 
-#### Babosa
+#### Slug
 
 **String $slug**
 
-Una versión URL amigable del nombre del expositor, que se utilizará como parámetro en la solicitud de API informando de que desea obtener los datos utilizando este expositor.
+A URL friendly version of the Exposer name, to be used as a parameter to the API request informing you want to get the data using this exposer.
 
 ```php 
 <?php 
@@ -38,11 +38,11 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 ```
 
-#### Estándar de mapeo soportado
+#### Supported Mapping Standard
 
-**Array o verdadero $mappers**
+**Array or true $mappers**
 
-Una lista de estándares de mapeo que soporta este expositor. Esto significa que cuando alguien solicite recibir datos a través de este expositor, también podrá elegir qué estándar de mapeo quiere que se sirva el contenido. Si se establece en `true` el expositor aceptará todos los estándares de mapeo.
+A list of mapping standards that is exposer supports. This means that whenever someone requests to receive data via this exposer, he/she will also be able to choose which mapping standard they want the content to be served. If set to `true` the exposer will accept all mapping standards.
 
 ```php 
 <?php 
@@ -56,7 +56,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 ```
 
-o 
+or 
 
 ```php 
 <?php 
@@ -64,16 +64,16 @@ o
 class MyExposer extends \Tainacan\Exposers\Exposer {
 	
 	public $slug = 'my-exposer';
-	public $mappers = ['dublin-core']; // indica que este expositor sólo servirá datos mapeados con dublin core mapper
+	public $mappers = ['dublin-core']; // indicates that this exposer will only serve data mapped to dublin core mapper
 	
 }
 ```
 
-#### No aceptar normas cartográficas 
+#### Accept no Mapping Standards 
 
-**Booleano $accept_no_mapper**
+**Bool $accept_no_mapper**
 
-Indica si este expositor acepta servir datos en su forma nativa, sin ningún estándar de mapeo.
+Indicates whether this exposer accepts to serve data in its native form, without any mapping standards.
 
 ```php 
 <?php 
@@ -81,19 +81,19 @@ Indica si este expositor acepta servir datos en su forma nativa, sin ningún est
 class MyExposer extends \Tainacan\Exposers\Exposer {
 	
 	public $slug = 'my-exposer';
-	public $mappers = ['dublin-core']; // indica que este expositor sólo servirá datos mapeados con dublin core mapper
+	public $mappers = ['dublin-core']; // indicates that this exposer will only serve data mapped to dublin core mapper
 	public $accept_no_mapper = true; 
 }
 ```
 
-### Métodos
+### Methods
 
-Ahora que has declarado los atributos básicos de tu Expositor, hay dos métodos que debes implementar.
+Now that you have declared the basic attributes of your Exposer, there are two methods you must implement.
 
 
 #### __construct()
 
-En este método debe llamar a `set_name()` y `set_description()` para identificar su expositor.
+In this method you must call `set_name()` and `set_description()` to identify your exposer.
 
 ```php 
 <?php 
@@ -101,7 +101,7 @@ En este método debe llamar a `set_name()` y `set_description()` para identifica
 class MyExposer extends \Tainacan\Exposers\Exposer {
 	
 	public $slug = 'my-exposer';
-	public $mappers = ['dublin-core']; // indica que este expositor sólo servirá datos mapeados con dublin core mapper
+	public $mappers = ['dublin-core']; // indicates that this exposer will only serve data mapped to dublin core mapper
 	public $accept_no_mapper = true; 
 	
 	public function __construct() {
@@ -112,24 +112,24 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 }
 ```
 
-**Nota**: La razón por la que Nombre y la Descripción se declaran de esta manera, y no como atributos, es para permitirle localizar sus cadenas a diferentes idiomas. Por favor, consulte la documentación de WordPress para aprender a internacionalizar su plugin.
+**Note**: The reason Name and Description are declared this way, and not as attributes, is to allow you to localize your strings to different languages. Please refer to the WordPress documentation to learn how to internationalize your plugin.
 
 
 #### rest_request_after_callbacks()
 
-Aquí es donde ocurre toda la magia.
+Now, this is where all the magic happens!
 
-Este método será llamado justo antes de que la API devuelva los datos al cliente.
+This method will be called right before the API returns the data to the client.
 
-Te dará todos los elementos que recibió, en la forma en que estaban a punto de ser servido en el formato JSON por defecto, y le permiten transformarlo.
+It will give you all the items it received, in the way they were about to be served in the default JSON format, and allow you to transform it.
 
-Recibe 3 parámetros:
+It receives 3 parameters:
 
-* $response: una instancia de `\WP_REST_Response` object 
-* $handler: una instancia de `\WP_REST_Server` object 
-* $request: una instancia de `\WP_REST_Request` object 
+* $response: an instance of the `\WP_REST_Response` object 
+* $handler: an instance of the `\WP_REST_Server` object 
+* $request: an instance of the `\WP_REST_Request` object 
 
-Este método debe devolver la versión modificada del objeto `\WP_REST_Response`.
+This method has to return the modified version of the `\WP_REST_Response` object.
 
 ```php 
 <?php 
@@ -137,7 +137,7 @@ Este método debe devolver la versión modificada del objeto `\WP_REST_Response`
 class MyExposer extends \Tainacan\Exposers\Exposer {
 	
 	public $slug = 'my-exposer';
-	public $mappers = ['dublin-core']; // indica que este expositor sólo servirá datos mapeados con dublin core mapper
+	public $mappers = ['dublin-core']; // indicates that this exposer will only serve data mapped to dublin core mapper
 	public $accept_no_mapper = true; 
 	
 	public function __construct() {
@@ -164,9 +164,9 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 ```
 
 
-### Registrar un nuevo expositor
+### Registering a new exposer
 
-Para registrar un nuevo expositor, la acción necesita ser añadida al hook `tainacan-register-exposers`, como:
+To register a new exposer, the action need to be added to the `tainacan-register-exposers` hook, like:
 ```php 
 <?php
 	function registerMyExposer($exposers) {
@@ -175,9 +175,9 @@ Para registrar un nuevo expositor, la acción necesita ser añadida al hook `tai
 	add_action('tainacan-register-exposers', 'registerMyExposer');
 ```
 
-### Ejemplo completo
+### Full Example
 
-Este es un ejemplo completo de un plugin que implementa un simple expositor de texto
+This is a full example of a plugin that implements a simple text exposer
 
 ```php 
 <?php
@@ -190,7 +190,7 @@ function myNewExposer($exposers) {
 	
 	class TxtExposer extends \Tainacan\Exposers\Exposer {
 		
-		public $slug = 'txt'; // escriba slug para url segura
+		public $slug = 'txt'; // type slug for url safe
 		public $name = 'TXT';
 		protected $mappers = true;
 		public $accept_no_mapper = true;
