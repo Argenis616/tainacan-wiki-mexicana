@@ -11,7 +11,7 @@
 - Presentar historias al público usando bloques de Gutenberg
 
 [Wiki en Español](/es-mx/#wiki-do-tainacan)
-[Wiki em Português](/es-mx/#wiki-do-tainacan)
+[Wiki em Português](/pt-br/#wiki-do-tainacan)
 [Wiki in English](/#tainacan-wiki)
 
 <!-- background color -->
