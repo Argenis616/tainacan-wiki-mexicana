@@ -9,7 +9,7 @@ Si no tienes una o no sabes cómo crear una, puedes empezar [instalando un servi
 
 Una vez que hayas configurado tu WordPress, no necesitas descargar Tainacan. Simplemente, visita la sección "Complementos" (“Plugins”) en tu panel de administración de WordPress, busca Tainacan y haz clic en "Instalar". Así de sencillo. Si aún tienes dudas, puedes consultar el [tutorial de instalacion de Tainacan](/es-mx/tainacan).
 
-## Complemento (plug in) Tainacan 
+## Complemento (plugin) Tainacan 
 
 Instala Tainacan directamente desde el panel de administración de tu sitio de WordPress o descárgalo del [repositorio oficial de complementos](https://es.wordpress.org/plugins/tainacan/). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan).
 
