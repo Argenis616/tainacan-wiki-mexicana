@@ -1,67 +1,67 @@
-# Protecting private files
+# Protección de archivos privados
 
-This page explains how Tainacan protects access to attachments made to private items.
+En esta página se explica cómo Tainacan protege el acceso a los archivos adjuntos a elementos privados.
 
-## How it works
+## Cómo funciona
 
-Tainacan changes the default folders WordPress uses to save attachments for items. Instead of saving attachments in folders and subfolders representing the year and month, Tainacan will save them in folders representing the collection and items ids.
+Tainacan cambia las carpetas por defecto que WordPress utiliza para guardar los adjuntos de los artículos. En lugar de guardar los adjuntos en carpetas y subcarpetas que representan el año y el mes, Tainacan los guardará en carpetas que representan la colección y los ids de los artículos.
 
-Every time an attachment or a document is uploaded to an item, the file is saved under a special directory inside the uploads folder. There is a base directory for all items files, `tainacan-items` by default, and, inside this folder a `$collection_id/$item_id` folder structure.
+Cada vez que se sube un adjunto o un documento a un artículo, el archivo se guarda en un directorio especial dentro de la carpeta de subidas. Existe un directorio base para todos los ficheros de ítems, `tainacan-items` por defecto, y, dentro de esta carpeta una estructura de carpetas `$collection_id/$item_id`.
 
 ```
-uploads/2019/02 <-- WordPress default. Stores uploads for february, 2019
-uploads/tainacan-items/123/456/ <-- Stores uploads for item 456 that belongs to collection 123
+uploads/2019/02 <-- WordPress por defecto. Tiendas subidas para febrero de 2019
+uploads/tainacan-items/123/456/ <-- Almacena las cargas del artículo 456 que pertenece a la colección 123
 ```
 
-The URL for the files will always remain the plain structure, for example, `site.com/wp-content/uploads/tainacan-items/1234/2345/file.jpg`. However, in the file system, collections and items folders can be prefixed, indicating they are protected folders.
+La URL de los archivos seguirá siendo siempre la estructura simple, por ejemplo, `site.com/wp-content/uploads/tainacan-items/1234/2345/file.jpg`. Sin embargo, en el sistema de archivos, las carpetas de colecciones e ítems pueden llevar prefijos, indicando que son carpetas protegidas.
 
-So if the item with ID `2345` is private, the folder will be called, for example, `_x_2345`.
+Así, si el ítem con ID `2345` es privado, la carpeta se llamará, por ejemplo, `_x_2345`.
 
-Since the URL and the folder in the filesystem don't match, trying to access this file would result in a 404 error. But then Tainacan will detect this and will into the prefixed folders for it.
+Dado que la URL y la carpeta en el sistema de archivos no coinciden, al intentar acceder a este archivo se produciría un error 404. Pero entonces Tainacan lo detectará y lo buscará en las carpetas prefijadas.
 
-If it finds, it will check whether the current user can read the item and then serve it for authorized users, or leave a 404 response for non-authorized users.
+Si lo encuentra, comprobará si el usuario actual puede leer el elemento y entonces lo servirá para los usuarios autorizados, o dejará una respuesta 404 para los usuarios no autorizados.
 
-A special `.htaccess` rule will block access to any URL that has a folder starting with the `_x_` prefix, so the only way to access these files will be using the plain URL and passing through this permission check.
+Una regla especial `.htaccess` bloqueará el acceso a cualquier URL que tenga una carpeta que comience con el prefijo `_x_`, por lo que la única forma de acceder a estos archivos será utilizando la URL simple y pasando por esta comprobación de permisos.
 
-Every time you edit an item or a collection, or even bulk edit items, the folders will be renamed accordingly.
+Cada vez que edite un elemento o una colección, o incluso edite elementos de forma masiva, las carpetas se renombrarán en consecuencia.
 
-!> For now, thumbnails are not considered private files and remain in the default WordPress upload folder.
+!> Por ahora, las miniaturas no se consideran archivos privados y permanecen en la carpeta de subida por defecto de WordPress.
 
-## Protecting folders
+## Protección de carpetas
 
-You need to add a rule to your `.htaccess` to block access to all prefixed folders inside your uploads directory. This could be done with a rule like this:
+Necesita añadir una regla a su `.htaccess` para bloquear el acceso a todas las carpetas prefijadas dentro de su directorio uploads. Esto puede hacerse con una regla como esta
 
 ```
 RewriteRule ^wp-content/uploads/tainacan-items/.*_x_\d+/.+$ - [F,L]
 ```
 
-This line will go right below the `RewriteEngine On` line.
+Esta línea irá justo debajo de la línea `RewriteEngine On`.
 
-Even if a person manages to find out the real file path, with the prefixed folder name, he/she will not be able to access it, only via the clean URL that will go through the permission check.
-
-
-## Changing base folder and prefixes
-
-The base folder for items attachments can be changed setting the `TAINACAN_ITEMS_UPLOADS_DIR` constant in `wp-config.php`. The default value is `tainacan-items`.
-
-The prefix for private folders can be changed setting the `TAINACAN_PRIVATE_FOLDER_PREFIX` constant in `wp-config.php`. The default value is `_x_`.
-
-!> These constants must be set in a fresh install. If they are changed after there are uploads, all the links to the existing files will break.
+Incluso si una persona consigue averiguar la ruta real del fichero, con el nombre de carpeta prefijado, no podrá acceder a él, sólo a través de la URL limpia que pasará por la comprobación de permisos.
 
 
-## Moving attachments from versions before 0.11
+## Cambiar la carpeta base y los prefijos
 
-If you are upgrading from an older version of Tainacan and already have files attached to items everything will keep working as usual. The changes will only be applied to new files uploaded from this point on. Old files will still be in the default WordPress folder structure.
+La carpeta base para los items adjuntos puede ser cambiada configurando la constante `TAINACAN_ITEMS_UPLOADS_DIR` en `wp-config.php`. El valor por defecto es `tainacan-items`.
 
-If you want to move old files to the new structure there is a Command-Line command you can run to do this, using WP CLI.
+El prefijo para las carpetas privadas se puede cambiar estableciendo la constante `TAINACAN_PRIVATE_FOLDER_PREFIX` en `wp-config.php`. El valor por defecto es `_x_`.
+
+!> Estas constantes deben establecerse en una instalación nueva. Si se cambian después de que haya subidas, todos los enlaces a los archivos existentes se romperán.
+
+
+## Trasladar archivos adjuntos desde versiones anteriores a la 0.11
+
+Si estás actualizando desde una versión anterior de Tainacan y ya tienes archivos adjuntos a elementos todo seguirá funcionando como siempre. Los cambios sólo se aplicarán a los nuevos archivos subidos a partir de este momento. Los archivos antiguos seguirán en la estructura de carpetas por defecto de WordPress.
+
+Si desea mover los archivos antiguos a la nueva estructura hay un comando de línea de comandos que puede ejecutar para hacerlo, usando WP CLI.
 
 ```
 wp tainacan move-attachments-to-items-folder
 ```
 
-!> Make a backup of your site before running this and check if everything is in place afterward, if they are not, recover your backup.
+!> Haga una copia de seguridad de su sitio antes de ejecutar esto y compruebe si todo está en su sitio después, si no lo están, recupere su copia de seguridad.
 
-It is a good idea to do a dry run before just to check if the command runs till the end and have an idea of the files that will be affected:
+Es una buena idea hacer una ejecución en seco antes sólo para comprobar si el comando se ejecuta hasta el final y tener una idea de los archivos que se verán afectados:
 
 ```
 wp tainacan move-attachments-to-items-folder --dry-run
