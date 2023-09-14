@@ -15,7 +15,7 @@ Una "colección" es un grupo de "elementos" que comparten un conjunto común de 
 
 Para cada “colección” puedes configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que alguien puede buscar elementos de un “País” y obtener resultados de “pinturas” y de “películas” en los resultados.
 
-> Ver la sección [Taxonomías](/es-mx/general-concepts.md#taxonomias) para saber más.
+> Ver la sección [Taxonomías](/es-mx/general-concepts.md#taxonomías) para saber más.
 
 ## Crear colecciones
 
