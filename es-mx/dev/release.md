@@ -12,7 +12,7 @@ Suponiendo:
 
 ## Pre-lanzamiento
 
-Antes de publicar una nueva versión, siempre lanzamos uno o más Release Candidates para que la comunidad tenga tiempo de [probar y asegurarse](/dev/tests-script) que la nueva versión de Tainacan está limpia y lista para llegar al mundo.
+Antes de publicar una nueva versión, siempre lanzamos uno o más Release Candidates para que la comunidad tenga tiempo de [probar y asegurarse](/es-mx/dev/tests-script) que la nueva versión de Tainacan está limpia y lista para llegar al mundo.
 
 ### Empezar en el repositorio git
 
