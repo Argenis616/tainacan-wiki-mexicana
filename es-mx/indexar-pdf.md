@@ -17,7 +17,7 @@ Una vez activada la función, los archivos _“PDF”_ creados como documentos d
 
 ## Búsqueda del texto indexado de documentos en formato PDF
 
-El contenido textual de _“PDF”_  indexado se buscará a través de la función de “_Búsqueda textual de Tainacán”_, que busca en todos _“metadatos”_. Ver más en: [Mecanismo de Busqueda](es-mx/search-engine.md)
+El contenido textual de _“PDF”_  indexado se buscará a través de la función de “_Búsqueda textual de Tainacán”_, que busca en todos _“metadatos”_. Ver más en: [Mecanismo de búsqueda](/es-mx/dev/search-engine.md)
 
 También puede buscar solo el contenido del “PDF” usando la opción _“Búsqueda Avanzada”_. Hay una nueva opción de búsqueda llamada _“Documento”_, ue buscará directamente en el contenido indexado de los documentos _“PDF”_ cargados.
 
