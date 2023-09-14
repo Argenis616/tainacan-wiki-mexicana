@@ -131,7 +131,7 @@ Cada año WordPress lanza un "tema oficial", que se activa por defecto en sus in
     allowfullscreen>
 </iframe>
 
-> Vea también cómo instalar el [plugin Tainacan](/es-mx/tainacan) para WordPress.
+> Vea también cómo instalar el [plugin Tainacan](/es-mx/tainacan.md) para WordPress.
 
 ### Actualizar el tema
 
