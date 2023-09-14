@@ -1,10 +1,10 @@
-# Admin UI Options
+# Opciones de la interfaz gráfica del administrador
 
-Since version 0.19, Tainacan offers a series of variables that can help you customize the admin panel. Most of this variables mean hidding elements. They can be passed directly to the admin URL as query params, but the ideal way is to use a filter for it. For example:
+Desde la versión 0.19, Tainacan ofrece una serie de variables que pueden ayudarte a personalizar el panel de administración. La mayoría de estas variables significan ocultar elementos. Se pueden pasar directamente a la URL del admin como query params, pero lo ideal es usar un filtro para ello. Por ejemplo
 
 ```php
 /*
- * Sends params to the Tainacan Admin Options
+ * Envía parámetros a las opciones de administración de Tainacan
  */
 function my_plugin_tainacan_admin_options($options) {
 
@@ -20,12 +20,12 @@ function my_plugin_tainacan_admin_options($options) {
 add_filter('tainacan-admin-ui-options', 'my_plugin_tainacan_admin_options');
 ```
 
-The same could be achieved for prototyping by accessing your admin URL like this:
+Lo mismo podría lograrse para la creación de prototipos accediendo a su URL de administración de la siguiente manera:
 `https://<your-site.com>/wp-admin/?homeCollectionsOrderBy=name&hideTainacanHeaderAdvancedSearch=true&hideItemsListCreationDropdownImport=true&page=tainacan_admin#/collections/`
 
-Follows the complete list of available variables, organized by region of the UI. Notice that some hidding elements variables can be overriden by others:
+A continuación se muestra la lista completa de variables disponibles, organizadas por regiones de la interfaz de usuario. Observa que algunas variables de los elementos de ocultación pueden ser anuladas por otras:
 
-## Home page, Repository Section
+## Página principal, Sección del Repositorio
 
 - `hideHomeRepositorySection`
   - `hideHomeThemeCollectionsButton`
@@ -37,7 +37,7 @@ Follows the complete list of available variables, organized by region of the UI.
   - `hideHomeExportersButton`
   - `hideHomeActivitiesButton`
 
-## Home page, Collections Section
+## Página principal, Sección de Colecciones
 
 - `hideHomeCollectionsSection`
   - `hideHomeCollectionsButton`
@@ -52,7 +52,7 @@ Follows the complete list of available variables, organized by region of the UI.
   - `homeCollectionsOrderBy` // Default is 'modified'
   - `homeCollectionsOrder` // Default is 'desc'
 
-## Tainacan main header
+## Cabecera principal de Tainacan
 
 - `hideTainacanHeader`
   - `hideTainacanHeaderHomeButton`
@@ -60,7 +60,7 @@ Follows the complete list of available variables, organized by region of the UI.
   - `hideTainacanHeaderAdvancedSearch`
   - `hideTainacanHeaderProcessesPopup`
 
-## Tainacan Repository Menu
+## Menú del Repositorio de Tainacan
 
 - `hidePrimaryMenu`
   - `hidePrimaryMenuCompressButton`
@@ -75,7 +75,7 @@ Follows the complete list of available variables, organized by region of the UI.
   - `hidePrimaryMenuActivitiesButton`
   - `hidePrimaryMenuCapabilitiesButton`
 
-## Tainacan Context Subheader
+## Subtítulo del Contexto Tainacan
 
 - `hideRepositorySubheader`
   - `hideRepositorySubheaderViewCollectionButton`
@@ -83,7 +83,7 @@ Follows the complete list of available variables, organized by region of the UI.
   - `hideRepositorySubheaderExportButton`
 - `hideCollectionSubheader`
 
-## Items list page
+## Página de lista de elementos
 
 - `hideItemsListPageTitle`
 - `hideItemsListMultipleSelection`
@@ -105,7 +105,7 @@ Follows the complete list of available variables, organized by region of the UI.
 - `hideItemsListActionAreas`
 - `hideItemsListFilterCreationButton`
 
-## Item edit page
+## Página de edición de elementos
 
 - `hideItemEditionPageTitle`
 - `hideItemEditionCollectionName`
@@ -122,11 +122,11 @@ Follows the complete list of available variables, organized by region of the UI.
 - `hideItemEditionFocusMode`
 - `hideItemEditionRequiredOnlySwitch`
 - `hideItemEditionMetadataTypes`
-- `allowItemEditionModalInsideModal` // Not recommended!
+- `allowItemEditionModalInsideModal` // ¡No recomendado!
 - `itemEditionDocumentInsideTabs`
 - `itemEditionAttachmentInsideTabs`
 
-## Item single page
+## Elemento de una sola página
 
 - `hideItemSinglePageTitle`
 - `hideItemSingleCollectionName`
@@ -139,6 +139,6 @@ Follows the complete list of available variables, organized by region of the UI.
 - `hideItemSingleActivities`
 - `hideItemSingleExposers`
 
-## Items bulk edition page
+## Página de edición masiva de elementos
 
 - `hideBulkEditionPageTitle`
