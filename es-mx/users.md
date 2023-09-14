@@ -1,4 +1,4 @@
-!> Esta página se refiere al esquema de permisos de usuario en **las versiones de Tainacan anteriores a la 0.15**. Recomendamos encarecidamente el uso de versiones más recientes, donde los permisos de usuario funcionan según [esta documentación](/es-mx/users-roles).
+> Esta página se refiere al esquema de permisos de usuario en **las versiones de Tainacan anteriores a la 0.15**. Recomendamos encarecidamente el uso de versiones más recientes, donde los permisos de usuario funcionan según [esta documentación](/es-mx/users-roles).
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
