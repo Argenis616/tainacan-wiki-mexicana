@@ -28,7 +28,7 @@ Tainacan cuenta con una API que permite a otras aplicaciones buscar y consumir e
 
 Del mismo modo que puedes elegir el formato del archivo cuando exportas tu colección, uno puede elegir el formato en el que quiere consumir tu contenido. Para eso están los expositores.
 
-Cada expositor implementa una forma diferente de presentar sus datos en la respuesta de la API, y puede admitir una o varias correspondencias. Ver más [detalles sobre los expositores](exposers.md).
+Cada expositor implementa una forma diferente de presentar sus datos en la respuesta de la API, y puede admitir una o varias correspondencias. Ver más [detalles sobre los expositores](/es-mx/dev/exposers.md).
 
 Por ejemplo, el expositor JSON por defecto soporta cualquier mapeo y puede servir tu contenido exponiendo cualquier estándar de metadatos al que hayas mapeado tu contenido. La decisión está en manos de la aplicación que solicita su API.
 
