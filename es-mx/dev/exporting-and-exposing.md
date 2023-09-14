@@ -10,7 +10,7 @@ Con Tainacan tienes la posibilidad de mapear la estructura de tu colección a un
 
 Lo hace informando, para cada metadato que crea, de qué es relativo en cada formato al que desea asignar su colección. Puedes decir, por ejemplo, que tu metadato "Nombre" es equivalente al atributo dc:Título en Dublin Core y a algún otro atributo en otros formatos que elijas.
 
-Tainacan se entrega con algunos estándares de mapeo que implementan estándares de metadatos populares. Y será fácil crear nuevos estándares.  Ver más [detalles sobre estándares de mapeo](/es-mx/dev/mapping-standards.md). 
+Tainacan se entrega con algunos estándares de mapeo que implementan estándares de metadatos populares. Y será fácil crear nuevos estándares.  Ver más [detalles sobre normas de mapeo](/es-mx/dev/mapping-standards.md). 
 
 También puede utilizar estos estándares de mapeo como preajuste al crear una nueva colección.
 
