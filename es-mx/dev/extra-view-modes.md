@@ -20,8 +20,8 @@ Como se muestra en [nuestro post para modos de vista extra](http://tainacan.org/
 
 Aquí describimos el proceso para crear un plugin de este tipo. Existen dos estrategias:
 
-1. Usar una [plantilla PHP](#template-strategy) para crear la lista de elementos;
-2. Uso de un [componente Vue.js](#component-strategy) para visualizar la lista de elementos;
+1. Usar una [plantilla PHP](#estrategia-de-plantillas) para crear la lista de elementos;
+2. Uso de un [componente Vue.js](#estrategia-de-componentes) para visualizar la lista de elementos;
 
 El último es más complejo, pero también te da más opciones de personalización e interacción.
 
