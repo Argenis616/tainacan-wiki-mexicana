@@ -1,6 +1,6 @@
-# Registering Custom Vue Components
+# Registro de componentes Vue personalizados
 
-When authoring plugins for extending Tainacan functionalities, you may have to face some Vue.js code, which is the JS framework adopted by our community for implementing the Tainacan Admin Panel. Most of the time, you shall have the tools necessary for doing the work using the libraries that our plugin already includes. But in the situations where that is not enough, comes the need for registering **extra VueJS components**. Here a few examples:
+Cuando crees plugins para extender las funcionalidades de Tainacan, puede que tengas que enfrentarte a código Vue.js, que es el framework JS adoptado por nuestra comunidad para implementar el Panel de Administración de Tainacan. La mayoría de las veces, dispondrás de las herramientas necesarias para realizar el trabajo utilizando las librerías que ya incluye nuestro plugin. Pero en las situaciones en las que eso no es suficiente, surge la necesidad de registrar **componentes VueJS adicionales**. Aquí algunos ejemplos:
 
 * You may need a [Map component](https://github.com/vue-leaflet/Vue2Leaflet ':ignore') for creating a [new Metadata Type](/dev/creating-metadata-type.md) of geo-location;
 * You may want to use a [Color Picker component](https://github.com/xiaokaike/vue-color ':ignore') for registering a [new Filter Type](/dev/creating-filters-type.md) based on colors, or even adding an extra form hook to increment your Collection settings;
