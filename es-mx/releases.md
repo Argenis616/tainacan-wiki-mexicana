@@ -43,9 +43,9 @@ Publicación de lanzamiento: [https://tainacan.org/blog/2022/08/23/tainacan-beta
 
 #### Para desarrolladores
 
-- Nuevos _hooks_ (filtros) para el [_backend_](/dev/filters.md#backend-filters) y el [_frontend_](/dev/filters.md#frontend-filters);
+- Nuevos _hooks_ (filtros) para el [_backend_](/es-mx/dev/filters.md#filtros-backend) y el [_frontend_](/es-mx/dev/filters.md#filtros-frontend);
 - Nuevos _template tags_ para la sección de metadatos;
-- [Configuraciones](/dev/admin-ui-options.md) para modificar el Admin;
+- [Configuraciones](/es-mx/dev/admin-ui-options.md) para modificar el Admin;
 - Form _hook_ específico para tipos de metadatos;
 - Form _hook_ en el formulario de roles de usuario;
 
