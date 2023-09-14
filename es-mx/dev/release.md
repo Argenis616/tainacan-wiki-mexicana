@@ -245,4 +245,4 @@ git push --tags
 
 ## ¡Actualiza este wiki!
 
-Los archivos `/_coverpage.md` y `/es-mx/_coverpage.md` de esta Wiki tienen el número de versión, que se muestra en [home page](/). ¡Asegúrate de mantenerlo actualizado siguiendo nuestras [directrices de contribución](/CONTRIBUTING.md)!
+Los archivos `/_coverpage.md` y `/es-mx/_coverpage.md` de esta Wiki tienen el número de versión, que se muestra en [home page](/). ¡Asegúrate de mantenerlo actualizado siguiendo nuestras [directrices de contribución](/es-mx/dev/CONTRIBUTING.md)!
