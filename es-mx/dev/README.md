@@ -1,6 +1,6 @@
 # Tainacan para desarrolladores
 
-Como saben, **Tainacan es un plugin de [WordPress](https://wordpress.org)** y está construido sobre esta conocida plataforma. Si estás familiarizado con _WordPress_ debería serte fácil entender cómo está organizado Tainacan, cómo interactúa con la base de datos y cómo construir tus propias funcionalidades a partir de él.
+Como saben, **Tainacan es un plugin de [WordPress](https://es.wordpress.org)** y está construido sobre esta conocida plataforma. Si estás familiarizado con _WordPress_ debería serte fácil entender cómo está organizado Tainacan, cómo interactúa con la base de datos y cómo construir tus propias funcionalidades a partir de él.
 
 ## Bueno, pero yo soy nuevo en WordPress
 
