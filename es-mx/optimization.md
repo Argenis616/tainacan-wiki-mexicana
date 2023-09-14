@@ -100,7 +100,7 @@ Para hacer esto, agrega la siguiente línea al archivo `wp-config.php`:
 define('TAINACAN_DISABLE_DEFAULT_SEARCH_ENGINE', true);
 ```
 
-Puedes encontrar más información sobre [el motor de búsqueda](/dev/search-engine) en la documentación para desarrolladores.
+Puedes encontrar más información sobre [el motor de búsqueda](es-mx/dev/search-engine.md) en la documentación para desarrolladores.
 
 ### Ajuste de las facetas de búsqueda
 
@@ -129,7 +129,7 @@ Si no tienes acceso para modificar la configuración del servidor, aquí hay alg
 define('TAINACAN_FACETS_DISABLE_COUNT_ITEMS', true);
 ```
 
-Encontrarás más información sobre las facetas en la sección [búsqueda facetada](/dev/faceted-search) de la documentación para desarrolladores.
+Encontrarás más información sobre las facetas en la sección [búsqueda facetada](es-mx/dev/faceted-search) de la documentación para desarrolladores.
 
 ---
 
