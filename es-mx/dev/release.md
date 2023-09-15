@@ -12,7 +12,7 @@ Suponiendo:
 
 ## Pre-lanzamiento
 
-Antes de publicar una nueva versión, siempre lanzamos uno o más Release Candidates para que la comunidad tenga tiempo de [probar y asegurarse](/es-mx/dev/tests-script) que la nueva versión de Tainacan está limpia y lista para llegar al mundo.
+Antes de publicar una nueva versión, siempre lanzamos uno o más Release Candidates para que la comunidad tenga tiempo de probar y asegurarse que la nueva versión de Tainacan está limpia y lista para llegar al mundo.
 
 ### Empezar en el repositorio git
 
@@ -245,4 +245,4 @@ git push --tags
 
 ## ¡Actualiza este wiki!
 
-Los archivos `/_coverpage.md` y `/es-mx/_coverpage.md` de esta Wiki tienen el número de versión, que se muestra en [home page](/). ¡Asegúrate de mantenerlo actualizado siguiendo nuestras [directrices de contribución](/es-mx/dev/CONTRIBUTING.md)!
+Los archivos `/_coverpage.md` y `/es-mx/_coverpage.md` de esta Wiki tienen el número de versión, que se muestra en [home page](/). ¡Asegúrate de mantenerlo actualizado siguiendo nuestras [directrices de contribución](es-mx/dev/CONTRIBUTING.md)!
