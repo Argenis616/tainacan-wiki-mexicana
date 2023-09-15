@@ -1,4 +1,4 @@
-> _TODO_ Document each action with parameters and usage example
+> _TODO_ Documente cada acción con parámetros y ejemplos de uso
 
 # Acciones
 
