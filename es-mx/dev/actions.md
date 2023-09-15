@@ -8,7 +8,7 @@ Del manual para desarrolladores de WordPress:
 
 Las Acciones Tainacan son acciones Backend, _basadas en PHP_:
 
-## Backend Actions
+## Acciones Backend
 
 ### `tainacan-insert`
 
