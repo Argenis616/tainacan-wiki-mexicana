@@ -2,7 +2,7 @@
 
 Esta documentación fue producida con el apoyo de [Fundação Nacional de Artes](https://www.funarte.gov.br/) y el [Instituto Brasileiro de Museus](https://www.gov.br/museus/pt-br).
 
-![Logo de FUNARTE](/_assets/images/logo_funarte.png ":size=200")
-![Logo de IBRAM](/_assets/images/logo_ibram.jpeg ":size=180")
+![Logo de FUNARTE](/_assets/logo_funarte.png ":size=200")
+![Logo de IBRAM](/_assets/logo_ibram.jpeg ":size=180")
 
 </div>
