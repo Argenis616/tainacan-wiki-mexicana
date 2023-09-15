@@ -1,6 +1,6 @@
-?> _TODO_ Document each action with parameters and usage example
+> _TODO_ Document each action with parameters and usage example
 
-# Actions
+# Acciones
 
 Del manual para desarrolladores de WordPress:
 
