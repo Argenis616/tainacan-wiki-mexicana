@@ -1,6 +1,6 @@
 # Configuración de su entorno local
 
-Este documento le ayudará a configurar su entorno local y a ejecutar las pruebas. Si aún no lo has hecho, echa un vistazo a [conceptos clave](key-concepts.md) para que pueda comprender mejor el proyecto.
+Este documento le ayudará a configurar su entorno local y a ejecutar las pruebas. Si aún no lo has hecho, echa un vistazo a [conceptos clave](/es-mx/dev/key-concepts.md) para que pueda comprender mejor el proyecto.
 
 ## Panorama general
 
